@@ -7,11 +7,13 @@ import { ToolCard } from "@/components/tool-card";
 export function DirectoryControls({
   brands,
   initialTools,
-  showResults = false
+  showResults = false,
+  hideBrandFilter = false,
 }: {
   brands: string[];
   initialTools: Tool[];
   showResults?: boolean;
+  hideBrandFilter?: boolean;
 }) {
   const [q, setQ] = useState("");
   const [brand, setBrand] = useState<string>("all");
@@ -28,7 +30,7 @@ export function DirectoryControls({
     const query = q.trim().toLowerCase();
     return initialTools.filter((t) => {
       if (onlyRunnable && !t.runner?.type) return false;
-      if (brand !== "all" && t.brand !== brand) return false;
+      if (!hideBrandFilter && brand !== "all" && t.brand !== brand) return false;
       if (tag !== "all" && !t.tags.includes(tag)) return false;
       if (!query) return true;
       const hay = [
@@ -38,16 +40,18 @@ export function DirectoryControls({
         t.pain,
         t.artifact,
         t.ctaLabel,
-        ...t.tags
-      ].join(" ").toLowerCase();
+        ...t.tags,
+      ]
+        .join(" ")
+        .toLowerCase();
       return hay.includes(query);
     });
-  }, [q, brand, tag, onlyRunnable, initialTools]);
+  }, [q, brand, tag, onlyRunnable, initialTools, hideBrandFilter]);
 
   return (
     <div>
-      <div className="grid gap-3 md:grid-cols-4">
-        <div className="md:col-span-2">
+      <div className={`grid gap-3 ${hideBrandFilter ? "md:grid-cols-3" : "md:grid-cols-4"}`}>
+        <div className={hideBrandFilter ? "md:col-span-2" : "md:col-span-2"}>
           <label className="text-xs uppercase font-black tracking-widest">Search</label>
           <input
             value={q}
@@ -57,19 +61,23 @@ export function DirectoryControls({
           />
         </div>
 
-        <div>
-          <label className="text-xs uppercase font-black tracking-widest">Brand</label>
-          <select
-            value={brand}
-            onChange={(e) => setBrand(e.target.value)}
-            className="mt-2 w-full brut-border bg-black/20 px-3 py-3 font-sans text-sm"
-          >
-            <option value="all">All</option>
-            {brands.map((b) => (
-              <option key={b} value={b}>{b}</option>
-            ))}
-          </select>
-        </div>
+        {!hideBrandFilter ? (
+          <div>
+            <label className="text-xs uppercase font-black tracking-widest">Brand</label>
+            <select
+              value={brand}
+              onChange={(e) => setBrand(e.target.value)}
+              className="mt-2 w-full brut-border bg-black/20 px-3 py-3 font-sans text-sm"
+            >
+              <option value="all">All</option>
+              {brands.map((b) => (
+                <option key={b} value={b}>
+                  {b}
+                </option>
+              ))}
+            </select>
+          </div>
+        ) : null}
 
         <div>
           <label className="text-xs uppercase font-black tracking-widest">Tag</label>
@@ -80,7 +88,9 @@ export function DirectoryControls({
           >
             <option value="all">All</option>
             {allTags.map((t) => (
-              <option key={t} value={t}>{t}</option>
+              <option key={t} value={t}>
+                {t}
+              </option>
             ))}
           </select>
         </div>
