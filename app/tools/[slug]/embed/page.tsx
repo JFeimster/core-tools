@@ -11,8 +11,14 @@ export const metadata = {
   description: "Embeddable view of a tool runner."
 };
 
-export default function ToolEmbedPage({ params }: { params: { slug: string } }) {
-  const tool = getToolBySlug(params.slug);
+export default async function ToolEmbedPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
+  const tool = getToolBySlug(slug);
   if (!tool) return notFound();
 
   return (
@@ -29,7 +35,10 @@ export default function ToolEmbedPage({ params }: { params: { slug: string } }) 
                 {tool.oneLiner ?? tool.pain}
               </p>
             </div>
-            <span className="brut-pill" style={{ background: "var(--accent)", color: "#000", borderColor: "#000" }}>
+            <span
+              className="brut-pill"
+              style={{ background: "var(--accent)", color: "#000", borderColor: "#000" }}
+            >
               embed
             </span>
           </div>
