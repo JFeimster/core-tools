@@ -1,0 +1,2698 @@
+[
+  {
+    "slug": "embedded-finance-widget",
+    "brand": "GoKapital",
+    "name": "Embedded Finance Widget (Referral Partners)",
+    "oneLiner": "Let partners embed a pre-qual widget on their site with tracking.",
+    "pain": "Allows CPAs, insurance agents, and auto dealers to embed a funding pre-qualification tool directly on their website, capturing leads with partner tracking.",
+    "artifact": "Embeddable iframe/widget (white-label)",
+    "inputs": [
+      {
+        "key": "businessRevenue",
+        "label": "Business Revenue ($/month)",
+        "type": "number",
+        "placeholder": "e.g., 12000",
+        "defaultValue": "12000"
+      },
+      {
+        "key": "reason",
+        "label": "Reason for Funding",
+        "type": "select",
+        "options": [
+          {
+            "label": "Working capital",
+            "value": "working-capital"
+          },
+          {
+            "label": "Equipment",
+            "value": "equipment"
+          },
+          {
+            "label": "Real estate",
+            "value": "real-estate"
+          },
+          {
+            "label": "Payroll gap",
+            "value": "payroll-gap"
+          }
+        ],
+        "defaultValue": "working-capital"
+      },
+      {
+        "key": "email",
+        "label": "Contact Email",
+        "type": "text",
+        "placeholder": "you@company.com",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Minimal data capture. Submit lead to internal intake with referral tracking code. Widget matches partner branding.",
+    "ctaLabel": "Get the Partner Embed",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "embed",
+      "referral",
+      "lead-capture"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "dd-plus-7-impact-calculator",
+    "brand": "Payability",
+    "name": "DD+7 Impact Calculator",
+    "oneLiner": "Quantifies how much working capital is trapped by longer payout cycles.",
+    "pain": "Quantifies the exact dollar amount of working capital locked up by DD+7 payout delays.",
+    "artifact": "Liquidity Loss Report (PDF)",
+    "inputs": [
+      {
+        "key": "avgDailySales",
+        "label": "Average Daily Amazon Sales ($)",
+        "type": "number",
+        "defaultValue": "5000"
+      },
+      {
+        "key": "currentCycleDays",
+        "label": "Current Payout Cycle (days)",
+        "type": "number",
+        "defaultValue": "14"
+      },
+      {
+        "key": "newCycleDays",
+        "label": "New DD+7 Cycle (days)",
+        "type": "number",
+        "defaultValue": "28"
+      }
+    ],
+    "logic": "Cash Loss = (New Cycle - Current Cycle) * Average Daily Sales",
+    "ctaLabel": "Unlock Your Trapped Capital",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "amazon",
+      "cashflow",
+      "calculator"
+    ],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        {
+          "key": "cashLoss",
+          "label": "Estimated Trapped Capital",
+          "format": "currency",
+          "expr": "(newCycleDays - currentCycleDays) * avgDailySales",
+          "note": "Back-of-napkin trapped working capital from payout delay."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "neca-material-money-quoter",
+    "brand": "DAC / Bank Breezy",
+    "name": "NECA Material Money Quoter",
+    "oneLiner": "Instantly quotes the bridge capital needed to buy materials for a new job.",
+    "pain": "Contractors need cash for materials before milestone payments hit.",
+    "artifact": "Project Material Finance Bridge Quote (PDF)",
+    "inputs": [
+      {
+        "key": "totalJobValue",
+        "label": "Total Contract/Job Value ($)",
+        "type": "number",
+        "defaultValue": "45000"
+      },
+      {
+        "key": "estimatedMaterialCost",
+        "label": "Estimated Material Cost ($)",
+        "type": "number",
+        "defaultValue": "8000"
+      }
+    ],
+    "logic": "Recommended Advance = Estimated Material Cost (capped at 25% of job value or $50k, whichever is lower).",
+    "ctaLabel": "Fund Materials Today",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "contractors",
+      "materials",
+      "quote"
+    ],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        {
+          "key": "capByJob",
+          "label": "25% of Job Value Cap",
+          "format": "currency",
+          "expr": "totalJobValue * 0.25"
+        },
+        {
+          "key": "recommendedAdvance",
+          "label": "Recommended Advance",
+          "format": "currency",
+          "expr": "estimatedMaterialCost",
+          "note": "Apply the cap logic in underwriting; this is the base bridge amount."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "payroll-gap-bridge-estimator",
+    "brand": "GoKapital",
+    "name": "Payroll Gap Bridge Estimator",
+    "oneLiner": "Calculates how much funding is needed to make payroll when a payment is delayed.",
+    "pain": "Payroll hits Friday. Client pays later. This tool tells you the gap fast.",
+    "artifact": "Friday Payroll Protection Plan (PDF)",
+    "inputs": [
+      {
+        "key": "totalPayroll",
+        "label": "Total Payroll Amount ($)",
+        "type": "number",
+        "defaultValue": "12000"
+      },
+      {
+        "key": "cashAvailable",
+        "label": "Current Cash Available ($)",
+        "type": "number",
+        "defaultValue": "4000"
+      }
+    ],
+    "logic": "Funding Needed = Payroll - Cash Available (floor at 0).",
+    "ctaLabel": "Get a Payroll Bridge Option",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "payroll",
+      "survival",
+      "calculator"
+    ],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        {
+          "key": "fundingNeeded",
+          "label": "Funding Needed",
+          "format": "currency",
+          "expr": "totalPayroll - cashAvailable",
+          "note": "If negative, treat as $0."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "mca-repayment-estimator",
+    "brand": "DAC / Bank Breezy",
+    "name": "MCA Repayment Estimator",
+    "oneLiner": "Projects daily repayment impact so owners see the cashflow bite up front.",
+    "pain": "Owners sign MCA terms without understanding daily deduction. This tool forces clarity.",
+    "artifact": "Daily Cash Flow Impact Report (Table/Summary)",
+    "inputs": [
+      {
+        "key": "advanceAmount",
+        "label": "Advance Amount Requested ($)",
+        "type": "number",
+        "defaultValue": "30000"
+      },
+      {
+        "key": "factorRate",
+        "label": "Factor Rate (e.g., 1.25)",
+        "type": "number",
+        "defaultValue": "1.25"
+      }
+    ],
+    "logic": "Total Repayment = Advance * Factor Rate. Estimated Daily Payment = Total Repayment / 90 business days.",
+    "ctaLabel": "See Safer Options",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "mca",
+      "cashflow",
+      "repayment"
+    ],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        {
+          "key": "totalRepayment",
+          "label": "Total Repayment",
+          "format": "currency",
+          "expr": "advanceAmount * factorRate"
+        },
+        {
+          "key": "dailyPayment",
+          "label": "Estimated Daily Payment (~90 days)",
+          "format": "currency",
+          "expr": "(advanceAmount * factorRate) / 90"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "the-dd-7-impact-calculator",
+    "brand": "Payability",
+    "name": "The DD+7 Impact Calculator",
+    "oneLiner": "The DD+7 Impact Calculator",
+    "pain": "**Pain Solved:** Quantifies the exact dollar amount of working capital permanently locked up by Amazon's DD+7 (Delivery Date \\+ 7 Days) policy. Solves the \"Cash Trapped\" anxiety.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicCashLossNewDD7CycleCurrentPayoutCycleAverageDailySales",
+        "label": "Input Fields:Core Logic:** Cash Loss \\= (New DD+7 Cycle \\- Current Payout Cycle) \\* Average Daily Sales",
+        "type": "number"
+      }
+    ],
+    "logic": "** **Input Fields:** Average Daily Amazon Sales ($), Current Payout Cycle (Days) (e.g., 14), New DD+7 Cycle (Days) (e.g., 28). **Core Logic:** Cash Loss \\= (New DD+7 Cycle \\- Current Payout Cycle) \\* Average Daily Sales",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "amazon",
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-inventory-turnover-accelerator",
+    "brand": "Payability",
+    "name": "The Inventory Turnover Accelerator",
+    "oneLiner": "The Inventory Turnover Accelerator",
+    "pain": "**Pain Solved:** Proves the financial benefit of paying the Payability fee by showing how many *extra* inventory turns are possible per year by getting daily cash. Solves the \"Cost vs. Velocity\" problem.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicTurnsGainedPayabilityTurnsLost13Assumed30velocitygain",
+        "label": "Input Fields:Core Logic:Turns Gained (Payability)** \\= Turns Lost \\* 1.3 (Assumed 30% velocity gain).",
+        "type": "number"
+      }
+    ],
+    "logic": "** **Input Fields:** Initial Capital ($), Average Inventory Turn Time (Days). **Core Logic:** Turns Lost Waiting (14 Days) \\= Initial Capital / (Average Inventory Turn Time). **Turns Gained (Payability)** \\= Turns Lost \\* 1.3 (Assumed 30% velocity gain).",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "inventory"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-fee-nullifier-cash-back-calculator",
+    "brand": "Payability",
+    "name": "The \"Fee Nullifier\" Cash Back Calculator",
+    "oneLiner": "The \"Fee Nullifier\" Cash Back Calculator",
+    "pain": "**Pain Solved:** Neutralizes the biggest objection (the 2% Payability fee) by demonstrating how the 2% cash back from the Seller Card makes the effective cost of capital zero. Solves the \"High Fee\" objection.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "tiktok-shop-viral-curse-predictor",
+    "brand": "Payability",
+    "name": "TikTok Shop Viral Curse Predictor",
+    "oneLiner": "TikTok Shop Viral Curse Predictor",
+    "pain": "**Pain Solved:** Shows new TikTok Shop sellers the risk of suspension (Late Dispatch Rate) due to the 15-30 day hold on funds, validating the need for instant capital to pay suppliers. Solves the \"Inventory-for-Viral-Success\" crisis.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicLDRRiskScoreCurrentCashonHandUnitsSoldSupplierCostperUnitStatusCriticalifscore10",
+        "label": "Input Fields:Core Logic:** LDR Risk Score \\= Current Cash on Hand / (Units Sold \\* Supplier Cost per Unit). Status \\= \"Critical\" if score \\< 1.0.",
+        "type": "number"
+      }
+    ],
+    "logic": "** **Input Fields:** Units Sold in Last 48 Hours, Current Cash on Hand ($), Supplier Cost per Unit ($). **Core Logic:** LDR Risk Score \\= Current Cash on Hand / (Units Sold \\* Supplier Cost per Unit). Status \\= \"Critical\" if score \\< 1.0.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "inventory"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "account-level-reserve-hostage-calculator",
+    "brand": "Payability",
+    "name": "Account Level Reserve Hostage Calculator",
+    "oneLiner": "Account Level Reserve Hostage Calculator",
+    "pain": "**Pain Solved:** Converts the abstract \"Account Level Reserve\" balance into a concrete, missed profit number. Taps into the visceral anger of having \"earned money withheld.\" Solves the \"Hostage\" feeling.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicMissedProfitCurrentReserveBalanceAverageNetProfitMarginAssumed1extraturnmo",
+        "label": "Input Fields:Core Logic:** Missed Profit \\= Current Reserve Balance \\* Average Net Profit Margin \\* (Assumed 1 extra turn/mo).",
+        "type": "text"
+      }
+    ],
+    "logic": "** **Input Fields:** Current Account Level Reserve Balance ($), Average Net Profit Margin (%). **Core Logic:** Missed Profit \\= Current Reserve Balance \\* Average Net Profit Margin \\* (Assumed 1 extra turn/mo).",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-cpa-bookkeeper-fee-integration-tool",
+    "brand": "Payability",
+    "name": "The CPA/Bookkeeper Fee Integration Tool",
+    "oneLiner": "The CPA/Bookkeeper Fee Integration Tool",
+    "pain": "**Pain Solved:** Shows accountants and tax preparers how to seamlessly integrate Payability to ensure their clients can always pay *their* (the accountant's) invoice, solving the professional's \"Invoice Chasing\" problem.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicTotalDaysofFloatEliminatedAverageClientInvoicingDelayOutputsachecklistforintegratingPayabilitycardforvendorpayments",
+        "label": "Input Fields:Core Logic:** Total Days of Float Eliminated \\= Average Client Invoicing Delay. Outputs a checklist for integrating Payability card for vendor payments.",
+        "type": "number"
+      }
+    ],
+    "logic": "** **Input Fields:** Average Client Invoicing Delay (Days), Average Client Invoice Amount ($). **Core Logic:** Total Days of Float Eliminated \\= Average Client Invoicing Delay. Outputs a checklist for integrating Payability card for vendor payments.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-supply-chain-hostage-release-timer",
+    "brand": "Payability",
+    "name": "The Supply Chain Hostage Release Timer",
+    "oneLiner": "The Supply Chain Hostage Release Timer",
+    "pain": "**Pain Solved:** Calculates the revenue lost when a stockout occurs because the seller missed a supplier wire deadline. Solves the \"Inventory Stockout Catastrophe\" problem.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicMissedSalesRevenueUnitsYouAreCurrentlyOutOfStockOnDaysSinceOutofStockAverageDailyUnitSales",
+        "label": "Input Fields:Core Logic:** Missed Sales Revenue \\= Units You Are Currently Out Of Stock On \\* (Days Since Out of Stock \\* Average Daily Unit Sales).",
+        "type": "number"
+      }
+    ],
+    "logic": "** **Input Fields:** Units You Are Currently Out Of Stock On, Average Daily Unit Sales, Days Since Out of Stock. **Core Logic:** Missed Sales Revenue \\= Units You Are Currently Out Of Stock On \\* (Days Since Out of Stock \\* Average Daily Unit Sales).",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "inventory",
+      "stockout"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-fba-prep-center-payout-predictor",
+    "brand": "Payability",
+    "name": "The FBA Prep Center Payout Predictor",
+    "oneLiner": "The FBA Prep Center Payout Predictor",
+    "pain": "**Pain Solved:** Shows FBA Prep Centers how partnering with Payability will guarantee they get paid on time, as their client (the seller) will no longer have cash flow delays. Solves the \"Accounts Receivable Chasing\" problem for the prep center.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicPayoutReliabilityGuaranteeReferralswhousePayabilitywillpayyourinvoicewithin24hoursoffunding",
+        "label": "Input Fields:Core Logic:Payout Reliability Guarantee** \\= \"Referrals who use Payability will pay your invoice within 24 hours of funding.\"",
+        "type": "text"
+      }
+    ],
+    "logic": "** **Input Fields:** Average Seller Invoice (Days), Invoice Delays Due to Payout Holds (Days). **Core Logic:** Simple submission form. Outputs a message: **Payout Reliability Guarantee** \\= \"Referrals who use Payability will pay your invoice within 24 hours of funding.\"",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "cash-flow"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-black-box-amazon-lending-score",
+    "brand": "Payability",
+    "name": "The \"Black Box\" Amazon Lending Score",
+    "oneLiner": "The \"Black Box\" Amazon Lending Score",
+    "pain": "**Pain Solved:** Agitates the high-revenue seller by showing their inability to apply for \"invite-only\" Amazon Lending when they need it most, contrasting it with Payability's instant access. Solves the \"Black Box Inflexibility\" problem.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicAccessStatusLOCKEDPayabilityisyourimmediateaccessalternative",
+        "label": "Input Fields:Core Logic:Access Status** \\= \"LOCKED. Payability is your immediate-access alternative.\"",
+        "type": "text"
+      }
+    ],
+    "logic": "** **Input Fields:** Annual Revenue ($), Amazon Lending Invite Status (Yes/No). **Core Logic:** If \"No\" Invite, output **Access Status** \\= \"LOCKED. Payability is your immediate-access alternative.\"",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "amazon"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-cost-of-waiting-vs-cost-of-fee-analyzer",
+    "brand": "Payability",
+    "name": "The Cost of Waiting vs. Cost of Fee Analyzer",
+    "oneLiner": "The Cost of Waiting vs. Cost of Fee Analyzer",
+    "pain": "**Pain Solved:** Uses the \"Kill Shot Data\" math to prove that the cost of capital (the fee) is mathematically lower than the cost of sitting on cash flow (the waiting). Solves the \"Opportunity Cost\" problem.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicNetWinThe2feenetsawinofMarginFeeprofitbyallowing14extradaysofsales",
+        "label": "Input Fields:Core Logic:Net Win** \\= \"The 2% fee nets a win of \\[Margin \\- Fee\\]% profit by allowing 14 extra days of sales.\"",
+        "type": "number"
+      }
+    ],
+    "logic": "** **Input Fields:** Average Margin (%), Cost of Advance Fee (%) (e.g., 2), Days Advance Saves (e.g., 14). **Core Logic:** If Margin \\> Fee, output **Net Win** \\= \"The 2% fee nets a win of \\[Margin \\- Fee\\]% profit by allowing 14 extra days of sales.\"",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "cash-flow"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-wholesale-distributor-payout-gap-closer",
+    "brand": "Payability",
+    "name": "The Wholesale Distributor Payout Gap Closer",
+    "oneLiner": "The Wholesale Distributor Payout Gap Closer",
+    "pain": "**Pain Solved:** Quantifies the exact revenue lost by wholesale distributors who are forced to sell less profitable products (due to cash flow constraints) instead of higher-margin items. Solves the distributor's \"Cash Flow Constrained Buying\" problem.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicProfitGapTotalMonthlyPurchaseVolumeAverageProfitMarginonDesiredStockAverageProfitMarginonConstrainedStock",
+        "label": "Input Fields:Core Logic:** Profit Gap \\= Total Monthly Purchase Volume \\* (Average Profit Margin on Desired Stock \\- Average Profit Margin on Constrained Stock).",
+        "type": "text"
+      }
+    ],
+    "logic": "** **Input Fields:** Average Profit Margin on Constrained Stock (%), Average Profit Margin on Desired Stock (%), Total Monthly Purchase Volume ($). **Core Logic:** Profit Gap \\= Total Monthly Purchase Volume \\* (Average Profit Margin on Desired Stock \\- Average Profit Margin on Constrained Stock).",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "cash-flow"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-multi-channel-expansion-revenue-forecaster",
+    "brand": "Payability",
+    "name": "The Multi-Channel Expansion Revenue Forecaster",
+    "oneLiner": "The Multi-Channel Expansion Revenue Forecaster",
+    "pain": "**Pain Solved:** Shows existing Amazon sellers (who are cash-starved) the quantifiable, missed revenue potential by *not* expanding to new channels (Walmart, Shopify) due to lack of capital for upfront inventory/setup. Solves the \"Channel Lock-In\" anxiety.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicMissedAnnualRevenueCurrentAmazonMonthlyRevenue12AssumedRevenueLiftfromExpansion",
+        "label": "Input Fields:Core Logic:** Missed Annual Revenue \\= Current Amazon Monthly Revenue \\* 12 \\* Assumed Revenue Lift from Expansion.",
+        "type": "number"
+      }
+    ],
+    "logic": "** **Input Fields:** Current Amazon Monthly Revenue ($), Target New Channel (e.g., Walmart), Assumed Revenue Lift from Expansion (%). **Core Logic:** Missed Annual Revenue \\= Current Amazon Monthly Revenue \\* 12 \\* Assumed Revenue Lift from Expansion.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "amazon",
+      "inventory",
+      "shopify"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-seasonal-stock-up-stress-reliever",
+    "brand": "Payability",
+    "name": "The Seasonal Stock-Up Stress Reliever",
+    "oneLiner": "The Seasonal Stock-Up Stress Reliever",
+    "pain": "**Pain Solved:** Calculates how much extra capital is needed, and how far in advance, a seller must order inventory to prevent seasonal stockouts, validating the need for instant, flexible funding. Solves the \"Holiday Stockout Panic.\"",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicExtraUnitsNeededNormalDailySalesPeakSeasonSalesMultiplierLeadTimetoReceiveInventoryCurrentStockTimelineshowswhenfundingisneededbasedonleadtime",
+        "label": "Input Fields:Core Logic:** Extra Units Needed \\= (Normal Daily Sales \\* Peak Season Sales Multiplier \\* Lead Time to Receive Inventory) \\- Current Stock. Timeline shows when funding is needed based on lead time.",
+        "type": "number"
+      }
+    ],
+    "logic": "** **Input Fields:** Normal Daily Sales (Units), Peak Season Sales Multiplier (e.g., 3x), Lead Time to Receive Inventory (Days). **Core Logic:** Extra Units Needed \\= (Normal Daily Sales \\* Peak Season Sales Multiplier \\* Lead Time to Receive Inventory) \\- Current Stock. Timeline shows when funding is needed based on lead time.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "funding",
+      "inventory",
+      "stockout"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-freight-forwarder-funding-guarantee",
+    "brand": "Payability",
+    "name": "The Freight Forwarder Funding Guarantee",
+    "oneLiner": "The Freight Forwarder Funding Guarantee",
+    "pain": "**Pain Solved:** Assures freight forwarders that their clients (sellers) will have immediate cash to cover hefty shipping and duties invoices, eliminating payment risk. Solves the freight forwarder's \"High-Risk Client\" problem.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicFundingAssuranceClientsusingPayabilityhavecashreleased1428daysfaster",
+        "label": "Input Fields:Core Logic:Funding Assurance** \\= \"Clients using Payability have cash released 14-28 days faster",
+        "type": "number"
+      },
+      {
+        "key": "virtuallyeliminatinginvoicedelayrisk",
+        "label": "virtually eliminating invoice delay risk.\"",
+        "type": "text"
+      }
+    ],
+    "logic": "** **Input Fields:** Average Freight Invoice Amount ($), Client's Average Payout Delay (Days). **Core Logic:** Simple submission form. Outputs a message: **Funding Assurance** \\= \"Clients using Payability have cash released 14-28 days faster, virtually eliminating invoice delay risk.\"",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-q4-profit-erosion-forecaster",
+    "brand": "Payability",
+    "name": "The Q4 Profit Erosion Forecaster",
+    "oneLiner": "The Q4 Profit Erosion Forecaster",
+    "pain": "**Pain Solved:** Quantifies the massive margin erosion caused by resorting to high-interest, short-term loans or desperate inventory sourcing during the critical Q4 holiday season. Solves the \"Peak Season Panic Financing\" problem.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicAvoidedInterestCostTotalQ4InventoryNeededInterestRateofAlternativeLoanOutputsacomparisonshowingthecostofPayabilitysadvancevshighinterestalternatives",
+        "label": "Input Fields:Core Logic:** Avoided Interest Cost \\= Total Q4 Inventory Needed \\\\\\* Interest Rate of Alternative Loan. Outputs a comparison showing the cost of Payability's advance vs. high-interest alternatives.",
+        "type": "number"
+      }
+    ],
+    "logic": "** **Input Fields:** Total Q4 Inventory Needed ($), Interest Rate of Alternative Loan (%). **Core Logic:** Avoided Interest Cost \\= Total Q4 Inventory Needed \\\\\\* Interest Rate of Alternative Loan. Outputs a comparison showing the cost of Payability's advance vs. high-interest alternatives.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "inventory"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-customer-review-velocity-builder",
+    "brand": "Payability",
+    "name": "The Customer Review Velocity Builder",
+    "oneLiner": "The Customer Review Velocity Builder",
+    "pain": "**Pain Solved:** Shows the quantifiable value of faster cash flow by calculating how many more units can be launched *sooner*, leading to a faster accumulation of critical customer reviews and better BSR (Best Seller Rank). Solves the \"Slow-Start Launch\" problem.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "inputFieldsCoreLogicExtraReviewsGainedDaysSavedAverageDailySalesReviewConversionRate",
+        "label": "Input Fields:Core Logic:** Extra Reviews Gained \\= Days Saved \\\\\\* Average Daily Sales \\\\\\* Review Conversion Rate.",
+        "type": "number"
+      }
+    ],
+    "logic": "** **Input Fields:** Days Saved by Daily Payouts (e.g., 14), Average Daily Sales (Units), Review Conversion Rate (%). **Core Logic:** Extra Reviews Gained \\= Days Saved \\\\\\* Average Daily Sales \\\\\\* Review Conversion Rate.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "cash-flow"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-stockout-death-spiral-estimator",
+    "brand": "8fig",
+    "name": "The \"Stockout Death Spiral\" Estimator",
+    "oneLiner": "The \"Stockout Death Spiral\" Estimator",
+    "pain": "**The Problem:** Sellers underestimate the cost of being out of stock (it's not just lost sales; it's lost SEO rank).",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "averageDailyRevenue",
+        "label": "** Average Daily Revenue",
+        "type": "number"
+      },
+      {
+        "key": "productMargin",
+        "label": "Product Margin %",
+        "type": "number"
+      },
+      {
+        "key": "currentKeywordRanking110",
+        "label": "Current Keyword Ranking (1-10)",
+        "type": "text"
+      },
+      {
+        "key": "daysOutofStock",
+        "label": "Days Out of Stock.",
+        "type": "number"
+      }
+    ],
+    "logic": "Calculates the total financial damage of a 14-day stockout.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator",
+      "estimator",
+      "seo",
+      "stockout"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-equity-saver-shield-vc-vs-8fig",
+    "brand": "8fig",
+    "name": "The Equity-Saver Shield (VC vs. 8fig)",
+    "oneLiner": "The Equity-Saver Shield (VC vs. 8fig)",
+    "pain": "**The Problem:** Founders think VC money is \"free\" because there's no interest. They're wrong.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "currentValuation",
+        "label": "** Current Valuation",
+        "type": "text"
+      },
+      {
+        "key": "projectedExitValuein35years",
+        "label": "Projected Exit Value (in 3-5 years)",
+        "type": "text"
+      },
+      {
+        "key": "equityrequestedbyVC",
+        "label": "Equity % requested by VC.",
+        "type": "number"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-boat-to-bank-gap-analyzer",
+    "brand": "8fig",
+    "name": "The \"Boat-to-Bank\" Gap Analyzer",
+    "oneLiner": "The \"Boat-to-Bank\" Gap Analyzer",
+    "pain": "**The Problem:** Cash is \"dead\" while inventory is on the water.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "manufacturingLeadTimedays",
+        "label": "** Manufacturing Lead Time (days)",
+        "type": "number"
+      },
+      {
+        "key": "shippingTimedays",
+        "label": "Shipping Time (days)",
+        "type": "number"
+      },
+      {
+        "key": "paymentTermswithSuppliereg",
+        "label": "Payment Terms with Supplier (e.g.",
+        "type": "number"
+      },
+      {
+        "key": "3070",
+        "label": "30/70).",
+        "type": "text"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "inventory"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-mca-shark-auditor",
+    "brand": "8fig",
+    "name": "The MCA \"Shark\" Auditor",
+    "oneLiner": "The MCA \"Shark\" Auditor",
+    "pain": "**The Problem:** Merchant Cash Advances (MCAs) hide their triple-digit APRs behind \"Factor Rates.\"",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "fundingAmount",
+        "label": "** Funding Amount",
+        "type": "number"
+      },
+      {
+        "key": "totalPaybackAmount",
+        "label": "Total Payback Amount",
+        "type": "number"
+      },
+      {
+        "key": "dailyofSaleswithheld",
+        "label": "Daily % of Sales withheld.",
+        "type": "number"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "apr",
+      "factor",
+      "mca"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-viral-hit-stress-test",
+    "brand": "8fig",
+    "name": "The \"Viral Hit\" Stress Test",
+    "oneLiner": "The \"Viral Hit\" Stress Test",
+    "pain": "**The Problem:** A TikTok video goes viral, the product sells out, and the brand dies because they can't restock fast enough.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "currentMonthlyUnitsSold",
+        "label": "** Current Monthly Units Sold",
+        "type": "text"
+      },
+      {
+        "key": "unitsinStock",
+        "label": "Units in Stock",
+        "type": "text"
+      },
+      {
+        "key": "supplierReorderTimeweeks",
+        "label": "Supplier Re-order Time (weeks).",
+        "type": "text"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-asset-light-roi-multiplier",
+    "brand": "8fig",
+    "name": "The \"Asset-Light\" ROI Multiplier",
+    "oneLiner": "The \"Asset-Light\" ROI Multiplier",
+    "pain": "**The Problem:** Sellers don't know if they should buy more inventory or spend more on ads.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "rOASReturnonAdSpend",
+        "label": "** ROAS (Return on Ad Spend)",
+        "type": "text"
+      },
+      {
+        "key": "inventoryTurnoverRate",
+        "label": "Inventory Turnover Rate",
+        "type": "number"
+      },
+      {
+        "key": "productMargin",
+        "label": "Product Margin.",
+        "type": "text"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "ads",
+      "inventory",
+      "roi"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-amazon-payout-bridge-predictor",
+    "brand": "8fig",
+    "name": "The \"Amazon Payout\" Bridge Predictor",
+    "oneLiner": "The \"Amazon Payout\" Bridge Predictor",
+    "pain": "**The Problem:** Amazon\u2019s 14-day hold kills high-velocity sellers.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "currentAmazonAccountLevel",
+        "label": "** Current Amazon Account Level",
+        "type": "text"
+      },
+      {
+        "key": "nextPODepositAmount",
+        "label": "Next PO Deposit Amount",
+        "type": "number"
+      },
+      {
+        "key": "nextPODueDate",
+        "label": "Next PO Due Date.",
+        "type": "text"
+      }
+    ],
+    "logic": "Calculates the gap between Amazon's disbursement schedule and the factory's \"Pay-to-Play\" date.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "amazon",
+      "bridge"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-q4-war-room-po-planner",
+    "brand": "8fig",
+    "name": "The Q4 \"War-Room\" PO Planner",
+    "oneLiner": "The Q4 \"War-Room\" PO Planner",
+    "pain": "**The Problem:** Ordering too late for Chinese New Year or Black Friday.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "targetSalesEventeg",
+        "label": "** Target Sales Event (e.g.",
+        "type": "number"
+      },
+      {
+        "key": "blackFriday",
+        "label": "Black Friday)",
+        "type": "text"
+      },
+      {
+        "key": "manufacturingTime",
+        "label": "Manufacturing Time",
+        "type": "text"
+      },
+      {
+        "key": "shippingMethodSeaAir",
+        "label": "Shipping Method (Sea/Air).",
+        "type": "text"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-ghost-revenue-interceptor",
+    "brand": "8fig",
+    "name": "The \"Ghost Revenue\" Interceptor",
+    "oneLiner": "The \"Ghost Revenue\" Interceptor",
+    "pain": "**The Problem:** Knowing how much money you *didn't* make because you were out of stock.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "totalMonthsActive",
+        "label": "** Total Months Active",
+        "type": "text"
+      },
+      {
+        "key": "totalDaysOutofStock",
+        "label": "Total Days Out of Stock",
+        "type": "number"
+      },
+      {
+        "key": "avgDailySales",
+        "label": "Avg Daily Sales.",
+        "type": "number"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-landed-cost-profit-leak-finder",
+    "brand": "8fig",
+    "name": "The \"Landed Cost\" Profit Leak Finder",
+    "oneLiner": "The \"Landed Cost\" Profit Leak Finder",
+    "pain": "**The Problem:** Sellers forget to factor in storage, shipping spikes, and duties, thinking they are more profitable than they are.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "factoryPrice",
+        "label": "** Factory Price",
+        "type": "text"
+      },
+      {
+        "key": "shippingCostperUnit",
+        "label": "Shipping Cost per Unit",
+        "type": "number"
+      },
+      {
+        "key": "storageFeeperMonth",
+        "label": "Storage Fee per Month",
+        "type": "text"
+      },
+      {
+        "key": "adSpendperUnitCPA",
+        "label": "Ad Spend per Unit (CPA).",
+        "type": "text"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "factor"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-exit-value-accelerator",
+    "brand": "8fig",
+    "name": "The \"Exit Value\" Accelerator",
+    "oneLiner": "The \"Exit Value\" Accelerator",
+    "pain": "**The Problem:** Sellers want to sell their business but their EBITDA is low due to stockouts.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "currentAnnualEBITDA",
+        "label": "** Current Annual EBITDA",
+        "type": "text"
+      },
+      {
+        "key": "currentValuationMultipleeg",
+        "label": "Current Valuation Multiple (e.g.",
+        "type": "text"
+      },
+      {
+        "key": "3x",
+        "label": "3x)",
+        "type": "text"
+      },
+      {
+        "key": "projectedRevenueGrowthwithFunding",
+        "label": "Projected Revenue Growth with Funding.",
+        "type": "number"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "stockout"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-air-freight-panic-button",
+    "brand": "8fig",
+    "name": "The \"Air Freight\" Panic Button",
+    "oneLiner": "The \"Air Freight\" Panic Button",
+    "pain": "**The Problem:** Stock is low. Sea freight takes 45 days. Air freight is 5x the cost. Is it worth it?",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "unitWeight",
+        "label": "** Unit Weight",
+        "type": "text"
+      },
+      {
+        "key": "airFreightCostkg",
+        "label": "Air Freight Cost/kg",
+        "type": "number"
+      },
+      {
+        "key": "seaFreightCostkg",
+        "label": "Sea Freight Cost/kg",
+        "type": "number"
+      },
+      {
+        "key": "dailySalesVelocity",
+        "label": "Daily Sales Velocity",
+        "type": "number"
+      },
+      {
+        "key": "profitMarginUnit",
+        "label": "Profit Margin/Unit.",
+        "type": "text"
+      }
+    ],
+    "logic": "Calculates the \"Profit Parity\" point. Does the extra margin from staying in stock outweigh the massive shipping bill?",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-big-box-trap-simulator-net-90-survival",
+    "brand": "8fig",
+    "name": "The \"Big Box\" Trap Simulator (Net-90 Survival)",
+    "oneLiner": "The \"Big Box\" Trap Simulator (Net-90 Survival)",
+    "pain": "**The Problem:** Walmart or Target finally placed a PO. Huge win? No. They pay Net-90. You go bankrupt fulfilling the order.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "wholesalePOAmount",
+        "label": "** Wholesale PO Amount",
+        "type": "number"
+      },
+      {
+        "key": "costofGoods",
+        "label": "Cost of Goods",
+        "type": "number"
+      },
+      {
+        "key": "paymentTermsNet306090",
+        "label": "Payment Terms (Net-30/60/90)",
+        "type": "number"
+      },
+      {
+        "key": "currentCashonHand",
+        "label": "Current Cash on Hand.",
+        "type": "text"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-zombie-sku-hunter",
+    "brand": "8fig",
+    "name": "The \"Zombie SKU\" Hunter",
+    "oneLiner": "The \"Zombie SKU\" Hunter",
+    "pain": "**The Problem:** 80% of cash is tied up in the 20% of products that don't sell.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "top5SKUs",
+        "label": "** Top 5 SKUs",
+        "type": "text"
+      },
+      {
+        "key": "unitCost",
+        "label": "Unit Cost",
+        "type": "number"
+      },
+      {
+        "key": "monthlySalesVelocity",
+        "label": "Monthly Sales Velocity",
+        "type": "number"
+      },
+      {
+        "key": "monthsofSupplyonHand",
+        "label": "Months of Supply on Hand.",
+        "type": "text"
+      }
+    ],
+    "logic": "Calculates \"Capital Velocity\" per SKU. Any SKU with \\>6 months supply and \\<10% margin contribution is marked \"Zombie.\"",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-ad-cost-inflation-forecaster",
+    "brand": "8fig",
+    "name": "The \"Ad Cost\" Inflation Forecaster",
+    "oneLiner": "The \"Ad Cost\" Inflation Forecaster",
+    "pain": "**The Problem:** CPAs (Cost Per Acquisition) rise every Q4. Sellers budget based on July costs, not November costs.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "currentCPA",
+        "label": "** Current CPA",
+        "type": "text"
+      },
+      {
+        "key": "averageOrderValueAOV",
+        "label": "Average Order Value (AOV)",
+        "type": "text"
+      },
+      {
+        "key": "conversionRate",
+        "label": "Conversion Rate",
+        "type": "number"
+      },
+      {
+        "key": "projectedQ4AdBudget",
+        "label": "Projected Q4 Ad Budget.",
+        "type": "text"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-golden-quarter-bonus-calculator",
+    "brand": "8fig",
+    "name": "The \"Golden Quarter\" Bonus Calculator",
+    "oneLiner": "The \"Golden Quarter\" Bonus Calculator",
+    "pain": "**The Problem:** Founders pay themselves last. They want to know, \"If I hit $1M this Q4, what do *I* get?\"",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "revenueGoal",
+        "label": "** Revenue Goal",
+        "type": "number"
+      },
+      {
+        "key": "netMargin",
+        "label": "Net Margin",
+        "type": "text"
+      },
+      {
+        "key": "reinvestmentmoneykeptinbiz",
+        "label": "\"Re-investment\" % (money kept in biz).",
+        "type": "number"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-supplier-bully-power-meter",
+    "brand": "8fig",
+    "name": "The \"Supplier Bully\" Power Meter",
+    "oneLiner": "The \"Supplier Bully\" Power Meter",
+    "pain": "**The Problem:** Suppliers dictate terms (30% deposit, 70% before ship) because the seller is small.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "currentAnnualOrderVolume",
+        "label": "** Current Annual Order Volume ($)",
+        "type": "number"
+      },
+      {
+        "key": "factoryMinimumOrderQuantityMOQ",
+        "label": "Factory Minimum Order Quantity (MOQ)",
+        "type": "text"
+      },
+      {
+        "key": "competitorVolumeEst",
+        "label": "Competitor Volume (Est).",
+        "type": "text"
+      }
+    ],
+    "logic": "Calculates the volume needed to demand Net-30 terms from a Chinese factory.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-discount-death-spiral-check",
+    "brand": "8fig",
+    "name": "The \"Discount\" Death Spiral Check",
+    "oneLiner": "The \"Discount\" Death Spiral Check",
+    "pain": "**The Problem:** Running a 25% OFF sale to drive cash flow, but destroying unit economics.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "productPrice",
+        "label": "** Product Price",
+        "type": "text"
+      },
+      {
+        "key": "productCost",
+        "label": "Product Cost",
+        "type": "number"
+      },
+      {
+        "key": "proposedDiscount",
+        "label": "Proposed Discount %.",
+        "type": "number"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "cash-flow"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-amazon-fees-fines-auditor-estimate",
+    "brand": "8fig",
+    "name": "The Amazon \"Fees & Fines\" Auditor (Estimate)",
+    "oneLiner": "The Amazon \"Fees & Fines\" Auditor (Estimate)",
+    "pain": "**The Problem:** FBA fees, storage fees, and \"low inventory\" fees eat margins silently.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "unitDimensionsStandardOversize",
+        "label": "** Unit Dimensions (Standard/Oversize)",
+        "type": "text"
+      },
+      {
+        "key": "daysinWarehouse",
+        "label": "Days in Warehouse",
+        "type": "number"
+      },
+      {
+        "key": "price",
+        "label": "Price.",
+        "type": "text"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "amazon",
+      "inventory"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-subscription-box-churn-burner",
+    "brand": "8fig",
+    "name": "The \"Subscription Box\" Churn Burner",
+    "oneLiner": "The \"Subscription Box\" Churn Burner",
+    "pain": "**The Problem:** Sub boxes must buy goods *before* renewals process. High churn \\= leftover junk.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "activeSubscribers",
+        "label": "** Active Subscribers",
+        "type": "text"
+      },
+      {
+        "key": "avgChurnRate",
+        "label": "Avg Churn Rate %",
+        "type": "number"
+      },
+      {
+        "key": "boxCost",
+        "label": "Box Cost",
+        "type": "number"
+      },
+      {
+        "key": "renewalDate",
+        "label": "Renewal Date.",
+        "type": "text"
+      }
+    ],
+    "logic": "Calculates the risk of over-ordering based on Churn Rate volatility.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "subscription"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-influencer-break-even-calculator",
+    "brand": "8fig",
+    "name": "The \"Influencer\" Break-Even Calculator",
+    "oneLiner": "The \"Influencer\" Break-Even Calculator",
+    "pain": "**The Problem:** Paying an influencer $5,000 upfront. How many units *actually* need to move?",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "influencerFee",
+        "label": "** Influencer Fee ($)",
+        "type": "number"
+      },
+      {
+        "key": "productMargin",
+        "label": "Product Margin ($)",
+        "type": "number"
+      },
+      {
+        "key": "avgConversionRate",
+        "label": "Avg Conversion Rate.",
+        "type": "number"
+      }
+    ],
+    "logic": "User inputs \u2192 calculation/logic \u2192 shareable artifact + CTA.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-3pl-switching-cost-calculator",
+    "brand": "8fig",
+    "name": "The \"3PL\" Switching Cost Calculator",
+    "oneLiner": "The \"3PL\" Switching Cost Calculator",
+    "pain": "**The Problem:** Everyone hates their 3PL, but fears the cost of moving stock.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "currentPickPackFee",
+        "label": "** Current Pick/Pack Fee",
+        "type": "text"
+      },
+      {
+        "key": "newPickPackFee",
+        "label": "New Pick/Pack Fee",
+        "type": "text"
+      },
+      {
+        "key": "numberofUnits",
+        "label": "Number of Units",
+        "type": "text"
+      },
+      {
+        "key": "movingTruckCost",
+        "label": "Moving Truck Cost.",
+        "type": "number"
+      }
+    ],
+    "logic": "Calculates the ROI of moving to a cheaper 3PL vs. the one-time move cost.",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "cash-flow-gap-bridge-calculator",
+    "brand": "GoKapital",
+    "name": "Cash Flow Gap Bridge Calculator",
+    "oneLiner": "Cash Flow Gap Bridge Calculator",
+    "pain": "**Problem Solved:** Finds the minimum Merchant Cash Advance (MCA) amount needed to cover an immediate payroll or invoice gap in under 60 seconds.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "bridge",
+      "calculator",
+      "cash-flow",
+      "mca",
+      "payroll"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "fix-and-flip-roi-max-loan-estimator",
+    "brand": "GoKapital",
+    "name": "Fix-and-Flip ROI & Max Loan Estimator",
+    "oneLiner": "Fix-and-Flip ROI & Max Loan Estimator",
+    "pain": "**Problem Solved:** Calculates the maximum Hard Money Loan amount a property can qualify for and the potential Return on Investment (ROI).",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator",
+      "estimator",
+      "roi"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "startup-funding-eligibility-quiz",
+    "brand": "GoKapital",
+    "name": "Startup Funding Eligibility Quiz",
+    "oneLiner": "Startup Funding Eligibility Quiz",
+    "pain": "**Problem Solved:** Immediately pre-qualifies a new business (0 months in biz) for a Personal/Startup Loan.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "funding",
+      "pre-qual"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "bank-rejected-second-look-finder",
+    "brand": "GoKapital",
+    "name": "Bank-Rejected\" Second Look Finder",
+    "oneLiner": "Bank-Rejected\" Second Look Finder",
+    "pain": "**Problem Solved:** Identifies a viable alternative funding product after a traditional bank denial.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "real-estate-proof-of-funds-pof-generator",
+    "brand": "GoKapital",
+    "name": "Real Estate Proof of Funds (POF) Generator",
+    "oneLiner": "Real Estate Proof of Funds (POF) Generator",
+    "pain": "**Problem Solved:** Instantly generates a generic, conditional Proof of Funds letter required for making real estate offers.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "sba-denial-pivot-tool",
+    "brand": "GoKapital",
+    "name": "SBA Denial Pivot Tool",
+    "oneLiner": "SBA Denial Pivot Tool",
+    "pain": "**Problem Solved:** Provides immediate, faster funding options for businesses that cannot wait the 1-3 months for an SBA 7(a) loan.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "bad-credit-business-funding-match",
+    "brand": "GoKapital",
+    "name": "Bad Credit Business Funding Match",
+    "oneLiner": "Bad Credit Business Funding Match",
+    "pain": "**Problem Solved:** Matches businesses with lower FICO scores to the GoKapital product with the lowest minimum requirement.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "credit",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "equipment-payment-estimator",
+    "brand": "GoKapital",
+    "name": "Equipment Payment Estimator",
+    "oneLiner": "Equipment Payment Estimator",
+    "pain": "**Problem Solved:** Estimates the monthly payment and total cost for financing a new piece of business equipment.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator",
+      "estimator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "lender-readiness-score",
+    "brand": "GoKapital",
+    "name": "Lender-Readiness Score",
+    "oneLiner": "Lender-Readiness Score",
+    "pain": "**Problem Solved:** Assesses a lead's current profile against the full underwriting criteria for all GoKapital products.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "lender",
+      "underwriting"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "competitor-rejection-analyzer",
+    "brand": "GoKapital",
+    "name": "Competitor Rejection Analyzer",
+    "oneLiner": "Competitor Rejection Analyzer",
+    "pain": "**Problem Solved:** Converts a rejection from a monoline competitor (e.g., OnDeck, BlueVine) into a viable GoKapital opportunity.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "invoice-to-cash-flow-gap-analyzer",
+    "brand": "GoKapital",
+    "name": "Invoice-to-Cash Flow Gap Analyzer",
+    "oneLiner": "Invoice-to-Cash Flow Gap Analyzer",
+    "pain": "**Problem Solved:** Calculates exactly how many days a contractor or service business can survive before their next payment arrives.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "cash-flow"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "gig-worker-back-on-the-road-calculator",
+    "brand": "GoKapital",
+    "name": "Gig Worker \"Back on the Road\" Calculator",
+    "oneLiner": "Gig Worker \"Back on the Road\" Calculator",
+    "pain": "**Problem Solved:** Shows Uber/Lyft/DoorDash drivers exactly how much income they're losing per day their car is in the shop.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "tax-payment-advance-estimator",
+    "brand": "GoKapital",
+    "name": "Tax Payment Advance Estimator",
+    "oneLiner": "Tax Payment Advance Estimator",
+    "pain": "**Problem Solved:** Helps business owners (especially Schedule C gig workers) calculate their estimated quarterly tax bill and funding needed.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator",
+      "estimator",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "material-cost-inflation-tracker-for-contractors",
+    "brand": "GoKapital",
+    "name": "Material Cost Inflation Tracker (For Contractors)",
+    "oneLiner": "Material Cost Inflation Tracker (For Contractors)",
+    "pain": "**Problem Solved:** Shows contractors how much more capital they need today vs. 6 months ago due to supply price increases.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "premium-finance-double-commission-calculator-for-insurance-agents",
+    "brand": "GoKapital",
+    "name": "Premium Finance \"Double Commission\" Calculator (For Insurance Agents)",
+    "oneLiner": "Premium Finance \"Double Commission\" Calculator (For Insurance Agents)",
+    "pain": "**Problem Solved:** Shows commercial insurance agents exactly how much extra income they can earn by financing their client's premiums.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "meet-or-beat-rate-comparison-tool",
+    "brand": "GoKapital",
+    "name": "Meet or Beat\" Rate Comparison Tool",
+    "oneLiner": "Meet or Beat\" Rate Comparison Tool",
+    "pain": "**Problem Solved:** Allows borrowers to input their current MCA or loan terms and see if GoKapital can beat it (automated pre-qualification).",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "mca",
+      "pre-qual"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "equipment-roi-payment-calculator",
+    "brand": "GoKapital",
+    "name": "Equipment ROI & Payment Calculator",
+    "oneLiner": "Equipment ROI & Payment Calculator",
+    "pain": "**Problem Solved:** Shows businesses whether buying new equipment will actually increase revenue enough to cover the financing payment.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator",
+      "roi"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "restaurant-walk-in-emergency-funding-tool",
+    "brand": "GoKapital",
+    "name": "Restaurant \"Walk-In Emergency\" Funding Tool",
+    "oneLiner": "Restaurant \"Walk-In Emergency\" Funding Tool",
+    "pain": "**Problem Solved:** Instant estimate for emergency equipment financing when critical kitchen equipment fails.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "embedded-finance-widget-for-referral-partners",
+    "brand": "GoKapital",
+    "name": "Embedded Finance Widget (For Referral Partners)",
+    "oneLiner": "Embedded Finance Widget (For Referral Partners)",
+    "pain": "**Problem Solved:** Allows CPAs, Insurance Agents, and Auto Dealers to embed a funding pre-qualification tool directly on their own website.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "embed",
+      "funding",
+      "pre-qual",
+      "referral",
+      "widget"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "wholesaler-real-estate-deal-analyzer-pro",
+    "brand": "GoKapital",
+    "name": "Wholesaler/Real Estate \"Deal Analyzer\" Pro",
+    "oneLiner": "Wholesaler/Real Estate \"Deal Analyzer\" Pro",
+    "pain": "**Problem Solved:** Comprehensive property analysis tool that calculates maximum offer, rehab budget, ARV, AND generates conditional Proof of Funds letter.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "turndown-retrieval-lead-magnet-template",
+    "brand": "GoKapital",
+    "name": "Turndown Retrieval\" Lead Magnet Template",
+    "oneLiner": "Turndown Retrieval\" Lead Magnet Template",
+    "pain": "**Problem Solved:** Provides referral partners (bank loan officers, equipment leasing agents) with a ready-made PDF they can send to rejected applicants.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "referral"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "daily-pay-commission-calculator-agent-recruitment-tool",
+    "brand": "GoKapital",
+    "name": "Daily Pay Commission\" Calculator (Agent Recruitment Tool)",
+    "oneLiner": "Daily Pay Commission\" Calculator (Agent Recruitment Tool)",
+    "pain": "**Problem Solved:** Shows potential agents exactly how much they could earn daily vs. traditional affiliate programs that pay monthly.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "supply-house-partnership-landing-page-template",
+    "brand": "GoKapital",
+    "name": "Supply House Partnership Landing Page Template",
+    "oneLiner": "Supply House Partnership Landing Page Template",
+    "pain": "**Problem Solved:** Provides agents with a pre-built, conversion-optimized landing page to pitch supply house partnerships.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "credit-incubator-roadmap-generator",
+    "brand": "GoKapital",
+    "name": "Credit Incubator\" Roadmap Generator",
+    "oneLiner": "Credit Incubator\" Roadmap Generator",
+    "pain": "**Problem Solved:** Creates a personalized 60-90 day action plan for businesses that don't currently qualify for any GoKapital product.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "credit"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-premium-finance-gap-calculator",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Premium Finance Gap Calculator",
+    "oneLiner": "The Premium Finance Gap Calculator",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Instantly calculates the exact financing needed to cover a commercial insurance premium down payment, saving the \"Turndown Tim\" agent from losing a renewal.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-urgent-tax-advance-estimator",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Urgent Tax Advance Estimator",
+    "oneLiner": "The Urgent Tax Advance Estimator",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Gives \"Tax Prep Tammy\u2019s\" clients (and gig workers) an immediate estimate of a tax payment advance, preventing IRS penalties.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator",
+      "estimator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-gig-income-funding-predictor-giggle-finance",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Gig Income Funding Predictor (\"Giggle Finance\")",
+    "oneLiner": "The Gig Income Funding Predictor (\"Giggle Finance\")",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Allows a gig worker (\"Networker Nate\u2019s\" audience) to see their funding potential instantly without a hard credit pull.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "credit",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-neca-material-money-quoter",
+    "brand": "DAC / Bank Breezy",
+    "name": "The NECA Material Money Quoter",
+    "oneLiner": "The NECA Material Money Quoter",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Solves the contractor's \"Cash Flow Gap\" by immediately calculating the bridge capital needed to buy materials for a new job.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "bridge",
+      "cash-flow",
+      "quote",
+      "quoter"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-turndown-retrieval-script-generator",
+    "brand": "DAC / Bank Breezy",
+    "name": "The \"Turndown Retrieval\" Script Generator",
+    "oneLiner": "The \"Turndown Retrieval\" Script Generator",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Generates a ready-to-use script for agents to approach bank loan officers for rejected leads (\"trash\"), enabling the \"Zero Budget Tactic.\"",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "ads"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-blue-collar-banker-lead-qualifier",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Blue Collar Banker Lead Qualifier",
+    "oneLiner": "The Blue Collar Banker Lead Qualifier",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Helps agents pre-qualify a prospect against DAC/Bank Breezy's *actual* underwriting minimums, reducing wasted effort on non-fundable leads.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "ads",
+      "pre-qual",
+      "underwriting"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-daily-commission-projection-dashboard",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Daily Commission Projection Dashboard",
+    "oneLiner": "The Daily Commission Projection Dashboard",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Provides new agents with a quick, motivational calculation of their daily earning potential based on the \"Daily Pay\" value proposition.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-auto-repair-emergency-advance-tool",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Auto-Repair Emergency Advance Tool",
+    "oneLiner": "The Auto-Repair Emergency Advance Tool",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Directly targets the gig worker's biggest fear: a broken car and no cash for repairs, which equals no income.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-merchant-cash-advance-mca-repayment-estimator",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Merchant Cash Advance (MCA) Repayment Estimator",
+    "oneLiner": "The Merchant Cash Advance (MCA) Repayment Estimator",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Helps Main Street retail owners (salons, restaurants) understand their future cash flow by projecting the daily deduction for an MCA.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator",
+      "cash-flow",
+      "estimator",
+      "mca"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-competitor-meet-or-beat-submitter",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Competitor \"Meet or Beat\" Submitter",
+    "oneLiner": "The Competitor \"Meet or Beat\" Submitter",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Weaponizes the $500 guarantee to instantly build trust and overcome client skepticism by offering a risk-free application.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-referral-commission-payout-estimator",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Referral Commission Payout Estimator",
+    "oneLiner": "The Referral Commission Payout Estimator",
+    "pain": "**Pain Point Solved (Under 60 Sec):** New agents want to quickly know how much they can earn from a potential deal. This tool provides an immediate, transparent commission calculation, reinforcing the \"Daily Pay\" value proposition.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator",
+      "estimator",
+      "referral"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-buy-here-pay-here-down-payment-bridge",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Buy-Here-Pay-Here Down Payment Bridge",
+    "oneLiner": "The Buy-Here-Pay-Here Down Payment Bridge",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Helps the F\\&I manager at a BHPH dealership instantly determine the short-term funding needed for a customer to complete a car purchase, converting a \"no-sale\" to a \"double-dip\" commission.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "bridge",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-trade-association-profit-split-calculator",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Trade Association Profit-Split Calculator",
+    "oneLiner": "The Trade Association Profit-Split Calculator",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Demonstrates to a Trade Association President (like PHCC or ABC) the non-dues revenue stream possible by becoming a DAC Master Affiliate.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-credit-score-vs-cash-flow-analyzer",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Credit Score vs. Cash Flow Analyzer",
+    "oneLiner": "The Credit Score vs. Cash Flow Analyzer",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Educates the sub-prime micro-entrepreneur that their low credit score is not a death sentence for funding, highlighting Bank Breezy\u2019s revenue-based underwriting model.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "cash-flow",
+      "credit",
+      "funding",
+      "underwriting"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-cold-lead-monetization-calculator",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Cold Lead Monetization Calculator",
+    "oneLiner": "The Cold Lead Monetization Calculator",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Shows bank loan officers or equipment leasing agents the exact dollar amount of commission they are throwing away by not monetizing their rejected leads.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "ads",
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-payroll-bridge-funding-quoter",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Payroll Bridge Funding Quoter",
+    "oneLiner": "The Payroll Bridge Funding Quoter",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Addresses the \"Survival\" motivation: the need for funds to meet payroll when client payments (Net-30/60) are delayed.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "bridge",
+      "funding",
+      "payroll",
+      "quote",
+      "quoter"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-trucker-repair-to-revenue-tracker",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Trucker Repair-to-Revenue Tracker",
+    "oneLiner": "The Trucker Repair-to-Revenue Tracker",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Independent truckers need quick capital for expensive repairs. This tool shows how quickly the advance is covered by their subsequent revenue.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-passive-income-network-builder",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Passive Income Network Builder",
+    "oneLiner": "The Passive Income Network Builder",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Converts an interested agent into a recruiter by showing the exponential power of building a downline, targeting the \"Networker Nate\" persona.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-bank-firing-risk-score",
+    "brand": "DAC / Bank Breezy",
+    "name": "The \"Bank Firing\" Risk Score",
+    "oneLiner": "The \"Bank Firing\" Risk Score",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Uses tightening banking standards data to agitate small business owners about their risk of being rejected by their current bank, making them receptive to an alternative solution.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-equipment-leasing-deposit-calculator",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Equipment Leasing Deposit Calculator",
+    "oneLiner": "The Equipment Leasing Deposit Calculator",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Assists equipment leasing brokers in retaining deals when a customer (like a contractor) can't afford the large, initial security deposit or first month's payment.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "calculator"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-same-day-vs-60-day-cost-analyzer",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Same-Day vs. 60-Day Cost Analyzer",
+    "oneLiner": "The Same-Day vs. 60-Day Cost Analyzer",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Justifies the higher cost of \"speed capital\" by quantifying the revenue lost waiting for a traditional bank loan (30-60 days).",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-tax-prep-fee-advance-solution",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Tax Prep Fee Advance Solution",
+    "oneLiner": "The Tax Prep Fee Advance Solution",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Helps \"Tax Prep Tammy\" secure her own fee upfront, as clients often need cash for both the tax bill *and* her service.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-bad-credit-good-business-certifier",
+    "brand": "DAC / Bank Breezy",
+    "name": "The \"Bad Credit, Good Business\" Certifier",
+    "oneLiner": "The \"Bad Credit, Good Business\" Certifier",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Provides a psychological boost and clear validation for the sub-prime entrepreneur who feels penalized by a low credit score but runs a profitable business.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "credit"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-service-industry-tip-to-revenue-translator",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Service Industry Tip-to-Revenue Translator",
+    "oneLiner": "The Service Industry Tip-to-Revenue Translator",
+    "pain": "**Pain Point Solved (Under 60 Sec):** For salons, restaurants, and bars, this tool quantifies the credit card tip flow to show bankability, proving steady revenue beyond standard sales.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "credit"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-neca-endorsement-value-illustrator",
+    "brand": "DAC / Bank Breezy",
+    "name": "The NECA Endorsement Value Illustrator",
+    "oneLiner": "The NECA Endorsement Value Illustrator",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Converts the abstract concept of a trade endorsement into a tangible trust metric for skeptical contractors.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "the-competitor-rate-to-factor-rate-translator",
+    "brand": "DAC / Bank Breezy",
+    "name": "The Competitor Rate-to-Factor Rate Translator",
+    "oneLiner": "The Competitor Rate-to-Factor Rate Translator",
+    "pain": "**Pain Point Solved (Under 60 Sec):** Demystifies the difference between traditional APR and the Factor Rate used in Merchant Cash Advances, allowing the agent to transparently compare offers.",
+    "artifact": "Shareable Report (PDF)",
+    "inputs": [
+      {
+        "key": "tool",
+        "label": "**",
+        "type": "text"
+      }
+    ],
+    "logic": "**",
+    "ctaLabel": "Run this tool",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": [
+      "apr",
+      "factor"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  }
+]
