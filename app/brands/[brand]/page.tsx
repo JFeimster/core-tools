@@ -63,7 +63,7 @@ export default async function BrandPage({
         </div>
 
         <div className="mt-6">
-          <DirectoryControls brands={brands} initialTools={tools} showResults />
+          <DirectoryControls brands={brands} initialTools={tools} showResults hideBrandFilter />
         </div>
       </div>
     </div>
