@@ -8,8 +8,14 @@ export function generateStaticParams() {
   return getAllToolSlugs().map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const tool = getToolBySlug(params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+
+  const tool = getToolBySlug(slug);
   if (!tool) return { title: "Tool Not Found" };
 
   return {
@@ -18,13 +24,19 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     openGraph: {
       title: tool.name,
       description: tool.oneLiner ?? tool.pain,
-      type: "website"
-    }
+      type: "website",
+    },
   };
 }
 
-export default function ToolPage({ params }: { params: { slug: string } }) {
-  const tool = getToolBySlug(params.slug);
+export default async function ToolPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
+  const tool = getToolBySlug(slug);
   if (!tool) return notFound();
 
   return (
@@ -39,16 +51,16 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
               {tool.brand}
             </span>
             {tool.tags.slice(0, 3).map((t) => (
-              <span key={t} className="brut-pill">{t}</span>
+              <span key={t} className="brut-pill">
+                {t}
+              </span>
             ))}
           </div>
         </div>
 
         <div className="mt-6 brut-border brut-shadow bg-[color:var(--paper)] p-6 md:p-8">
           <h1 className="text-2xl md:text-4xl font-black uppercase">{tool.name}</h1>
-          <p className="mt-3 font-sans text-[color:var(--muted)] max-w-3xl">
-            {tool.oneLiner ?? tool.pain}
-          </p>
+          <p className="mt-3 font-sans text-[color:var(--muted)] max-w-3xl">{tool.oneLiner ?? tool.pain}</p>
 
           <div className="mt-5 grid gap-3 md:grid-cols-3 font-sans text-sm">
             <div className="brut-border-soft p-4">
