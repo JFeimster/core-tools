@@ -2694,5 +2694,492 @@
     "runner": {
       "type": "none"
     }
+  },
+  {
+    "slug": "onramp-bezos-interest-calculator",
+    "brand": "Onramp Funds",
+    "name": "Bezos Interest Calculator",
+    "oneLiner": "Quantify the profit you lose while Amazon holds your payout float.",
+    "pain": "Visualizes the opportunity cost of Amazon holding payout funds for ~14 days.",
+    "artifact": "Lost Profit Receipt (graphic/receipt-style)",
+    "inputs": [
+      { "key": "biWeeklyPayout", "label": "Average Bi-Weekly Payout ($)", "type": "number", "defaultValue": "10000" },
+      { "key": "roiPerTurnPct", "label": "Average ROI per Inventory Turn (%)", "type": "number", "defaultValue": "20" }
+    ],
+    "logic": "(Payout Amount) * (ROI%/100) * (26 pay periods / 12 months).",
+    "ctaLabel": "Unlock this capital with OnRamp",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["amazon", "payouts", "calculator", "cashflow"],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        {
+          "key": "lostProfitPerMonth",
+          "label": "Estimated Monthly Lost Profit",
+          "format": "currency",
+          "expr": "biWeeklyPayout * (roiPerTurnPct/100) * (26/12)",
+          "note": "Doc formula interpreted as monthly-equivalent profit opportunity."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "onramp-stockout-bleed-auditor",
+    "brand": "Onramp Funds",
+    "name": "Stockout Bleed Auditor",
+    "oneLiner": "Calculate profit lost + ranking penalty while you wait for capital.",
+    "pain": "Quantifies the cost of waiting for a wire when a winner is out of stock.",
+    "artifact": "Hemorrhage Report (dashboard view)",
+    "inputs": [
+      { "key": "dailyUnitSales", "label": "Daily Unit Sales (when in stock)", "type": "number", "defaultValue": "25" },
+      { "key": "profitPerUnit", "label": "Profit Per Unit ($)", "type": "number", "defaultValue": "8" },
+      { "key": "daysUntilCapital", "label": "Days until Capital is Available", "type": "number", "defaultValue": "7" }
+    ],
+    "logic": "Direct Loss = Daily Sales * Profit * Days; Ranking Penalty = Direct Loss * 1.5.",
+    "ctaLabel": "Fund the restock now",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["amazon", "inventory", "urgency", "calculator"],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        { "key": "directLoss", "label": "Direct Profit Loss", "format": "currency", "expr": "dailyUnitSales * profitPerUnit * daysUntilCapital" },
+        { "key": "rankingPenalty", "label": "Estimated Ranking Penalty", "format": "currency", "expr": "(dailyUnitSales * profitPerUnit * daysUntilCapital) * 1.5" }
+      ]
+    }
+  },
+  {
+    "slug": "onramp-velocity-multiplier-simulator",
+    "brand": "Onramp Funds",
+    "name": "Velocity Multiplier Simulator",
+    "oneLiner": "Compare compounding growth with standard turns vs fast turns.",
+    "pain": "Shows how faster inventory turns can change 90-day outcomes.",
+    "artifact": "J-Curve Graph (visual comparison)",
+    "inputs": [
+      { "key": "availableCapital", "label": "Available Capital ($)", "type": "number", "defaultValue": "5000" },
+      { "key": "marginPct", "label": "Inventory Margin (%)", "type": "number", "defaultValue": "20" },
+      { "key": "currentTurnDays", "label": "Current Turnaround Time (days)", "type": "number", "defaultValue": "30" },
+      { "key": "onrampTurnDays", "label": "OnRamp Turnaround Time (days)", "type": "number", "defaultValue": "7" }
+    ],
+    "logic": "Compares compounding over 90 days at different intervals (standard vs faster turns).",
+    "ctaLabel": "Start the flywheel",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["simulator", "velocity", "growth"],
+    "runner": { "type": "none" }
+  },
+  {
+    "slug": "onramp-dd7-reality-calendar",
+    "brand": "Onramp Funds",
+    "name": "DD+7 Reality Calendar",
+    "oneLiner": "Show the real cash timeline under Delivery Date + 7 policies.",
+    "pain": "Clarifies the cashflow gap created by DD+7 timelines.",
+    "artifact": "Cash Gap Calendar (timeline view)",
+    "inputs": [
+      { "key": "shipmentDate", "label": "Shipment Date (YYYY-MM-DD)", "type": "text", "defaultValue": "" },
+      { "key": "deliveryDays", "label": "Estimated Delivery Time (days)", "type": "number", "defaultValue": "5" },
+      { "key": "shipmentValue", "label": "Shipment Value ($)", "type": "number", "defaultValue": "10000" }
+    ],
+    "logic": "Amazon Date = Ship + Delivery + 7 + 3; OnRamp Date = Ship + 0.",
+    "ctaLabel": "Get paid the day you ship",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["amazon", "timeline", "cashflow"],
+    "runner": { "type": "none" }
+  },
+  {
+    "slug": "onramp-prep-center-shock-audit",
+    "brand": "Onramp Funds",
+    "name": "Prep Center Shock Audit (2026 Edition)",
+    "oneLiner": "Calculate the new upfront cash required for 3PL/prep fees.",
+    "pain": "Quantifies the upfront cash requirement shift to pre-revenue invoices.",
+    "artifact": "Liquidity Trap Warning (PDF)",
+    "inputs": [
+      { "key": "monthlyUnits", "label": "Monthly Unit Volume", "type": "number", "defaultValue": "5000" },
+      { "key": "prepFee", "label": "Avg Prep Fee ($)", "type": "number", "defaultValue": "1.5" }
+    ],
+    "logic": "New Monthly Cash Requirement = Monthly Units * Prep Fee.",
+    "ctaLabel": "Pay your 3PL instantly",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["ops", "3pl", "cashflow", "calculator"],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        { "key": "monthlyCashNeed", "label": "New Monthly Cash Requirement", "format": "currency", "expr": "monthlyUnits * prepFee" }
+      ]
+    }
+  },
+  {
+    "slug": "onramp-deal-sniper-analyzer",
+    "brand": "Onramp Funds",
+    "name": "Wholesale Deal Sniper Analyzer",
+    "oneLiner": "Go/no-go on a time-sensitive deal after cost of speed.",
+    "pain": "Helps decide if the deal margin covers instant-capital cost.",
+    "artifact": "Green Light Card (mobile verdict)",
+    "inputs": [
+      { "key": "dealCost", "label": "Total Deal Cost ($)", "type": "number", "defaultValue": "3000" },
+      { "key": "projectedProfit", "label": "Projected Net Profit ($)", "type": "number", "defaultValue": "900" },
+      { "key": "timeToSellWeeks", "label": "Time to Sell Out (weeks)", "type": "number", "defaultValue": "4" }
+    ],
+    "logic": "Fee = Deal Cost * 0.02; Net ROI = (Profit - Fee) / Deal Cost; If Net ROI > 10% => SNIPE IT.",
+    "ctaLabel": "Get the wire now",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["wholesale", "decision", "calculator"],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        { "key": "estFee", "label": "Estimated OnRamp Fee (2%)", "format": "currency", "expr": "dealCost * 0.02" },
+        { "key": "netProfitAfterFee", "label": "Net Profit After Fee", "format": "currency", "expr": "projectedProfit - (dealCost * 0.02)" },
+        { "key": "netRoi", "label": "Net ROI (decimal)", "format": "number", "expr": "(projectedProfit - (dealCost * 0.02)) / dealCost" }
+      ]
+    }
+  },
+  {
+    "slug": "onramp-unbankable-fundability-quiz",
+    "brand": "Onramp Funds",
+    "name": "Unbankable Fundability Quiz",
+    "oneLiner": "Quick pre-qual based on sales data, not personal credit.",
+    "pain": "Reduces fear of rejection and routes qualified leads.",
+    "artifact": "Credit-Agnostic Certificate (badge)",
+    "inputs": [
+      {
+        "key": "monthlyRevenueBand",
+        "label": "Monthly Revenue",
+        "type": "select",
+        "options": [
+          { "label": "< $5k", "value": "<5k" },
+          { "label": "$5k–$20k", "value": "5k-20k" },
+          { "label": "$20k+", "value": "20k+" }
+        ],
+        "defaultValue": "5k-20k"
+      },
+      {
+        "key": "platform",
+        "label": "Sales Platform",
+        "type": "select",
+        "options": [
+          { "label": "Amazon", "value": "amazon" },
+          { "label": "Shopify", "value": "shopify" },
+          { "label": "Walmart", "value": "walmart" }
+        ],
+        "defaultValue": "amazon"
+      },
+      {
+        "key": "hasInventory",
+        "label": "Do you have inventory to sell?",
+        "type": "select",
+        "options": [
+          { "label": "Yes", "value": "yes" },
+          { "label": "No", "value": "no" }
+        ],
+        "defaultValue": "yes"
+      }
+    ],
+    "logic": "If Revenue > $3k and Platform is Amazon/Shopify => APPROVED; shows Bank Rejected vs OnRamp Qualified.",
+    "ctaLabel": "Connect your store to verify",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["quiz", "prequal", "amazon"],
+    "runner": { "type": "none" }
+  },
+  {
+    "slug": "onramp-q4-load-up-capacity-calculator",
+    "brand": "Onramp Funds",
+    "name": "Q4 Load Up Capacity Calculator",
+    "oneLiner": "Estimate buying power before peak season with faster cycles.",
+    "pain": "Shows how velocity funding increases inventory control before Dec 25.",
+    "artifact": "Inventory Mountain (visual)",
+    "inputs": [
+      { "key": "cashOnHand", "label": "Current Cash on Hand ($)", "type": "number", "defaultValue": "5000" },
+      { "key": "sellThroughDays", "label": "Avg Item Sell-Through Rate (days)", "type": "number", "defaultValue": "14" }
+    ],
+    "logic": "Simulates multiple buy/ship/fund cycles in a Q4 window vs one static batch.",
+    "ctaLabel": "Supercharge your buying power",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["q4", "seasonal", "simulator"],
+    "runner": { "type": "none" }
+  },
+  {
+    "slug": "onramp-deferred-transaction-unlocker",
+    "brand": "Onramp Funds",
+    "name": "Deferred Transaction Unlocker",
+    "oneLiner": "Estimate how much deferred balance you can access today.",
+    "pain": "Targets deferred transactions balance and shows immediate unlock potential.",
+    "artifact": "Unlock Key (animation/value reveal)",
+    "inputs": [
+      { "key": "deferredBalance", "label": "Deferred Transactions Balance ($)", "type": "number", "defaultValue": "10000" }
+    ],
+    "logic": "Unlockable Amount = Balance * 0.80 (conservative).",
+    "ctaLabel": "Withdraw it now",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["amazon", "deferred", "calculator"],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        { "key": "unlockable", "label": "Estimated Unlockable Amount (80%)", "format": "currency", "expr": "deferredBalance * 0.8" }
+      ]
+    }
+  },
+  {
+    "slug": "onramp-zombie-inventory-detector",
+    "brand": "Onramp Funds",
+    "name": "Zombie Inventory Detector",
+    "oneLiner": "Flag aged inventory and decide whether to liquidate or hold.",
+    "pain": "Helps evaluate aged inventory vs moving capital into fast movers.",
+    "artifact": "Dead Stock Report (recommendation)",
+    "inputs": [
+      { "key": "unitsAged", "label": "Units in stock > 90 days", "type": "number", "defaultValue": "200" },
+      { "key": "avgUnitValue", "label": "Avg Unit Value ($)", "type": "number", "defaultValue": "15" },
+      { "key": "monthlySales", "label": "Current monthly sales (units)", "type": "number", "defaultValue": "40" }
+    ],
+    "logic": "Compares holding cost vs liquidating and reallocating capital (includes opportunity cost concept).",
+    "ctaLabel": "Liquidate and reload",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["inventory", "fees", "decision"],
+    "runner": { "type": "none" }
+  },
+
+  {
+    "slug": "rokfi-payroll-panic-countdown-timer",
+    "brand": "ROKFI",
+    "name": "Payroll Panic Countdown Timer",
+    "oneLiner": "Know your cash-out date before payroll hits.",
+    "pain": "Contractors need to know if they’ll hit zero before expected payment.",
+    "artifact": "Survival Dashboard (PDF) + pre-filled term sheet",
+    "inputs": [
+      { "key": "bankBalance", "label": "Current Bank Balance ($)", "type": "number", "defaultValue": "12000" },
+      { "key": "weeklyPayroll", "label": "Total Weekly Payroll (Net Wages) ($)", "type": "number", "defaultValue": "8000" },
+      { "key": "outstandingInvoices", "label": "Outstanding Invoices ($)", "type": "number", "defaultValue": "25000" },
+      { "key": "expectedPaymentDate", "label": "Expected Payment Date (YYYY-MM-DD)", "type": "text", "defaultValue": "" }
+    ],
+    "logic": "Labor Burden = Payroll*1.18; Daily Burn = Labor Burden/5; Days Until Zero = Balance/Daily Burn; if DaysUntilZero < days-to-payment => critical failure.",
+    "ctaLabel": "Unlock your unpaid invoices now",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["construction", "payroll", "warning"],
+    "runner": { "type": "none" }
+  },
+  {
+    "slug": "rokfi-bid-protector-inflation-adjuster",
+    "brand": "ROKFI",
+    "name": "Bid Protector Inflation Adjuster",
+    "oneLiner": "Add an inflation buffer so materials don’t eat your margin.",
+    "pain": "Bids starting months later get wrecked by material inflation.",
+    "artifact": "Safe Bid Certificate (proposal attachment)",
+    "inputs": [
+      { "key": "materialCost", "label": "Estimated Material Cost ($)", "type": "number", "defaultValue": "50000" },
+      { "key": "durationMonths", "label": "Project Duration (months)", "type": "number", "defaultValue": "3" },
+      {
+        "key": "materialType",
+        "label": "Primary Material Type",
+        "type": "select",
+        "options": [
+          { "label": "Lumber", "value": "lumber" },
+          { "label": "Steel", "value": "steel" },
+          { "label": "PVC", "value": "pvc" },
+          { "label": "Copper", "value": "copper" }
+        ],
+        "defaultValue": "steel"
+      }
+    ],
+    "logic": "Risk Buffer = Material Cost * (Inflation Factor * Duration). Inflation factor pulled from static trend assumptions.",
+    "ctaLabel": "Get a Material Purchase Loan",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["construction", "bids", "inflation"],
+    "runner": { "type": "none" }
+  },
+  {
+    "slug": "rokfi-net-90-opportunity-cost-calculator",
+    "brand": "ROKFI",
+    "name": "Net-90 Opportunity Cost Calculator",
+    "oneLiner": "Show the real cost of waiting 90 days to get paid.",
+    "pain": "Owners underestimate what slow pay costs in missed jobs.",
+    "artifact": "Lost Profit Report",
+    "inputs": [
+      { "key": "invoiceAmount", "label": "Invoice Amount ($)", "type": "number", "defaultValue": "50000" },
+      { "key": "waitDays", "label": "Wait Time (days)", "type": "number", "defaultValue": "90" },
+      { "key": "jobsTurnedDown", "label": "Potential jobs turned down (count)", "type": "number", "defaultValue": "2" },
+      { "key": "avgProfitPerJob", "label": "Avg Profit per Job ($)", "type": "number", "defaultValue": "7500" }
+    ],
+    "logic": "Opportunity Cost = Jobs * AvgProfit; Cost of Waiting = OpportunityCost / InvoiceAmount (annualized concept in doc).",
+    "ctaLabel": "Get your invoice tomorrow (fee ~2%)",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["construction", "accounts-receivable", "calculator"],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        { "key": "opportunityCost", "label": "Opportunity Cost", "format": "currency", "expr": "jobsTurnedDown * avgProfitPerJob" },
+        { "key": "costRatio", "label": "Cost of Waiting (ratio)", "format": "number", "expr": "(jobsTurnedDown * avgProfitPerJob) / invoiceAmount" }
+      ]
+    }
+  },
+  {
+    "slug": "rokfi-repair-vs-replace-roi-engine",
+    "brand": "ROKFI",
+    "name": "Repair vs Replace ROI Engine",
+    "oneLiner": "Compare the true year-1 cost of repairing vs replacing your truck.",
+    "pain": "Trucker owners need a cold, fast decision under pressure.",
+    "artifact": "Financial Roadmap (comparison)",
+    "inputs": [
+      { "key": "repairCost", "label": "Repair Cost ($)", "type": "number", "defaultValue": "25000" },
+      { "key": "replacementCost", "label": "Replacement Truck Cost ($)", "type": "number", "defaultValue": "80000" },
+      { "key": "tradeInValue", "label": "Current Truck Trade-in Value ($)", "type": "number", "defaultValue": "20000" },
+      { "key": "dailyRevenue", "label": "Daily Revenue ($)", "type": "number", "defaultValue": "900" },
+      { "key": "downtimeDays", "label": "Downtime (days)", "type": "number", "defaultValue": "7" }
+    ],
+    "logic": "Repair Path = Repair + (DailyRevenue*Downtime); Replace Path = (Replacement-TradeIn) + (DailyRevenue*Downtime); Difference = Replace - Repair.",
+    "ctaLabel": "Finance the repair",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["trucking", "decision", "calculator"],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        { "key": "repairPath", "label": "Repair Path Cost", "format": "currency", "expr": "repairCost + (dailyRevenue * downtimeDays)" },
+        { "key": "replacePath", "label": "Replace Path Cost", "format": "currency", "expr": "(replacementCost - tradeInValue) + (dailyRevenue * downtimeDays)" },
+        { "key": "difference", "label": "Replace - Repair (cost delta)", "format": "currency", "expr": "((replacementCost - tradeInValue) + (dailyRevenue * downtimeDays)) - (repairCost + (dailyRevenue * downtimeDays))" }
+      ]
+    }
+  },
+  {
+    "slug": "rokfi-spot-market-breakeven-calculator",
+    "brand": "ROKFI",
+    "name": "Spot Market Breakeven Calculator",
+    "oneLiner": "Know the minimum $/mile you need to not lose money.",
+    "pain": "Rates fluctuate; you need a hard floor before you accept a load.",
+    "artifact": "Minimum Acceptable Rate Card",
+    "inputs": [
+      { "key": "fixedMonthlyCosts", "label": "Fixed Monthly Costs ($)", "type": "number", "defaultValue": "9000" },
+      { "key": "fuelPrice", "label": "Fuel Price ($/gallon)", "type": "number", "defaultValue": "4.0" },
+      { "key": "mpg", "label": "Miles per Gallon", "type": "number", "defaultValue": "7" },
+      { "key": "maintenanceCpm", "label": "Maintenance (cost per mile $)", "type": "number", "defaultValue": "0.25" },
+      { "key": "desiredProfit", "label": "Desired Monthly Profit ($)", "type": "number", "defaultValue": "4000" },
+      { "key": "milesDriven", "label": "Estimated Miles Driven (monthly)", "type": "number", "defaultValue": "9000" }
+    ],
+    "logic": "Fixed CPM = FixedCosts/Miles; Variable CPM = (FuelPrice/MPG)+MaintenanceCPM; Target Rate = FixedCPM + VariableCPM + (DesiredProfit/Miles).",
+    "ctaLabel": "Get working capital",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["trucking", "rates", "calculator"],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        { "key": "fixedCpm", "label": "Fixed Cost per Mile", "format": "number", "expr": "fixedMonthlyCosts / milesDriven" },
+        { "key": "variableCpm", "label": "Variable Cost per Mile", "format": "number", "expr": "(fuelPrice / mpg) + maintenanceCpm" },
+        { "key": "targetRate", "label": "Target Rate per Mile", "format": "number", "expr": "(fixedMonthlyCosts / milesDriven) + ((fuelPrice / mpg) + maintenanceCpm) + (desiredProfit / milesDriven)" }
+      ]
+    }
+  },
+  {
+    "slug": "rokfi-deal-killer-hard-money-analyzer",
+    "brand": "ROKFI",
+    "name": "Deal Killer Hard Money Analyzer",
+    "oneLiner": "Green-light or kill a flip deal based on true carrying cost.",
+    "pain": "Real estate investors need instant clarity on profit after hard money cost.",
+    "artifact": "Green Light / Red Light Deal Scorecard",
+    "inputs": [
+      { "key": "purchasePrice", "label": "Purchase Price ($)", "type": "number", "defaultValue": "220000" },
+      { "key": "rehabBudget", "label": "Rehab Budget ($)", "type": "number", "defaultValue": "40000" },
+      { "key": "arv", "label": "ARV (After Repair Value) ($)", "type": "number", "defaultValue": "340000" },
+      { "key": "holdMonths", "label": "Estimated Hold Time (months)", "type": "number", "defaultValue": "6" }
+    ],
+    "logic": "Loan = Purchase+Rehab; Interest = Loan*0.12*(Hold/12); Total = Loan+Interest+Closing(3%); Profit = ARV-Total; Green if Profit > 15% of ARV.",
+    "ctaLabel": "Get a Proof of Funds letter",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["real-estate", "deal", "calculator"],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        { "key": "loanAmount", "label": "Loan Amount", "format": "currency", "expr": "purchasePrice + rehabBudget" },
+        { "key": "interestCost", "label": "Interest Cost (12% APR)", "format": "currency", "expr": "(purchasePrice + rehabBudget) * 0.12 * (holdMonths/12)" },
+        { "key": "closingCosts", "label": "Closing Costs (3% of loan)", "format": "currency", "expr": "(purchasePrice + rehabBudget) * 0.03" },
+        { "key": "totalCost", "label": "Total Cost", "format": "currency", "expr": "(purchasePrice + rehabBudget) + ((purchasePrice + rehabBudget) * 0.12 * (holdMonths/12)) + ((purchasePrice + rehabBudget) * 0.03)" },
+        { "key": "profit", "label": "Projected Profit", "format": "currency", "expr": "arv - ((purchasePrice + rehabBudget) + ((purchasePrice + rehabBudget) * 0.12 * (holdMonths/12)) + ((purchasePrice + rehabBudget) * 0.03))" }
+      ]
+    }
+  },
+  {
+    "slug": "rokfi-am-i-bankable-score",
+    "brand": "ROKFI",
+    "name": "Am I Bankable? Probability Score",
+    "oneLiner": "Estimate funding probability before taking a hard pull.",
+    "pain": "Owners fear rejection; this gives odds + routing.",
+    "artifact": "Funding Readiness Report + checklist",
+    "inputs": [
+      { "key": "timeInBusinessMonths", "label": "Time in Business (months)", "type": "number", "defaultValue": "18" },
+      { "key": "monthlyRevenue", "label": "Monthly Revenue ($)", "type": "number", "defaultValue": "25000" },
+      { "key": "creditScoreEst", "label": "Estimated Credit Score", "type": "number", "defaultValue": "650" },
+      { "key": "industry", "label": "Industry", "type": "text", "defaultValue": "" }
+    ],
+    "logic": "Score 0–100 with points for revenue, credit, time, and low-risk industry.",
+    "ctaLabel": "Claim your pre-approval",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["prequal", "score", "routing"],
+    "runner": { "type": "none" }
+  },
+  {
+    "slug": "rokfi-section-179-tax-slash-calculator",
+    "brand": "ROKFI",
+    "name": "Section 179 Tax Slash Calculator",
+    "oneLiner": "Show net equipment cost after estimated tax savings.",
+    "pain": "Owners hesitate on equipment; this shows real net cost after tax impact.",
+    "artifact": "Tax Savings PDF (CPA-ready)",
+    "inputs": [
+      { "key": "equipmentCost", "label": "Cost of Equipment ($)", "type": "number", "defaultValue": "50000" },
+      { "key": "taxBracketPct", "label": "Estimated Tax Bracket (%)", "type": "number", "defaultValue": "35" }
+    ],
+    "logic": "Tax Savings = Equipment Cost * Tax Bracket; Net Cost = Equipment Cost - Tax Savings.",
+    "ctaLabel": "Finance equipment before Dec 31",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["tax", "equipment", "calculator"],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        { "key": "taxSavings", "label": "Estimated Tax Savings", "format": "currency", "expr": "equipmentCost * (taxBracketPct/100)" },
+        { "key": "netCost", "label": "Estimated Net Cost", "format": "currency", "expr": "equipmentCost - (equipmentCost * (taxBracketPct/100))" }
+      ]
+    }
+  },
+  {
+    "slug": "rokfi-burn-rate-runway-extender",
+    "brand": "ROKFI",
+    "name": "Burn Rate Runway Extender",
+    "oneLiner": "Find your runway (months) before you hit zero.",
+    "pain": "Startups need to know their ‘death date’ and act early.",
+    "artifact": "Death Date Calendar Invite",
+    "inputs": [
+      { "key": "cashOnHand", "label": "Current Cash on Hand ($)", "type": "number", "defaultValue": "120000" },
+      { "key": "monthlyExpenses", "label": "Monthly Expenses ($)", "type": "number", "defaultValue": "45000" },
+      { "key": "monthlyRevenue", "label": "Monthly Revenue ($)", "type": "number", "defaultValue": "25000" }
+    ],
+    "logic": "Net Burn = Expenses - Revenue; Months Left = Cash / Net Burn.",
+    "ctaLabel": "Secure a 0% APR line",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["startup", "runway", "calculator"],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        { "key": "netBurn", "label": "Net Burn (per month)", "format": "currency", "expr": "monthlyExpenses - monthlyRevenue" },
+        { "key": "monthsLeft", "label": "Months of Runway", "format": "number", "expr": "cashOnHand / (monthlyExpenses - monthlyRevenue)" }
+      ]
+    }
+  },
+  {
+    "slug": "rokfi-bad-debt-consolidator",
+    "brand": "ROKFI",
+    "name": "Bad Debt Consolidator",
+    "oneLiner": "Estimate monthly savings by consolidating multiple MCAs.",
+    "pain": "Daily payments crush cash flow; consolidation can restore oxygen.",
+    "artifact": "Cash Flow Liberation Chart",
+    "inputs": [
+      { "key": "dailyPayments", "label": "Total Daily Payments ($)", "type": "number", "defaultValue": "350" },
+      { "key": "outstandingBalance", "label": "Total Outstanding Balance ($)", "type": "number", "defaultValue": "60000" },
+      { "key": "termMonths", "label": "Desired Monthly Term (months)", "type": "number", "defaultValue": "24" }
+    ],
+    "logic": "Current Monthly Cost = DailyPayments*22; New Monthly Cost = (Balance*1.25)/Months; Savings = Current - New.",
+    "ctaLabel": "See if you qualify",
+    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "tags": ["mca", "debt", "calculator"],
+    "runner": {
+      "type": "formula",
+      "outputs": [
+        { "key": "currentMonthly", "label": "Current Monthly Cost", "format": "currency", "expr": "dailyPayments * 22" },
+        { "key": "newMonthly", "label": "Estimated New Monthly Cost", "format": "currency", "expr": "(outstandingBalance * 1.25) / termMonths" },
+        { "key": "monthlySavings", "label": "Estimated Monthly Savings", "format": "currency", "expr": "(dailyPayments * 22) - ((outstandingBalance * 1.25) / termMonths)" }
+      ]
+    }
   }
 ]
