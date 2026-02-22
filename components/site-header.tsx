@@ -18,6 +18,7 @@ export function SiteHeader() {
           <Link className="brut-btn px-3 py-2 text-xs" href="/tools">Tools</Link>
           <Link className="brut-btn px-3 py-2 text-xs" href="/brands">Brands</Link>
           <Link className="brut-btn px-3 py-2 text-xs" href="/collections">Collections</Link>
+          <Link className="brut-btn px-3 py-2 text-xs" href="/admin">Admin</Link>
           <a className="brut-btn px-3 py-2 text-xs" href="https://vercel.com/new" target="_blank" rel="noreferrer">
             Deploy
           </a>
