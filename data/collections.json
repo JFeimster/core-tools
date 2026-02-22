@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "amazon-cashflow-recovery",
+    "title": "Amazon Cashflow Recovery",
+    "oneLiner": "Stop payout delays from choking inventory turns.",
+    "audience": "Amazon sellers",
+    "primaryCtaLabel": "Get funded faster",
+    "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "toolSlugs": [
+      "dd-plus-7-impact-calculator",
+      "onramp-bezos-interest-calculator",
+      "onramp-stockout-bleed-auditor",
+      "onramp-dd7-reality-calendar",
+      "onramp-deferred-transaction-unlocker"
+    ],
+    "tags": ["amazon", "cashflow", "inventory"]
+  },
+  {
+    "slug": "contractor-payroll-survival",
+    "title": "Contractor Payroll Survival",
+    "oneLiner": "Know your zero date. Bridge the gap before payroll bounces.",
+    "audience": "Contractors",
+    "primaryCtaLabel": "Unlock unpaid invoices",
+    "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "toolSlugs": [
+      "rokfi-payroll-panic-countdown-timer",
+      "payroll-gap-bridge-estimator",
+      "neca-material-money-quoter",
+      "rokfi-net-90-opportunity-cost-calculator"
+    ],
+    "tags": ["construction", "payroll", "accounts-receivable"]
+  },
+  {
+    "slug": "trucking-profit-control",
+    "title": "Trucking Profit Control",
+    "oneLiner": "Know breakeven. Stop taking loads that kill you slowly.",
+    "audience": "Owner-operators",
+    "primaryCtaLabel": "Get working capital",
+    "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "toolSlugs": [
+      "rokfi-spot-market-breakeven-calculator",
+      "rokfi-repair-vs-replace-roi-engine",
+      "rokfi-bad-debt-consolidator"
+    ],
+    "tags": ["trucking", "rates", "cashflow"]
+  },
+  {
+    "slug": "real-estate-deal-screeners",
+    "title": "Real Estate Deal Screeners",
+    "oneLiner": "Kill bad deals fast. Green-light winners with proof.",
+    "audience": "Investors / flippers",
+    "primaryCtaLabel": "Get proof of funds",
+    "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "toolSlugs": [
+      "rokfi-deal-killer-hard-money-analyzer",
+      "rokfi-section-179-tax-slash-calculator"
+    ],
+    "tags": ["real-estate", "deal", "roi"]
+  },
+  {
+    "slug": "mca-escape-plan",
+    "title": "MCA Escape Plan",
+    "oneLiner": "See the real daily bite and estimate consolidation relief.",
+    "audience": "Business owners under daily deductions",
+    "primaryCtaLabel": "See safer options",
+    "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "toolSlugs": [
+      "mca-repayment-estimator",
+      "rokfi-bad-debt-consolidator"
+    ],
+    "tags": ["mca", "debt", "cashflow"]
+  },
+  {
+    "slug": "bid-margin-protection",
+    "title": "Bid Margin Protection",
+    "oneLiner": "Inflation-proof your bids so materials don’t eat the job.",
+    "audience": "Contractors bidding work",
+    "primaryCtaLabel": "Get a material purchase loan",
+    "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "toolSlugs": [
+      "rokfi-bid-protector-inflation-adjuster",
+      "neca-material-money-quoter"
+    ],
+    "tags": ["construction", "bids", "materials"]
+  }
+]
