@@ -17,6 +17,7 @@ export function SiteHeader() {
         <nav className="flex items-center gap-2">
           <Link className="brut-btn px-3 py-2 text-xs" href="/tools">Tools</Link>
           <Link className="brut-btn px-3 py-2 text-xs" href="/brands">Brands</Link>
+          <Link className="brut-btn px-3 py-2 text-xs" href="/collections">Collections</Link>
           <a className="brut-btn px-3 py-2 text-xs" href="https://vercel.com/new" target="_blank" rel="noreferrer">
             Deploy
           </a>
