@@ -17,6 +17,9 @@ export default function AdminPage() {
           <Link className="brut-btn px-4 py-3 text-sm" href="/admin/tool-builder">
             Tool Builder →
           </Link>
+          <Link className="brut-btn px-4 py-3 text-sm" href="/admin/collection-builder">
+            Collection Builder →
+          </Link>
         </div>
       </div>
     </div>
