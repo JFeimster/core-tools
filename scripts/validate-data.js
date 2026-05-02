@@ -1,9 +1,10 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const rootDir = process.cwd();
 const toolsPath = resolve(rootDir, "data/tools.json");
 const collectionsPath = resolve(rootDir, "data/collections.json");
+const tagTaxonomyPath = resolve(rootDir, "data/tag-taxonomy.json");
 
 const SUPPORTED_INPUT_TYPES = new Set(["number", "text", "select"]);
 const SUPPORTED_RUNNER_TYPES = new Set(["none", "formula"]);
@@ -15,9 +16,10 @@ const warnings = [];
 
 const tools = readJsonArray(toolsPath, "data/tools.json");
 const collections = readJsonArray(collectionsPath, "data/collections.json");
+const allowedTags = readAllowedTags(tagTaxonomyPath);
 
-validateTools(tools);
-validateCollections(collections, new Set(tools.map((tool) => tool.slug)));
+validateTools(tools, allowedTags);
+validateCollections(collections, new Set(tools.map((tool) => tool.slug)), allowedTags);
 
 if (warnings.length > 0) {
   console.warn("\nData warnings:");
@@ -50,7 +52,32 @@ function readJsonArray(path, label) {
   }
 }
 
-function validateTools(items) {
+function readAllowedTags(path) {
+  if (!existsSync(path)) return null;
+
+  try {
+    const parsed = JSON.parse(readFileSync(path, "utf8"));
+
+    if (!Array.isArray(parsed?.allowedTags)) {
+      warnings.push("data/tag-taxonomy.json exists but does not include allowedTags array.");
+      return null;
+    }
+
+    return new Set(
+      parsed.allowedTags
+        .filter((tag) => typeof tag === "string")
+        .map((tag) => tag.trim())
+        .filter(Boolean)
+    );
+  } catch (error) {
+    warnings.push(
+      `data/tag-taxonomy.json could not be read or parsed: ${getErrorMessage(error)}`
+    );
+    return null;
+  }
+}
+
+function validateTools(items, allowedTags) {
   const seenSlugs = new Set();
 
   items.forEach((tool, index) => {
@@ -72,6 +99,8 @@ function validateTools(items) {
 
     if (!Array.isArray(tool?.tags) || tool.tags.length === 0) {
       errors.push(`${ref} must include at least one tag.`);
+    } else {
+      validateTags(tool.tags, allowedTags, ref);
     }
 
     if (!Array.isArray(tool?.inputs)) {
@@ -167,7 +196,7 @@ function validateFormulaExpression(expr, numericInputKeys, outputRef) {
   }
 }
 
-function validateCollections(items, toolSlugs) {
+function validateCollections(items, toolSlugs, allowedTags) {
   const seenSlugs = new Set();
 
   items.forEach((collection, index) => {
@@ -199,12 +228,29 @@ function validateCollections(items, toolSlugs) {
 
     if (!Array.isArray(collection?.tags) || collection.tags.length === 0) {
       errors.push(`${ref} must include at least one tag.`);
+    } else {
+      validateTags(collection.tags, allowedTags, ref);
     }
 
     if (collection?.primaryCtaUrl === "https://YOUR_PRIMARY_CTA_LINK") {
       warnings.push(`${ref} still uses placeholder CTA URL.`);
     }
   });
+}
+
+function validateTags(tags, allowedTags, ref) {
+  if (!allowedTags) return;
+
+  for (const tag of tags) {
+    if (typeof tag !== "string" || tag.trim() === "") {
+      errors.push(`${ref} includes an invalid blank/non-string tag.`);
+      continue;
+    }
+
+    if (!allowedTags.has(tag)) {
+      warnings.push(`${ref} uses unknown tag: ${tag}`);
+    }
+  }
 }
 
 function requireString(object, key, ref) {
