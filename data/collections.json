@@ -5,7 +5,7 @@
     "oneLiner": "Stop payout delays from choking inventory turns.",
     "audience": "Amazon sellers",
     "primaryCtaLabel": "Get funded faster",
-    "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "primaryCtaUrl": "https://core-tools.vercel.app/tools/deferred-transaction-unlocker",
     "toolSlugs": [
       "dd-plus-7-impact-calculator",
       "bezos-interest-calculator",
@@ -25,7 +25,7 @@
     "oneLiner": "Know your zero date. Bridge the gap before payroll bounces.",
     "audience": "Contractors",
     "primaryCtaLabel": "Unlock unpaid invoices",
-    "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "primaryCtaUrl": "https://core-tools.vercel.app/tools/payroll-panic-countdown-timer",
     "toolSlugs": [
       "payroll-panic-countdown-timer",
       "payroll-gap-bridge-estimator",
@@ -44,7 +44,7 @@
     "oneLiner": "Know breakeven. Stop taking loads that kill you slowly.",
     "audience": "Owner-operators",
     "primaryCtaLabel": "Get working capital",
-    "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "primaryCtaUrl": "https://core-tools.vercel.app/tools/spot-market-breakeven-calculator",
     "toolSlugs": [
       "spot-market-breakeven-calculator",
       "repair-vs-replace-roi-engine",
@@ -62,7 +62,7 @@
     "oneLiner": "Kill bad deals fast. Green-light winners with proof.",
     "audience": "Investors / flippers",
     "primaryCtaLabel": "Get proof of funds",
-    "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "primaryCtaUrl": "https://core-tools.vercel.app/tools/deal-killer-hard-money-analyzer",
     "toolSlugs": [
       "deal-killer-hard-money-analyzer",
       "section-179-tax-slash-calculator"
@@ -79,7 +79,7 @@
     "oneLiner": "See the real daily bite and estimate consolidation relief.",
     "audience": "Business owners under daily deductions",
     "primaryCtaLabel": "See safer options",
-    "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "primaryCtaUrl": "https://core-tools.vercel.app/tools/mca-repayment-estimator",
     "toolSlugs": [
       "mca-repayment-estimator",
       "bad-debt-consolidator"
@@ -96,7 +96,7 @@
     "oneLiner": "Inflation-proof your bids so materials don’t eat the job.",
     "audience": "Contractors bidding work",
     "primaryCtaLabel": "Get a material purchase loan",
-    "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "primaryCtaUrl": "https://core-tools.vercel.app/tools/bid-protector-inflation-adjuster",
     "toolSlugs": [
       "bid-protector-inflation-adjuster",
       "neca-material-money-quoter"
