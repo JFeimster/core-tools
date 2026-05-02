@@ -8,12 +8,16 @@
     "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
     "toolSlugs": [
       "dd-plus-7-impact-calculator",
-      "onramp-bezos-interest-calculator",
-      "onramp-stockout-bleed-auditor",
-      "onramp-dd7-reality-calendar",
-      "onramp-deferred-transaction-unlocker"
+      "bezos-interest-calculator",
+      "stockout-bleed-auditor",
+      "dd7-reality-calendar",
+      "deferred-transaction-unlocker"
     ],
-    "tags": ["amazon", "cashflow", "inventory"]
+    "tags": [
+      "amazon",
+      "cashflow",
+      "inventory"
+    ]
   },
   {
     "slug": "contractor-payroll-survival",
@@ -23,12 +27,16 @@
     "primaryCtaLabel": "Unlock unpaid invoices",
     "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
     "toolSlugs": [
-      "rokfi-payroll-panic-countdown-timer",
+      "payroll-panic-countdown-timer",
       "payroll-gap-bridge-estimator",
       "neca-material-money-quoter",
-      "rokfi-net-90-opportunity-cost-calculator"
+      "net-90-opportunity-cost-calculator"
     ],
-    "tags": ["construction", "payroll", "accounts-receivable"]
+    "tags": [
+      "construction",
+      "payroll",
+      "accounts-receivable"
+    ]
   },
   {
     "slug": "trucking-profit-control",
@@ -38,11 +46,15 @@
     "primaryCtaLabel": "Get working capital",
     "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
     "toolSlugs": [
-      "rokfi-spot-market-breakeven-calculator",
-      "rokfi-repair-vs-replace-roi-engine",
-      "rokfi-bad-debt-consolidator"
+      "spot-market-breakeven-calculator",
+      "repair-vs-replace-roi-engine",
+      "bad-debt-consolidator"
     ],
-    "tags": ["trucking", "rates", "cashflow"]
+    "tags": [
+      "trucking",
+      "rates",
+      "cashflow"
+    ]
   },
   {
     "slug": "real-estate-deal-screeners",
@@ -52,10 +64,14 @@
     "primaryCtaLabel": "Get proof of funds",
     "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
     "toolSlugs": [
-      "rokfi-deal-killer-hard-money-analyzer",
-      "rokfi-section-179-tax-slash-calculator"
+      "deal-killer-hard-money-analyzer",
+      "section-179-tax-slash-calculator"
     ],
-    "tags": ["real-estate", "deal", "roi"]
+    "tags": [
+      "real-estate",
+      "deal",
+      "roi"
+    ]
   },
   {
     "slug": "mca-escape-plan",
@@ -66,9 +82,13 @@
     "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
     "toolSlugs": [
       "mca-repayment-estimator",
-      "rokfi-bad-debt-consolidator"
+      "bad-debt-consolidator"
     ],
-    "tags": ["mca", "debt", "cashflow"]
+    "tags": [
+      "mca",
+      "debt",
+      "cashflow"
+    ]
   },
   {
     "slug": "bid-margin-protection",
@@ -78,9 +98,13 @@
     "primaryCtaLabel": "Get a material purchase loan",
     "primaryCtaUrl": "https://YOUR_PRIMARY_CTA_LINK",
     "toolSlugs": [
-      "rokfi-bid-protector-inflation-adjuster",
+      "bid-protector-inflation-adjuster",
       "neca-material-money-quoter"
     ],
-    "tags": ["construction", "bids", "materials"]
+    "tags": [
+      "construction",
+      "bids",
+      "materials"
+    ]
   }
 ]
