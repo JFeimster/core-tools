@@ -48,7 +48,7 @@
     ],
     "logic": "Minimal data capture. Submit lead to internal intake with referral tracking code. Widget matches partner branding.",
     "ctaLabel": "Get the Partner Embed",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
       "embed",
       "referral",
@@ -87,7 +87,7 @@
     ],
     "logic": "Cash Loss = (New Cycle - Current Cycle) * Average Daily Sales",
     "ctaLabel": "Unlock Your Trapped Capital",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "amazon",
       "cashflow",
@@ -129,7 +129,7 @@
     ],
     "logic": "Recommended Advance = Estimated Material Cost (capped at 25% of job value or $50k, whichever is lower).",
     "ctaLabel": "Fund Materials Today",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "contractors",
       "materials",
@@ -177,7 +177,7 @@
     ],
     "logic": "Funding Needed = Payroll - Cash Available (floor at 0).",
     "ctaLabel": "Get a Payroll Bridge Option",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
       "payroll",
       "survival",
@@ -219,7 +219,7 @@
     ],
     "logic": "Total Repayment = Advance * Factor Rate. Estimated Daily Payment = Total Repayment / 90 business days.",
     "ctaLabel": "See Safer Options",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "mca",
       "cashflow",
@@ -259,7 +259,7 @@
     ],
     "logic": "** **Input Fields:** Average Daily Amazon Sales ($), Current Payout Cycle (Days) (e.g., 14), New DD+7 Cycle (Days) (e.g., 28). **Core Logic:** Cash Loss \\= (New DD+7 Cycle \\- Current Payout Cycle) \\* Average Daily Sales",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "amazon",
       "calculator"
@@ -284,7 +284,7 @@
     ],
     "logic": "** **Input Fields:** Initial Capital ($), Average Inventory Turn Time (Days). **Core Logic:** Turns Lost Waiting (14 Days) \\= Initial Capital / (Average Inventory Turn Time). **Turns Gained (Payability)** \\= Turns Lost \\* 1.3 (Assumed 30% velocity gain).",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "inventory"
     ],
@@ -308,7 +308,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "calculator"
     ],
@@ -332,7 +332,7 @@
     ],
     "logic": "** **Input Fields:** Units Sold in Last 48 Hours, Current Cash on Hand ($), Supplier Cost per Unit ($). **Core Logic:** LDR Risk Score \\= Current Cash on Hand / (Units Sold \\* Supplier Cost per Unit). Status \\= \"Critical\" if score \\< 1.0.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "inventory"
     ],
@@ -356,7 +356,7 @@
     ],
     "logic": "** **Input Fields:** Current Account Level Reserve Balance ($), Average Net Profit Margin (%). **Core Logic:** Missed Profit \\= Current Reserve Balance \\* Average Net Profit Margin \\* (Assumed 1 extra turn/mo).",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "calculator"
     ],
@@ -380,7 +380,7 @@
     ],
     "logic": "** **Input Fields:** Average Client Invoicing Delay (Days), Average Client Invoice Amount ($). **Core Logic:** Total Days of Float Eliminated \\= Average Client Invoicing Delay. Outputs a checklist for integrating Payability card for vendor payments.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "tool"
     ],
@@ -404,7 +404,7 @@
     ],
     "logic": "** **Input Fields:** Units You Are Currently Out Of Stock On, Average Daily Unit Sales, Days Since Out of Stock. **Core Logic:** Missed Sales Revenue \\= Units You Are Currently Out Of Stock On \\* (Days Since Out of Stock \\* Average Daily Unit Sales).",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "inventory",
       "stockout"
@@ -429,7 +429,7 @@
     ],
     "logic": "** **Input Fields:** Average Seller Invoice (Days), Invoice Delays Due to Payout Holds (Days). **Core Logic:** Simple submission form. Outputs a message: **Payout Reliability Guarantee** \\= \"Referrals who use Payability will pay your invoice within 24 hours of funding.\"",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "cash-flow"
     ],
@@ -453,7 +453,7 @@
     ],
     "logic": "** **Input Fields:** Annual Revenue ($), Amazon Lending Invite Status (Yes/No). **Core Logic:** If \"No\" Invite, output **Access Status** \\= \"LOCKED. Payability is your immediate-access alternative.\"",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "amazon"
     ],
@@ -477,7 +477,7 @@
     ],
     "logic": "** **Input Fields:** Average Margin (%), Cost of Advance Fee (%) (e.g., 2), Days Advance Saves (e.g., 14). **Core Logic:** If Margin \\> Fee, output **Net Win** \\= \"The 2% fee nets a win of \\[Margin \\- Fee\\]% profit by allowing 14 extra days of sales.\"",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "cash-flow"
     ],
@@ -501,7 +501,7 @@
     ],
     "logic": "** **Input Fields:** Average Profit Margin on Constrained Stock (%), Average Profit Margin on Desired Stock (%), Total Monthly Purchase Volume ($). **Core Logic:** Profit Gap \\= Total Monthly Purchase Volume \\* (Average Profit Margin on Desired Stock \\- Average Profit Margin on Constrained Stock).",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "cash-flow"
     ],
@@ -525,7 +525,7 @@
     ],
     "logic": "** **Input Fields:** Current Amazon Monthly Revenue ($), Target New Channel (e.g., Walmart), Assumed Revenue Lift from Expansion (%). **Core Logic:** Missed Annual Revenue \\= Current Amazon Monthly Revenue \\* 12 \\* Assumed Revenue Lift from Expansion.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "amazon",
       "inventory",
@@ -551,7 +551,7 @@
     ],
     "logic": "** **Input Fields:** Normal Daily Sales (Units), Peak Season Sales Multiplier (e.g., 3x), Lead Time to Receive Inventory (Days). **Core Logic:** Extra Units Needed \\= (Normal Daily Sales \\* Peak Season Sales Multiplier \\* Lead Time to Receive Inventory) \\- Current Stock. Timeline shows when funding is needed based on lead time.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "funding",
       "inventory",
@@ -582,7 +582,7 @@
     ],
     "logic": "** **Input Fields:** Average Freight Invoice Amount ($), Client's Average Payout Delay (Days). **Core Logic:** Simple submission form. Outputs a message: **Funding Assurance** \\= \"Clients using Payability have cash released 14-28 days faster, virtually eliminating invoice delay risk.\"",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "funding"
     ],
@@ -606,7 +606,7 @@
     ],
     "logic": "** **Input Fields:** Total Q4 Inventory Needed ($), Interest Rate of Alternative Loan (%). **Core Logic:** Avoided Interest Cost \\= Total Q4 Inventory Needed \\\\\\* Interest Rate of Alternative Loan. Outputs a comparison showing the cost of Payability's advance vs. high-interest alternatives.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "inventory"
     ],
@@ -630,7 +630,7 @@
     ],
     "logic": "** **Input Fields:** Days Saved by Daily Payouts (e.g., 14), Average Daily Sales (Units), Review Conversion Rate (%). **Core Logic:** Extra Reviews Gained \\= Days Saved \\\\\\* Average Daily Sales \\\\\\* Review Conversion Rate.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
       "cash-flow"
     ],
@@ -669,7 +669,7 @@
     ],
     "logic": "Calculates the total financial damage of a 14-day stockout.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "calculator",
       "estimator",
@@ -706,7 +706,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "tool"
     ],
@@ -745,7 +745,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "inventory"
     ],
@@ -779,7 +779,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "apr",
       "factor",
@@ -815,7 +815,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "tool"
     ],
@@ -849,7 +849,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "ads",
       "inventory",
@@ -885,7 +885,7 @@
     ],
     "logic": "Calculates the gap between Amazon's disbursement schedule and the factory's \"Pay-to-Play\" date.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "amazon",
       "bridge"
@@ -925,7 +925,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "tool"
     ],
@@ -959,7 +959,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "tool"
     ],
@@ -998,7 +998,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "factor"
     ],
@@ -1037,7 +1037,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "stockout"
     ],
@@ -1081,7 +1081,7 @@
     ],
     "logic": "Calculates the \"Profit Parity\" point. Does the extra margin from staying in stock outweigh the massive shipping bill?",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "tool"
     ],
@@ -1120,7 +1120,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "tool"
     ],
@@ -1159,7 +1159,7 @@
     ],
     "logic": "Calculates \"Capital Velocity\" per SKU. Any SKU with \\>6 months supply and \\<10% margin contribution is marked \"Zombie.\"",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "tool"
     ],
@@ -1198,7 +1198,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "tool"
     ],
@@ -1232,7 +1232,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "calculator"
     ],
@@ -1266,7 +1266,7 @@
     ],
     "logic": "Calculates the volume needed to demand Net-30 terms from a Chinese factory.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "tool"
     ],
@@ -1300,7 +1300,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "cash-flow"
     ],
@@ -1334,7 +1334,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "amazon",
       "inventory"
@@ -1374,7 +1374,7 @@
     ],
     "logic": "Calculates the risk of over-ordering based on Churn Rate volatility.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "subscription"
     ],
@@ -1408,7 +1408,7 @@
     ],
     "logic": "User inputs → calculation/logic → shareable artifact + CTA.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "calculator"
     ],
@@ -1447,7 +1447,7 @@
     ],
     "logic": "Calculates the ROI of moving to a cheaper 3PL vs. the one-time move cost.",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
       "calculator"
     ],
@@ -1471,7 +1471,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
       "bridge",
       "calculator",
@@ -1499,7 +1499,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/3S1msc4",
     "tags": [
       "calculator",
       "estimator",
@@ -1525,7 +1525,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/3Hp1HCs",
     "tags": [
       "funding",
       "pre-qual"
@@ -1550,7 +1550,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
       "funding"
     ],
@@ -1574,7 +1574,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/3S1msc4",
     "tags": [
       "tool"
     ],
@@ -1598,7 +1598,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
       "funding"
     ],
@@ -1622,7 +1622,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/3HpEtvG",
     "tags": [
       "credit",
       "funding"
@@ -1647,7 +1647,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/48TYlTx",
     "tags": [
       "calculator",
       "estimator"
@@ -1672,7 +1672,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
       "lender",
       "underwriting"
@@ -1697,7 +1697,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
       "tool"
     ],
@@ -1721,7 +1721,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
       "cash-flow"
     ],
@@ -1745,7 +1745,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/3Hp1HCs",
     "tags": [
       "calculator"
     ],
@@ -1769,7 +1769,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/3Hp1HCs",
     "tags": [
       "calculator",
       "estimator",
@@ -1795,7 +1795,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/3HpEtvG",
     "tags": [
       "tool"
     ],
@@ -1819,7 +1819,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
       "calculator"
     ],
@@ -1843,7 +1843,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4216lQe",
     "tags": [
       "mca",
       "pre-qual"
@@ -1868,7 +1868,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/3HpEtvG",
     "tags": [
       "calculator",
       "roi"
@@ -1893,7 +1893,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/48TYlTx",
     "tags": [
       "funding"
     ],
@@ -1917,7 +1917,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
       "embed",
       "funding",
@@ -1945,7 +1945,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/3S1msc4",
     "tags": [
       "tool"
     ],
@@ -1969,7 +1969,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/48TYlTx",
     "tags": [
       "referral"
     ],
@@ -1993,7 +1993,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
       "calculator"
     ],
@@ -2017,7 +2017,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
       "tool"
     ],
@@ -2041,7 +2041,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bit.ly/3Hp1HCs",
     "tags": [
       "credit"
     ],
@@ -2065,7 +2065,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "calculator"
     ],
@@ -2089,7 +2089,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "calculator",
       "estimator"
@@ -2114,7 +2114,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "credit",
       "funding"
@@ -2139,7 +2139,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "bridge",
       "cash-flow",
@@ -2166,7 +2166,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "ads"
     ],
@@ -2190,7 +2190,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "ads",
       "pre-qual",
@@ -2216,7 +2216,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "tool"
     ],
@@ -2240,7 +2240,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "tool"
     ],
@@ -2264,7 +2264,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "calculator",
       "cash-flow",
@@ -2291,7 +2291,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "tool"
     ],
@@ -2315,7 +2315,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "calculator",
       "estimator",
@@ -2341,7 +2341,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "bridge",
       "funding"
@@ -2366,7 +2366,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "calculator"
     ],
@@ -2390,7 +2390,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "cash-flow",
       "credit",
@@ -2417,7 +2417,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "ads",
       "calculator"
@@ -2442,7 +2442,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "bridge",
       "funding",
@@ -2470,7 +2470,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "tool"
     ],
@@ -2494,7 +2494,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "tool"
     ],
@@ -2518,7 +2518,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "tool"
     ],
@@ -2542,7 +2542,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "calculator"
     ],
@@ -2566,7 +2566,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "tool"
     ],
@@ -2590,7 +2590,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "tool"
     ],
@@ -2614,7 +2614,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "credit"
     ],
@@ -2638,7 +2638,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "credit"
     ],
@@ -2662,7 +2662,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "tool"
     ],
@@ -2686,7 +2686,7 @@
     ],
     "logic": "**",
     "ctaLabel": "Run this tool",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "apr",
       "factor"
@@ -2718,7 +2718,7 @@
     ],
     "logic": "(Payout Amount) * (ROI%/100) * (26 pay periods / 12 months).",
     "ctaLabel": "Unlock this capital with OnRamp",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://onrampfunds.partnerlinks.io/lbz9wzd0o1dv",
     "tags": [
       "amazon",
       "payouts",
@@ -2767,7 +2767,7 @@
     ],
     "logic": "Direct Loss = Daily Sales * Profit * Days; Ranking Penalty = Direct Loss * 1.5.",
     "ctaLabel": "Fund the restock now",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://onrampfunds.partnerlinks.io/lbz9wzd0o1dv",
     "tags": [
       "amazon",
       "inventory",
@@ -2827,7 +2827,7 @@
     ],
     "logic": "Compares compounding over 90 days at different intervals (standard vs faster turns).",
     "ctaLabel": "Start the flywheel",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://onrampfunds.partnerlinks.io/lbz9wzd0o1dv",
     "tags": [
       "simulator",
       "velocity",
@@ -2866,7 +2866,7 @@
     ],
     "logic": "Amazon Date = Ship + Delivery + 7 + 3; OnRamp Date = Ship + 0.",
     "ctaLabel": "Get paid the day you ship",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://onrampfunds.partnerlinks.io/lbz9wzd0o1dv",
     "tags": [
       "amazon",
       "timeline",
@@ -2899,7 +2899,7 @@
     ],
     "logic": "New Monthly Cash Requirement = Monthly Units * Prep Fee.",
     "ctaLabel": "Pay your 3PL instantly",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://onrampfunds.partnerlinks.io/lbz9wzd0o1dv",
     "tags": [
       "ops",
       "3pl",
@@ -2947,7 +2947,7 @@
     ],
     "logic": "Fee = Deal Cost * 0.02; Net ROI = (Profit - Fee) / Deal Cost; If Net ROI > 10% => SNIPE IT.",
     "ctaLabel": "Get the wire now",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://onrampfunds.partnerlinks.io/lbz9wzd0o1dv",
     "tags": [
       "wholesale",
       "decision",
@@ -3044,7 +3044,7 @@
     ],
     "logic": "If Revenue > $3k and Platform is Amazon/Shopify => APPROVED; shows Bank Rejected vs OnRamp Qualified.",
     "ctaLabel": "Connect your store to verify",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://onrampfunds.partnerlinks.io/lbz9wzd0o1dv",
     "tags": [
       "quiz",
       "prequal",
@@ -3077,7 +3077,7 @@
     ],
     "logic": "Simulates multiple buy/ship/fund cycles in a Q4 window vs one static batch.",
     "ctaLabel": "Supercharge your buying power",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://onrampfunds.partnerlinks.io/lbz9wzd0o1dv",
     "tags": [
       "q4",
       "seasonal",
@@ -3104,7 +3104,7 @@
     ],
     "logic": "Unlockable Amount = Balance * 0.80 (conservative).",
     "ctaLabel": "Withdraw it now",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://onrampfunds.partnerlinks.io/lbz9wzd0o1dv",
     "tags": [
       "amazon",
       "deferred",
@@ -3151,7 +3151,7 @@
     ],
     "logic": "Compares holding cost vs liquidating and reallocating capital (includes opportunity cost concept).",
     "ctaLabel": "Liquidate and reload",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://onrampfunds.partnerlinks.io/lbz9wzd0o1dv",
     "tags": [
       "inventory",
       "fees",
@@ -3196,7 +3196,7 @@
     ],
     "logic": "Labor Burden = Payroll*1.18; Daily Burn = Labor Burden/5; Days Until Zero = Balance/Daily Burn; if DaysUntilZero < days-to-payment => critical failure.",
     "ctaLabel": "Unlock your unpaid invoices now",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://rok.my.site.com/MyPartner/s/",
     "tags": [
       "construction",
       "payroll",
@@ -3253,7 +3253,7 @@
     ],
     "logic": "Risk Buffer = Material Cost * (Inflation Factor * Duration). Inflation factor pulled from static trend assumptions.",
     "ctaLabel": "Get a Material Purchase Loan",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://rok.my.site.com/MyPartner/s/",
     "tags": [
       "construction",
       "bids",
@@ -3298,7 +3298,7 @@
     ],
     "logic": "Opportunity Cost = Jobs * AvgProfit; Cost of Waiting = OpportunityCost / InvoiceAmount (annualized concept in doc).",
     "ctaLabel": "Get your invoice tomorrow (fee ~2%)",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://rok.my.site.com/MyPartner/s/",
     "tags": [
       "construction",
       "accounts-receivable",
@@ -3363,7 +3363,7 @@
     ],
     "logic": "Repair Path = Repair + (DailyRevenue*Downtime); Replace Path = (Replacement-TradeIn) + (DailyRevenue*Downtime); Difference = Replace - Repair.",
     "ctaLabel": "Finance the repair",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://rok.my.site.com/MyPartner/s/",
     "tags": [
       "trucking",
       "decision",
@@ -3440,7 +3440,7 @@
     ],
     "logic": "Fixed CPM = FixedCosts/Miles; Variable CPM = (FuelPrice/MPG)+MaintenanceCPM; Target Rate = FixedCPM + VariableCPM + (DesiredProfit/Miles).",
     "ctaLabel": "Get working capital",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://rok.my.site.com/MyPartner/s/",
     "tags": [
       "trucking",
       "rates",
@@ -3505,7 +3505,7 @@
     ],
     "logic": "Loan = Purchase+Rehab; Interest = Loan*0.12*(Hold/12); Total = Loan+Interest+Closing(3%); Profit = ARV-Total; Green if Profit > 15% of ARV.",
     "ctaLabel": "Get a Proof of Funds letter",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://rok.my.site.com/MyPartner/s/",
     "tags": [
       "real-estate",
       "deal",
@@ -3582,7 +3582,7 @@
     ],
     "logic": "Score 0–100 with points for revenue, credit, time, and low-risk industry.",
     "ctaLabel": "Claim your pre-approval",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://rok.my.site.com/MyPartner/s/",
     "tags": [
       "prequal",
       "score",
@@ -3615,7 +3615,7 @@
     ],
     "logic": "Tax Savings = Equipment Cost * Tax Bracket; Net Cost = Equipment Cost - Tax Savings.",
     "ctaLabel": "Finance equipment before Dec 31",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://rok.my.site.com/MyPartner/s/",
     "tags": [
       "tax",
       "equipment",
@@ -3668,7 +3668,7 @@
     ],
     "logic": "Net Burn = Expenses - Revenue; Months Left = Cash / Net Burn.",
     "ctaLabel": "Secure a 0% APR line",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://rok.my.site.com/MyPartner/s/",
     "tags": [
       "startup",
       "runway",
@@ -3721,7 +3721,7 @@
     ],
     "logic": "Current Monthly Cost = DailyPayments*22; New Monthly Cost = (Balance*1.25)/Months; Savings = Current - New.",
     "ctaLabel": "See if you qualify",
-    "ctaUrl": "https://YOUR_PRIMARY_CTA_LINK",
+    "ctaUrl": "https://rok.my.site.com/MyPartner/s/",
     "tags": [
       "mca",
       "debt",
