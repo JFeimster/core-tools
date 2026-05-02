@@ -184,6 +184,7 @@ Complex logic, caps, scoring, dates, APIs, and text verdicts require runner code
 - Manual workflow run completed successfully on 2026-05-02.
 - `npm run validate:data` passed.
 - `npm run build` passed.
+- Production smoke test confirmed after Phase 3 cleanup.
 - Repo search confirmed no `YOUR_PRIMARY_CTA_LINK` placeholders.
 - Repo search confirmed no `NEXT_PUBLIC_SITE_URL` references.
 - Repo search confirmed no old target provider-prefixed slugs from the white-label rename set.
@@ -195,7 +196,6 @@ Complex logic, caps, scoring, dates, APIs, and text verdicts require runner code
 | Some generated tool labels are messy | Clean pasted transcript artifacts |
 | Deprecated tags remain | Migrate `cash-flow` → `cashflow`, `pre-qual` → `prequal` |
 | Data quality can be stricter later | Tighten validator after cleanup |
-| Production smoke test still needed | Check key live tool, collection, embed, and admin routes |
 
 ## Completed Sequence
 
@@ -220,6 +220,7 @@ Complex logic, caps, scoring, dates, APIs, and text verdicts require runner code
 - Replaced tool CTA placeholders with approved external URLs
 - Added `.github/workflows/validate-build.yml`
 - Confirmed manual GitHub Actions validate/build success
+- Confirmed production smoke test after Phase 3 cleanup
 
 ## Operating Focus
 
