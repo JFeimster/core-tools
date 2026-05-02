@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/sync-public-tools.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
