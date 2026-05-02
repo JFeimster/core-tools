@@ -37,6 +37,7 @@ Format: newest first. Keep entries compact and focused on shipped repo changes.
 
 ### Confirmed
 
+- Production smoke test confirmed after Phase 3 cleanup.
 - Manual GitHub Actions `Validate and Build` workflow run completed successfully.
 - `npm run validate:data` passed in GitHub Actions.
 - `npm run build` passed in GitHub Actions.
@@ -54,7 +55,6 @@ Format: newest first. Keep entries compact and focused on shipped repo changes.
 
 ### Known Follow-Ups
 
-- Production smoke test key tool and collection routes.
 - Clean pasted/generated tool labels.
 - Normalize deprecated tags:
   - `cash-flow` → `cashflow`
