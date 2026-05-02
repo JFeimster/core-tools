@@ -8,7 +8,8 @@
     "prebuild": "node scripts/sync-public-tools.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "validate:data": "node scripts/validate-data.js"
   },
   "dependencies": {
     "next": "15.3.8",
