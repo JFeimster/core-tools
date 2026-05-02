@@ -1,0 +1,94 @@
+{
+  "allowedTags": [
+    "accounts-receivable",
+    "amazon",
+    "bids",
+    "calculator",
+    "cash-flow",
+    "cashflow",
+    "construction",
+    "contractors",
+    "debt",
+    "deal",
+    "embed",
+    "funding",
+    "inventory",
+    "lead-capture",
+    "materials",
+    "mca",
+    "payroll",
+    "playbook",
+    "pre-qual",
+    "prequal",
+    "quote",
+    "rates",
+    "real-estate",
+    "referral",
+    "repayment",
+    "roi",
+    "shopify",
+    "stockout",
+    "survival",
+    "tool",
+    "trucking"
+  ],
+  "groups": {
+    "audience": [
+      "amazon",
+      "construction",
+      "contractors",
+      "real-estate",
+      "shopify",
+      "trucking"
+    ],
+    "financePain": [
+      "accounts-receivable",
+      "cash-flow",
+      "cashflow",
+      "debt",
+      "funding",
+      "inventory",
+      "materials",
+      "mca",
+      "payroll",
+      "repayment",
+      "stockout",
+      "survival"
+    ],
+    "toolType": [
+      "calculator",
+      "embed",
+      "playbook",
+      "quote",
+      "tool"
+    ],
+    "useCase": [
+      "bids",
+      "deal",
+      "lead-capture",
+      "pre-qual",
+      "prequal",
+      "rates",
+      "referral",
+      "roi"
+    ],
+    "channel": [
+      "amazon",
+      "shopify"
+    ],
+    "statusCandidates": [
+      "cash-flow",
+      "pre-qual"
+    ]
+  },
+  "deprecatedTags": {
+    "cash-flow": "cashflow",
+    "pre-qual": "prequal"
+  },
+  "notes": {
+    "purpose": "Controlled tag list for tools and collections.",
+    "validation": "scripts/validate-data.js reads allowedTags. Unknown tags currently warn, not fail.",
+    "style": "Prefer lowercase kebab-case tags. Prefer cashflow over cash-flow and prequal over pre-qual going forward.",
+    "cleanup": "Keep deprecated tags in allowedTags until existing data has been migrated."
+  }
+}
