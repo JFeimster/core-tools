@@ -81,6 +81,40 @@ const base = "https://core-tools.vercel.app";
 
 Do not hand-author `public/tools.json`.
 
+## Current CTA State
+
+Placeholder CTAs have been replaced in both primary data files.
+
+| File | CTA State |
+|---|---|
+| `data/tools.json` | Uses approved external brand-level CTAs |
+| `data/collections.json` | Uses approved external brand-level CTAs |
+
+Approved brand-level CTA routing:
+
+| Brand | CTA URL |
+|---|---|
+| DAC / Bank Breezy | `https://bankbreezy.com/funding/jason/` |
+| Onramp Funds | `https://onrampfunds.partnerlinks.io/lbz9wzd0o1dv` |
+| ROKFI | `https://rok.my.site.com/MyPartner/s/` |
+| Payability | `https://fas.st/t/P7LZc7v7` |
+| 8fig | `https://grow.8fig.co/lh7ictz6db3r` |
+
+GoKapital tools use product/use-case specific shortlinks.
+
+## White-Label Slug Cleanup
+
+The selected provider-prefixed tool slugs were renamed to white-labeled slugs in `data/tools.json`, and matching collection `toolSlugs` were updated in `data/collections.json`.
+
+Examples:
+
+```txt
+onramp-bezos-interest-calculator -> bezos-interest-calculator
+onramp-stockout-bleed-auditor -> stockout-bleed-auditor
+rokfi-payroll-panic-countdown-timer -> payroll-panic-countdown-timer
+rokfi-bad-debt-consolidator -> bad-debt-consolidator
+```
+
 ## Current Core Files
 
 | File | Purpose |
@@ -93,6 +127,7 @@ Do not hand-author `public/tools.json`.
 | `lib/runner.ts` | Client-side formula runner |
 | `scripts/sync-public-tools.js` | Syncs `data/tools.json` to `public/tools.json` |
 | `scripts/validate-data.js` | Validates tools, collections, runners, and tags |
+| `.github/workflows/validate-build.yml` | Runs data validation and build checks |
 
 ## Current Admin Tools
 
@@ -143,15 +178,24 @@ Formula runner supports only:
 
 Complex logic, caps, scoring, dates, APIs, and text verdicts require runner code changes first.
 
+## Current Validation State
+
+- GitHub Actions workflow: `Validate and Build`
+- Manual workflow run completed successfully on 2026-05-02.
+- `npm run validate:data` passed.
+- `npm run build` passed.
+- Repo search confirmed no `YOUR_PRIMARY_CTA_LINK` placeholders.
+- Repo search confirmed no `NEXT_PUBLIC_SITE_URL` references.
+- Repo search confirmed no old target provider-prefixed slugs from the white-label rename set.
+
 ## Current Known Gaps
 
 | Gap | Fix |
 |---|---|
-| Placeholder CTA URLs remain | Replace before partner-ready launch |
 | Some generated tool labels are messy | Clean pasted transcript artifacts |
 | Deprecated tags remain | Migrate `cash-flow` → `cashflow`, `pre-qual` → `prequal` |
 | Data quality can be stricter later | Tighten validator after cleanup |
-| Connector verification can improve | Add GitHub Actions or route-fetch automation later |
+| Production smoke test still needed | Check key live tool, collection, embed, and admin routes |
 
 ## Completed Sequence
 
@@ -171,6 +215,11 @@ Complex logic, caps, scoring, dates, APIs, and text verdicts require runner code
 - Updated `README.md`
 - Updated `app/layout.tsx`
 - Updated `lib/generators.ts`
+- White-labeled selected provider-prefixed tool slugs
+- Replaced collection CTA placeholders with approved external URLs
+- Replaced tool CTA placeholders with approved external URLs
+- Added `.github/workflows/validate-build.yml`
+- Confirmed manual GitHub Actions validate/build success
 
 ## Operating Focus
 
