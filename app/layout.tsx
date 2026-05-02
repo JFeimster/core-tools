@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/site-footer";
 export const metadata: Metadata = {
   title: "Core Tool Directory",
   description: "A neo-brutalist directory to launch tool pages, embeds, and landing pages fast.",
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://core-tools.vercel.app"),
   openGraph: {
     title: "Core Tool Directory",
     description: "Browse tools. Generate landing pages. Copy embeds. Ship.",
