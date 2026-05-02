@@ -25,9 +25,11 @@ images: { unoptimized: true }
 ```json
 {
   "dev": "next dev",
+  "prebuild": "node scripts/sync-public-tools.js",
   "build": "next build",
   "start": "next start",
-  "lint": "next lint"
+  "lint": "next lint",
+  "validate:data": "node scripts/validate-data.js"
 }
 ```
 
@@ -41,7 +43,7 @@ https://core-tools.vercel.app
 
 Do not introduce environment-variable canonical URL handling.
 
-Required fixes:
+Confirmed code targets:
 
 ```ts
 metadataBase: new URL("https://core-tools.vercel.app")
@@ -65,7 +67,52 @@ const base = "https://core-tools.vercel.app";
 | `/collections/[slug]` | Active | Collection detail page |
 | `/admin` | Active | Admin utility index |
 | `/admin/tool-builder` | Active | Tool JSON builder |
-| `/admin/collection-builder` | Missing | Planned next admin utility |
+| `/admin/collection-builder` | Active | Collection JSON builder |
+| `/tools.json` | Generated | Built from `data/tools.json` by prebuild |
+
+## Current Data Sources
+
+| File | Purpose |
+|---|---|
+| `data/tools.json` | Main tool source of truth |
+| `data/collections.json` | Collection/playbook source of truth |
+| `data/tag-taxonomy.json` | Optional tag taxonomy |
+| `public/tools.json` | Generated client-readable tool data |
+
+Do not hand-author `public/tools.json`.
+
+## Current Core Files
+
+| File | Purpose |
+|---|---|
+| `lib/types.ts` | Tool + runner types |
+| `lib/tools.ts` | Tool helpers |
+| `lib/brands.ts` | Brand helpers |
+| `lib/collections.ts` | Collection helpers |
+| `lib/generators.ts` | Embed + landing draft generators |
+| `lib/runner.ts` | Client-side formula runner |
+| `scripts/sync-public-tools.js` | Syncs `data/tools.json` to `public/tools.json` |
+| `scripts/validate-data.js` | Validates tools, collections, runners, and tags |
+
+## Current Admin Tools
+
+| Route | Component | Purpose |
+|---|---|---|
+| `/admin/tool-builder` | `ToolBuilder` | Generate tool JSON, embeds, and landing drafts |
+| `/admin/collection-builder` | `CollectionBuilder` | Generate collection JSON from selected tools |
+
+## Docs
+
+| File | Purpose |
+|---|---|
+| `PROJECT_STATE.md` | Current repo state |
+| `CHANGELOG.md` | Compact shipped-change log |
+| `README.md` | Main repo overview |
+| `docs/schema-notes.md` | JSON schema notes |
+| `docs/deployment-verification.md` | Connector-driven deployment verification |
+| `docs/roadmap.md` | Build roadmap |
+
+`docs/deployment-verification.md` intentionally replaces the earlier `docs/deployment-checklist.md` concept.
 
 ## Dynamic Route Rule
 
@@ -81,41 +128,7 @@ export default async function Page({
 }
 ```
 
-Current dynamic routes already follow this pattern for:
-
-- `app/tools/[slug]/page.tsx`
-- `app/brands/[brand]/page.tsx`
-- `app/collections/[slug]/page.tsx`
-
-## Current Data Sources
-
-| File | Purpose |
-|---|---|
-| `data/tools.json` | Main tool source of truth |
-| `data/collections.json` | Collection/playbook source of truth |
-| `lib/types.ts` | Tool + runner types |
-| `lib/tools.ts` | Tool helpers |
-| `lib/brands.ts` | Brand helpers |
-| `lib/collections.ts` | Collection helpers |
-| `lib/generators.ts` | Embed + landing draft generators |
-| `lib/runner.ts` | Client-side formula runner |
-
-## Current Tool Schema
-
-Tools are JSON objects with:
-
-- `slug`
-- `brand`
-- `name`
-- `oneLiner`
-- `pain`
-- `artifact`
-- `inputs`
-- `logic`
-- `ctaLabel`
-- `ctaUrl`
-- `tags`
-- `runner`
+## Runner Scope
 
 Runner types:
 
@@ -128,77 +141,36 @@ Formula runner supports only:
 + - * / ( )
 ```
 
-## Current Collection Schema
+Complex logic, caps, scoring, dates, APIs, and text verdicts require runner code changes first.
 
-Collections use:
-
-```ts
-{
-  slug: string;
-  title: string;
-  oneLiner: string;
-  audience: string;
-  primaryCtaLabel: string;
-  primaryCtaUrl: string;
-  toolSlugs: string[];
-  tags: string[];
-}
-```
-
-## Current Components
-
-- `components/copy-box.tsx`
-- `components/directory-controls.tsx`
-- `components/site-header.tsx`
-- `components/site-footer.tsx`
-- `components/tool-card.tsx`
-- `components/tool-runner.tsx`
-- `components/tool-tabs.tsx`
-- `components/tool-builder.tsx`
-
-## Known Gaps
+## Current Known Gaps
 
 | Gap | Fix |
 |---|---|
-| `metadataBase` uses example domain | Change to `https://core-tools.vercel.app` |
-| Embed generator uses env fallback logic | Hardcode `const base = "https://core-tools.vercel.app";` |
-| `public/tools.json` missing | Add sync script from `data/tools.json` |
-| Collection Builder missing | Add component + admin route |
-| Data validation missing | Add validation script |
 | Placeholder CTA URLs remain | Replace before partner-ready launch |
-| README is behind current app | Update after state/changelog/docs are added |
+| Some generated tool labels are messy | Clean pasted transcript artifacts |
+| Deprecated tags remain | Migrate `cash-flow` → `cashflow`, `pre-qual` → `prequal` |
+| Data quality can be stricter later | Tighten validator after cleanup |
+| Connector verification can improve | Add GitHub Actions or route-fetch automation later |
 
-## Recommended Next File Sequence
+## Completed Sequence
 
-1. `CHANGELOG.md`
-2. `scripts/sync-public-tools.js`
-3. `package.json` update to add `prebuild`
-4. `components/collection-builder.tsx`
-5. `app/admin/collection-builder/page.tsx`
-6. `app/admin/page.tsx` update
-7. `scripts/validate-data.js`
-8. `data/tag-taxonomy.json`
-9. `docs/schema-notes.md`
-10. `docs/deployment-checklist.md`
-11. `docs/roadmap.md`
-12. `README.md` update
-13. `app/layout.tsx` update
-14. `lib/generators.ts` update
-
-## Build Check
-
-Run before deploy:
-
-```bash
-npm run build
-```
-
-After validation script exists:
-
-```bash
-npm run validate:data
-npm run build
-```
+- Added `CHANGELOG.md`
+- Added `scripts/sync-public-tools.js`
+- Added `prebuild` script
+- Added `components/collection-builder.tsx`
+- Added `/admin/collection-builder`
+- Updated `/admin`
+- Added `scripts/validate-data.js`
+- Added `validate:data` script
+- Added optional tag taxonomy validation
+- Added `data/tag-taxonomy.json`
+- Added `docs/schema-notes.md`
+- Added `docs/deployment-verification.md`
+- Added `docs/roadmap.md`
+- Updated `README.md`
+- Updated `app/layout.tsx`
+- Updated `lib/generators.ts`
 
 ## Operating Focus
 
