@@ -1,10 +1,9 @@
 import type { Tool } from "@/lib/types";
 
 export function buildEmbedSnippet(tool: Tool) {
-  // For static export, base URL should be your deployed domain.
-  // Replace YOUR_DOMAIN after deploy (or set a canonical in your own docs).
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://core-tools.vercel.app";
-const src = `${base}/tools/${tool.slug}/embed`;
+  const base = "https://core-tools.vercel.app";
+  const src = `${base}/tools/${tool.slug}/embed`;
+
   return [
     `<!-- ${tool.name} embed -->`,
     `<iframe`,
@@ -19,7 +18,9 @@ const src = `${base}/tools/${tool.slug}/embed`;
 }
 
 export function buildLandingPageDraft(tool: Tool) {
-  const bullets = tool.inputs.slice(0, 4).map((i) => `- **${i.label}**`).join("\n") || `- **Fast input → fast output**`;
+  const bullets =
+    tool.inputs.slice(0, 4).map((i) => `- **${i.label}**`).join("\n") ||
+    `- **Fast input → fast output**`;
 
   return [
     `# ${tool.name}`,
