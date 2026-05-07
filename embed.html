@@ -57,6 +57,26 @@
       color: #ffbf1f;
       font-size: 0.92rem;
     }
+    label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+      color: #fff;
+      font-weight: 1000;
+      text-transform: uppercase;
+    }
+    input {
+      width: min(420px, 100%);
+      padding: 0.85rem 1rem;
+      border: 3px solid #fff8e7;
+      border-radius: 14px;
+      background: #050505;
+      color: #ffbf1f;
+      font: inherit;
+      font-weight: 900;
+      outline: none;
+    }
+    input:focus { box-shadow: 0 0 0 3px #ffbf1f; }
+    .helper { margin-top: 0.5rem; font-size: 0.9rem; color: #bdb5aa; }
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
     .mini { border: 3px solid #fff8e7; border-radius: 18px; padding: 16px; background: #222; }
     .mini strong { display: block; color: #fff; margin-bottom: 6px; }
@@ -108,17 +128,13 @@
   loading="lazy"
 &gt;&lt;/iframe&gt;</pre>
 
-      <h2>Partner-tracked embed example</h2>
-      <button class="copy-button" type="button" data-copy-target="partner-code" data-status-target="partner-status">Copy partner embed</button>
+      <h2>Partner-tracked embed generator</h2>
+      <label for="partner-slug">Partner / Campaign Slug</label>
+      <input id="partner-slug" type="text" value="darwin" placeholder="e.g. darwin" autocomplete="off" />
+      <p class="helper">Allowed characters: letters, numbers, hyphens, and underscores. The embed code updates automatically.</p>
+      <button class="copy-button" type="button" data-copy-target="partner-code" data-status-target="partner-status">Copy generated embed</button>
       <span id="partner-status" class="copy-status" aria-live="polite"></span>
-      <pre id="partner-code">&lt;iframe
-  src="https://burn-rate-runway-widget.vercel.app/?partner=darwin&amp;source=wix_blog&amp;campaign=startup_runway"
-  title="Burn Rate Runway Extender"
-  width="100%"
-  height="920"
-  style="max-width:940px;width:100%;border:0;overflow:hidden;"
-  loading="lazy"
-&gt;&lt;/iframe&gt;</pre>
+      <pre id="partner-code"></pre>
 
       <div class="grid">
         <div class="mini"><strong>Recommended desktop height</strong>920px to 980px</div>
@@ -131,6 +147,34 @@
     </section>
   </main>
   <script>
+    function sanitizeSlug(value) {
+      const cleaned = String(value || '')
+        .replace(/[^a-zA-Z0-9_-]/g, '')
+        .slice(0, 80);
+      return cleaned || 'partner';
+    }
+
+    function buildPartnerEmbed(slug) {
+      const safeSlug = sanitizeSlug(slug);
+      return `<iframe
+  src="https://burn-rate-runway-widget.vercel.app/?partner=${safeSlug}&source=wix_blog&campaign=startup_runway"
+  title="Burn Rate Runway Extender"
+  width="100%"
+  height="920"
+  style="max-width:940px;width:100%;border:0;overflow:hidden;"
+  loading="lazy"
+></iframe>`;
+    }
+
+    function updatePartnerCode() {
+      const input = document.getElementById('partner-slug');
+      const codeEl = document.getElementById('partner-code');
+      if (!input || !codeEl) return;
+      const sanitized = sanitizeSlug(input.value);
+      if (input.value !== sanitized) input.value = sanitized;
+      codeEl.innerText = buildPartnerEmbed(sanitized);
+    }
+
     function copyText(text, statusEl) {
       const fallbackCopy = () => {
         const textarea = document.createElement('textarea');
@@ -168,6 +212,9 @@
         copyText(codeEl.innerText, statusEl);
       });
     });
+
+    document.getElementById('partner-slug')?.addEventListener('input', updatePartnerCode);
+    updatePartnerCode();
   </script>
 </body>
 </html>
