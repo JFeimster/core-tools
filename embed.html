@@ -80,6 +80,20 @@
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
     .mini { border: 3px solid #fff8e7; border-radius: 18px; padding: 16px; background: #222; }
     .mini strong { display: block; color: #fff; margin-bottom: 6px; }
+    .tracking-box {
+      margin-top: 1.5rem;
+      padding: 18px;
+      border: 3px solid #fff8e7;
+      border-radius: 18px;
+      background: #222;
+    }
+    .tracking-box ul { margin: 0.75rem 0 0; padding-left: 1.25rem; color: #d7d1c8; font-weight: 700; }
+    .tracking-box li { margin-bottom: 0.45rem; }
+    .tracking-box code {
+      color: #ffbf1f;
+      font-weight: 900;
+      overflow-wrap: anywhere;
+    }
     a { color: #ffbf1f; font-weight: 900; }
     .copy-button {
       display: inline-block;
@@ -135,6 +149,18 @@
       <button class="copy-button" type="button" data-copy-target="partner-code" data-status-target="partner-status">Copy generated embed</button>
       <span id="partner-status" class="copy-status" aria-live="polite"></span>
       <pre id="partner-code"></pre>
+
+      <div class="tracking-box">
+        <h2>Tracking Parameters Supported</h2>
+        <p>Add these values to the widget URL so partner traffic does not vanish into the marketing fog machine.</p>
+        <ul>
+          <li><code>partner</code> identifies the partner, broker, affiliate, or campaign owner.</li>
+          <li><code>source</code> identifies the placement, such as <code>wix_blog</code>, <code>partner_hub</code>, or <code>wix_group</code>.</li>
+          <li><code>campaign</code> identifies the campaign theme, such as <code>startup_runway</code>.</li>
+        </ul>
+        <p>Example widget URL:<br><code>https://burn-rate-runway-widget.vercel.app/?partner=darwin&amp;source=wix_blog&amp;campaign=startup_runway</code></p>
+        <p>The widget appends those values to CTA clicks as <code>utm_partner</code>, <code>utm_source</code>, and <code>utm_campaign</code>.</p>
+      </div>
 
       <div class="grid">
         <div class="mini"><strong>Recommended desktop height</strong>920px to 980px</div>
