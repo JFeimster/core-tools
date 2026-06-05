@@ -3750,5 +3750,421 @@
         }
       ]
     }
+  },
+  {
+    "slug": "toolforge-codex-branch-batch-builder",
+    "brand": "ToolForge",
+    "name": "Codex Branch Batch Builder",
+    "oneLiner": "Plan a safe feature branch with scope, validation, and PR steps.",
+    "pain": "Keeps branch-based batch work organized before code or docs changes start to drift.",
+    "artifact": "Branch plan and batch checklist",
+    "inputs": [
+      {
+        "key": "batchGoal",
+        "label": "Batch Goal",
+        "type": "text",
+        "placeholder": "Describe the outcome",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Defines a branch plan, the intended file scope, and the validation steps before commit.",
+    "ctaLabel": "Open Tool Builder",
+    "ctaUrl": "/admin/tool-builder",
+    "tags": [
+      "tool",
+      "playbook",
+      "routing",
+      "decision"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  }
+  ,
+  {
+    "slug": "toolforge-jules-repo-cleanup-operator",
+    "brand": "ToolForge",
+    "name": "Jules Repo Cleanup Operator",
+    "oneLiner": "Turn repo cleanup into a safe, repeatable maintenance pass.",
+    "pain": "Keeps generated files, docs drift, and noisy diffs from distracting the next batch.",
+    "artifact": "Cleanup report and status summary",
+    "inputs": [
+      {
+        "key": "dirtyFiles",
+        "label": "Dirty Files",
+        "type": "text",
+        "placeholder": "List the files in scope",
+        "defaultValue": ""
+      },
+      {
+        "key": "validationCommand",
+        "label": "Validation Command",
+        "type": "text",
+        "placeholder": "npm run validate:data",
+        "defaultValue": "npm run validate:data"
+      }
+    ],
+    "logic": "Checks repo hygiene, validates the batch, and confirms the tree is safe to commit.",
+    "ctaLabel": "Open Admin",
+    "ctaUrl": "/admin",
+    "tags": [
+      "tool",
+      "playbook",
+      "warning",
+      "decision"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "toolforge-vscode-local-repo-opener",
+    "brand": "ToolForge",
+    "name": "VS Code Local Repo Opener",
+    "oneLiner": "Start a local edit session with the right repo checks in place.",
+    "pain": "Reduces the chance of jumping into edits before confirming branch and workspace state.",
+    "artifact": "Local repo opening checklist",
+    "inputs": [
+      {
+        "key": "repoPath",
+        "label": "Repo Path",
+        "type": "text",
+        "placeholder": "C:\\path\\to\\repo",
+        "defaultValue": ""
+      },
+      {
+        "key": "branch",
+        "label": "Current Branch",
+        "type": "text",
+        "placeholder": "main or feature branch",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Confirms the repo is open, the branch is known, and the working tree is ready for safe edits.",
+    "ctaLabel": "Open Directory",
+    "ctaUrl": "/tools",
+    "tags": [
+      "tool",
+      "embed",
+      "routing"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "toolforge-static-site-build-playbook",
+    "brand": "ToolForge",
+    "name": "Static Site Build Playbook",
+    "oneLiner": "Keep static-export builds safe, clean, and reviewable.",
+    "pain": "Prevents runtime features and generated artifacts from sneaking into a static-export repo.",
+    "artifact": "Static build checklist",
+    "inputs": [
+      {
+        "key": "validationCommand",
+        "label": "Validation Command",
+        "type": "text",
+        "placeholder": "npm run validate:data",
+        "defaultValue": "npm run validate:data"
+      },
+      {
+        "key": "buildCommand",
+        "label": "Build Command",
+        "type": "text",
+        "placeholder": "npm run build",
+        "defaultValue": "npm run build"
+      }
+    ],
+    "logic": "Aligns the batch with static export, validation, build, and artifact cleanup steps.",
+    "ctaLabel": "Open Collection Builder",
+    "ctaUrl": "/admin/collection-builder",
+    "tags": [
+      "playbook",
+      "tool",
+      "embed"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "toolforge-landing-page-generator-skill",
+    "brand": "ToolForge",
+    "name": "Landing Page Generator Skill",
+    "oneLiner": "Draft landing pages that match a tool, audience, and CTA.",
+    "pain": "Helps avoid vague marketing pages and keeps the page aligned to the actual offer.",
+    "artifact": "Landing page brief",
+    "inputs": [
+      {
+        "key": "audience",
+        "label": "Audience",
+        "type": "text",
+        "placeholder": "Who is this for?",
+        "defaultValue": ""
+      },
+      {
+        "key": "primaryCta",
+        "label": "Primary CTA",
+        "type": "text",
+        "placeholder": "What should users do next?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Defines page sections, CTA language, and trust elements for a conversion-focused landing page.",
+    "ctaLabel": "Open Tool Builder",
+    "ctaUrl": "/admin/tool-builder",
+    "tags": [
+      "lead-capture",
+      "tool",
+      "roi"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "toolforge-embed-generator-skill",
+    "brand": "ToolForge",
+    "name": "Embed Generator Skill",
+    "oneLiner": "Shape a compact embed experience that still feels useful.",
+    "pain": "Keeps iframe and widget surfaces minimal, clear, and static-export safe.",
+    "artifact": "Embed spec",
+    "inputs": [
+      {
+        "key": "embedGoal",
+        "label": "Embed Goal",
+        "type": "text",
+        "placeholder": "Lead capture, utility, or showcase",
+        "defaultValue": ""
+      },
+      {
+        "key": "ctaUrl",
+        "label": "CTA URL",
+        "type": "text",
+        "placeholder": "/admin/tool-builder",
+        "defaultValue": "/admin/tool-builder"
+      }
+    ],
+    "logic": "Maps the minimum UI, output, and CTA behavior for an embed-friendly tool view.",
+    "ctaLabel": "Open Builder",
+    "ctaUrl": "/admin/tool-builder",
+    "tags": [
+      "embed",
+      "widget",
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "toolforge-funding-tool-builder-skill",
+    "brand": "ToolForge",
+    "name": "Funding Tool Builder Skill",
+    "oneLiner": "Create funding-oriented tools that are useful without making approval claims.",
+    "pain": "Turns lender-facing ideas into schema-safe assets with safe language.",
+    "artifact": "Funding tool spec",
+    "inputs": [
+      {
+        "key": "fundingUseCase",
+        "label": "Funding Use Case",
+        "type": "text",
+        "placeholder": "Working capital, payroll, equipment",
+        "defaultValue": ""
+      },
+      {
+        "key": "ctaPath",
+        "label": "CTA Path",
+        "type": "text",
+        "placeholder": "/collections",
+        "defaultValue": "/collections"
+      }
+    ],
+    "logic": "Shapes the tool inputs, outputs, and compliance-safe CTA for a funding workflow.",
+    "ctaLabel": "Open Collections",
+    "ctaUrl": "/collections",
+    "tags": [
+      "funding",
+      "calculator",
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "toolforge-business-credit-workflow-skill",
+    "brand": "ToolForge",
+    "name": "Business Credit Workflow Skill",
+    "oneLiner": "Map business credit steps into a practical workflow asset.",
+    "pain": "Makes the credit setup path easier to follow and easier to ship.",
+    "artifact": "Business credit workflow map",
+    "inputs": [
+      {
+        "key": "currentStage",
+        "label": "Current Stage",
+        "type": "text",
+        "placeholder": "Setup, building, or ready",
+        "defaultValue": ""
+      },
+      {
+        "key": "goal",
+        "label": "Goal",
+        "type": "text",
+        "placeholder": "Tradeline, card fit, or prep",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Sequenced workflow for the next practical business-credit step.",
+    "ctaLabel": "Open Directory",
+    "ctaUrl": "/tools",
+    "tags": [
+      "credit",
+      "playbook",
+      "score"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "toolforge-seo-brief-generator-skill",
+    "brand": "ToolForge",
+    "name": "SEO Brief Generator Skill",
+    "oneLiner": "Turn a topic into a clear SEO brief with a page plan.",
+    "pain": "Reduces content drift and keeps search pages tied to a real offer.",
+    "artifact": "SEO brief",
+    "inputs": [
+      {
+        "key": "topic",
+        "label": "Topic",
+        "type": "text",
+        "placeholder": "What page are we planning?",
+        "defaultValue": ""
+      },
+      {
+        "key": "searchIntent",
+        "label": "Search Intent",
+        "type": "text",
+        "placeholder": "Informational, commercial, or navigational",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Defines the target query, page outline, and internal-link opportunities.",
+    "ctaLabel": "Open Tools",
+    "ctaUrl": "/tools",
+    "tags": [
+      "seo",
+      "lead-capture",
+      "tool"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "toolforge-project-knowledge-sync-skill",
+    "brand": "ToolForge",
+    "name": "Project Knowledge Sync Skill",
+    "oneLiner": "Keep project memory aligned with the current repo state.",
+    "pain": "Prevents stale context from slowing the next batch or review cycle.",
+    "artifact": "Project knowledge sync note",
+    "inputs": [
+      {
+        "key": "sourceDocs",
+        "label": "Source Docs",
+        "type": "text",
+        "placeholder": "Docs or snapshot files to read",
+        "defaultValue": ""
+      },
+      {
+        "key": "nextAction",
+        "label": "Next Action",
+        "type": "text",
+        "placeholder": "What should happen next?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Summarizes repo state, known gaps, and the next useful file or batch.",
+    "ctaLabel": "Open Admin",
+    "ctaUrl": "/admin",
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "toolforge-deployment-qa-skill",
+    "brand": "ToolForge",
+    "name": "Deployment QA Skill",
+    "oneLiner": "Check a deployment for static-export and route health issues.",
+    "pain": "Catches live-site problems before a batch gets merged or reused.",
+    "artifact": "Deployment QA report",
+    "inputs": [
+      {
+        "key": "deploymentUrl",
+        "label": "Deployment URL",
+        "type": "text",
+        "placeholder": "https://core-tools.vercel.app",
+        "defaultValue": "https://core-tools.vercel.app"
+      },
+      {
+        "key": "routeCount",
+        "label": "Route Count",
+        "type": "number",
+        "placeholder": "How many routes to check?",
+        "defaultValue": "5"
+      }
+    ],
+    "logic": "Confirms build health, generated assets, and route response basics.",
+    "ctaLabel": "Open Admin",
+    "ctaUrl": "/admin",
+    "tags": [
+      "tool",
+      "warning",
+      "decision"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "toolforge-github-pr-review-skill",
+    "brand": "ToolForge",
+    "name": "GitHub PR Review Skill",
+    "oneLiner": "Review a pull request for scope, risk, and release fit.",
+    "pain": "Helps catch scope creep, validation gaps, and merge risk early.",
+    "artifact": "PR review report",
+    "inputs": [
+      {
+        "key": "prDiff",
+        "label": "PR Diff",
+        "type": "text",
+        "placeholder": "Summary of changed files",
+        "defaultValue": ""
+      },
+      {
+        "key": "targetBranch",
+        "label": "Target Branch",
+        "type": "text",
+        "placeholder": "main",
+        "defaultValue": "main"
+      }
+    ],
+    "logic": "Scores the change set for scope, validation readiness, and merge risk.",
+    "ctaLabel": "Open Admin",
+    "ctaUrl": "/admin",
+    "tags": [
+      "tool",
+      "decision",
+      "warning"
+    ],
+    "runner": {
+      "type": "none"
+    }
   }
 ]
