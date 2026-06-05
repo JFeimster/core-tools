@@ -1,0 +1,259 @@
+{
+  "project": {
+    "name": "Core Tool Directory",
+    "repository": "JFeimster/core-tools",
+    "localPath": "C:\\Users\\jason\\Documents\\GitHub\\core-tools",
+    "liveSite": "https://core-tools.vercel.app",
+    "appPurpose": "A static-first Next.js App Router directory for business finance tools, embeds, landing drafts, brand pages, and curated playbooks."
+  },
+  "stack": {
+    "framework": "Next.js 15.3.8 with React 19",
+    "language": "TypeScript",
+    "styling": "Tailwind CSS",
+    "deployment": "Vercel",
+    "buildModel": "Static export with JSON-driven content and no database, auth, or server actions."
+  },
+  "repoState": {
+    "currentBranch": "main",
+    "importantRecentCommits": [
+      {
+        "sha": "b0d8af5",
+        "message": "Stabilize Next.js local workspace ignores"
+      },
+      {
+        "sha": "cee4f55",
+        "message": "Add Batch A commercialization briefs"
+      },
+      {
+        "sha": "915cf56",
+        "message": "Add tool pack index CSV"
+      }
+    ],
+    "cleanWorkspaceExpectation": "The working tree should be clean after ignoring generated outputs. Future builds may regenerate .next/, out/, and public/tools.json, but those should not appear in git status."
+  },
+  "routeInventory": {
+    "publicRoutes": [
+      "/",
+      "/tools",
+      "/tools/[slug]",
+      "/tools/[slug]/embed",
+      "/brands",
+      "/brands/[brand]",
+      "/collections",
+      "/collections/[slug]"
+    ],
+    "adminRoutes": [
+      "/admin",
+      "/admin/tool-builder",
+      "/admin/collection-builder"
+    ],
+    "generatedRoutes": [
+      "/tools.json"
+    ]
+  },
+  "sourceMap": {
+    "app": [
+      "app/layout.tsx",
+      "app/globals.css",
+      "app/page.tsx",
+      "app/tools/page.tsx",
+      "app/tools/[slug]/page.tsx",
+      "app/tools/[slug]/embed/page.tsx",
+      "app/brands/page.tsx",
+      "app/brands/[brand]/page.tsx",
+      "app/collections/page.tsx",
+      "app/collections/[slug]/page.tsx",
+      "app/admin/page.tsx",
+      "app/admin/tool-builder/page.tsx",
+      "app/admin/collection-builder/page.tsx"
+    ],
+    "components": [
+      "components/directory-controls.tsx",
+      "components/copy-box.tsx",
+      "components/collection-builder.tsx",
+      "components/site-footer.tsx",
+      "components/site-header.tsx",
+      "components/tool-builder.tsx",
+      "components/tool-card.tsx",
+      "components/tool-runner.tsx",
+      "components/tool-tabs.tsx"
+    ],
+    "lib": [
+      "lib/runner.ts",
+      "lib/generators.ts",
+      "lib/collections.ts",
+      "lib/brands.ts",
+      "lib/slug.ts",
+      "lib/tools.ts",
+      "lib/types.ts"
+    ],
+    "data": [
+      "data/tools.json",
+      "data/collections.json",
+      "data/tag-taxonomy.json"
+    ],
+    "docs": [
+      "README.md",
+      "PROJECT_STATE.md",
+      "CHANGELOG.md",
+      "docs/schema-notes.md",
+      "docs/roadmap.md",
+      "docs/deployment-verification.md",
+      "docs/tool-pack-readme.md",
+      "docs/tool-pack-index.csv",
+      "docs/tool-pack-batch-a-briefs.md"
+    ],
+    "scripts": [
+      "scripts/sync-public-tools.js",
+      "scripts/validate-data.js"
+    ],
+    "landing": [
+      "landing/index.html"
+    ]
+  },
+  "dataSources": {
+    "tools": {
+      "file": "data/tools.json",
+      "recordCount": 113,
+      "role": "Main tool source of truth",
+      "shape": [
+        "slug",
+        "brand",
+        "name",
+        "oneLiner",
+        "pain",
+        "artifact",
+        "inputs",
+        "logic",
+        "ctaLabel",
+        "ctaUrl",
+        "tags",
+        "runner"
+      ]
+    },
+    "collections": {
+      "file": "data/collections.json",
+      "recordCount": 6,
+      "role": "Collection and playbook source of truth",
+      "shape": [
+        "slug",
+        "title",
+        "oneLiner",
+        "audience",
+        "primaryCtaLabel",
+        "primaryCtaUrl",
+        "toolSlugs",
+        "tags"
+      ]
+    },
+    "tagTaxonomy": {
+      "file": "data/tag-taxonomy.json",
+      "role": "Optional controlled tag taxonomy",
+      "shape": [
+        "allowedTags",
+        "groups",
+        "deprecatedTags",
+        "notes"
+      ],
+      "notes": "Unknown tags are warnings, not build failures."
+    },
+    "generatedPublicTools": {
+      "file": "public/tools.json",
+      "source": "data/tools.json",
+      "generatedBy": "scripts/sync-public-tools.js",
+      "recordCount": 113,
+      "doNotHandAuthor": true,
+      "ignoredByGitignore": true
+    }
+  },
+  "validationAndBuild": {
+    "packageScripts": {
+      "dev": "next dev",
+      "prebuild": "node scripts/sync-public-tools.js",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "validate:data": "node scripts/validate-data.js"
+    },
+    "validationCommand": "npm run validate:data",
+    "buildCommand": "npm run build",
+    "knownWarnings": [
+      "validate:data currently prints unknown-tag warnings for tags that are not covered by data/tag-taxonomy.json.",
+      "build runs prebuild first, which regenerates public/tools.json before next build."
+    ]
+  },
+  "generatedArtifacts": {
+    "ignored": [
+      "node_modules/",
+      ".next/",
+      "out/",
+      "dist/",
+      "build/",
+      ".vercel/",
+      "public/tools.json",
+      "coverage/",
+      ".turbo/",
+      ".eslintcache",
+      "tsconfig.tsbuildinfo",
+      "*.log",
+      "npm-debug.log*",
+      "yarn-debug.log*",
+      "yarn-error.log*",
+      "pnpm-debug.log*",
+      ".env",
+      ".env.*"
+    ],
+    "doNotHandAuthor": [
+      "public/tools.json"
+    ]
+  },
+  "projectKnowledge": {
+    "recommendedFiles": [
+      "project-data-snapshot.json",
+      "PROJECT_STATE.md",
+      "CHANGELOG.md",
+      "README.md",
+      "docs/schema-notes.md",
+      "docs/deployment-verification.md",
+      "docs/roadmap.md"
+    ],
+    "combinedUploadPacks": [
+      {
+        "name": "tool-pack",
+        "files": [
+          "docs/tool-pack-readme.md",
+          "docs/tool-pack-index.csv"
+        ],
+        "purpose": "Starter asset pack for tool commercialization and upload workflows."
+      },
+      {
+        "name": "batch-a-commercialization",
+        "files": [
+          "docs/tool-pack-batch-a-briefs.md",
+          "docs/tool-pack-index.csv"
+        ],
+        "purpose": "Batch A commercialization bundle for building grouped tool assets."
+      }
+    ],
+    "missingRecommendedFiles": [
+      "source-tool-docs-summary.md"
+    ]
+  },
+  "knownGaps": [
+    "validate:data still emits unknown-tag warnings because the taxonomy does not yet cover every tag in the data files.",
+    "Deprecated tags such as cash-flow and pre-qual still need cleanup in the data layer.",
+    "Some generated tool labels may still contain pasted transcript artifacts.",
+    "There is no backend CMS, auth, or database; all content changes are manual JSON and component edits."
+  ],
+  "recommendedNextFiles": [
+    "source-tool-docs-summary.md"
+  ],
+  "operatingRules": [
+    "Keep the app static-first and avoid introducing backend dependencies unless a clear product need appears.",
+    "Do not hand-author public/tools.json; it is generated from data/tools.json by prebuild/build.",
+    "Keep the canonical live URL hardcoded as https://core-tools.vercel.app.",
+    "Use async params in dynamic App Router pages when updating route code.",
+    "Prefer JSON-driven content changes over code changes when adjusting tool or collection content.",
+    "Preserve the current ignore rules for .next/, out/, node_modules/, and public/tools.json."
+  ]
+}
