@@ -2,6 +2,17 @@
 
 This queue tracks future ToolForge ideas and where they should land.
 
+## This Batch
+
+Added in this batch:
+
+- ChatGPT
+- Claude
+- Cursor
+- Windsurf
+
+These packs are now represented in the ToolForge library; the remaining queue items stay as future work.
+
 ## Queue Key
 
 - `Visible?`: whether it should become a public directory entry

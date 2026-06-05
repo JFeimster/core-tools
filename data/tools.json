@@ -4167,4 +4167,180 @@
       "type": "none"
     }
   }
+  ,
+  {
+    "slug": "chatgpt-custom-gpt-builder-playbook",
+    "brand": "ToolForge",
+    "name": "ChatGPT Custom GPT Builder Playbook",
+    "oneLiner": "Plan a Custom GPT spec, instruction set, and test prompts.",
+    "pain": "Turns a GPT idea into a reviewable spec before anyone tries to build it.",
+    "artifact": "Custom GPT specification",
+    "inputs": [
+      {
+        "key": "gptGoal",
+        "label": "GPT Goal",
+        "type": "text",
+        "placeholder": "What should the GPT do?",
+        "defaultValue": ""
+      },
+      {
+        "key": "knowledgeSources",
+        "label": "Knowledge Sources",
+        "type": "text",
+        "placeholder": "Docs, snapshots, or notes",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Defines the GPT purpose, sources, guardrails, and test prompts before implementation.",
+    "ctaLabel": "Open AI Platform Pack",
+    "ctaUrl": "/collections/ai-platform-build-pack",
+    "tags": [
+      "tool",
+      "playbook",
+      "decision"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "chatgpt-project-knowledge-refresh-prompt",
+    "brand": "ToolForge",
+    "name": "ChatGPT Project Knowledge Refresh Prompt",
+    "oneLiner": "Refresh project memory from the latest repo state.",
+    "pain": "Keeps future ChatGPT threads from carrying stale repo assumptions.",
+    "artifact": "Project knowledge refresh prompt",
+    "inputs": [
+      {
+        "key": "currentBranch",
+        "label": "Current Branch",
+        "type": "text",
+        "placeholder": "feature branch or main",
+        "defaultValue": ""
+      },
+      {
+        "key": "sourceFiles",
+        "label": "Source Files",
+        "type": "text",
+        "placeholder": "Snapshot, roadmap, docs",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Pulls current repo facts into a compact knowledge update and flags stale references.",
+    "ctaLabel": "Open Admin",
+    "ctaUrl": "/admin",
+    "tags": [
+      "tool",
+      "routing",
+      "warning"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "claude-project-setup-playbook",
+    "brand": "ToolForge",
+    "name": "Claude Project Setup Playbook",
+    "oneLiner": "Prepare a source-backed Claude project brief for Core Tools.",
+    "pain": "Reduces setup drift when a long-context review needs one clean starting point.",
+    "artifact": "Claude project brief",
+    "inputs": [
+      {
+        "key": "projectGoal",
+        "label": "Project Goal",
+        "type": "text",
+        "placeholder": "What should Claude help with?",
+        "defaultValue": ""
+      },
+      {
+        "key": "sourceDocs",
+        "label": "Source Docs",
+        "type": "text",
+        "placeholder": "Docs and snapshot files",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Defines the repo context, constraints, and first-read files for a Claude project.",
+    "ctaLabel": "Open AI Platform Pack",
+    "ctaUrl": "/collections/ai-platform-build-pack",
+    "tags": [
+      "tool",
+      "playbook",
+      "decision"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "cursor-feature-branch-builder",
+    "brand": "ToolForge",
+    "name": "Cursor Feature Branch Builder",
+    "oneLiner": "Plan a safe feature branch with scope, validation, and review steps.",
+    "pain": "Keeps editor-driven branches narrow enough to validate and ship cleanly.",
+    "artifact": "Feature branch plan",
+    "inputs": [
+      {
+        "key": "branchName",
+        "label": "Branch Name",
+        "type": "text",
+        "placeholder": "feature/example",
+        "defaultValue": ""
+      },
+      {
+        "key": "fileScope",
+        "label": "File Scope",
+        "type": "text",
+        "placeholder": "Files and folders in scope",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Turns an editor session into a bounded branch plan with validation and cleanup steps.",
+    "ctaLabel": "Open AI Platform Pack",
+    "ctaUrl": "/collections/ai-platform-build-pack",
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "windsurf-static-site-iteration-playbook",
+    "brand": "ToolForge",
+    "name": "Windsurf Static Site Iteration Playbook",
+    "oneLiner": "Iterate on a static page or section without breaking export safety.",
+    "pain": "Helps page polish stay focused instead of turning into a broad redesign.",
+    "artifact": "Static site iteration checklist",
+    "inputs": [
+      {
+        "key": "targetRoute",
+        "label": "Target Route",
+        "type": "text",
+        "placeholder": "/tools or /collections route",
+        "defaultValue": ""
+      },
+      {
+        "key": "sectionGoal",
+        "label": "Section Goal",
+        "type": "text",
+        "placeholder": "What should improve?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Guides an iterative pass over one section while keeping the page static-export safe.",
+    "ctaLabel": "Open AI Platform Pack",
+    "ctaUrl": "/collections/ai-platform-build-pack",
+    "tags": [
+      "tool",
+      "playbook",
+      "embed"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  }
 ]

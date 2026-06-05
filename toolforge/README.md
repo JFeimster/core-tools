@@ -30,6 +30,23 @@ Use ToolForge when the task is more than a one-off edit and should be repeated, 
 - `agents/`: platform-specific operating guides and prompt assets
 - `skills/`: reusable cross-platform skills and workflows
 
+## Platform Packs
+
+Current platform packs in the library:
+
+- Codex
+- Jules
+- VS Code
+- GitHub Actions
+- Vercel
+- Notion
+- ChatGPT
+- Claude
+- Cursor
+- Windsurf
+
+Keep adding packs only when they help a builder act faster or more safely inside Core Tools.
+
 ## Maintenance Rule
 
 Keep ToolForge practical. If a file does not help future work happen faster or safer, it does not belong here.

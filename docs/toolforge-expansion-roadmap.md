@@ -12,7 +12,7 @@ This roadmap turns the ToolForge resource library into a practical expansion tra
 
 ## Platform Packs To Add Next
 
-Prioritize packs that help people ship or operate the repo and its offers:
+Prioritize packs that help people ship or operate the repo and its offers. The current batch adds ChatGPT, Claude, Cursor, and Windsurf; the next queue items remain in `docs/toolforge-import-queue.md`.
 
 - ChatGPT GPT Builder
 - Claude Projects

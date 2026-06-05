@@ -201,5 +201,25 @@
       "playbook",
       "warning"
     ]
+  },
+  {
+    "slug": "ai-platform-build-pack",
+    "title": "AI Platform Build Pack",
+    "oneLiner": "Build and review ChatGPT, Claude, Cursor, and Windsurf workflows in one place.",
+    "audience": "Builders using AI platforms to ship Core Tools work",
+    "primaryCtaLabel": "Browse the pack",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "chatgpt-custom-gpt-builder-playbook",
+      "chatgpt-project-knowledge-refresh-prompt",
+      "claude-project-setup-playbook",
+      "cursor-feature-branch-builder",
+      "windsurf-static-site-iteration-playbook"
+    ],
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ]
   }
 ]
