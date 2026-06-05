@@ -32,6 +32,7 @@ Each tool record must include:
 ## Tag Rules
 
 - Every tool needs at least one tag.
+- Check `data/tag-taxonomy.json` before inventing a new tag.
 - Prefer tags that already exist in the taxonomy.
 - Unknown tags are allowed for now, but they produce warnings.
 - Clean up deprecated tags instead of adding more new variants.

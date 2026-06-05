@@ -235,18 +235,18 @@
         "purpose": "Batch A commercialization bundle for building grouped tool assets."
       }
     ],
-    "missingRecommendedFiles": [
-      "source-tool-docs-summary.md"
-    ]
+    "missingRecommendedFiles": []
   },
   "knownGaps": [
-    "validate:data still emits unknown-tag warnings because the taxonomy does not yet cover every tag in the data files.",
+    "Taxonomy coverage is now the active cleanup focus for the highest-frequency unknown tags.",
+    "validate:data still emits unknown-tag warnings for tags that are not yet covered by the taxonomy.",
+    "Semantic cleanup of tags inside data/tools.json is still a later batch.",
     "Deprecated tags such as cash-flow and pre-qual still need cleanup in the data layer.",
     "Some generated tool labels may still contain pasted transcript artifacts.",
     "There is no backend CMS, auth, or database; all content changes are manual JSON and component edits."
   ],
   "recommendedNextFiles": [
-    "source-tool-docs-summary.md"
+    "data/tools.json"
   ],
   "operatingRules": [
     "Keep the app static-first and avoid introducing backend dependencies unless a clear product need appears.",

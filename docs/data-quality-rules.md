@@ -63,6 +63,9 @@ Only these input types are supported:
 
 ## Tag Taxonomy Warnings
 
+- Unknown tags should first be resolved by expanding `data/tag-taxonomy.json`.
+- Taxonomy coverage comes before renaming tags inside `data/tools.json`.
+- High-frequency tags should be normalized before low-frequency edge cases.
 - Unknown tags are non-blocking today.
 - Tag taxonomy exists to reduce drift over time.
 - Deprecated tags should be normalized as a separate cleanup step.

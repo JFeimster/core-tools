@@ -6,7 +6,7 @@ Current non-blocking issues and cleanup queue for Core Tools.
 
 | Severity | Area | Issue | Recommended Fix | Blocks Deploy |
 |---|---|---|---|---|
-| Medium | Data quality | Unknown tag warnings still appear during `validate:data` | Expand taxonomy coverage or normalize tags | No |
+| Medium | Data quality | Unknown tag warnings still appear during `validate:data` | Expand taxonomy coverage first, then normalize `data/tools.json` tags later | No |
 | Medium | Data quality | Some generated tool labels may still contain pasted transcript artifacts | Clean labels in the source data | No |
 | Medium | CTA hygiene | Some CTA URLs may need final partner review | Replace or confirm destinations | No |
 | Low | Generated artifacts | Build output can recreate `.next/`, `out/`, and `public/tools.json` | Keep them ignored and clean them after local builds when needed | No |
@@ -16,12 +16,14 @@ Current non-blocking issues and cleanup queue for Core Tools.
 
 ## Cleanup Queue
 
-- Normalize remaining deprecated tags.
+- Continue taxonomy coverage for high-frequency tags before touching `data/tools.json`.
+- Normalize remaining deprecated tags in `data/tools.json` after coverage is in place.
 - Clean any lingering label artifacts in source data.
 - Review all externally routed CTAs.
 - Decide when warnings should become hard errors.
 
 ## Notes
 
+- `data/tools.json` has not been changed in this batch.
 - None of the items above are currently deployment blockers.
 - Keep this list short and current instead of turning it into a backlog dump.

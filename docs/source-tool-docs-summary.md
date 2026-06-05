@@ -46,6 +46,9 @@ Core collection fields:
 ## Tag Rules
 
 - Unknown tags are warnings, not hard failures.
+- First resolve unknown tags by expanding `data/tag-taxonomy.json`.
+- Keep taxonomy coverage separate from renaming tags in `data/tools.json`.
+- Normalize high-frequency tags before edge cases.
 - The validator only reads `allowedTags` from `data/tag-taxonomy.json`.
 - Deprecated tags should be migrated over time, not blocked immediately.
 - Current cleanup targets include `cash-flow` and `pre-qual`.
