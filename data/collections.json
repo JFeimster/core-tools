@@ -107,4 +107,99 @@
       "materials"
     ]
   }
+  ,
+  {
+    "slug": "agent-build-workflow-pack",
+    "title": "Agent Build Workflow Pack",
+    "oneLiner": "Build feature batches with clear branch, review, and validation steps.",
+    "audience": "Builders and operators working with agent workflows",
+    "primaryCtaLabel": "Open branch workflow",
+    "primaryCtaUrl": "/tools/toolforge-codex-branch-batch-builder",
+    "toolSlugs": [
+      "toolforge-codex-branch-batch-builder",
+      "toolforge-jules-repo-cleanup-operator",
+      "toolforge-github-pr-review-skill",
+      "toolforge-project-knowledge-sync-skill"
+    ],
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ]
+  },
+  {
+    "slug": "static-site-launch-pack",
+    "title": "Static Site Launch Pack",
+    "oneLiner": "Keep static-export launches clean from page planning through deployment QA.",
+    "audience": "Operators shipping static sites",
+    "primaryCtaLabel": "Review build flow",
+    "primaryCtaUrl": "/tools/toolforge-static-site-build-playbook",
+    "toolSlugs": [
+      "toolforge-static-site-build-playbook",
+      "toolforge-vscode-local-repo-opener",
+      "toolforge-deployment-qa-skill",
+      "toolforge-embed-generator-skill"
+    ],
+    "tags": [
+      "tool",
+      "embed",
+      "playbook"
+    ]
+  },
+  {
+    "slug": "funding-tool-creation-pack",
+    "title": "Funding Tool Creation Pack",
+    "oneLiner": "Turn funding ideas into safe, schema-ready directory tools.",
+    "audience": "Funding brokers and builders",
+    "primaryCtaLabel": "Open funding builder",
+    "primaryCtaUrl": "/tools/toolforge-funding-tool-builder-skill",
+    "toolSlugs": [
+      "toolforge-funding-tool-builder-skill",
+      "toolforge-business-credit-workflow-skill",
+      "toolforge-codex-branch-batch-builder"
+    ],
+    "tags": [
+      "funding",
+      "tool",
+      "playbook"
+    ]
+  },
+  {
+    "slug": "seo-lead-magnet-pack",
+    "title": "SEO Lead Magnet Pack",
+    "oneLiner": "Plan search pages and lead magnets that actually match the offer.",
+    "audience": "Content and growth operators",
+    "primaryCtaLabel": "Open SEO brief",
+    "primaryCtaUrl": "/tools/toolforge-seo-brief-generator-skill",
+    "toolSlugs": [
+      "toolforge-seo-brief-generator-skill",
+      "toolforge-landing-page-generator-skill",
+      "toolforge-embed-generator-skill",
+      "toolforge-project-knowledge-sync-skill"
+    ],
+    "tags": [
+      "seo",
+      "lead-capture",
+      "tool"
+    ]
+  },
+  {
+    "slug": "repo-maintenance-pack",
+    "title": "Repo Maintenance Pack",
+    "oneLiner": "Keep the repo clean, reviewable, and safe to ship.",
+    "audience": "Maintainers and operators",
+    "primaryCtaLabel": "Open cleanup operator",
+    "primaryCtaUrl": "/tools/toolforge-jules-repo-cleanup-operator",
+    "toolSlugs": [
+      "toolforge-jules-repo-cleanup-operator",
+      "toolforge-project-knowledge-sync-skill",
+      "toolforge-github-pr-review-skill",
+      "toolforge-vscode-local-repo-opener"
+    ],
+    "tags": [
+      "tool",
+      "playbook",
+      "warning"
+    ]
+  }
 ]
