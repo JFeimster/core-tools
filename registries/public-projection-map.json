@@ -1,0 +1,23 @@
+{
+  "visibility": "internal",
+  "allow": [
+    "slug",
+    "brand",
+    "name",
+    "oneLiner",
+    "pain",
+    "artifact",
+    "inputs",
+    "logic",
+    "ctaLabel",
+    "ctaUrl",
+    "tags",
+    "runner"
+  ],
+  "block": [
+    "internal",
+    "affiliate_partner",
+    "provider_routing",
+    "commission_logic"
+  ]
+}

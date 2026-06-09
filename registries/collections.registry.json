@@ -1,0 +1,197 @@
+{
+  "visibility": "internal",
+  "collections": [
+    {
+      "slug": "amazon-cashflow-recovery",
+      "title": "Amazon Cashflow Recovery",
+      "description": "Stop payout delays from choking inventory turns.",
+      "toolCount": 5
+    },
+    {
+      "slug": "contractor-payroll-survival",
+      "title": "Contractor Payroll Survival",
+      "description": "Know your zero date. Bridge the gap before payroll bounces.",
+      "toolCount": 4
+    },
+    {
+      "slug": "trucking-profit-control",
+      "title": "Trucking Profit Control",
+      "description": "Know breakeven. Stop taking loads that kill you slowly.",
+      "toolCount": 3
+    },
+    {
+      "slug": "real-estate-deal-screeners",
+      "title": "Real Estate Deal Screeners",
+      "description": "Kill bad deals fast. Green-light winners with proof.",
+      "toolCount": 2
+    },
+    {
+      "slug": "mca-escape-plan",
+      "title": "MCA Escape Plan",
+      "description": "See the real daily bite and estimate consolidation relief.",
+      "toolCount": 2
+    },
+    {
+      "slug": "bid-margin-protection",
+      "title": "Bid Margin Protection",
+      "description": "Inflation-proof your bids so materials don’t eat the job.",
+      "toolCount": 2
+    },
+    {
+      "slug": "agent-build-workflow-pack",
+      "title": "Agent Build Workflow Pack",
+      "description": "Build feature batches with clear branch, review, and validation steps.",
+      "toolCount": 4
+    },
+    {
+      "slug": "static-site-launch-pack",
+      "title": "Static Site Launch Pack",
+      "description": "Keep static-export launches clean from page planning through deployment QA.",
+      "toolCount": 4
+    },
+    {
+      "slug": "funding-tool-creation-pack",
+      "title": "Funding Tool Creation Pack",
+      "description": "Turn funding ideas into safe, schema-ready directory tools.",
+      "toolCount": 3
+    },
+    {
+      "slug": "seo-lead-magnet-pack",
+      "title": "SEO Lead Magnet Pack",
+      "description": "Plan search pages and lead magnets that actually match the offer.",
+      "toolCount": 4
+    },
+    {
+      "slug": "repo-maintenance-pack",
+      "title": "Repo Maintenance Pack",
+      "description": "Keep the repo clean, reviewable, and safe to ship.",
+      "toolCount": 4
+    },
+    {
+      "slug": "ai-platform-build-pack",
+      "title": "AI Platform Build Pack",
+      "description": "Build and review ChatGPT, Claude, Cursor, and Windsurf workflows in one place.",
+      "toolCount": 5
+    },
+    {
+      "slug": "funding-operator-workflow-pack",
+      "title": "Funding Operator Workflow Pack",
+      "description": "Build sharper funding intake, readiness, and lender routing workflows.",
+      "toolCount": 6
+    },
+    {
+      "slug": "affiliate-growth-workflow-pack",
+      "title": "Affiliate Growth Workflow Pack",
+      "description": "Ship clearer partner pages, onboarding, and offer assets.",
+      "toolCount": 4
+    },
+    {
+      "slug": "local-business-seo-workflow-pack",
+      "title": "Local Business + SEO Workflow Pack",
+      "description": "Turn local services and calculator ideas into clearer lead-gen assets.",
+      "toolCount": 2
+    },
+    {
+      "slug": "automation-ops-workflow-pack",
+      "title": "Automation Ops Workflow Pack",
+      "description": "Clean up the pipeline and automate the handoff points that slow teams down.",
+      "toolCount": 3
+    },
+    {
+      "slug": "automation-platform-workflow-pack",
+      "title": "Automation Platform Workflow Pack",
+      "description": "Use common automation platforms to route leads, manage follow-up, and keep operations moving.",
+      "toolCount": 12
+    },
+    {
+      "slug": "funding-crm-automation-pack",
+      "title": "Funding CRM Automation Pack",
+      "description": "Keep funding leads, pipeline stages, and follow-up in one clean automation flow.",
+      "toolCount": 4
+    },
+    {
+      "slug": "affiliate-ops-automation-pack",
+      "title": "Affiliate Ops Automation Pack",
+      "description": "Coordinate lead capture, pipeline tracking, and partner handoffs with less manual work.",
+      "toolCount": 5
+    },
+    {
+      "slug": "community-ops-automation-pack",
+      "title": "Community Ops Automation Pack",
+      "description": "Use alerts, SMS, and community routing to keep operators and partners moving.",
+      "toolCount": 3
+    },
+    {
+      "slug": "funding-tools",
+      "title": "Funding Tools",
+      "description": "Core funding tools for public browsing and lead capture.",
+      "toolCount": 12
+    },
+    {
+      "slug": "cash-flow-bridges",
+      "title": "Cash Flow Bridges",
+      "description": "Tools for delaying the pain between work completed and cash received.",
+      "toolCount": 26
+    },
+    {
+      "slug": "gig-worker-funding",
+      "title": "Gig Worker Funding",
+      "description": "Tools for income smoothing and short-term liquidity planning.",
+      "toolCount": 6
+    },
+    {
+      "slug": "broker-affiliate-tools",
+      "title": "Broker and Affiliate Tools",
+      "description": "Tools for commissions, partner timing, and deal flow.",
+      "toolCount": 10
+    },
+    {
+      "slug": "real-estate-funding",
+      "title": "Real Estate Funding",
+      "description": "Bridge tools for acquisition, earnest money, and renovation timing.",
+      "toolCount": 5
+    },
+    {
+      "slug": "equipment-vehicle-funding",
+      "title": "Equipment and Vehicle Funding",
+      "description": "Tools for machinery, vehicles, and replacement timing.",
+      "toolCount": 9
+    },
+    {
+      "slug": "tax-funding",
+      "title": "Tax Funding",
+      "description": "Planning tools for tax settlement pressure and payment schedules.",
+      "toolCount": 6
+    },
+    {
+      "slug": "startup-funding",
+      "title": "Startup Funding",
+      "description": "Founder-focused runway and bridge planning tools.",
+      "toolCount": 6
+    },
+    {
+      "slug": "bad-credit-funding",
+      "title": "Bad Credit Funding",
+      "description": "Tools that handle credit friction with safer public-safe language.",
+      "toolCount": 7
+    },
+    {
+      "slug": "funding-readiness",
+      "title": "Funding Readiness",
+      "description": "Readiness tools that help owners prepare before they apply.",
+      "toolCount": 10
+    },
+    {
+      "slug": "commission-tools",
+      "title": "Commission Tools",
+      "description": "Tools for commission timing and recovery planning.",
+      "toolCount": 6
+    },
+    {
+      "slug": "emergency-funding",
+      "title": "Emergency Funding",
+      "description": "Short-term triage tools for urgent cash timing problems.",
+      "toolCount": 6
+    }
+  ]
+}

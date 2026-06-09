@@ -1,0 +1,10 @@
+{
+  "visibility": "internal",
+  "items": [
+    {
+      "slug": "sample-offer",
+      "visibility": "internal",
+      "note": "Placeholder internal offer record."
+    }
+  ]
+}

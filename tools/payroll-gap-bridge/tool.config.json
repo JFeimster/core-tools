@@ -1,0 +1,6 @@
+{
+  "slug": "payroll-gap-bridge",
+  "name": "Payroll Gap Bridge",
+  "status": "scaffolded",
+  "artifactRoot": "tools/payroll-gap-bridge/"
+}

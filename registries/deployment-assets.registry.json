@@ -1,0 +1,30 @@
+{
+  "visibility": "internal",
+  "assets": [
+    "tools/rokfi-burn-rate-runway-extender/",
+    "tools/invoice-float-bridge/",
+    "tools/payroll-gap-bridge/",
+    "tools/inventory-reorder-bridge/",
+    "tools/job-material-bridge/",
+    "tools/repair-vs-replace-bridge/",
+    "tools/bad-credit-funding-bridge/",
+    "tools/revenue-based-bridge/",
+    "tools/merchant-cash-advance-compare/",
+    "tools/tax-settlement-bridge/",
+    "tools/irs-payment-plan-planner/",
+    "tools/startup-runway-planner/",
+    "tools/gig-income-stabilizer/",
+    "tools/rideshare-cash-bridge/",
+    "tools/creator-income-bridge/",
+    "tools/affiliate-payout-accelerator/",
+    "tools/broker-book-closing-bridge/",
+    "tools/real-estate-earnest-money-bridge/",
+    "tools/flip-renovation-bridge/",
+    "tools/bridge-loan-readiness-check/",
+    "tools/cashflow-reserve-planner/",
+    "tools/commission-recovery-planner/",
+    "tools/client-acquisition-bridge/",
+    "tools/merchant-stack-optimizer/",
+    "tools/equipment-acquisition-planner/"
+  ]
+}

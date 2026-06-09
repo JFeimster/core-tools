@@ -1,0 +1,6 @@
+{
+  "slug": "invoice-float-bridge",
+  "name": "Invoice Float Bridge",
+  "status": "scaffolded",
+  "artifactRoot": "tools/invoice-float-bridge/"
+}

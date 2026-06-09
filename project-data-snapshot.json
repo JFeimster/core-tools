@@ -1,42 +1,21 @@
 {
   "project": {
     "name": "Core Tool Directory",
-    "repository": "JFeimster/core-tools",
-    "localPath": "C:\\Users\\jason\\Documents\\GitHub\\core-tools",
+    "repo": "https://github.com/JFeimster/core-tools.git",
     "liveSite": "https://core-tools.vercel.app",
-    "appPurpose": "A static-first Next.js App Router directory for business finance tools, embeds, landing drafts, brand pages, and curated playbooks."
+    "primaryBranch": "main",
+    "workingBranch": "feature/tool-registry-architecture-overhaul",
+    "lastReviewedAt": "2026-06-08"
   },
   "stack": {
-    "framework": "Next.js 15.3.8 with React 19",
+    "framework": "Next.js 15.3.8 App Router",
     "language": "TypeScript",
     "styling": "Tailwind CSS",
-    "deployment": "Vercel",
-    "buildModel": "Static export with JSON-driven content and no database, auth, or server actions."
-  },
-  "repoState": {
-    "currentBranch": "feature/automation-platform-workflow-pack",
-    "importantRecentCommits": [
-      {
-        "sha": "348c6ba",
-        "message": "Merge pull request #7 from JFeimster/feature/operator-workflow-skills-pack"
-      },
-      {
-        "sha": "3463744",
-        "message": "Remove runner stubs from operator skill entries"
-      },
-      {
-        "sha": "2e31b76",
-        "message": "Add operator workflow skills pack"
-      },
-      {
-        "sha": "ec616ef",
-        "message": "Merge pull request #6 from JFeimster/feature/toolforge-ai-platform-pack"
-      }
-    ],
-    "cleanWorkspaceExpectation": "The working tree should be clean after ignoring generated outputs. Future builds may regenerate .next/, out/, and public/tools.json, but those should not appear in git status."
+    "deployment": "Vercel static export",
+    "buildModel": "Static export with JSON-driven public data and file-based tool artifacts"
   },
   "routeInventory": {
-    "publicRoutes": [
+    "appRoutes": [
       "/",
       "/tools",
       "/tools/[slug]",
@@ -55,242 +34,76 @@
       "/tools.json"
     ]
   },
-  "sourceMap": {
-    "app": [
-      "app/layout.tsx",
-      "app/globals.css",
-      "app/page.tsx",
-      "app/tools/page.tsx",
-      "app/tools/[slug]/page.tsx",
-      "app/tools/[slug]/embed/page.tsx",
-      "app/brands/page.tsx",
-      "app/brands/[brand]/page.tsx",
-      "app/collections/page.tsx",
-      "app/collections/[slug]/page.tsx",
-      "app/admin/page.tsx",
-      "app/admin/tool-builder/page.tsx",
-      "app/admin/collection-builder/page.tsx"
-    ],
-    "components": [
-      "components/directory-controls.tsx",
-      "components/copy-box.tsx",
-      "components/collection-builder.tsx",
-      "components/site-footer.tsx",
-      "components/site-header.tsx",
-      "components/tool-builder.tsx",
-      "components/tool-card.tsx",
-      "components/tool-runner.tsx",
-      "components/tool-tabs.tsx"
-    ],
-    "lib": [
-      "lib/runner.ts",
-      "lib/generators.ts",
-      "lib/collections.ts",
-      "lib/brands.ts",
-      "lib/slug.ts",
-      "lib/tools.ts",
-      "lib/types.ts"
-    ],
-    "data": [
-      "data/tools.json",
-      "data/collections.json",
-      "data/tag-taxonomy.json"
-    ],
-    "docs": [
+  "sourceOfTruthFiles": [
+    "data/tools.json",
+    "data/collections.json",
+    "data/tag-taxonomy.json",
+    "registries/funding-tools.registry.json",
+    "registries/tool-artifacts.registry.json",
+    "registries/registry-index.json"
+  ],
+  "generatedFiles": [
+    "public/tools.json",
+    "data/public-tool-index.json"
+  ],
+  "internalRegistryFiles": [
+    "registries/funding-tools.registry.json",
+    "registries/affiliate-offers.registry.json",
+    "registries/tool-artifacts.registry.json",
+    "registries/cta-routing.registry.json",
+    "registries/compliance-rules.registry.json",
+    "registries/brands.registry.json",
+    "registries/collections.registry.json",
+    "registries/personas.registry.json"
+  ],
+  "publicDataFiles": [
+    "data/tools.json",
+    "data/collections.json",
+    "data/tag-taxonomy.json",
+    "data/public-tool-index.json"
+  ],
+  "staticArtifactArchitecture": {
+    "toolRoot": "tools/[slug]/",
+    "requiredFiles": [
       "README.md",
-      "PROJECT_STATE.md",
-      "CHANGELOG.md",
-      "docs/schema-notes.md",
-      "docs/roadmap.md",
-      "docs/toolforge-expansion-roadmap.md",
-      "docs/toolforge-import-queue.md",
-      "docs/deployment-verification.md",
-      "docs/tool-pack-readme.md",
-      "docs/tool-pack-index.csv",
-      "docs/tool-pack-batch-a-briefs.md"
+      "tool.config.json",
+      "landing/index.html",
+      "landing/styles.css",
+      "landing/script.js",
+      "embed/index.html",
+      "embed/styles.css",
+      "embed/script.js",
+      "assets/",
+      "exports/"
     ],
-    "scripts": [
-      "scripts/sync-public-tools.js",
-      "scripts/validate-data.js"
-    ],
-    "skills": [
-      "toolforge/skills/README.md",
-      "toolforge/skills/schema.md",
-      "toolforge/skills/funding-readiness-review.md",
-      "toolforge/skills/bank-statement-prep.md",
-      "toolforge/skills/gig-income-organizer.md",
-      "toolforge/skills/business-credit-setup.md",
-      "toolforge/skills/lender-match-brief.md",
-      "toolforge/skills/funding-application-qa.md",
-      "toolforge/skills/affiliate-landing-page-builder.md",
-      "toolforge/skills/partner-onboarding-sequence.md",
-      "toolforge/skills/lead-magnet-builder-operator.md",
-      "toolforge/skills/offer-stack-builder.md",
-      "toolforge/skills/local-seo-page-builder.md",
-      "toolforge/skills/content-repurposing.md",
-      "toolforge/skills/calculator-spec-builder.md",
-      "toolforge/skills/client-intake-workflow.md",
-      "toolforge/skills/crm-cleanup.md",
-      "toolforge/skills/pipeline-follow-up.md",
-      "toolforge/skills/notion-dashboard-builder.md",
-      "toolforge/skills/google-sheets-ops.md",
-      "toolforge/skills/zapier-make-n8n-automation.md",
-      "toolforge/skills/discord-community-ops.md"
-    ],
-    "landing": [
+    "legacyRootHtml": [
+      "landing.html",
+      "embed.html",
       "landing/index.html"
     ]
   },
-  "dataSources": {
-    "tools": {
-      "file": "data/tools.json",
-      "recordCount": 157,
-      "role": "Main tool source of truth",
-      "shape": [
-        "slug",
-        "brand",
-        "name",
-        "oneLiner",
-        "pain",
-        "artifact",
-        "inputs",
-        "logic",
-        "ctaLabel",
-        "ctaUrl",
-        "tags",
-        "runner"
-      ]
-    },
-    "collections": {
-      "file": "data/collections.json",
-      "recordCount": 20,
-      "role": "Collection and playbook source of truth",
-      "shape": [
-        "slug",
-        "title",
-        "oneLiner",
-        "audience",
-        "primaryCtaLabel",
-        "primaryCtaUrl",
-        "toolSlugs",
-        "tags"
-      ]
-    },
-    "tagTaxonomy": {
-      "file": "data/tag-taxonomy.json",
-      "role": "Optional controlled tag taxonomy",
-      "shape": [
-        "allowedTags",
-        "groups",
-        "deprecatedTags",
-        "notes"
-      ],
-      "notes": "Unknown tags are warnings, not build failures."
-    },
-    "generatedPublicTools": {
-      "file": "public/tools.json",
-      "source": "data/tools.json",
-      "generatedBy": "scripts/sync-public-tools.js",
-      "recordCount": 157,
-      "doNotHandAuthor": true,
-      "ignoredByGitignore": true
-    }
-  },
-  "validationAndBuild": {
-    "packageScripts": {
-      "dev": "next dev",
-      "prebuild": "node scripts/sync-public-tools.js",
-      "build": "next build",
-      "start": "next start",
-      "lint": "next lint",
-      "validate:data": "node scripts/validate-data.js"
-    },
-    "validationCommand": "npm run validate:data",
-    "buildCommand": "npm run build",
-    "knownWarnings": [
-      "validate:data currently prints unknown-tag warnings for tags that are not covered by data/tag-taxonomy.json.",
-      "build runs prebuild first, which regenerates public/tools.json before next build."
-    ]
-  },
-  "generatedArtifacts": {
-    "ignored": [
-      "node_modules/",
-      ".next/",
-      "out/",
-      "dist/",
-      "build/",
-      ".vercel/",
-      "public/tools.json",
-      "coverage/",
-      ".turbo/",
-      ".eslintcache",
-      "tsconfig.tsbuildinfo",
-      "*.log",
-      "npm-debug.log*",
-      "yarn-debug.log*",
-      "yarn-error.log*",
-      "pnpm-debug.log*",
-      ".env",
-      ".env.*"
-    ],
-    "doNotHandAuthor": [
-      "public/tools.json"
-    ]
-  },
-  "projectKnowledge": {
-    "recommendedFiles": [
-      "project-data-snapshot.json",
-      "PROJECT_STATE.md",
-      "CHANGELOG.md",
-      "README.md",
-      "toolforge/README.md",
-      "toolforge/agents/README.md",
-      "toolforge/skills/README.md",
-      "toolforge/skills/schema.md",
-      "docs/toolforge-expansion-roadmap.md",
-      "docs/toolforge-import-queue.md",
-      "docs/schema-notes.md",
-      "docs/deployment-verification.md",
-      "docs/roadmap.md"
-    ],
-    "combinedUploadPacks": [
-      {
-        "name": "tool-pack",
-        "files": [
-          "docs/tool-pack-readme.md",
-          "docs/tool-pack-index.csv"
-        ],
-        "purpose": "Starter asset pack for tool commercialization and upload workflows."
-      },
-      {
-        "name": "batch-a-commercialization",
-        "files": [
-          "docs/tool-pack-batch-a-briefs.md",
-          "docs/tool-pack-index.csv"
-        ],
-        "purpose": "Batch A commercialization bundle for building grouped tool assets."
-      }
-    ],
-    "missingRecommendedFiles": []
-  },
-  "knownGaps": [
-    "The automation platform workflow pack is now the active utility focus and should continue in small, reviewable packs.",
-    "The next queue should extend automation coverage into adjacent platforms such as Replit, Vercel, and GitHub Actions if useful.",
-    "Semantic cleanup of tool tags inside data/tools.json is still a later batch if new content work reintroduces tag drift.",
-    "Deprecated tags such as cash-flow and pre-qual still need cleanup in the data layer.",
-    "Some generated tool labels may still contain pasted transcript artifacts.",
-    "There is no backend CMS, auth, or database; all content changes are manual JSON and component edits."
+  "toolArtifactPattern": "tools/[slug]/{README.md,tool.config.json,landing/,embed/,assets/,exports/}",
+  "registryStrategy": "Internal registries track backlog, routing, compliance, artifacts, and monetization. Public app data only receives sanitized projections.",
+  "privacyRules": [
+    "Do not expose internal routing notes in public data.",
+    "Do not expose affiliate partner names unless intentionally public.",
+    "Do not expose provider underwriting logic in public projections.",
+    "Mark generated files clearly and do not hand-author public/tools.json."
+  ],
+  "migrationNotes": [
+    "Burn Rate Runway Extender now has a dedicated tool artifact folder.",
+    "Root landing/embed HTML should be treated as deprecated legacy surfaces.",
+    "Funding tools were promoted from internal registry backlog into public-safe tool records.",
+    "Public tags were normalized toward canonical kebab-case while deprecated aliases remain mapped in taxonomy."
+  ],
+  "validationScripts": [
+    "npm run validate:data",
+    "npm run validate:registries",
+    "npm run build"
   ],
   "recommendedNextFiles": [
-    "toolforge/agents/replit/README.md",
-    "toolforge/skills/README.md"
-  ],
-  "operatingRules": [
-    "Keep the app static-first and avoid introducing backend dependencies unless a clear product need appears.",
-    "Do not hand-author public/tools.json; it is generated from data/tools.json by prebuild/build.",
-    "Keep the canonical live URL hardcoded as https://core-tools.vercel.app.",
-    "Use async params in dynamic App Router pages when updating route code.",
-    "Prefer JSON-driven content changes over code changes when adjusting tool or collection content.",
-    "Preserve the current ignore rules for .next/, out/, node_modules/, and public/tools.json."
+    "docs/funding-tools-promotion-workflow.md",
+    "registries/provider-routing.registry.json",
+    "tools/rokfi-burn-rate-runway-extender/tool.config.json"
   ]
 }

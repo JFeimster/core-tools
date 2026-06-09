@@ -1,0 +1,13 @@
+{
+  "visibility": "internal",
+  "rules": [
+    {
+      "category": "funding",
+      "disclaimer": "Estimates only. Underwriting determines terms."
+    },
+    {
+      "category": "tax",
+      "disclaimer": "Not tax advice. Review with a qualified professional."
+    }
+  ]
+}

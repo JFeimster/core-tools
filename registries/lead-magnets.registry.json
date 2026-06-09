@@ -1,0 +1,10 @@
+{
+  "registry_name": "Lead Magnets",
+  "registry_slug": "lead-magnets",
+  "version": "1.0.0",
+  "purpose": "Track future lead magnet ideas and their internal planning notes.",
+  "visibility": "internal",
+  "status": "placeholder-needs-review",
+  "notes": "Intentionally scaffolded for future population. Keep internal planning details here until there are real lead magnets to register.",
+  "items": []
+}

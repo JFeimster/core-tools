@@ -1,0 +1,387 @@
+{
+  "visibility": "internal",
+  "playbooks": [
+    {
+      "slug": "amazon-cashflow-recovery",
+      "title": "Amazon Cashflow Recovery",
+      "toolSlugs": [
+        "dd-plus-7-impact-calculator",
+        "bezos-interest-calculator",
+        "stockout-bleed-auditor",
+        "dd7-reality-calendar",
+        "deferred-transaction-unlocker"
+      ]
+    },
+    {
+      "slug": "contractor-payroll-survival",
+      "title": "Contractor Payroll Survival",
+      "toolSlugs": [
+        "payroll-panic-countdown-timer",
+        "payroll-gap-bridge-estimator",
+        "neca-material-money-quoter",
+        "net-90-opportunity-cost-calculator"
+      ]
+    },
+    {
+      "slug": "trucking-profit-control",
+      "title": "Trucking Profit Control",
+      "toolSlugs": [
+        "spot-market-breakeven-calculator",
+        "repair-vs-replace-roi-engine",
+        "bad-debt-consolidator"
+      ]
+    },
+    {
+      "slug": "real-estate-deal-screeners",
+      "title": "Real Estate Deal Screeners",
+      "toolSlugs": [
+        "deal-killer-hard-money-analyzer",
+        "section-179-tax-slash-calculator"
+      ]
+    },
+    {
+      "slug": "mca-escape-plan",
+      "title": "MCA Escape Plan",
+      "toolSlugs": [
+        "mca-repayment-estimator",
+        "bad-debt-consolidator"
+      ]
+    },
+    {
+      "slug": "bid-margin-protection",
+      "title": "Bid Margin Protection",
+      "toolSlugs": [
+        "bid-protector-inflation-adjuster",
+        "neca-material-money-quoter"
+      ]
+    },
+    {
+      "slug": "agent-build-workflow-pack",
+      "title": "Agent Build Workflow Pack",
+      "toolSlugs": [
+        "toolforge-codex-branch-batch-builder",
+        "toolforge-jules-repo-cleanup-operator",
+        "toolforge-github-pr-review-skill",
+        "toolforge-project-knowledge-sync-skill"
+      ]
+    },
+    {
+      "slug": "static-site-launch-pack",
+      "title": "Static Site Launch Pack",
+      "toolSlugs": [
+        "toolforge-static-site-build-playbook",
+        "toolforge-vscode-local-repo-opener",
+        "toolforge-deployment-qa-skill",
+        "toolforge-embed-generator-skill"
+      ]
+    },
+    {
+      "slug": "funding-tool-creation-pack",
+      "title": "Funding Tool Creation Pack",
+      "toolSlugs": [
+        "toolforge-funding-tool-builder-skill",
+        "toolforge-business-credit-workflow-skill",
+        "toolforge-codex-branch-batch-builder"
+      ]
+    },
+    {
+      "slug": "seo-lead-magnet-pack",
+      "title": "SEO Lead Magnet Pack",
+      "toolSlugs": [
+        "toolforge-seo-brief-generator-skill",
+        "toolforge-landing-page-generator-skill",
+        "toolforge-embed-generator-skill",
+        "toolforge-project-knowledge-sync-skill"
+      ]
+    },
+    {
+      "slug": "repo-maintenance-pack",
+      "title": "Repo Maintenance Pack",
+      "toolSlugs": [
+        "toolforge-jules-repo-cleanup-operator",
+        "toolforge-project-knowledge-sync-skill",
+        "toolforge-github-pr-review-skill",
+        "toolforge-vscode-local-repo-opener"
+      ]
+    },
+    {
+      "slug": "ai-platform-build-pack",
+      "title": "AI Platform Build Pack",
+      "toolSlugs": [
+        "chatgpt-custom-gpt-builder-playbook",
+        "chatgpt-project-knowledge-refresh-prompt",
+        "claude-project-setup-playbook",
+        "cursor-feature-branch-builder",
+        "windsurf-static-site-iteration-playbook"
+      ]
+    },
+    {
+      "slug": "funding-operator-workflow-pack",
+      "title": "Funding Operator Workflow Pack",
+      "toolSlugs": [
+        "funding-readiness-review",
+        "bank-statement-prep",
+        "gig-income-organizer",
+        "business-credit-setup",
+        "lender-match-brief",
+        "funding-application-qa"
+      ]
+    },
+    {
+      "slug": "affiliate-growth-workflow-pack",
+      "title": "Affiliate Growth Workflow Pack",
+      "toolSlugs": [
+        "affiliate-landing-page-builder",
+        "partner-onboarding-sequence",
+        "lead-magnet-builder-operator",
+        "offer-stack-builder"
+      ]
+    },
+    {
+      "slug": "local-business-seo-workflow-pack",
+      "title": "Local Business + SEO Workflow Pack",
+      "toolSlugs": [
+        "local-seo-page-builder",
+        "calculator-spec-builder"
+      ]
+    },
+    {
+      "slug": "automation-ops-workflow-pack",
+      "title": "Automation Ops Workflow Pack",
+      "toolSlugs": [
+        "crm-cleanup",
+        "pipeline-follow-up",
+        "zapier-make-n8n-automation"
+      ]
+    },
+    {
+      "slug": "automation-platform-workflow-pack",
+      "title": "Automation Platform Workflow Pack",
+      "toolSlugs": [
+        "n8n-funding-lead-router-workflow",
+        "n8n-crm-follow-up-workflow",
+        "zapier-lead-capture-to-crm-playbook",
+        "zapier-document-reminder-zap",
+        "make-multi-step-router-playbook",
+        "google-sheets-funding-tracker-builder",
+        "airtable-affiliate-pipeline-base",
+        "notion-client-intake-dashboard",
+        "hubspot-funding-pipeline-setup",
+        "gohighlevel-sms-follow-up-campaign",
+        "slack-operator-alerts-playbook",
+        "discord-affiliate-community-ops-playbook"
+      ]
+    },
+    {
+      "slug": "funding-crm-automation-pack",
+      "title": "Funding CRM Automation Pack",
+      "toolSlugs": [
+        "n8n-funding-lead-router-workflow",
+        "n8n-crm-follow-up-workflow",
+        "google-sheets-funding-tracker-builder",
+        "hubspot-funding-pipeline-setup"
+      ]
+    },
+    {
+      "slug": "affiliate-ops-automation-pack",
+      "title": "Affiliate Ops Automation Pack",
+      "toolSlugs": [
+        "zapier-lead-capture-to-crm-playbook",
+        "zapier-document-reminder-zap",
+        "make-multi-step-router-playbook",
+        "airtable-affiliate-pipeline-base",
+        "notion-client-intake-dashboard"
+      ]
+    },
+    {
+      "slug": "community-ops-automation-pack",
+      "title": "Community Ops Automation Pack",
+      "toolSlugs": [
+        "gohighlevel-sms-follow-up-campaign",
+        "slack-operator-alerts-playbook",
+        "discord-affiliate-community-ops-playbook"
+      ]
+    },
+    {
+      "slug": "funding-tools",
+      "title": "Funding Tools",
+      "toolSlugs": [
+        "embedded-finance-widget",
+        "dd-plus-7-impact-calculator",
+        "neca-material-money-quoter",
+        "payroll-gap-bridge-estimator",
+        "mca-repayment-estimator",
+        "the-dd-7-impact-calculator",
+        "the-inventory-turnover-accelerator",
+        "the-fee-nullifier-cash-back-calculator",
+        "tiktok-shop-viral-curse-predictor",
+        "account-level-reserve-hostage-calculator",
+        "the-cpa-bookkeeper-fee-integration-tool",
+        "the-supply-chain-hostage-release-timer"
+      ]
+    },
+    {
+      "slug": "cash-flow-bridges",
+      "title": "Cash Flow Bridges",
+      "toolSlugs": [
+        "payroll-gap-bridge-estimator",
+        "the-inventory-turnover-accelerator",
+        "the-amazon-payout-bridge-predictor",
+        "cash-flow-gap-bridge-calculator",
+        "invoice-to-cash-flow-gap-analyzer",
+        "the-buy-here-pay-here-down-payment-bridge",
+        "the-payroll-bridge-funding-quoter",
+        "onramp-zombie-inventory-detector",
+        "payroll-panic-countdown-timer",
+        "rokfi-burn-rate-runway-extender",
+        "invoice-float-bridge",
+        "payroll-gap-bridge",
+        "inventory-reorder-bridge",
+        "job-material-bridge",
+        "repair-vs-replace-bridge",
+        "bad-credit-funding-bridge",
+        "revenue-based-bridge",
+        "tax-settlement-bridge",
+        "startup-runway-planner",
+        "rideshare-cash-bridge",
+        "creator-income-bridge",
+        "broker-book-closing-bridge",
+        "real-estate-earnest-money-bridge",
+        "flip-renovation-bridge",
+        "bridge-loan-readiness-check",
+        "client-acquisition-bridge"
+      ]
+    },
+    {
+      "slug": "gig-worker-funding",
+      "title": "Gig Worker Funding",
+      "toolSlugs": [
+        "gig-worker-back-on-the-road-calculator",
+        "the-gig-income-funding-predictor-giggle-finance",
+        "gig-income-organizer",
+        "gig-income-stabilizer",
+        "rideshare-cash-bridge",
+        "creator-income-bridge"
+      ]
+    },
+    {
+      "slug": "broker-affiliate-tools",
+      "title": "Broker and Affiliate Tools",
+      "toolSlugs": [
+        "premium-finance-double-commission-calculator-for-insurance-agents",
+        "daily-pay-commission-calculator-agent-recruitment-tool",
+        "the-daily-commission-projection-dashboard",
+        "the-referral-commission-payout-estimator",
+        "affiliate-landing-page-builder",
+        "airtable-affiliate-pipeline-base",
+        "discord-affiliate-community-ops-playbook",
+        "affiliate-payout-accelerator",
+        "broker-book-closing-bridge",
+        "commission-recovery-planner"
+      ]
+    },
+    {
+      "slug": "real-estate-funding",
+      "title": "Real Estate Funding",
+      "toolSlugs": [
+        "fix-and-flip-roi-max-loan-estimator",
+        "real-estate-proof-of-funds-pof-generator",
+        "wholesaler-real-estate-deal-analyzer-pro",
+        "real-estate-earnest-money-bridge",
+        "flip-renovation-bridge"
+      ]
+    },
+    {
+      "slug": "equipment-vehicle-funding",
+      "title": "Equipment and Vehicle Funding",
+      "toolSlugs": [
+        "equipment-payment-estimator",
+        "equipment-roi-payment-calculator",
+        "the-auto-repair-emergency-advance-tool",
+        "the-trucker-repair-to-revenue-tracker",
+        "the-equipment-leasing-deposit-calculator",
+        "repair-vs-replace-roi-engine",
+        "job-material-bridge",
+        "repair-vs-replace-bridge",
+        "equipment-acquisition-planner"
+      ]
+    },
+    {
+      "slug": "tax-funding",
+      "title": "Tax Funding",
+      "toolSlugs": [
+        "tax-payment-advance-estimator",
+        "the-urgent-tax-advance-estimator",
+        "the-tax-prep-fee-advance-solution",
+        "section-179-tax-slash-calculator",
+        "tax-settlement-bridge",
+        "irs-payment-plan-planner"
+      ]
+    },
+    {
+      "slug": "startup-funding",
+      "title": "Startup Funding",
+      "toolSlugs": [
+        "startup-funding-eligibility-quiz",
+        "rokfi-burn-rate-runway-extender",
+        "revenue-based-bridge",
+        "startup-runway-planner",
+        "bridge-loan-readiness-check",
+        "client-acquisition-bridge"
+      ]
+    },
+    {
+      "slug": "bad-credit-funding",
+      "title": "Bad Credit Funding",
+      "toolSlugs": [
+        "mca-repayment-estimator",
+        "the-mca-shark-auditor",
+        "bad-credit-business-funding-match",
+        "the-merchant-cash-advance-mca-repayment-estimator",
+        "the-bad-credit-good-business-certifier",
+        "bad-credit-funding-bridge",
+        "merchant-stack-optimizer"
+      ]
+    },
+    {
+      "slug": "funding-readiness",
+      "title": "Funding Readiness",
+      "toolSlugs": [
+        "account-level-reserve-hostage-calculator",
+        "the-q4-war-room-po-planner",
+        "lender-readiness-score",
+        "funding-readiness-review",
+        "irs-payment-plan-planner",
+        "startup-runway-planner",
+        "bridge-loan-readiness-check",
+        "cashflow-reserve-planner",
+        "commission-recovery-planner",
+        "equipment-acquisition-planner"
+      ]
+    },
+    {
+      "slug": "commission-tools",
+      "title": "Commission Tools",
+      "toolSlugs": [
+        "premium-finance-double-commission-calculator-for-insurance-agents",
+        "daily-pay-commission-calculator-agent-recruitment-tool",
+        "the-daily-commission-projection-dashboard",
+        "the-referral-commission-payout-estimator",
+        "broker-book-closing-bridge",
+        "commission-recovery-planner"
+      ]
+    },
+    {
+      "slug": "emergency-funding",
+      "title": "Emergency Funding",
+      "toolSlugs": [
+        "payroll-gap-bridge-estimator",
+        "rokfi-burn-rate-runway-extender",
+        "invoice-float-bridge",
+        "payroll-gap-bridge",
+        "startup-runway-planner",
+        "cashflow-reserve-planner"
+      ]
+    }
+  ]
+}

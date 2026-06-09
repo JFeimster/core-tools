@@ -1,0 +1,10 @@
+{
+  "registry_name": "Downloadable Assets",
+  "registry_slug": "downloadable-assets",
+  "version": "1.0.0",
+  "purpose": "Track future downloadable asset ideas for tools and collections.",
+  "visibility": "internal",
+  "status": "placeholder-needs-review",
+  "notes": "Intentionally scaffolded for future population. Keep internal planning details here until there are real downloadable assets to register.",
+  "items": []
+}

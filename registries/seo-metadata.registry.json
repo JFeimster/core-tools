@@ -1,0 +1,10 @@
+{
+  "registry_name": "SEO Metadata",
+  "registry_slug": "seo-metadata",
+  "version": "1.0.0",
+  "purpose": "Track future SEO metadata planning for tools and collections.",
+  "visibility": "internal",
+  "status": "placeholder-needs-review",
+  "notes": "Intentionally scaffolded for future population. Keep internal planning details here until there are real SEO metadata records to register.",
+  "items": []
+}

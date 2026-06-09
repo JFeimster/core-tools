@@ -1,0 +1,121 @@
+{
+  "visibility": "internal",
+  "registries": [
+    {
+      "file": "funding-tools.registry.json",
+      "purpose": "Funding tool backlog and routing."
+    },
+    {
+      "file": "affiliate-offers.registry.json",
+      "purpose": "Internal affiliate offer planning."
+    },
+    {
+      "file": "tool-artifacts.registry.json",
+      "purpose": "Per-tool static artifact inventory."
+    },
+    {
+      "file": "cta-routing.registry.json",
+      "purpose": "Reusable CTA destinations and labels."
+    },
+    {
+      "file": "compliance-rules.registry.json",
+      "purpose": "Risk and disclaimer mapping."
+    },
+    {
+      "file": "brands.registry.json",
+      "purpose": "Brand registry for internal organization."
+    },
+    {
+      "file": "collections.registry.json",
+      "purpose": "Collection planning and public bundles."
+    },
+    {
+      "file": "personas.registry.json",
+      "purpose": "Persona inventory derived from registry items."
+    },
+    {
+      "file": "content-clusters.registry.json",
+      "purpose": "Content cluster planning for expansion."
+    },
+    {
+      "file": "deployment-assets.registry.json",
+      "purpose": "Static artifact and export tracking."
+    },
+    {
+      "file": "playbooks.registry.json",
+      "purpose": "Workflow bundle and playbook mapping."
+    },
+    {
+      "file": "automation-tools.registry.json",
+      "purpose": "Future automation tool registry."
+    },
+    {
+      "file": "tool-status.registry.json",
+      "purpose": "Lifecycle status reference."
+    },
+    {
+      "file": "embed-targets.registry.json",
+      "purpose": "Embed-ready target inventory."
+    },
+    {
+      "file": "lead-magnets.registry.json",
+      "purpose": "Lead magnet planning."
+    },
+    {
+      "file": "downloadable-assets.registry.json",
+      "purpose": "Downloadable asset planning."
+    },
+    {
+      "file": "form-fields.registry.json",
+      "purpose": "Reusable form field inventory."
+    },
+    {
+      "file": "output-artifacts.registry.json",
+      "purpose": "Generated output artifact inventory."
+    },
+    {
+      "file": "risk-disclaimers.registry.json",
+      "purpose": "Risk disclaimer catalog."
+    },
+    {
+      "file": "tool-prompts.registry.json",
+      "purpose": "Prompt and copy starter inventory."
+    },
+    {
+      "file": "seo-metadata.registry.json",
+      "purpose": "SEO metadata planning."
+    },
+    {
+      "file": "funnel-routes.registry.json",
+      "purpose": "Funnel route planning."
+    },
+    {
+      "file": "provider-routing.registry.json",
+      "purpose": "Internal provider routing notes."
+    },
+    {
+      "file": "internal-notes.registry.json",
+      "purpose": "Private operating notes."
+    },
+    {
+      "file": "monetization.registry.json",
+      "purpose": "Monetization planning and tracking."
+    },
+    {
+      "file": "registry-schema.json",
+      "purpose": "Registry metadata schema."
+    },
+    {
+      "file": "tool-artifact-schema.json",
+      "purpose": "Tool artifact schema."
+    },
+    {
+      "file": "public-projection-map.json",
+      "purpose": "Internal-to-public field mapping."
+    },
+    {
+      "file": "collection-map.json",
+      "purpose": "Registry collection mapping."
+    }
+  ]
+}

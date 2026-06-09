@@ -1,0 +1,6 @@
+{
+  "slug": "tax-settlement-bridge",
+  "name": "Tax Settlement Bridge",
+  "status": "scaffolded",
+  "artifactRoot": "tools/tax-settlement-bridge/"
+}

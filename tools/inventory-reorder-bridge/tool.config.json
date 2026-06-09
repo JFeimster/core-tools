@@ -1,0 +1,6 @@
+{
+  "slug": "inventory-reorder-bridge",
+  "name": "Inventory Reorder Bridge",
+  "status": "scaffolded",
+  "artifactRoot": "tools/inventory-reorder-bridge/"
+}

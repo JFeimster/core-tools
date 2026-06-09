@@ -1,0 +1,26 @@
+{
+  "visibility": "internal",
+  "personas": [
+    "Accounts receivable holder",
+    "Affiliate operator",
+    "Agency owner",
+    "Broker",
+    "Business owner",
+    "Contractor",
+    "Creator",
+    "Driver",
+    "Fleet owner",
+    "Flipper",
+    "Founder",
+    "Gig worker",
+    "Inventory buyer",
+    "Investor",
+    "Merchant owner",
+    "Operator",
+    "Owner with credit friction",
+    "Payroll risk owner",
+    "Sales operator",
+    "Startup founder",
+    "Taxpayer"
+  ]
+}

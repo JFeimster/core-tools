@@ -431,7 +431,7 @@
     "ctaLabel": "Run this tool",
     "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
-      "cash-flow"
+      "cashflow"
     ],
     "runner": {
       "type": "none"
@@ -479,7 +479,7 @@
     "ctaLabel": "Run this tool",
     "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
-      "cash-flow"
+      "cashflow"
     ],
     "runner": {
       "type": "none"
@@ -503,7 +503,7 @@
     "ctaLabel": "Run this tool",
     "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
-      "cash-flow"
+      "cashflow"
     ],
     "runner": {
       "type": "none"
@@ -632,7 +632,7 @@
     "ctaLabel": "Run this tool",
     "ctaUrl": "https://fas.st/t/P7LZc7v7",
     "tags": [
-      "cash-flow"
+      "cashflow"
     ],
     "runner": {
       "type": "none"
@@ -1302,7 +1302,7 @@
     "ctaLabel": "Run this tool",
     "ctaUrl": "https://grow.8fig.co/lh7ictz6db3r",
     "tags": [
-      "cash-flow"
+      "cashflow"
     ],
     "runner": {
       "type": "none"
@@ -1475,7 +1475,7 @@
     "tags": [
       "bridge",
       "calculator",
-      "cash-flow",
+      "cashflow",
       "mca",
       "payroll"
     ],
@@ -1528,7 +1528,7 @@
     "ctaUrl": "https://bit.ly/3Hp1HCs",
     "tags": [
       "funding",
-      "pre-qual"
+      "prequal"
     ],
     "runner": {
       "type": "none"
@@ -1723,7 +1723,7 @@
     "ctaLabel": "Run this tool",
     "ctaUrl": "https://bit.ly/4hTZsrJ",
     "tags": [
-      "cash-flow"
+      "cashflow"
     ],
     "runner": {
       "type": "none"
@@ -1846,7 +1846,7 @@
     "ctaUrl": "https://bit.ly/4216lQe",
     "tags": [
       "mca",
-      "pre-qual"
+      "prequal"
     ],
     "runner": {
       "type": "none"
@@ -1921,7 +1921,7 @@
     "tags": [
       "embed",
       "funding",
-      "pre-qual",
+      "prequal",
       "referral",
       "widget"
     ],
@@ -2142,7 +2142,7 @@
     "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "bridge",
-      "cash-flow",
+      "cashflow",
       "quote",
       "quoter"
     ],
@@ -2193,7 +2193,7 @@
     "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "ads",
-      "pre-qual",
+      "prequal",
       "underwriting"
     ],
     "runner": {
@@ -2267,7 +2267,7 @@
     "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
       "calculator",
-      "cash-flow",
+      "cashflow",
       "estimator",
       "mca"
     ],
@@ -2392,7 +2392,7 @@
     "ctaLabel": "Run this tool",
     "ctaUrl": "https://bankbreezy.com/funding/jason/",
     "tags": [
-      "cash-flow",
+      "cashflow",
       "credit",
       "funding",
       "underwriting"
@@ -3779,8 +3779,7 @@
     "runner": {
       "type": "none"
     }
-  }
-  ,
+  },
   {
     "slug": "toolforge-jules-repo-cleanup-operator",
     "brand": "ToolForge",
@@ -4166,8 +4165,7 @@
     "runner": {
       "type": "none"
     }
-  }
-  ,
+  },
   {
     "slug": "chatgpt-custom-gpt-builder-playbook",
     "brand": "ToolForge",
@@ -5395,5 +5393,630 @@
       "referral",
       "growth"
     ]
+  },
+  {
+    "slug": "invoice-float-bridge",
+    "brand": "Core Tools",
+    "name": "Invoice Float Bridge",
+    "oneLiner": "Bridge a short delay between invoice issuance and payment arrival.",
+    "pain": "Bridge a short delay between invoice issuance and payment arrival.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "invoice-bridge",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "payroll-gap-bridge",
+    "brand": "Core Tools",
+    "name": "Payroll Gap Bridge",
+    "oneLiner": "Cover payroll when cash lands after the due date.",
+    "pain": "Cover payroll when cash lands after the due date.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "payroll-bridge",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "inventory-reorder-bridge",
+    "brand": "Core Tools",
+    "name": "Inventory Reorder Bridge",
+    "oneLiner": "Estimate funding needed to restock before sell-through stalls.",
+    "pain": "Estimate funding needed to restock before sell-through stalls.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "inventory-reorder",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "job-material-bridge",
+    "brand": "Core Tools",
+    "name": "Job Material Bridge",
+    "oneLiner": "Estimate the advance needed to buy materials before milestone billing.",
+    "pain": "Estimate the advance needed to buy materials before milestone billing.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "materials-bridge",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "repair-vs-replace-bridge",
+    "brand": "Core Tools",
+    "name": "Repair vs Replace Bridge",
+    "oneLiner": "Compare repair cash need versus replacement financing urgency.",
+    "pain": "Compare repair cash need versus replacement financing urgency.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "fleet-bridge",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "bad-credit-funding-bridge",
+    "brand": "Core Tools",
+    "name": "Bad Credit Funding Bridge",
+    "oneLiner": "Find a conservative path for owners with limited credit options.",
+    "pain": "Find a conservative path for owners with limited credit options.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "credit-bridge",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "revenue-based-bridge",
+    "brand": "Core Tools",
+    "name": "Revenue Based Bridge",
+    "oneLiner": "Estimate an advance sized for recurring revenue and payback tolerance.",
+    "pain": "Estimate an advance sized for recurring revenue and payback tolerance.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "revenue-bridge",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "merchant-cash-advance-compare",
+    "brand": "Core Tools",
+    "name": "MCA Compare",
+    "oneLiner": "Compare the daily bite of a merchant cash advance with safer alternatives.",
+    "pain": "Compare the daily bite of a merchant cash advance with safer alternatives.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "mca",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "tax-settlement-bridge",
+    "brand": "Core Tools",
+    "name": "Tax Settlement Bridge",
+    "oneLiner": "Estimate a short-term bridge for back taxes and installment pressure.",
+    "pain": "Estimate a short-term bridge for back taxes and installment pressure.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "tax-bridge",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "irs-payment-plan-planner",
+    "brand": "Core Tools",
+    "name": "IRS Payment Plan Planner",
+    "oneLiner": "Plan a payment schedule before the IRS notice becomes a scramble.",
+    "pain": "Plan a payment schedule before the IRS notice becomes a scramble.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "tax-plan",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "startup-runway-planner",
+    "brand": "Core Tools",
+    "name": "Startup Runway Planner",
+    "oneLiner": "Translate cash and burn into a simple runway planning estimate.",
+    "pain": "Translate cash and burn into a simple runway planning estimate.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "runway",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "gig-income-stabilizer",
+    "brand": "Core Tools",
+    "name": "Gig Income Stabilizer",
+    "oneLiner": "Smooth out income swings and estimate short-term funding needs.",
+    "pain": "Smooth out income swings and estimate short-term funding needs.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "gig-income",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "rideshare-cash-bridge",
+    "brand": "Core Tools",
+    "name": "Rideshare Cash Bridge",
+    "oneLiner": "Bridge the gap between rideshare payouts and weekly bills.",
+    "pain": "Bridge the gap between rideshare payouts and weekly bills.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "rideshare",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "creator-income-bridge",
+    "brand": "Core Tools",
+    "name": "Creator Income Bridge",
+    "oneLiner": "Stabilize creator cash flow when sponsorships and payouts lag.",
+    "pain": "Stabilize creator cash flow when sponsorships and payouts lag.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "creator",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "affiliate-payout-accelerator",
+    "brand": "Core Tools",
+    "name": "Affiliate Payout Accelerator",
+    "oneLiner": "Estimate the gap between earned commissions and cash timing.",
+    "pain": "Estimate the gap between earned commissions and cash timing.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "affiliate",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "broker-book-closing-bridge",
+    "brand": "Core Tools",
+    "name": "Broker Book Closing Bridge",
+    "oneLiner": "Estimate the funding gap between deal close and commission settlement.",
+    "pain": "Estimate the funding gap between deal close and commission settlement.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "broker",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "real-estate-earnest-money-bridge",
+    "brand": "Core Tools",
+    "name": "Earnest Money Bridge",
+    "oneLiner": "Estimate the liquidity required to secure a real estate deal quickly.",
+    "pain": "Estimate the liquidity required to secure a real estate deal quickly.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "earnest-money",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "flip-renovation-bridge",
+    "brand": "Core Tools",
+    "name": "Flip Renovation Bridge",
+    "oneLiner": "Estimate bridge capital for renovation work before resale cash arrives.",
+    "pain": "Estimate bridge capital for renovation work before resale cash arrives.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "renovation",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "bridge-loan-readiness-check",
+    "brand": "Core Tools",
+    "name": "Bridge Loan Readiness Check",
+    "oneLiner": "Check documents and risk flags before applying for a bridge loan.",
+    "pain": "Check documents and risk flags before applying for a bridge loan.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "readiness",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "cashflow-reserve-planner",
+    "brand": "Core Tools",
+    "name": "Cashflow Reserve Planner",
+    "oneLiner": "Size a reserve that reduces the chance of a short-term funding emergency.",
+    "pain": "Size a reserve that reduces the chance of a short-term funding emergency.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "reserve",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "commission-recovery-planner",
+    "brand": "Core Tools",
+    "name": "Commission Recovery Planner",
+    "oneLiner": "Plan around delayed commissions and back-office settlement lag.",
+    "pain": "Plan around delayed commissions and back-office settlement lag.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "commission",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "client-acquisition-bridge",
+    "brand": "Core Tools",
+    "name": "Client Acquisition Bridge",
+    "oneLiner": "Estimate cash needed to bridge marketing spend before client payment lands.",
+    "pain": "Estimate cash needed to bridge marketing spend before client payment lands.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "acquisition",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "merchant-stack-optimizer",
+    "brand": "Core Tools",
+    "name": "Merchant Stack Optimizer",
+    "oneLiner": "Compare common funding stack pressure against a simplified plan.",
+    "pain": "Compare common funding stack pressure against a simplified plan.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "stack",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "equipment-acquisition-planner",
+    "brand": "Core Tools",
+    "name": "Equipment Acquisition Planner",
+    "oneLiner": "Estimate equipment finance needs and timing for an urgent purchase.",
+    "pain": "Estimate equipment finance needs and timing for an urgent purchase.",
+    "artifact": "calculator",
+    "inputs": [
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "defaultValue": "10000"
+      }
+    ],
+    "logic": "Public-safe summary only.",
+    "ctaLabel": "Review options",
+    "ctaUrl": "https://bankbreezy.com/funding/jason/",
+    "tags": [
+      "equipment",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
   }
 ]
+
