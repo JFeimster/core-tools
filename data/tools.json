@@ -4380,10 +4380,7 @@
       "tool",
       "decision",
       "warning"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "bank-statement-prep",
@@ -4422,10 +4419,7 @@
       "tool",
       "warning",
       "funding"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "gig-income-organizer",
@@ -4464,10 +4458,7 @@
       "tool",
       "runway",
       "warning"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "business-credit-setup",
@@ -4506,10 +4497,7 @@
       "tool",
       "credit",
       "playbook"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "lender-match-brief",
@@ -4548,10 +4536,7 @@
       "tool",
       "lender",
       "routing"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "funding-application-qa",
@@ -4590,10 +4575,7 @@
       "tool",
       "decision",
       "warning"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "affiliate-landing-page-builder",
@@ -4632,10 +4614,7 @@
       "tool",
       "lead-capture",
       "seo"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "partner-onboarding-sequence",
@@ -4674,10 +4653,7 @@
       "tool",
       "referral",
       "routing"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "lead-magnet-builder-operator",
@@ -4716,10 +4692,7 @@
       "tool",
       "lead-capture",
       "growth"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "offer-stack-builder",
@@ -4758,10 +4731,7 @@
       "tool",
       "growth",
       "decision"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "local-seo-page-builder",
@@ -4800,10 +4770,7 @@
       "tool",
       "seo",
       "lead-capture"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "calculator-spec-builder",
@@ -4842,10 +4809,7 @@
       "tool",
       "calculator",
       "decision"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "crm-cleanup",
@@ -4884,10 +4848,7 @@
       "tool",
       "routing",
       "warning"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "pipeline-follow-up",
@@ -4926,10 +4887,7 @@
       "tool",
       "routing",
       "urgency"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   },
   {
     "slug": "zapier-make-n8n-automation",
@@ -4968,9 +4926,6 @@
       "tool",
       "ops",
       "routing"
-    ],
-    "runner": {
-      "type": "none"
-    }
+    ]
   }
 ]
