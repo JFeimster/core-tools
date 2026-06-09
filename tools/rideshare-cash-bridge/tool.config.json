@@ -1,0 +1,6 @@
+{
+  "slug": "rideshare-cash-bridge",
+  "name": "Rideshare Cash Bridge",
+  "status": "scaffolded",
+  "artifactRoot": "tools/rideshare-cash-bridge/"
+}

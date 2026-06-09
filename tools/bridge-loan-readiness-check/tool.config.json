@@ -1,0 +1,6 @@
+{
+  "slug": "bridge-loan-readiness-check",
+  "name": "Bridge Loan Readiness Check",
+  "status": "scaffolded",
+  "artifactRoot": "tools/bridge-loan-readiness-check/"
+}

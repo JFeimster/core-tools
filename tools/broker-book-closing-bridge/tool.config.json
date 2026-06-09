@@ -1,0 +1,6 @@
+{
+  "slug": "broker-book-closing-bridge",
+  "name": "Broker Book Closing Bridge",
+  "status": "scaffolded",
+  "artifactRoot": "tools/broker-book-closing-bridge/"
+}

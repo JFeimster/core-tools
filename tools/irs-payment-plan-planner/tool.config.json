@@ -1,0 +1,6 @@
+{
+  "slug": "irs-payment-plan-planner",
+  "name": "IRS Payment Plan Planner",
+  "status": "scaffolded",
+  "artifactRoot": "tools/irs-payment-plan-planner/"
+}

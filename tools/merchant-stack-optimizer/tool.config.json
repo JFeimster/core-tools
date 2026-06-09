@@ -1,0 +1,6 @@
+{
+  "slug": "merchant-stack-optimizer",
+  "name": "Merchant Stack Optimizer",
+  "status": "scaffolded",
+  "artifactRoot": "tools/merchant-stack-optimizer/"
+}
