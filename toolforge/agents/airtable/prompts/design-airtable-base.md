@@ -1,0 +1,1 @@
+Design an Airtable base for this workflow. Keep the answer focused on the minimum useful tables, fields, views, and follow-up logic. Do not overbuild the schema or assume custom code. Return a practical base design that can be reviewed quickly.

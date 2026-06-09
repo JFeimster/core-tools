@@ -44,6 +44,7 @@ Current platform packs in the library:
 - Claude
 - Cursor
 - Windsurf
+- Automation Platforms
 
 Keep adding packs only when they help a builder act faster or more safely inside Core Tools.
 

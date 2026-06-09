@@ -1,0 +1,1 @@
+Create a Google Sheets tracker schema for this workflow. Keep the output to a practical column list, stage model, owner field, and one clear review view. Do not overcomplicate the sheet or assume a database.

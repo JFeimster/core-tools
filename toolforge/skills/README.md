@@ -24,6 +24,18 @@ Use the skills library when a task is likely to repeat across branches, platform
 - Helps keep future utility expansion consistent
 - Reduces prompt drift and one-off instruction noise
 
+## Automation-Oriented Skills
+
+These skills pair well with the automation platform pack:
+
+- `zapier-make-n8n-automation`
+- `google-sheets-ops`
+- `notion-dashboard-builder`
+- `crm-cleanup`
+- `pipeline-follow-up`
+- `client-intake-workflow`
+- `discord-community-ops`
+
 ## Operator Workflow Skills Pack
 
 This batch adds practical operator workflows for founders, funding brokers, affiliates, gig workers, real estate pros, e-commerce sellers, consultants, and automation operators.

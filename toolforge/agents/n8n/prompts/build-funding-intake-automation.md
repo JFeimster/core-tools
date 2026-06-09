@@ -1,0 +1,1 @@
+Build an n8n automation spec for funding intake that starts from a webhook, validates the minimum borrower fields, routes qualified leads to the right follow-up path, and sends unqualified or incomplete leads to a human review branch. Keep the output practical, note the required fields, and include a stop condition for failed routing.

@@ -1,0 +1,1 @@
+Build a HubSpot funding pipeline spec for this workflow. Keep the answer focused on the stage map, ownership rules, source mapping, follow-up logic, and cleanup notes. Do not assume custom code or backend services.

@@ -1,0 +1,1 @@
+Build a Make scenario spec for this workflow. Keep the output focused on trigger, branching, logging, fallback logic, and validation checks. Do not assume unsupported runtime features. Return a practical outline that an operator can build from directly.

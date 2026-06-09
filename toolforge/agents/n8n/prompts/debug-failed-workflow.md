@@ -1,0 +1,1 @@
+Debug this n8n workflow using the workflow spec and the failure notes below. Identify the most likely break point, the data fields to verify first, the routing rule to check, and the minimum safe fix. Do not assume backend code or database access. Keep the answer short and operational.
