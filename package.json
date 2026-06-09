@@ -9,7 +9,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "validate:data": "node scripts/validate-data.js"
+    "validate:data": "node scripts/validate-data.js",
+    "validate:registries": "node scripts/validate-registries.js",
+    "scaffold:tool-artifacts": "node scripts/scaffold-tool-artifacts.js",
+    "project:registries": "node scripts/project-registries-to-public-data.js"
   },
   "dependencies": {
     "next": "15.3.8",
