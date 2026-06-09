@@ -318,11 +318,29 @@ const existingTools = readJson(toolsPath);
 const existingCollections = readJson(collectionsPath);
 const existingSlugs = new Set(existingTools.map((tool) => tool.slug));
 
+const projectedToolsBySlug = new Map(
+  registryItems.map((item) => [item.slug, publicTool(item)])
+);
+
+const updatedExistingTools = existingTools.map((tool) => {
+  const projectedTool = projectedToolsBySlug.get(tool.slug);
+
+  if (!projectedTool) {
+    return tool;
+  }
+
+  return {
+    ...tool,
+    ...projectedTool,
+    slug: tool.slug,
+  };
+});
+
 const newPublicTools = registryItems
   .filter((item) => !existingSlugs.has(item.slug))
   .map(publicTool);
 
-const mergedTools = [...existingTools, ...newPublicTools];
+const mergedTools = [...updatedExistingTools, ...newPublicTools];
 const mergedCollections = mergeCollections(existingCollections, buildCollections(mergedTools.map((tool) => tool.slug)));
 
 const registryPayload = {
