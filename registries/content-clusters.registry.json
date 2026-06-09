@@ -1,0 +1,13 @@
+{
+  "visibility": "internal",
+  "clusters": [
+    {
+      "slug": "funding-readiness",
+      "purpose": "Readiness content and lead magnets."
+    },
+    {
+      "slug": "cash-flow-bridges",
+      "purpose": "Runway and invoice timing content."
+    }
+  ]
+}
