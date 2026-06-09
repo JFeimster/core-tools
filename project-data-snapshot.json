@@ -14,19 +14,19 @@
     "buildModel": "Static export with JSON-driven content and no database, auth, or server actions."
   },
   "repoState": {
-    "currentBranch": "feature/toolforge-ai-platform-pack",
+    "currentBranch": "feature/operator-workflow-skills-pack",
     "importantRecentCommits": [
+      {
+        "sha": "ec616ef",
+        "message": "Merge pull request #6 from JFeimster/feature/toolforge-ai-platform-pack"
+      },
+      {
+        "sha": "50d78be",
+        "message": "Add ToolForge AI platform pack"
+      },
       {
         "sha": "6855868",
         "message": "Merge pull request #5 from JFeimster/feature/toolforge-expansion-roadmap"
-      },
-      {
-        "sha": "65fcf4a",
-        "message": "Merge pull request #4 from JFeimster/feature/toolforge-directory-entries"
-      },
-      {
-        "sha": "9dfdb7b",
-        "message": "Merge pull request #3 from JFeimster/feature/toolforge-agent-skills-library"
       }
     ],
     "cleanWorkspaceExpectation": "The working tree should be clean after ignoring generated outputs. Future builds may regenerate .next/, out/, and public/tools.json, but those should not appear in git status."
@@ -109,6 +109,30 @@
       "scripts/sync-public-tools.js",
       "scripts/validate-data.js"
     ],
+    "skills": [
+      "toolforge/skills/README.md",
+      "toolforge/skills/schema.md",
+      "toolforge/skills/funding-readiness-review.md",
+      "toolforge/skills/bank-statement-prep.md",
+      "toolforge/skills/gig-income-organizer.md",
+      "toolforge/skills/business-credit-setup.md",
+      "toolforge/skills/lender-match-brief.md",
+      "toolforge/skills/funding-application-qa.md",
+      "toolforge/skills/affiliate-landing-page-builder.md",
+      "toolforge/skills/partner-onboarding-sequence.md",
+      "toolforge/skills/lead-magnet-builder-operator.md",
+      "toolforge/skills/offer-stack-builder.md",
+      "toolforge/skills/local-seo-page-builder.md",
+      "toolforge/skills/content-repurposing.md",
+      "toolforge/skills/calculator-spec-builder.md",
+      "toolforge/skills/client-intake-workflow.md",
+      "toolforge/skills/crm-cleanup.md",
+      "toolforge/skills/pipeline-follow-up.md",
+      "toolforge/skills/notion-dashboard-builder.md",
+      "toolforge/skills/google-sheets-ops.md",
+      "toolforge/skills/zapier-make-n8n-automation.md",
+      "toolforge/skills/discord-community-ops.md"
+    ],
     "landing": [
       "landing/index.html"
     ]
@@ -116,7 +140,7 @@
   "dataSources": {
     "tools": {
       "file": "data/tools.json",
-      "recordCount": 130,
+      "recordCount": 145,
       "role": "Main tool source of truth",
       "shape": [
         "slug",
@@ -135,7 +159,7 @@
     },
     "collections": {
       "file": "data/collections.json",
-      "recordCount": 12,
+      "recordCount": 16,
       "role": "Collection and playbook source of truth",
       "shape": [
         "slug",
@@ -163,7 +187,7 @@
       "file": "public/tools.json",
       "source": "data/tools.json",
       "generatedBy": "scripts/sync-public-tools.js",
-      "recordCount": 130,
+      "recordCount": 145,
       "doNotHandAuthor": true,
       "ignoredByGitignore": true
     }
@@ -217,6 +241,8 @@
       "README.md",
       "toolforge/README.md",
       "toolforge/agents/README.md",
+      "toolforge/skills/README.md",
+      "toolforge/skills/schema.md",
       "docs/toolforge-expansion-roadmap.md",
       "docs/toolforge-import-queue.md",
       "docs/schema-notes.md",
@@ -244,7 +270,7 @@
     "missingRecommendedFiles": []
   },
   "knownGaps": [
-    "The AI platform pack is now the active utility focus and should continue in small, reviewable packs.",
+    "The operator workflow skills pack is now the active utility focus and should continue in small, reviewable packs.",
     "The import queue still needs Gemini CLI, Replit, and the other remaining platform-specific entries.",
     "Semantic cleanup of tool tags inside data/tools.json is still a later batch if new content work reintroduces tag drift.",
     "Deprecated tags such as cash-flow and pre-qual still need cleanup in the data layer.",
@@ -252,7 +278,8 @@
     "There is no backend CMS, auth, or database; all content changes are manual JSON and component edits."
   ],
   "recommendedNextFiles": [
-    "toolforge/agents/gemini/README.md"
+    "toolforge/agents/gemini/README.md",
+    "toolforge/skills/README.md"
   ],
   "operatingRules": [
     "Keep the app static-first and avoid introducing backend dependencies unless a clear product need appears.",

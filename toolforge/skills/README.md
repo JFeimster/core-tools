@@ -23,3 +23,46 @@ Use the skills library when a task is likely to repeat across branches, platform
 - Reinforces validation-first changes
 - Helps keep future utility expansion consistent
 - Reduces prompt drift and one-off instruction noise
+
+## Operator Workflow Skills Pack
+
+This batch adds practical operator workflows for founders, funding brokers, affiliates, gig workers, real estate pros, e-commerce sellers, consultants, and automation operators.
+
+### Funding + Capital Workflows
+
+- Funding Readiness Review
+- Bank Statement Prep
+- Gig Income Organizer
+- Business Credit Setup
+- Lender Match Brief
+- Funding Application QA
+
+### Affiliate + Partner Workflows
+
+- Affiliate Landing Page Builder
+- Partner Onboarding Sequence
+- Lead Magnet Builder for Operators
+- Offer Stack Builder
+
+### Content + SEO Workflows
+
+- Local SEO Page Builder
+- Content Repurposing
+- Calculator Spec Builder
+
+### Ops + Automation Workflows
+
+- Client Intake Workflow
+- CRM Cleanup
+- Pipeline Follow-Up
+- Notion Dashboard Builder
+- Google Sheets Ops
+- Zapier, Make, and n8n Automation
+
+### Community + Client Workflows
+
+- Discord Community Ops
+
+## Maintenance Rule
+
+Keep skills practical, reusable, and tied to a real artifact or workflow that future agents can ship without extra interpretation.

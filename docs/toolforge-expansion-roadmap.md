@@ -14,6 +14,8 @@ This roadmap turns the ToolForge resource library into a practical expansion tra
 
 Prioritize packs that help people ship or operate the repo and its offers. The current batch adds ChatGPT, Claude, Cursor, and Windsurf; the next queue items remain in `docs/toolforge-import-queue.md`.
 
+The current operator batch adds practical skills for funding, partner growth, content, and ops workflows.
+
 - ChatGPT GPT Builder
 - Claude Projects
 - Cursor
@@ -95,6 +97,7 @@ Make it visible when the item is something a user would actually click in the di
 3. Keep the import queue current
 4. Review whether any new taxonomy coverage is actually needed
 5. Refresh the project snapshot after each meaningful batch
+6. Continue with the next platform pack after the operator workflow skills ship
 
 ## Success Criteria
 
