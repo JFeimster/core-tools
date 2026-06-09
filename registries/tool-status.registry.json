@@ -1,0 +1,10 @@
+{
+  "visibility": "internal",
+  "statuses": [
+    "backlog",
+    "scaffolded",
+    "review",
+    "active",
+    "deprecated"
+  ]
+}
