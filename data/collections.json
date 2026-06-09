@@ -106,8 +106,7 @@
       "bids",
       "materials"
     ]
-  }
-  ,
+  },
   {
     "slug": "agent-build-workflow-pack",
     "title": "Agent Build Workflow Pack",
@@ -379,6 +378,283 @@
       "tool",
       "playbook",
       "routing"
+    ]
+  },
+  {
+    "slug": "funding-tools",
+    "title": "Funding Tools",
+    "oneLiner": "Core funding tools for public browsing and lead capture.",
+    "audience": "Business owners",
+    "primaryCtaLabel": "Open tools",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "embedded-finance-widget",
+      "dd-plus-7-impact-calculator",
+      "neca-material-money-quoter",
+      "payroll-gap-bridge-estimator",
+      "mca-repayment-estimator",
+      "the-dd-7-impact-calculator",
+      "the-inventory-turnover-accelerator",
+      "the-fee-nullifier-cash-back-calculator",
+      "tiktok-shop-viral-curse-predictor",
+      "account-level-reserve-hostage-calculator",
+      "the-cpa-bookkeeper-fee-integration-tool",
+      "the-supply-chain-hostage-release-timer"
+    ],
+    "tags": [
+      "funding",
+      "tools"
+    ]
+  },
+  {
+    "slug": "cash-flow-bridges",
+    "title": "Cash Flow Bridges",
+    "oneLiner": "Tools for delaying the pain between work completed and cash received.",
+    "audience": "Operators under timing pressure",
+    "primaryCtaLabel": "See bridge tools",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "payroll-gap-bridge-estimator",
+      "the-inventory-turnover-accelerator",
+      "the-amazon-payout-bridge-predictor",
+      "cash-flow-gap-bridge-calculator",
+      "invoice-to-cash-flow-gap-analyzer",
+      "the-buy-here-pay-here-down-payment-bridge",
+      "the-payroll-bridge-funding-quoter",
+      "onramp-zombie-inventory-detector",
+      "payroll-panic-countdown-timer",
+      "rokfi-burn-rate-runway-extender",
+      "invoice-float-bridge",
+      "payroll-gap-bridge",
+      "inventory-reorder-bridge",
+      "job-material-bridge",
+      "repair-vs-replace-bridge",
+      "bad-credit-funding-bridge",
+      "revenue-based-bridge",
+      "tax-settlement-bridge",
+      "startup-runway-planner",
+      "rideshare-cash-bridge",
+      "creator-income-bridge",
+      "broker-book-closing-bridge",
+      "real-estate-earnest-money-bridge",
+      "flip-renovation-bridge",
+      "bridge-loan-readiness-check",
+      "client-acquisition-bridge"
+    ],
+    "tags": [
+      "cashflow",
+      "bridge"
+    ]
+  },
+  {
+    "slug": "gig-worker-funding",
+    "title": "Gig Worker Funding",
+    "oneLiner": "Tools for income smoothing and short-term liquidity planning.",
+    "audience": "Gig workers and creators",
+    "primaryCtaLabel": "Open gig tools",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "gig-worker-back-on-the-road-calculator",
+      "the-gig-income-funding-predictor-giggle-finance",
+      "gig-income-organizer",
+      "gig-income-stabilizer",
+      "rideshare-cash-bridge",
+      "creator-income-bridge"
+    ],
+    "tags": [
+      "gig",
+      "income"
+    ]
+  },
+  {
+    "slug": "broker-affiliate-tools",
+    "title": "Broker and Affiliate Tools",
+    "oneLiner": "Tools for commissions, partner timing, and deal flow.",
+    "audience": "Brokers and affiliates",
+    "primaryCtaLabel": "Open partner tools",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "premium-finance-double-commission-calculator-for-insurance-agents",
+      "daily-pay-commission-calculator-agent-recruitment-tool",
+      "the-daily-commission-projection-dashboard",
+      "the-referral-commission-payout-estimator",
+      "affiliate-landing-page-builder",
+      "airtable-affiliate-pipeline-base",
+      "discord-affiliate-community-ops-playbook",
+      "affiliate-payout-accelerator",
+      "broker-book-closing-bridge",
+      "commission-recovery-planner"
+    ],
+    "tags": [
+      "affiliate",
+      "broker"
+    ]
+  },
+  {
+    "slug": "real-estate-funding",
+    "title": "Real Estate Funding",
+    "oneLiner": "Bridge tools for acquisition, earnest money, and renovation timing.",
+    "audience": "Investors and flippers",
+    "primaryCtaLabel": "Open real estate tools",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "fix-and-flip-roi-max-loan-estimator",
+      "real-estate-proof-of-funds-pof-generator",
+      "wholesaler-real-estate-deal-analyzer-pro",
+      "real-estate-earnest-money-bridge",
+      "flip-renovation-bridge"
+    ],
+    "tags": [
+      "real-estate",
+      "bridge"
+    ]
+  },
+  {
+    "slug": "equipment-vehicle-funding",
+    "title": "Equipment and Vehicle Funding",
+    "oneLiner": "Tools for machinery, vehicles, and replacement timing.",
+    "audience": "Operators and fleet owners",
+    "primaryCtaLabel": "Open equipment tools",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "equipment-payment-estimator",
+      "equipment-roi-payment-calculator",
+      "the-auto-repair-emergency-advance-tool",
+      "the-trucker-repair-to-revenue-tracker",
+      "the-equipment-leasing-deposit-calculator",
+      "repair-vs-replace-roi-engine",
+      "job-material-bridge",
+      "repair-vs-replace-bridge",
+      "equipment-acquisition-planner"
+    ],
+    "tags": [
+      "equipment",
+      "vehicle"
+    ]
+  },
+  {
+    "slug": "tax-funding",
+    "title": "Tax Funding",
+    "oneLiner": "Planning tools for tax settlement pressure and payment schedules.",
+    "audience": "Taxpayers and business owners",
+    "primaryCtaLabel": "Open tax tools",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "tax-payment-advance-estimator",
+      "the-urgent-tax-advance-estimator",
+      "the-tax-prep-fee-advance-solution",
+      "section-179-tax-slash-calculator",
+      "tax-settlement-bridge",
+      "irs-payment-plan-planner"
+    ],
+    "tags": [
+      "tax",
+      "planning"
+    ]
+  },
+  {
+    "slug": "startup-funding",
+    "title": "Startup Funding",
+    "oneLiner": "Founder-focused runway and bridge planning tools.",
+    "audience": "Startup founders",
+    "primaryCtaLabel": "Open startup tools",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "startup-funding-eligibility-quiz",
+      "rokfi-burn-rate-runway-extender",
+      "revenue-based-bridge",
+      "startup-runway-planner",
+      "bridge-loan-readiness-check",
+      "client-acquisition-bridge"
+    ],
+    "tags": [
+      "startup",
+      "runway"
+    ]
+  },
+  {
+    "slug": "bad-credit-funding",
+    "title": "Bad Credit Funding",
+    "oneLiner": "Tools that handle credit friction with safer public-safe language.",
+    "audience": "Owners with credit constraints",
+    "primaryCtaLabel": "Open credit tools",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "mca-repayment-estimator",
+      "the-mca-shark-auditor",
+      "bad-credit-business-funding-match",
+      "the-merchant-cash-advance-mca-repayment-estimator",
+      "the-bad-credit-good-business-certifier",
+      "bad-credit-funding-bridge",
+      "merchant-stack-optimizer"
+    ],
+    "tags": [
+      "credit",
+      "funding"
+    ]
+  },
+  {
+    "slug": "funding-readiness",
+    "title": "Funding Readiness",
+    "oneLiner": "Readiness tools that help owners prepare before they apply.",
+    "audience": "Operators preparing a package",
+    "primaryCtaLabel": "Review readiness",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "account-level-reserve-hostage-calculator",
+      "the-q4-war-room-po-planner",
+      "lender-readiness-score",
+      "funding-readiness-review",
+      "irs-payment-plan-planner",
+      "startup-runway-planner",
+      "bridge-loan-readiness-check",
+      "cashflow-reserve-planner",
+      "commission-recovery-planner",
+      "equipment-acquisition-planner"
+    ],
+    "tags": [
+      "readiness",
+      "planning"
+    ]
+  },
+  {
+    "slug": "commission-tools",
+    "title": "Commission Tools",
+    "oneLiner": "Tools for commission timing and recovery planning.",
+    "audience": "Sales teams and brokers",
+    "primaryCtaLabel": "Open commission tools",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "premium-finance-double-commission-calculator-for-insurance-agents",
+      "daily-pay-commission-calculator-agent-recruitment-tool",
+      "the-daily-commission-projection-dashboard",
+      "the-referral-commission-payout-estimator",
+      "broker-book-closing-bridge",
+      "commission-recovery-planner"
+    ],
+    "tags": [
+      "commission",
+      "ops"
+    ]
+  },
+  {
+    "slug": "emergency-funding",
+    "title": "Emergency Funding",
+    "oneLiner": "Short-term triage tools for urgent cash timing problems.",
+    "audience": "Owners under time pressure",
+    "primaryCtaLabel": "Open emergency tools",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "payroll-gap-bridge-estimator",
+      "rokfi-burn-rate-runway-extender",
+      "invoice-float-bridge",
+      "payroll-gap-bridge",
+      "startup-runway-planner",
+      "cashflow-reserve-planner"
+    ],
+    "tags": [
+      "emergency",
+      "bridge"
     ]
   }
 ]
