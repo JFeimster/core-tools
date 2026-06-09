@@ -1,0 +1,630 @@
+{
+  "visibility": "internal",
+  "items": [
+    {
+      "slug": "rokfi-burn-rate-runway-extender",
+      "artifact_root": "tools/rokfi-burn-rate-runway-extender/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/rokfi-burn-rate-runway-extender/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/rokfi-burn-rate-runway-extender/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/rokfi-burn-rate-runway-extender/README.md"
+        },
+        "config": {
+          "path": "tools/rokfi-burn-rate-runway-extender/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/rokfi-burn-rate-runway-extender/assets/"
+        },
+        "exports": {
+          "path": "tools/rokfi-burn-rate-runway-extender/exports/"
+        }
+      },
+      "status": "active"
+    },
+    {
+      "slug": "invoice-float-bridge",
+      "artifact_root": "tools/invoice-float-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/invoice-float-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/invoice-float-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/invoice-float-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/invoice-float-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/invoice-float-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/invoice-float-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "payroll-gap-bridge",
+      "artifact_root": "tools/payroll-gap-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/payroll-gap-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/payroll-gap-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/payroll-gap-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/payroll-gap-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/payroll-gap-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/payroll-gap-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "inventory-reorder-bridge",
+      "artifact_root": "tools/inventory-reorder-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/inventory-reorder-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/inventory-reorder-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/inventory-reorder-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/inventory-reorder-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/inventory-reorder-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/inventory-reorder-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "job-material-bridge",
+      "artifact_root": "tools/job-material-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/job-material-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/job-material-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/job-material-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/job-material-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/job-material-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/job-material-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "repair-vs-replace-bridge",
+      "artifact_root": "tools/repair-vs-replace-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/repair-vs-replace-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/repair-vs-replace-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/repair-vs-replace-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/repair-vs-replace-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/repair-vs-replace-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/repair-vs-replace-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "bad-credit-funding-bridge",
+      "artifact_root": "tools/bad-credit-funding-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/bad-credit-funding-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/bad-credit-funding-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/bad-credit-funding-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/bad-credit-funding-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/bad-credit-funding-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/bad-credit-funding-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "revenue-based-bridge",
+      "artifact_root": "tools/revenue-based-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/revenue-based-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/revenue-based-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/revenue-based-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/revenue-based-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/revenue-based-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/revenue-based-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "merchant-cash-advance-compare",
+      "artifact_root": "tools/merchant-cash-advance-compare/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/merchant-cash-advance-compare/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/merchant-cash-advance-compare/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/merchant-cash-advance-compare/README.md"
+        },
+        "config": {
+          "path": "tools/merchant-cash-advance-compare/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/merchant-cash-advance-compare/assets/"
+        },
+        "exports": {
+          "path": "tools/merchant-cash-advance-compare/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "tax-settlement-bridge",
+      "artifact_root": "tools/tax-settlement-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/tax-settlement-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/tax-settlement-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/tax-settlement-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/tax-settlement-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/tax-settlement-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/tax-settlement-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "irs-payment-plan-planner",
+      "artifact_root": "tools/irs-payment-plan-planner/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/irs-payment-plan-planner/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/irs-payment-plan-planner/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/irs-payment-plan-planner/README.md"
+        },
+        "config": {
+          "path": "tools/irs-payment-plan-planner/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/irs-payment-plan-planner/assets/"
+        },
+        "exports": {
+          "path": "tools/irs-payment-plan-planner/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "startup-runway-planner",
+      "artifact_root": "tools/startup-runway-planner/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/startup-runway-planner/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/startup-runway-planner/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/startup-runway-planner/README.md"
+        },
+        "config": {
+          "path": "tools/startup-runway-planner/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/startup-runway-planner/assets/"
+        },
+        "exports": {
+          "path": "tools/startup-runway-planner/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "gig-income-stabilizer",
+      "artifact_root": "tools/gig-income-stabilizer/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/gig-income-stabilizer/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/gig-income-stabilizer/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/gig-income-stabilizer/README.md"
+        },
+        "config": {
+          "path": "tools/gig-income-stabilizer/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/gig-income-stabilizer/assets/"
+        },
+        "exports": {
+          "path": "tools/gig-income-stabilizer/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "rideshare-cash-bridge",
+      "artifact_root": "tools/rideshare-cash-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/rideshare-cash-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/rideshare-cash-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/rideshare-cash-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/rideshare-cash-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/rideshare-cash-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/rideshare-cash-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "creator-income-bridge",
+      "artifact_root": "tools/creator-income-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/creator-income-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/creator-income-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/creator-income-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/creator-income-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/creator-income-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/creator-income-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "affiliate-payout-accelerator",
+      "artifact_root": "tools/affiliate-payout-accelerator/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/affiliate-payout-accelerator/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/affiliate-payout-accelerator/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/affiliate-payout-accelerator/README.md"
+        },
+        "config": {
+          "path": "tools/affiliate-payout-accelerator/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/affiliate-payout-accelerator/assets/"
+        },
+        "exports": {
+          "path": "tools/affiliate-payout-accelerator/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "broker-book-closing-bridge",
+      "artifact_root": "tools/broker-book-closing-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/broker-book-closing-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/broker-book-closing-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/broker-book-closing-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/broker-book-closing-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/broker-book-closing-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/broker-book-closing-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "real-estate-earnest-money-bridge",
+      "artifact_root": "tools/real-estate-earnest-money-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/real-estate-earnest-money-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/real-estate-earnest-money-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/real-estate-earnest-money-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/real-estate-earnest-money-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/real-estate-earnest-money-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/real-estate-earnest-money-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "flip-renovation-bridge",
+      "artifact_root": "tools/flip-renovation-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/flip-renovation-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/flip-renovation-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/flip-renovation-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/flip-renovation-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/flip-renovation-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/flip-renovation-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "bridge-loan-readiness-check",
+      "artifact_root": "tools/bridge-loan-readiness-check/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/bridge-loan-readiness-check/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/bridge-loan-readiness-check/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/bridge-loan-readiness-check/README.md"
+        },
+        "config": {
+          "path": "tools/bridge-loan-readiness-check/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/bridge-loan-readiness-check/assets/"
+        },
+        "exports": {
+          "path": "tools/bridge-loan-readiness-check/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "cashflow-reserve-planner",
+      "artifact_root": "tools/cashflow-reserve-planner/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/cashflow-reserve-planner/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/cashflow-reserve-planner/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/cashflow-reserve-planner/README.md"
+        },
+        "config": {
+          "path": "tools/cashflow-reserve-planner/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/cashflow-reserve-planner/assets/"
+        },
+        "exports": {
+          "path": "tools/cashflow-reserve-planner/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "commission-recovery-planner",
+      "artifact_root": "tools/commission-recovery-planner/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/commission-recovery-planner/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/commission-recovery-planner/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/commission-recovery-planner/README.md"
+        },
+        "config": {
+          "path": "tools/commission-recovery-planner/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/commission-recovery-planner/assets/"
+        },
+        "exports": {
+          "path": "tools/commission-recovery-planner/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "client-acquisition-bridge",
+      "artifact_root": "tools/client-acquisition-bridge/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/client-acquisition-bridge/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/client-acquisition-bridge/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/client-acquisition-bridge/README.md"
+        },
+        "config": {
+          "path": "tools/client-acquisition-bridge/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/client-acquisition-bridge/assets/"
+        },
+        "exports": {
+          "path": "tools/client-acquisition-bridge/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "merchant-stack-optimizer",
+      "artifact_root": "tools/merchant-stack-optimizer/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/merchant-stack-optimizer/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/merchant-stack-optimizer/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/merchant-stack-optimizer/README.md"
+        },
+        "config": {
+          "path": "tools/merchant-stack-optimizer/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/merchant-stack-optimizer/assets/"
+        },
+        "exports": {
+          "path": "tools/merchant-stack-optimizer/exports/"
+        }
+      },
+      "status": "backlog"
+    },
+    {
+      "slug": "equipment-acquisition-planner",
+      "artifact_root": "tools/equipment-acquisition-planner/",
+      "artifacts": {
+        "landing": {
+          "path": "tools/equipment-acquisition-planner/landing/index.html"
+        },
+        "embed": {
+          "path": "tools/equipment-acquisition-planner/embed/index.html"
+        },
+        "readme": {
+          "path": "tools/equipment-acquisition-planner/README.md"
+        },
+        "config": {
+          "path": "tools/equipment-acquisition-planner/tool.config.json"
+        },
+        "assets": {
+          "path": "tools/equipment-acquisition-planner/assets/"
+        },
+        "exports": {
+          "path": "tools/equipment-acquisition-planner/exports/"
+        }
+      },
+      "status": "backlog"
+    }
+  ]
+}

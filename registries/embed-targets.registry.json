@@ -1,0 +1,25 @@
+{
+  "visibility": "internal",
+  "targets": [
+    {
+      "slug": "embedded-finance-widget",
+      "path": "/tools/embedded-finance-widget/embed"
+    },
+    {
+      "slug": "dd-plus-7-impact-calculator",
+      "path": "/tools/dd-plus-7-impact-calculator/embed"
+    },
+    {
+      "slug": "neca-material-money-quoter",
+      "path": "/tools/neca-material-money-quoter/embed"
+    },
+    {
+      "slug": "payroll-gap-bridge-estimator",
+      "path": "/tools/payroll-gap-bridge-estimator/embed"
+    },
+    {
+      "slug": "mca-repayment-estimator",
+      "path": "/tools/mca-repayment-estimator/embed"
+    }
+  ]
+}
