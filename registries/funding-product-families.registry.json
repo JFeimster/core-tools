@@ -1,0 +1,447 @@
+[
+  {
+    "schema_version": "1.0.0",
+    "name": "Startup Funding Path",
+    "slug": "startup-funding-path",
+    "public_label": "Startup / Credit-Leverage Funding",
+    "solution_family_keys": [
+      "startup_credit_leverage"
+    ],
+    "description": "Funding paths for new founders, new entities, and early-stage operators with limited business revenue but usable personal credit, income, or eligible assets.",
+    "best_for": [
+      "startup launch capital",
+      "setup costs",
+      "bridge liquidity",
+      "business credit foundation",
+      "credit-strong new founders"
+    ],
+    "avoid_when": [
+      "weak personal credit",
+      "no income verification",
+      "major derogatories",
+      "unrealistic funding request"
+    ],
+    "watch_out_for": [
+      "recent inquiries",
+      "open bankruptcy",
+      "thin credit profile",
+      "high utilization"
+    ],
+    "common_requirements": [
+      "personal credit profile",
+      "identity verification",
+      "income or asset documentation where required"
+    ],
+    "common_documents": [
+      "government_id",
+      "credit_authorization",
+      "income_verification",
+      "business_formation_docs"
+    ],
+    "qualification_band": "startup_no_revenue_credit_leverage",
+    "typical_speed": "3–10 days to 2–3 weeks",
+    "primary_cta": "Check Startup Funding Readiness",
+    "related_route_tags": [
+      "route_startup"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Use when business revenue is limited but borrower profile can support credit-leverage or startup paths."
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "Revenue Advance Program",
+    "slug": "revenue-advance-program",
+    "public_label": "Fast Working Capital / Revenue-Based Funding",
+    "solution_family_keys": [
+      "fast_working_capital"
+    ],
+    "description": "Fast capital paths for active businesses with visible deposits and urgent working capital needs where speed matters more than perfect pricing.",
+    "best_for": [
+      "payroll gap",
+      "inventory",
+      "materials",
+      "short-cycle opportunities",
+      "ad spend recovery",
+      "urgent working capital"
+    ],
+    "avoid_when": [
+      "long-term expansion",
+      "razor-thin margins",
+      "borrower cannot handle frequent payments"
+    ],
+    "watch_out_for": [
+      "recent NSFs",
+      "negative days",
+      "stacking",
+      "existing MCA balance",
+      "repayment strain"
+    ],
+    "common_requirements": [
+      "active revenue",
+      "recent bank statements",
+      "business bank activity",
+      "minimum time in business may apply"
+    ],
+    "common_documents": [
+      "bank_statements",
+      "business_application",
+      "government_id",
+      "voided_check"
+    ],
+    "qualification_band": "subprime_revenue_based",
+    "typical_speed": "same day to 1–3 business days",
+    "primary_cta": "Review Fast Working Capital Options",
+    "related_route_tags": [
+      "route_working_capital",
+      "route_fast_capital",
+      "route_bankbreezy"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Do not position as cheap capital. Route based on deposits, urgency, margin, and risk tolerance."
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "Business Line Access Solution",
+    "slug": "business-line-access-solution",
+    "public_label": "Business Line of Credit / Revolving Access",
+    "solution_family_keys": [
+      "revolving_access"
+    ],
+    "description": "Revolving access for established operators who need recurring draw-based capital instead of a one-time funding hit.",
+    "best_for": [
+      "cash-flow smoothing",
+      "seasonal swings",
+      "recurring working capital",
+      "optionality"
+    ],
+    "avoid_when": [
+      "chaotic cash management",
+      "unstable revenue",
+      "no operating history"
+    ],
+    "watch_out_for": [
+      "weak deposits",
+      "thin time in business",
+      "recent delinquencies",
+      "tax issues"
+    ],
+    "common_requirements": [
+      "established business",
+      "usable credit profile",
+      "consistent deposits",
+      "business bank account"
+    ],
+    "common_documents": [
+      "bank_statements",
+      "business_basic_information",
+      "credit_authorization",
+      "tax_returns_if_requested"
+    ],
+    "qualification_band": "fair_credit_business_funding",
+    "typical_speed": "3 days to 2–4 weeks",
+    "primary_cta": "Check Line of Credit Fit",
+    "related_route_tags": [
+      "route_line_of_credit",
+      "route_revolving_access"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Best when borrower wants repeatable access and has enough stability to justify revolving capital."
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "Structured Growth Loan Path",
+    "slug": "structured-growth-loan-path",
+    "public_label": "Structured Growth Capital",
+    "solution_family_keys": [
+      "structured_growth"
+    ],
+    "description": "More document-driven growth capital for stable businesses with clearer books, defined use of funds, and tolerance for underwriting.",
+    "best_for": [
+      "expansion",
+      "refinance",
+      "larger projects",
+      "growth plans",
+      "stronger economics than emergency capital"
+    ],
+    "avoid_when": [
+      "same-day urgency",
+      "sloppy books",
+      "unclear use of funds"
+    ],
+    "watch_out_for": [
+      "tax issues",
+      "urgency mismatch",
+      "thin documentation",
+      "weak margins"
+    ],
+    "common_requirements": [
+      "operating history",
+      "business revenue",
+      "credit review",
+      "financial documentation"
+    ],
+    "common_documents": [
+      "bank_statements",
+      "tax_returns",
+      "financial_statements",
+      "business_application",
+      "credit_report"
+    ],
+    "qualification_band": "stronger_credit_bank_adjacent",
+    "typical_speed": "2–4 weeks to 1–3 months",
+    "primary_cta": "Review Growth Capital Fit",
+    "related_route_tags": [
+      "route_structured_growth",
+      "route_term_loan"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Use when borrower has time and a cleaner profile. Avoid forcing emergency files into this lane."
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "Equipment Finance Solution",
+    "slug": "equipment-finance-solution",
+    "public_label": "Equipment / Truck / Asset-Backed Funding",
+    "solution_family_keys": [
+      "equipment_asset_finance"
+    ],
+    "description": "Capital for trucks, machinery, vehicles, and business-use equipment where the asset itself helps support the deal.",
+    "best_for": [
+      "construction",
+      "transportation",
+      "trucking",
+      "fleet growth",
+      "machinery purchase",
+      "capex-driven businesses"
+    ],
+    "avoid_when": [
+      "general cash needs disguised as equipment",
+      "no invoice or asset detail",
+      "non-business-use asset"
+    ],
+    "watch_out_for": [
+      "obsolete assets",
+      "salvage title",
+      "poor invoice detail",
+      "unclear collateral value"
+    ],
+    "common_requirements": [
+      "equipment quote or invoice",
+      "business use case",
+      "credit and cash-flow review"
+    ],
+    "common_documents": [
+      "equipment_invoice",
+      "spec_sheet",
+      "government_id",
+      "business_application",
+      "bank_statements"
+    ],
+    "qualification_band": "fair_credit_business_funding",
+    "typical_speed": "24 hours to 2–4 weeks",
+    "primary_cta": "Review Equipment Funding Fit",
+    "related_route_tags": [
+      "route_equipment",
+      "route_asset_backed"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Ask for invoice/specs early. Kill vague unrestricted-cash requests before they waste routing cycles."
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "Real Estate Capital Track",
+    "slug": "real-estate-capital-track",
+    "public_label": "Real Estate / Asset-Secured Capital",
+    "solution_family_keys": [
+      "real_estate_capital"
+    ],
+    "description": "Asset-secured capital for investors, flippers, rental buyers, developers, and commercial owner-operators.",
+    "best_for": [
+      "bridge loans",
+      "DSCR rental purchases",
+      "fix-and-flip",
+      "commercial acquisition",
+      "cash-out or refinance with collateral support"
+    ],
+    "avoid_when": [
+      "no collateral story",
+      "no exit plan",
+      "low equity support",
+      "unrealistic ARV"
+    ],
+    "watch_out_for": [
+      "LTV support",
+      "appraisal gaps",
+      "scope risk",
+      "borrower experience",
+      "property condition"
+    ],
+    "common_requirements": [
+      "property details",
+      "purchase price or value",
+      "equity/down payment",
+      "exit strategy",
+      "project scope when applicable"
+    ],
+    "common_documents": [
+      "purchase_contract",
+      "appraisal",
+      "rent_roll",
+      "lease",
+      "scope_of_work",
+      "property_photos"
+    ],
+    "qualification_band": "real_estate_asset_backed",
+    "typical_speed": "2–4 weeks to 1–3 months",
+    "primary_cta": "Review Real Estate Capital Fit",
+    "related_route_tags": [
+      "route_real_estate",
+      "route_dscr",
+      "route_bridge"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Collateral, property strategy, and exit plan matter more than generic business-funding language here."
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "Marketplace Capital Track",
+    "slug": "marketplace-capital-track",
+    "public_label": "Ecommerce / Marketplace Seller Capital",
+    "solution_family_keys": [
+      "ecommerce_marketplace_capital"
+    ],
+    "description": "Funding paths for e-commerce, Amazon, Walmart, Shopify, and marketplace sellers where underwriting is tied to sales history and account health.",
+    "best_for": [
+      "inventory",
+      "ad spend",
+      "marketplace cash-flow smoothing",
+      "stockout prevention",
+      "seller growth"
+    ],
+    "avoid_when": [
+      "suspended seller account",
+      "disconnected platform data",
+      "unstable account health"
+    ],
+    "watch_out_for": [
+      "platform concentration",
+      "account health",
+      "reserve holds",
+      "fulfillment timing"
+    ],
+    "common_requirements": [
+      "platform sales history",
+      "marketplace/API connection",
+      "account continuity",
+      "active revenue"
+    ],
+    "common_documents": [
+      "marketplace_connection",
+      "seller_statements",
+      "bank_statements",
+      "inventory_plan"
+    ],
+    "qualification_band": "ecommerce_marketplace",
+    "typical_speed": "instant to 1–3 days for some paths; longer for structured growth",
+    "primary_cta": "Review Marketplace Funding Fit",
+    "related_route_tags": [
+      "route_ecommerce",
+      "route_marketplace_seller"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Best niche moat for seller-specific pages and calculators. Account health is the underwriting landmine."
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "Business Credit Builder Path",
+    "slug": "business-credit-builder-path",
+    "public_label": "Business Credit Builder / Funding Prep",
+    "solution_family_keys": [
+      "credit_building_services"
+    ],
+    "description": "Prep and infrastructure path for applicants who need stronger business credit, entity setup, tradelines, or fundability cleanup before larger applications.",
+    "best_for": [
+      "not-ready applicants",
+      "new entities",
+      "thin credit profiles",
+      "business credit education",
+      "pre-funding preparation"
+    ],
+    "avoid_when": [
+      "borrower needs emergency capital today",
+      "borrower expects guaranteed funding"
+    ],
+    "watch_out_for": [
+      "overpromising",
+      "poor expectations",
+      "confusing credit building with approval"
+    ],
+    "common_requirements": [
+      "entity information",
+      "EIN/DUNS where applicable",
+      "business address and records",
+      "credit review"
+    ],
+    "common_documents": [
+      "business_formation_docs",
+      "ein_letter",
+      "business_address_verification",
+      "credit_report"
+    ],
+    "qualification_band": "mixed_or_specialty",
+    "typical_speed": "30–180 days depending on build path",
+    "primary_cta": "Start Funding Prep",
+    "related_route_tags": [
+      "route_business_credit",
+      "route_nurture"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Nurture lane. Useful when funding fit is weak but applicant can be developed into a future file."
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "Manual Funding Strategy Review",
+    "slug": "manual-funding-strategy-review",
+    "public_label": "Manual Funding Strategy Review",
+    "solution_family_keys": [
+      "manual_review"
+    ],
+    "description": "Human review route for unusual, borderline, high-ticket, conflicted, or multi-path files that should not be auto-routed by a quiz alone.",
+    "best_for": [
+      "mixed-use requests",
+      "large asks",
+      "conflicting signals",
+      "edge cases",
+      "complex capital stacks"
+    ],
+    "avoid_when": [
+      "simple low-value files with clear nurture path"
+    ],
+    "watch_out_for": [
+      "incomplete intake",
+      "contradictory answers",
+      "unsupported claims",
+      "urgency without documentation"
+    ],
+    "common_requirements": [
+      "full intake",
+      "use-of-funds explanation",
+      "documents based on product family",
+      "advisor review"
+    ],
+    "common_documents": [
+      "funding_intake",
+      "bank_statements",
+      "credit_authorization",
+      "supporting_documents_by_use_case"
+    ],
+    "qualification_band": "manual_review",
+    "typical_speed": "advisor-dependent",
+    "primary_cta": "Request a Funding Strategy Review",
+    "related_route_tags": [
+      "route_manual_review"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Use for anything that smells like application roulette wearing cologne."
+  }
+]

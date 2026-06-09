@@ -1,0 +1,69 @@
+[
+  {
+    "schema_version": "1.0.0",
+    "name": "Funding Directory",
+    "slug": "funding-directory",
+    "alternate_name": "Capital Architect",
+    "asset_type": "directory_site",
+    "status": "draft",
+    "featured": true,
+    "collection": "funding-products",
+    "public_visibility": true,
+    "positioning": "White-labeled capital-path directory for business owners to explore funding options without exposing backend provider relationships.",
+    "primary_hook": "Your Capital, Unfiltered.",
+    "primary_cta": "Launch Matching Engine",
+    "data_sources": [
+      "funding-products.registry.json",
+      "funding-product-families.registry.json",
+      "funding-routing-rules.registry.json",
+      "funding-scorecard.registry.json"
+    ],
+    "core_features": [
+      "funding_product_cards",
+      "matching_engine",
+      "filters_by_revenue",
+      "filters_by_credit",
+      "filters_by_time_in_business",
+      "featured_funding_paths",
+      "cta_to_apply_or_request_review"
+    ],
+    "recommended_filters": [
+      "solution_family",
+      "funding_type",
+      "monthly_revenue",
+      "credit_score",
+      "time_in_business",
+      "funding_amount",
+      "speed_to_funding",
+      "business_persona"
+    ],
+    "recommended_views": [
+      "featured_paths",
+      "fast_capital",
+      "startup_funding",
+      "lines_of_credit",
+      "equipment_financing",
+      "real_estate_capital",
+      "marketplace_seller_capital"
+    ],
+    "files": [
+      "index.html",
+      "styles.css",
+      "script.js"
+    ],
+    "current_source_files": [
+      "funding directory index.html",
+      "moonshine_capital_normalized_import(2).csv"
+    ],
+    "future_features": [
+      "dynamic_product_rendering_from_json",
+      "quiz_to_directory_routing",
+      "lead_capture",
+      "hubspot_sync",
+      "notion_sync",
+      "n8n_webhook_submission",
+      "white_labeled_provider_matching"
+    ],
+    "internal_notes": "Current HTML references 59 active funding products and should be converted to render cards from funding-products.registry.json rather than hardcoded examples."
+  }
+]

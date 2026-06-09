@@ -1,0 +1,322 @@
+[
+  {
+    "schema_version": "1.0.0",
+    "name": "Funding Readiness Scorecard",
+    "slug": "funding-readiness-scorecard",
+    "asset_type": "scorecard",
+    "status": "active",
+    "featured": true,
+    "collection": "funding-tools",
+    "public_visibility": true,
+    "primary_hook": "Find Out If Your Business Is Fundable Before You Apply.",
+    "hero_message": "Answer a few questions and get a clear funding readiness score based on revenue, time in business, bank activity, credit profile, business structure, funding purpose, and potential red flags.",
+    "primary_cta": "Get My Funding Score",
+    "secondary_cta": "Speak With a Funding Strategist",
+    "visitor_psychology": "Can I qualify for funding, or am I wasting time?",
+    "audience": [
+      "small_business_owners",
+      "gig_workers",
+      "founders",
+      "ecommerce_sellers",
+      "contractors",
+      "real_estate_investors",
+      "local_entrepreneurs"
+    ],
+    "visual_style": [
+      "trustworthy_fintech",
+      "editorial_cards",
+      "dark_navy",
+      "white_cards",
+      "green_score_indicators",
+      "bento_sections",
+      "score_meter"
+    ],
+    "score_model": {
+      "total_points": 100,
+      "categories": [
+        {
+          "field": "monthly_revenue",
+          "label": "Monthly Revenue",
+          "points": 25
+        },
+        {
+          "field": "time_in_business_months",
+          "label": "Time in Business",
+          "points": 20
+        },
+        {
+          "field": "credit_score_band",
+          "label": "Credit Profile",
+          "points": 20
+        },
+        {
+          "field": "bank_status",
+          "label": "Business Bank Activity",
+          "points": 15
+        },
+        {
+          "field": "business_structure",
+          "label": "Business Structure",
+          "points": 10
+        },
+        {
+          "field": "funding_purpose",
+          "label": "Funding Purpose / Use Case",
+          "points": 10
+        }
+      ],
+      "red_flag_penalties": {
+        "open_bankruptcy": 25,
+        "recent_tax_lien": 15,
+        "recent_missed_payments": 10,
+        "recent_nsfs_overdrafts": 10,
+        "new_bank_account": 8,
+        "existing_mca_daily_payment_advance": 10,
+        "suspended_marketplace_account": 15,
+        "no_current_revenue": 20
+      }
+    },
+    "score_tiers": [
+      {
+        "min": 80,
+        "max": 100,
+        "label": "Highly Fundable",
+        "lead_priority": "hot",
+        "recommended_cta": "Speak With a Funding Strategist"
+      },
+      {
+        "min": 65,
+        "max": 79,
+        "label": "Fundable, But Needs Review",
+        "lead_priority": "warm",
+        "recommended_cta": "Get My Funding Options Reviewed"
+      },
+      {
+        "min": 45,
+        "max": 64,
+        "label": "Possible Fit for Select Programs",
+        "lead_priority": "nurture",
+        "recommended_cta": "Get a Funding Readiness Review"
+      },
+      {
+        "min": 0,
+        "max": 44,
+        "label": "Not Ready Yet — But Fixable",
+        "lead_priority": "education",
+        "recommended_cta": "Get the Funding Prep Checklist"
+      }
+    ],
+    "questions": [
+      {
+        "field": "business_persona",
+        "question": "What best describes you?",
+        "type": "single_select",
+        "required": true,
+        "options": [
+          "existing_small_business_owner",
+          "gig_worker_independent_contractor",
+          "ecommerce_marketplace_seller",
+          "startup_founder",
+          "real_estate_investor",
+          "contractor_trucking_equipment_heavy",
+          "not_sure"
+        ]
+      },
+      {
+        "field": "monthly_revenue",
+        "question": "What is your average monthly business revenue?",
+        "type": "single_select",
+        "required": true,
+        "options": [
+          "0_2999",
+          "3000_8499",
+          "8500_14999",
+          "15000_19999",
+          "20000_49999",
+          "50000_99999",
+          "100000_plus"
+        ]
+      },
+      {
+        "field": "time_in_business_months",
+        "question": "How long have you been operating?",
+        "type": "single_select",
+        "required": true,
+        "options": [
+          "not_launched",
+          "0_3_months",
+          "4_5_months",
+          "6_11_months",
+          "12_23_months",
+          "24_plus_months"
+        ]
+      },
+      {
+        "field": "credit_score_band",
+        "question": "What is your estimated personal credit score?",
+        "type": "single_select",
+        "required": true,
+        "options": [
+          "below_500",
+          "500_579",
+          "580_599",
+          "600_659",
+          "660_679",
+          "680_699",
+          "700_plus"
+        ]
+      },
+      {
+        "field": "bank_status",
+        "question": "Do you have a business bank account with regular deposits?",
+        "type": "single_select",
+        "required": true,
+        "options": [
+          "no_business_bank_account",
+          "low_or_inconsistent_deposits",
+          "consistent_monthly_deposits",
+          "strong_clean_activity",
+          "recent_nsfs_overdrafts"
+        ]
+      },
+      {
+        "field": "business_structure",
+        "question": "How is your business currently set up?",
+        "type": "single_select",
+        "required": true,
+        "options": [
+          "no_formal_business",
+          "sole_prop_independent_contractor",
+          "llc_corp_no_business_bank",
+          "llc_corp_with_business_bank",
+          "llc_corp_bank_ein_clean_records"
+        ]
+      },
+      {
+        "field": "funding_purpose",
+        "question": "What do you need funding for?",
+        "type": "single_select",
+        "required": true,
+        "options": [
+          "payroll_emergency_working_capital",
+          "inventory_materials",
+          "marketing_growth",
+          "equipment_vehicle_truck",
+          "real_estate_purchase_project",
+          "ecommerce_marketplace_growth",
+          "startup_launch_capital",
+          "debt_consolidation_refinancing",
+          "business_credit_building",
+          "not_sure"
+        ]
+      },
+      {
+        "field": "desired_funding_amount",
+        "question": "Desired funding amount",
+        "type": "single_select",
+        "required": true,
+        "options": [
+          "under_5000",
+          "5000_25000",
+          "25000_75000",
+          "75000_150000",
+          "150000_500000",
+          "500000_plus"
+        ]
+      },
+      {
+        "field": "red_flags",
+        "question": "Do any red flags apply?",
+        "type": "multi_select",
+        "required": true,
+        "options": [
+          "open_bankruptcy",
+          "recent_tax_lien",
+          "recent_missed_payments",
+          "recent_nsfs_overdrafts",
+          "business_bank_account_recently_opened",
+          "existing_mca_daily_payment_advance",
+          "suspended_marketplace_account",
+          "no_current_revenue",
+          "none"
+        ]
+      }
+    ],
+    "lead_capture_fields": [
+      "name",
+      "email",
+      "phone",
+      "business_name",
+      "state",
+      "consent"
+    ],
+    "outputs": [
+      "funding_readiness_score",
+      "score_tier",
+      "score_meter_color",
+      "primary_funding_family",
+      "secondary_funding_families",
+      "strengths",
+      "risks",
+      "documents_needed",
+      "recommended_next_steps",
+      "lead_priority",
+      "cta"
+    ],
+    "public_funding_paths": [
+      "fast-working-capital",
+      "revenue-based-funding",
+      "business-line-of-credit",
+      "structured-growth-capital",
+      "startup-credit-leverage-funding",
+      "equipment-truck-asset-backed-funding",
+      "real-estate-asset-secured-capital",
+      "ecommerce-marketplace-seller-capital",
+      "business-credit-builder-funding-prep",
+      "manual-funding-strategy-review"
+    ],
+    "versions": [
+      {
+        "type": "embed_widget",
+        "files": [
+          "widget.html",
+          "widget.css",
+          "widget.js",
+          "embed-example.html"
+        ]
+      },
+      {
+        "type": "landing_page",
+        "files": [
+          "index.html",
+          "styles.css",
+          "script.js"
+        ]
+      }
+    ],
+    "integration_hooks": {
+      "window_object": "window.fundingReadinessResult",
+      "browser_event": "fundingReadinessCalculated"
+    },
+    "related_registries": [
+      "funding-routing-rules.registry.json",
+      "funding-product-families.registry.json",
+      "funding-products.registry.json",
+      "funding-lead-fields.registry.json",
+      "funding-documents.registry.json",
+      "funding-compliance-copy.registry.json"
+    ],
+    "monetization_path": [
+      "lead_capture",
+      "funding_strategy_review",
+      "application_submission",
+      "affiliate_partner_routing",
+      "business_credit_nurture"
+    ],
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "document_key": "bank_statements",
+    "label": "Business Bank Statements",
+    "description": "Recent statements used to verify deposits, cash flow, account activity, NSFs, negative days, and existing advance payments.",
+    "commonly_required_for": [
+      "revenue-advance-program",
+      "business-line-access-solution",
+      "structured-growth-loan-path"
+    ],
+    "typical_period": "3–6 months",
+    "public_visibility": true,
+    "internal_notes": "Review consistency, deposit sources, NSFs, negative days, and current advance payments.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "business_application",
+    "label": "Funding Application",
+    "description": "Standard borrower application collecting entity, owner, funding request, and use-of-funds information.",
+    "commonly_required_for": [
+      "all_funding_paths"
+    ],
+    "typical_period": "current",
+    "public_visibility": true,
+    "internal_notes": "Should feed CRM, routing engine, and submission packet.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "government_id",
+    "label": "Government-Issued ID",
+    "description": "Owner identification used for identity verification and funding packet completion.",
+    "commonly_required_for": [
+      "all_funding_paths"
+    ],
+    "typical_period": "current/unexpired",
+    "public_visibility": true,
+    "internal_notes": "Driver license often requested for fast-capital programs.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "voided_check",
+    "label": "Voided Business Check",
+    "description": "Bank verification item commonly requested for funding or ACH setup.",
+    "commonly_required_for": [
+      "revenue-advance-program",
+      "business-line-access-solution"
+    ],
+    "typical_period": "current",
+    "public_visibility": true,
+    "internal_notes": "Confirm account ownership and business name consistency.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "credit_authorization",
+    "label": "Credit Authorization",
+    "description": "Authorization to review borrower credit where the product depends on personal or business credit.",
+    "commonly_required_for": [
+      "startup-funding-path",
+      "business-line-access-solution",
+      "structured-growth-loan-path",
+      "equipment-finance-solution"
+    ],
+    "typical_period": "current",
+    "public_visibility": true,
+    "internal_notes": "Avoid hard-pull confusion; clarify process with borrower.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "credit_report",
+    "label": "Credit Report",
+    "description": "Credit profile used to evaluate credit-dependent funding paths and identify derogatories, inquiries, utilization, and score range.",
+    "commonly_required_for": [
+      "startup-funding-path",
+      "structured-growth-loan-path",
+      "business-line-access-solution"
+    ],
+    "typical_period": "current",
+    "public_visibility": true,
+    "internal_notes": "Critical for 680+ startup/strong-credit paths and 600–660 fair-credit paths.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "income_verification",
+    "label": "Income Verification",
+    "description": "Paystubs, W-2, bank deposits, or other income support used when personal credit/income drives approval.",
+    "commonly_required_for": [
+      "startup-funding-path",
+      "personal_startup",
+      "credit_leverage_paths"
+    ],
+    "typical_period": "recent/current",
+    "public_visibility": true,
+    "internal_notes": "Important when business revenue is low or not yet established.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "tax_returns",
+    "label": "Tax Returns",
+    "description": "Business or personal tax returns used for more document-heavy, bank-adjacent, SBA, growth, or real estate paths.",
+    "commonly_required_for": [
+      "structured-growth-loan-path",
+      "real-estate-capital-track",
+      "business-line-access-solution"
+    ],
+    "typical_period": "1–3 years",
+    "public_visibility": true,
+    "internal_notes": "Tax issues can create routing problems; surface early.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "financial_statements",
+    "label": "Financial Statements",
+    "description": "Profit and loss, balance sheet, or other financial reports used for structured underwriting and larger requests.",
+    "commonly_required_for": [
+      "structured-growth-loan-path",
+      "real-estate-capital-track"
+    ],
+    "typical_period": "year-to-date and prior periods",
+    "public_visibility": true,
+    "internal_notes": "Sloppy books create underwriting drag; use for stronger files.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "equipment_invoice",
+    "label": "Equipment Invoice or Quote",
+    "description": "Invoice, quote, or purchase order for trucks, machinery, vehicles, or business-use equipment.",
+    "commonly_required_for": [
+      "equipment-finance-solution"
+    ],
+    "typical_period": "current",
+    "public_visibility": true,
+    "internal_notes": "Need asset description, seller/vendor, cost, condition, and business use.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "spec_sheet",
+    "label": "Equipment Spec Sheet",
+    "description": "Asset specification details supporting equipment, truck, fleet, or machinery financing.",
+    "commonly_required_for": [
+      "equipment-finance-solution"
+    ],
+    "typical_period": "current",
+    "public_visibility": true,
+    "internal_notes": "Useful for avoiding obsolete/salvage-title surprises.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "purchase_contract",
+    "label": "Purchase Contract",
+    "description": "Real estate purchase contract or agreement used for acquisition, bridge, rental, or commercial property financing.",
+    "commonly_required_for": [
+      "real-estate-capital-track"
+    ],
+    "typical_period": "current",
+    "public_visibility": true,
+    "internal_notes": "Tie request to property economics and closing timeline.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "appraisal",
+    "label": "Appraisal / Valuation Support",
+    "description": "Property valuation support used to evaluate LTV and collateral strength.",
+    "commonly_required_for": [
+      "real-estate-capital-track"
+    ],
+    "typical_period": "current or recent",
+    "public_visibility": true,
+    "internal_notes": "Watch appraisal gaps and unsupported ARV claims.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "rent_roll",
+    "label": "Rent Roll",
+    "description": "Rental income schedule used for DSCR, multifamily, commercial, and income-property review.",
+    "commonly_required_for": [
+      "real-estate-capital-track"
+    ],
+    "typical_period": "current",
+    "public_visibility": true,
+    "internal_notes": "Validate occupancy, lease terms, and income support.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "lease",
+    "label": "Lease Agreement",
+    "description": "Tenant or property lease documentation supporting real estate income or business location context.",
+    "commonly_required_for": [
+      "real-estate-capital-track",
+      "structured-growth-loan-path"
+    ],
+    "typical_period": "current",
+    "public_visibility": true,
+    "internal_notes": "Helpful for rental, commercial, and operating-location review.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "scope_of_work",
+    "label": "Scope of Work",
+    "description": "Project scope, budget, and timeline for fix-and-flip, renovation, bridge, or construction-related deals.",
+    "commonly_required_for": [
+      "real-estate-capital-track"
+    ],
+    "typical_period": "current",
+    "public_visibility": true,
+    "internal_notes": "Scope risk is a major issue in bridge/fix-and-flip paths.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "marketplace_connection",
+    "label": "Marketplace / API Connection",
+    "description": "Platform connection or sales data authorization for Amazon, Walmart, Shopify, or other marketplace funding paths.",
+    "commonly_required_for": [
+      "marketplace-capital-track"
+    ],
+    "typical_period": "current/active connection",
+    "public_visibility": true,
+    "internal_notes": "Suspension, disconnection, or poor account health can kill the file.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "seller_statements",
+    "label": "Seller Statements / Platform Sales History",
+    "description": "Marketplace sales history used to evaluate seller revenue, consistency, and growth needs.",
+    "commonly_required_for": [
+      "marketplace-capital-track"
+    ],
+    "typical_period": "3–12 months",
+    "public_visibility": true,
+    "internal_notes": "Match platform revenue to bank deposits where possible.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "retirement_account_statement",
+    "label": "Retirement Account Statement",
+    "description": "Retirement asset statement used for ROBS or retirement-backed startup funding paths.",
+    "commonly_required_for": [
+      "startup-funding-path"
+    ],
+    "typical_period": "current",
+    "public_visibility": true,
+    "internal_notes": "Use only for eligible structures; do not imply approval or tax advice.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  },
+  {
+    "document_key": "business_formation_docs",
+    "label": "Business Formation Documents",
+    "description": "Entity formation, EIN, operating agreement, or registration documents used for entity validation and fundability prep.",
+    "commonly_required_for": [
+      "startup-funding-path",
+      "business-credit-builder-path",
+      "structured-growth-loan-path"
+    ],
+    "typical_period": "current",
+    "public_visibility": true,
+    "internal_notes": "Useful for business credit and bank-account consistency checks.",
+    "schema_version": "1.0.0",
+    "source_files": [
+      "funding_product_portfolio_report(5).md",
+      "moonshine_capital_master_handbook(4).pdf"
+    ]
+  }
+]

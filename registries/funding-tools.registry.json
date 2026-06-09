@@ -1,1713 +1,525 @@
-{
-  "registry_name": "Funding Tools Registry",
-  "registry_slug": "funding-tools",
-  "version": "1.0.0",
-  "source_sheet": "registry/backlog import",
-  "purpose": "Internal planning registry for funding tools, routing, and per-tool artifact tracking.",
-  "privacy": "internal",
-  "public_projection_target": "data/tools.json",
-  "recommended_public_fields": [
-    "slug",
-    "brand",
-    "name",
-    "oneLiner",
-    "pain",
-    "artifact",
-    "inputs",
-    "logic",
-    "ctaLabel",
-    "ctaUrl",
-    "tags",
-    "runner"
-  ],
-  "recommended_internal_fields": [
-    "internal",
-    "provider_visibility",
-    "artifacts",
-    "artifact_root"
-  ],
-  "status_workflow": [
-    "backlog",
-    "scaffolded",
-    "review",
-    "active",
-    "deprecated"
-  ],
-  "items": [
-    {
-      "name": "Burn Rate Runway Extender",
-      "slug": "rokfi-burn-rate-runway-extender",
-      "sequence": 1,
-      "persona": "Startup founder",
-      "description": "Estimate runway, net burn, and the point where funding review should start.",
-      "path": "/tools/rokfi-burn-rate-runway-extender/",
-      "url": "https://core-tools.vercel.app/tools/rokfi-burn-rate-runway-extender/",
-      "asset_type": "calculator",
-      "workflow_stage": "awareness",
-      "use_case": "Founder runway triage",
-      "categories": [
-        "startup-funding",
-        "emergency-funding"
-      ],
-      "bundle_candidates": [
-        "startup-funding",
-        "emergency-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": false,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "active",
-      "featured": true,
-      "collection": "startup-funding",
-      "primary_cta_label": "Review funding options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Share embed",
-      "secondary_cta_url": "/tools/rokfi-burn-rate-runway-extender/embed",
-      "tags": [
-        "startup",
-        "runway",
-        "burn"
-      ],
-      "related_assets": [
-        "tools/rokfi-burn-rate-runway-extender/landing/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/rokfi-burn-rate-runway-extender/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/rokfi-burn-rate-runway-extender/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/rokfi-burn-rate-runway-extender/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/rokfi-burn-rate-runway-extender/README.md"
-        },
-        "config": {
-          "path": "tools/rokfi-burn-rate-runway-extender/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/rokfi-burn-rate-runway-extender/assets/"
-        },
-        "exports": {
-          "path": "tools/rokfi-burn-rate-runway-extender/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "burn-rate widget fallback",
-        "core_logic": "Estimate runway from cash, burn, and revenue."
-      }
-    },
-    {
-      "name": "Invoice Float Bridge",
-      "slug": "invoice-float-bridge",
-      "sequence": 0,
-      "persona": "Accounts receivable holder",
-      "description": "Bridge a short delay between invoice issuance and payment arrival.",
-      "path": "/tools/invoice-float-bridge/",
-      "url": "https://core-tools.vercel.app/tools/invoice-float-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "invoice-funding",
-      "categories": [
-        "cash-flow-bridges",
-        "cash-flow-bridges"
-      ],
-      "bundle_candidates": [
-        "cash-flow-bridges",
-        "cash-flow-bridges"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "cash-flow-bridges",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/invoice-float-bridge/embed",
-      "tags": [
-        "invoice bridge",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/invoice-float-bridge/landing/index.html",
-        "tools/invoice-float-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/invoice-float-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/invoice-float-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/invoice-float-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/invoice-float-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/invoice-float-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/invoice-float-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/invoice-float-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Payroll Gap Bridge",
-      "slug": "payroll-gap-bridge",
-      "sequence": 0,
-      "persona": "Payroll risk owner",
-      "description": "Cover payroll when cash lands after the due date.",
-      "path": "/tools/payroll-gap-bridge/",
-      "url": "https://core-tools.vercel.app/tools/payroll-gap-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "emergency-funding",
-      "categories": [
-        "emergency-funding",
-        "emergency-funding"
-      ],
-      "bundle_candidates": [
-        "emergency-funding",
-        "emergency-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "emergency-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/payroll-gap-bridge/embed",
-      "tags": [
-        "payroll bridge",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/payroll-gap-bridge/landing/index.html",
-        "tools/payroll-gap-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/payroll-gap-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/payroll-gap-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/payroll-gap-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/payroll-gap-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/payroll-gap-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/payroll-gap-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/payroll-gap-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Inventory Reorder Bridge",
-      "slug": "inventory-reorder-bridge",
-      "sequence": 0,
-      "persona": "Inventory buyer",
-      "description": "Estimate funding needed to restock before sell-through stalls.",
-      "path": "/tools/inventory-reorder-bridge/",
-      "url": "https://core-tools.vercel.app/tools/inventory-reorder-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "inventory-funding",
-      "categories": [
-        "cash-flow-bridges",
-        "cash-flow-bridges"
-      ],
-      "bundle_candidates": [
-        "cash-flow-bridges",
-        "cash-flow-bridges"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "cash-flow-bridges",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/inventory-reorder-bridge/embed",
-      "tags": [
-        "inventory reorder",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/inventory-reorder-bridge/landing/index.html",
-        "tools/inventory-reorder-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/inventory-reorder-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/inventory-reorder-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/inventory-reorder-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/inventory-reorder-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/inventory-reorder-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/inventory-reorder-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/inventory-reorder-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Job Material Bridge",
-      "slug": "job-material-bridge",
-      "sequence": 0,
-      "persona": "Contractor",
-      "description": "Estimate the advance needed to buy materials before milestone billing.",
-      "path": "/tools/job-material-bridge/",
-      "url": "https://core-tools.vercel.app/tools/job-material-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "equipment-funding",
-      "categories": [
-        "equipment-vehicle-funding",
-        "equipment-vehicle-funding"
-      ],
-      "bundle_candidates": [
-        "equipment-vehicle-funding",
-        "equipment-vehicle-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "equipment-vehicle-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/job-material-bridge/embed",
-      "tags": [
-        "materials bridge",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/job-material-bridge/landing/index.html",
-        "tools/job-material-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/job-material-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/job-material-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/job-material-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/job-material-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/job-material-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/job-material-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/job-material-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Repair vs Replace Bridge",
-      "slug": "repair-vs-replace-bridge",
-      "sequence": 0,
-      "persona": "Fleet owner",
-      "description": "Compare repair cash need versus replacement financing urgency.",
-      "path": "/tools/repair-vs-replace-bridge/",
-      "url": "https://core-tools.vercel.app/tools/repair-vs-replace-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "equipment-funding",
-      "categories": [
-        "equipment-vehicle-funding",
-        "equipment-vehicle-funding"
-      ],
-      "bundle_candidates": [
-        "equipment-vehicle-funding",
-        "equipment-vehicle-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "equipment-vehicle-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/repair-vs-replace-bridge/embed",
-      "tags": [
-        "fleet bridge",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/repair-vs-replace-bridge/landing/index.html",
-        "tools/repair-vs-replace-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/repair-vs-replace-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/repair-vs-replace-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/repair-vs-replace-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/repair-vs-replace-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/repair-vs-replace-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/repair-vs-replace-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/repair-vs-replace-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Bad Credit Funding Bridge",
-      "slug": "bad-credit-funding-bridge",
-      "sequence": 0,
-      "persona": "Owner with credit friction",
-      "description": "Find a conservative path for owners with limited credit options.",
-      "path": "/tools/bad-credit-funding-bridge/",
-      "url": "https://core-tools.vercel.app/tools/bad-credit-funding-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "bad-credit-funding",
-      "categories": [
-        "bad-credit-funding",
-        "bad-credit-funding"
-      ],
-      "bundle_candidates": [
-        "bad-credit-funding",
-        "bad-credit-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "bad-credit-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/bad-credit-funding-bridge/embed",
-      "tags": [
-        "credit-bridge",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/bad-credit-funding-bridge/landing/index.html",
-        "tools/bad-credit-funding-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/bad-credit-funding-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/bad-credit-funding-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/bad-credit-funding-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/bad-credit-funding-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/bad-credit-funding-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/bad-credit-funding-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/bad-credit-funding-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Revenue Based Bridge",
-      "slug": "revenue-based-bridge",
-      "sequence": 0,
-      "persona": "Founder",
-      "description": "Estimate an advance sized for recurring revenue and payback tolerance.",
-      "path": "/tools/revenue-based-bridge/",
-      "url": "https://core-tools.vercel.app/tools/revenue-based-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "startup-funding",
-      "categories": [
-        "startup-funding",
-        "startup-funding"
-      ],
-      "bundle_candidates": [
-        "startup-funding",
-        "startup-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "startup-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/revenue-based-bridge/embed",
-      "tags": [
-        "revenue bridge",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/revenue-based-bridge/landing/index.html",
-        "tools/revenue-based-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/revenue-based-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/revenue-based-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/revenue-based-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/revenue-based-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/revenue-based-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/revenue-based-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/revenue-based-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "MCA Compare",
-      "slug": "merchant-cash-advance-compare",
-      "sequence": 0,
-      "persona": "Merchant owner",
-      "description": "Compare the daily bite of a merchant cash advance with safer alternatives.",
-      "path": "/tools/merchant-cash-advance-compare/",
-      "url": "https://core-tools.vercel.app/tools/merchant-cash-advance-compare/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "mca-funding",
-      "categories": [
-        "bad-credit-funding",
-        "bad-credit-funding"
-      ],
-      "bundle_candidates": [
-        "bad-credit-funding",
-        "bad-credit-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "bad-credit-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/merchant-cash-advance-compare/embed",
-      "tags": [
-        "mca",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/merchant-cash-advance-compare/landing/index.html",
-        "tools/merchant-cash-advance-compare/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/merchant-cash-advance-compare/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/merchant-cash-advance-compare/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/merchant-cash-advance-compare/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/merchant-cash-advance-compare/README.md"
-        },
-        "config": {
-          "path": "tools/merchant-cash-advance-compare/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/merchant-cash-advance-compare/assets/"
-        },
-        "exports": {
-          "path": "tools/merchant-cash-advance-compare/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Tax Settlement Bridge",
-      "slug": "tax-settlement-bridge",
-      "sequence": 0,
-      "persona": "Taxpayer",
-      "description": "Estimate a short-term bridge for back taxes and installment pressure.",
-      "path": "/tools/tax-settlement-bridge/",
-      "url": "https://core-tools.vercel.app/tools/tax-settlement-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "tax-funding",
-      "categories": [
-        "tax-funding",
-        "tax-funding"
-      ],
-      "bundle_candidates": [
-        "tax-funding",
-        "tax-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "tax-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/tax-settlement-bridge/embed",
-      "tags": [
-        "tax bridge",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/tax-settlement-bridge/landing/index.html",
-        "tools/tax-settlement-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/tax-settlement-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/tax-settlement-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/tax-settlement-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/tax-settlement-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/tax-settlement-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/tax-settlement-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/tax-settlement-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "IRS Payment Plan Planner",
-      "slug": "irs-payment-plan-planner",
-      "sequence": 0,
-      "persona": "Taxpayer",
-      "description": "Plan a payment schedule before the IRS notice becomes a scramble.",
-      "path": "/tools/irs-payment-plan-planner/",
-      "url": "https://core-tools.vercel.app/tools/irs-payment-plan-planner/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "tax-funding",
-      "categories": [
-        "tax-funding",
-        "tax-funding"
-      ],
-      "bundle_candidates": [
-        "tax-funding",
-        "tax-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "tax-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/irs-payment-plan-planner/embed",
-      "tags": [
-        "tax plan",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/irs-payment-plan-planner/landing/index.html",
-        "tools/irs-payment-plan-planner/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/irs-payment-plan-planner/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/irs-payment-plan-planner/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/irs-payment-plan-planner/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/irs-payment-plan-planner/README.md"
-        },
-        "config": {
-          "path": "tools/irs-payment-plan-planner/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/irs-payment-plan-planner/assets/"
-        },
-        "exports": {
-          "path": "tools/irs-payment-plan-planner/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Startup Runway Planner",
-      "slug": "startup-runway-planner",
-      "sequence": 0,
-      "persona": "Founder",
-      "description": "Translate cash and burn into a simple runway planning estimate.",
-      "path": "/tools/startup-runway-planner/",
-      "url": "https://core-tools.vercel.app/tools/startup-runway-planner/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "startup-funding",
-      "categories": [
-        "startup-funding",
-        "startup-funding"
-      ],
-      "bundle_candidates": [
-        "startup-funding",
-        "startup-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "startup-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/startup-runway-planner/embed",
-      "tags": [
-        "runway",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/startup-runway-planner/landing/index.html",
-        "tools/startup-runway-planner/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/startup-runway-planner/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/startup-runway-planner/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/startup-runway-planner/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/startup-runway-planner/README.md"
-        },
-        "config": {
-          "path": "tools/startup-runway-planner/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/startup-runway-planner/assets/"
-        },
-        "exports": {
-          "path": "tools/startup-runway-planner/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Gig Income Stabilizer",
-      "slug": "gig-income-stabilizer",
-      "sequence": 0,
-      "persona": "Gig worker",
-      "description": "Smooth out income swings and estimate short-term funding needs.",
-      "path": "/tools/gig-income-stabilizer/",
-      "url": "https://core-tools.vercel.app/tools/gig-income-stabilizer/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "gig-income",
-      "categories": [
-        "gig-worker-funding",
-        "gig-worker-funding"
-      ],
-      "bundle_candidates": [
-        "gig-worker-funding",
-        "gig-worker-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "gig-worker-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/gig-income-stabilizer/embed",
-      "tags": [
-        "gig income",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/gig-income-stabilizer/landing/index.html",
-        "tools/gig-income-stabilizer/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/gig-income-stabilizer/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/gig-income-stabilizer/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/gig-income-stabilizer/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/gig-income-stabilizer/README.md"
-        },
-        "config": {
-          "path": "tools/gig-income-stabilizer/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/gig-income-stabilizer/assets/"
-        },
-        "exports": {
-          "path": "tools/gig-income-stabilizer/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Rideshare Cash Bridge",
-      "slug": "rideshare-cash-bridge",
-      "sequence": 0,
-      "persona": "Driver",
-      "description": "Bridge the gap between rideshare payouts and weekly bills.",
-      "path": "/tools/rideshare-cash-bridge/",
-      "url": "https://core-tools.vercel.app/tools/rideshare-cash-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "gig-income",
-      "categories": [
-        "gig-worker-funding",
-        "gig-worker-funding"
-      ],
-      "bundle_candidates": [
-        "gig-worker-funding",
-        "gig-worker-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "gig-worker-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/rideshare-cash-bridge/embed",
-      "tags": [
-        "rideshare",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/rideshare-cash-bridge/landing/index.html",
-        "tools/rideshare-cash-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/rideshare-cash-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/rideshare-cash-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/rideshare-cash-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/rideshare-cash-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/rideshare-cash-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/rideshare-cash-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/rideshare-cash-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Creator Income Bridge",
-      "slug": "creator-income-bridge",
-      "sequence": 0,
-      "persona": "Creator",
-      "description": "Stabilize creator cash flow when sponsorships and payouts lag.",
-      "path": "/tools/creator-income-bridge/",
-      "url": "https://core-tools.vercel.app/tools/creator-income-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "gig-income",
-      "categories": [
-        "gig-worker-funding",
-        "gig-worker-funding"
-      ],
-      "bundle_candidates": [
-        "gig-worker-funding",
-        "gig-worker-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "gig-worker-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/creator-income-bridge/embed",
-      "tags": [
-        "creator",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/creator-income-bridge/landing/index.html",
-        "tools/creator-income-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/creator-income-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/creator-income-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/creator-income-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/creator-income-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/creator-income-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/creator-income-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/creator-income-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Affiliate Payout Accelerator",
-      "slug": "affiliate-payout-accelerator",
-      "sequence": 0,
-      "persona": "Affiliate operator",
-      "description": "Estimate the gap between earned commissions and cash timing.",
-      "path": "/tools/affiliate-payout-accelerator/",
-      "url": "https://core-tools.vercel.app/tools/affiliate-payout-accelerator/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "affiliate-funding",
-      "categories": [
-        "affiliate-ops",
-        "broker-affiliate-tools"
-      ],
-      "bundle_candidates": [
-        "affiliate-ops",
-        "broker-affiliate-tools"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "affiliate-ops",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/affiliate-payout-accelerator/embed",
-      "tags": [
-        "affiliate",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/affiliate-payout-accelerator/landing/index.html",
-        "tools/affiliate-payout-accelerator/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/affiliate-payout-accelerator/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/affiliate-payout-accelerator/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/affiliate-payout-accelerator/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/affiliate-payout-accelerator/README.md"
-        },
-        "config": {
-          "path": "tools/affiliate-payout-accelerator/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/affiliate-payout-accelerator/assets/"
-        },
-        "exports": {
-          "path": "tools/affiliate-payout-accelerator/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Broker Book Closing Bridge",
-      "slug": "broker-book-closing-bridge",
-      "sequence": 0,
-      "persona": "Broker",
-      "description": "Estimate the funding gap between deal close and commission settlement.",
-      "path": "/tools/broker-book-closing-bridge/",
-      "url": "https://core-tools.vercel.app/tools/broker-book-closing-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "broker-funding",
-      "categories": [
-        "broker-affiliate-tools",
-        "broker-affiliate-tools"
-      ],
-      "bundle_candidates": [
-        "broker-affiliate-tools",
-        "broker-affiliate-tools"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "broker-affiliate-tools",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/broker-book-closing-bridge/embed",
-      "tags": [
-        "broker",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/broker-book-closing-bridge/landing/index.html",
-        "tools/broker-book-closing-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/broker-book-closing-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/broker-book-closing-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/broker-book-closing-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/broker-book-closing-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/broker-book-closing-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/broker-book-closing-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/broker-book-closing-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Earnest Money Bridge",
-      "slug": "real-estate-earnest-money-bridge",
-      "sequence": 0,
-      "persona": "Investor",
-      "description": "Estimate the liquidity required to secure a real estate deal quickly.",
-      "path": "/tools/real-estate-earnest-money-bridge/",
-      "url": "https://core-tools.vercel.app/tools/real-estate-earnest-money-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "real-estate-funding",
-      "categories": [
-        "real-estate-funding",
-        "real-estate-funding"
-      ],
-      "bundle_candidates": [
-        "real-estate-funding",
-        "real-estate-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "real-estate-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/real-estate-earnest-money-bridge/embed",
-      "tags": [
-        "earnest money",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/real-estate-earnest-money-bridge/landing/index.html",
-        "tools/real-estate-earnest-money-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/real-estate-earnest-money-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/real-estate-earnest-money-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/real-estate-earnest-money-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/real-estate-earnest-money-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/real-estate-earnest-money-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/real-estate-earnest-money-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/real-estate-earnest-money-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Flip Renovation Bridge",
-      "slug": "flip-renovation-bridge",
-      "sequence": 0,
-      "persona": "Flipper",
-      "description": "Estimate bridge capital for renovation work before resale cash arrives.",
-      "path": "/tools/flip-renovation-bridge/",
-      "url": "https://core-tools.vercel.app/tools/flip-renovation-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "real-estate-funding",
-      "categories": [
-        "real-estate-funding",
-        "real-estate-funding"
-      ],
-      "bundle_candidates": [
-        "real-estate-funding",
-        "real-estate-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "real-estate-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/flip-renovation-bridge/embed",
-      "tags": [
-        "renovation",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/flip-renovation-bridge/landing/index.html",
-        "tools/flip-renovation-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/flip-renovation-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/flip-renovation-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/flip-renovation-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/flip-renovation-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/flip-renovation-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/flip-renovation-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/flip-renovation-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Bridge Loan Readiness Check",
-      "slug": "bridge-loan-readiness-check",
-      "sequence": 0,
-      "persona": "Founder",
-      "description": "Check documents and risk flags before applying for a bridge loan.",
-      "path": "/tools/bridge-loan-readiness-check/",
-      "url": "https://core-tools.vercel.app/tools/bridge-loan-readiness-check/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "startup-funding",
-      "categories": [
-        "funding-readiness",
-        "funding-readiness"
-      ],
-      "bundle_candidates": [
-        "funding-readiness",
-        "funding-readiness"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "funding-readiness",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/bridge-loan-readiness-check/embed",
-      "tags": [
-        "readiness",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/bridge-loan-readiness-check/landing/index.html",
-        "tools/bridge-loan-readiness-check/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/bridge-loan-readiness-check/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/bridge-loan-readiness-check/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/bridge-loan-readiness-check/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/bridge-loan-readiness-check/README.md"
-        },
-        "config": {
-          "path": "tools/bridge-loan-readiness-check/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/bridge-loan-readiness-check/assets/"
-        },
-        "exports": {
-          "path": "tools/bridge-loan-readiness-check/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Cashflow Reserve Planner",
-      "slug": "cashflow-reserve-planner",
-      "sequence": 0,
-      "persona": "Operator",
-      "description": "Size a reserve that reduces the chance of a short-term funding emergency.",
-      "path": "/tools/cashflow-reserve-planner/",
-      "url": "https://core-tools.vercel.app/tools/cashflow-reserve-planner/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "emergency-funding",
-      "categories": [
-        "funding-readiness",
-        "funding-readiness"
-      ],
-      "bundle_candidates": [
-        "funding-readiness",
-        "funding-readiness"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "funding-readiness",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/cashflow-reserve-planner/embed",
-      "tags": [
-        "reserve",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/cashflow-reserve-planner/landing/index.html",
-        "tools/cashflow-reserve-planner/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/cashflow-reserve-planner/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/cashflow-reserve-planner/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/cashflow-reserve-planner/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/cashflow-reserve-planner/README.md"
-        },
-        "config": {
-          "path": "tools/cashflow-reserve-planner/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/cashflow-reserve-planner/assets/"
-        },
-        "exports": {
-          "path": "tools/cashflow-reserve-planner/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Commission Recovery Planner",
-      "slug": "commission-recovery-planner",
-      "sequence": 0,
-      "persona": "Sales operator",
-      "description": "Plan around delayed commissions and back-office settlement lag.",
-      "path": "/tools/commission-recovery-planner/",
-      "url": "https://core-tools.vercel.app/tools/commission-recovery-planner/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "commission-funding",
-      "categories": [
-        "commission-tools",
-        "commission-tools"
-      ],
-      "bundle_candidates": [
-        "commission-tools",
-        "commission-tools"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "commission-tools",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/commission-recovery-planner/embed",
-      "tags": [
-        "commission",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/commission-recovery-planner/landing/index.html",
-        "tools/commission-recovery-planner/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/commission-recovery-planner/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/commission-recovery-planner/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/commission-recovery-planner/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/commission-recovery-planner/README.md"
-        },
-        "config": {
-          "path": "tools/commission-recovery-planner/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/commission-recovery-planner/assets/"
-        },
-        "exports": {
-          "path": "tools/commission-recovery-planner/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Client Acquisition Bridge",
-      "slug": "client-acquisition-bridge",
-      "sequence": 0,
-      "persona": "Agency owner",
-      "description": "Estimate cash needed to bridge marketing spend before client payment lands.",
-      "path": "/tools/client-acquisition-bridge/",
-      "url": "https://core-tools.vercel.app/tools/client-acquisition-bridge/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "startup-funding",
-      "categories": [
-        "startup-funding",
-        "startup-funding"
-      ],
-      "bundle_candidates": [
-        "startup-funding",
-        "startup-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "startup-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/client-acquisition-bridge/embed",
-      "tags": [
-        "acquisition",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/client-acquisition-bridge/landing/index.html",
-        "tools/client-acquisition-bridge/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/client-acquisition-bridge/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/client-acquisition-bridge/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/client-acquisition-bridge/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/client-acquisition-bridge/README.md"
-        },
-        "config": {
-          "path": "tools/client-acquisition-bridge/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/client-acquisition-bridge/assets/"
-        },
-        "exports": {
-          "path": "tools/client-acquisition-bridge/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Merchant Stack Optimizer",
-      "slug": "merchant-stack-optimizer",
-      "sequence": 0,
-      "persona": "Business owner",
-      "description": "Compare common funding stack pressure against a simplified plan.",
-      "path": "/tools/merchant-stack-optimizer/",
-      "url": "https://core-tools.vercel.app/tools/merchant-stack-optimizer/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "bad-credit-funding",
-      "categories": [
-        "bad-credit-funding",
-        "bad-credit-funding"
-      ],
-      "bundle_candidates": [
-        "bad-credit-funding",
-        "bad-credit-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "bad-credit-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/merchant-stack-optimizer/embed",
-      "tags": [
-        "stack",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/merchant-stack-optimizer/landing/index.html",
-        "tools/merchant-stack-optimizer/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/merchant-stack-optimizer/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/merchant-stack-optimizer/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/merchant-stack-optimizer/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/merchant-stack-optimizer/README.md"
-        },
-        "config": {
-          "path": "tools/merchant-stack-optimizer/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/merchant-stack-optimizer/assets/"
-        },
-        "exports": {
-          "path": "tools/merchant-stack-optimizer/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    },
-    {
-      "name": "Equipment Acquisition Planner",
-      "slug": "equipment-acquisition-planner",
-      "sequence": 0,
-      "persona": "Operator",
-      "description": "Estimate equipment finance needs and timing for an urgent purchase.",
-      "path": "/tools/equipment-acquisition-planner/",
-      "url": "https://core-tools.vercel.app/tools/equipment-acquisition-planner/",
-      "asset_type": "calculator",
-      "workflow_stage": "consideration",
-      "use_case": "equipment-funding",
-      "categories": [
-        "equipment-vehicle-funding",
-        "equipment-vehicle-funding"
-      ],
-      "bundle_candidates": [
-        "equipment-vehicle-funding",
-        "equipment-vehicle-funding"
-      ],
-      "automation_level": "low",
-      "human_review_required": true,
-      "compliance_sensitivity": "medium",
-      "front_end_visibility": "public",
-      "status": "backlog",
-      "featured": false,
-      "collection": "equipment-vehicle-funding",
-      "primary_cta_label": "Review options",
-      "primary_cta_url": "https://bankbreezy.com/funding/jason/",
-      "secondary_cta_label": "Open tool",
-      "secondary_cta_url": "/tools/equipment-acquisition-planner/embed",
-      "tags": [
-        "equipment",
-        "funding"
-      ],
-      "related_assets": [
-        "tools/equipment-acquisition-planner/landing/index.html",
-        "tools/equipment-acquisition-planner/embed/index.html"
-      ],
-      "provider_visibility": "internal-only",
-      "source_registry": "funding-tools",
-      "artifact_root": "tools/equipment-acquisition-planner/",
-      "artifacts": {
-        "landing": {
-          "path": "tools/equipment-acquisition-planner/landing/index.html"
-        },
-        "embed": {
-          "path": "tools/equipment-acquisition-planner/embed/index.html"
-        },
-        "readme": {
-          "path": "tools/equipment-acquisition-planner/README.md"
-        },
-        "config": {
-          "path": "tools/equipment-acquisition-planner/tool.config.json"
-        },
-        "assets": {
-          "path": "tools/equipment-acquisition-planner/assets/"
-        },
-        "exports": {
-          "path": "tools/equipment-acquisition-planner/exports/"
-        }
-      },
-      "internal": {
-        "affiliate_partner": "internal",
-        "provider_routing": "internal",
-        "core_logic": "safe public projection only"
-      }
-    }
-  ]
-}
+[
+  {
+    "schema_version": "1.0.0",
+    "name": "The \"Bezos Interest\" Calculator",
+    "slug": "the-bezos-interest-calculator",
+    "asset_type": "calculator",
+    "status": "idea",
+    "featured": true,
+    "collection": "engineering-as-marketing",
+    "target_persona": [
+      "amazon_sellers",
+      "ecommerce_sellers",
+      "marketplace_operators"
+    ],
+    "pain_solved": "Visualizes profit lost while Amazon holds funds in reserve.",
+    "time_to_value": "<60 seconds",
+    "shareable_artifact": "\"The Lost Profit Receipt\" (Graphic)",
+    "input_fields": [
+      "Avg Bi-Weekly Payout ($)",
+      "Avg ROI per Inventory Turn (%)"
+    ],
+    "core_logic": "Payout * (ROI% / 100) * (26 pay periods / 12)",
+    "outputs": [
+      "calculated_result",
+      "risk_or_opportunity_summary",
+      "recommended_capital_path",
+      "shareable_result_artifact"
+    ],
+    "primary_cta": "Unlock Your Trapped Capital Today →",
+    "recommended_funding_path": "marketplace-capital-track",
+    "related_registries": [
+      "funding-product-families.registry.json",
+      "funding-products.registry.json",
+      "funding-routing-rules.registry.json"
+    ],
+    "files": [
+      "index.html",
+      "styles.css",
+      "script.js",
+      "README.md"
+    ],
+    "monetization_path": [
+      "lead_capture",
+      "funding_review",
+      "product_routing",
+      "affiliate_partner_routing"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Engineering-as-marketing lead magnet. Build as static page/widget first; wire to routing engine later.",
+    "source_files": [
+      "Engineering-as-Marketing_Tools for Business Funding - Table 1.csv"
+    ]
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "The \"Stockout Death Spiral\" Estimator",
+    "slug": "the-stockout-death-spiral-estimator",
+    "asset_type": "tool",
+    "status": "idea",
+    "featured": true,
+    "collection": "engineering-as-marketing",
+    "target_persona": [
+      "ecommerce_sellers",
+      "amazon_sellers",
+      "inventory_based_businesses"
+    ],
+    "pain_solved": "Calculates total financial damage of zero inventory on SEO rank.",
+    "time_to_value": "<60 seconds",
+    "shareable_artifact": "\"The Stockout Hemorrhage Report\" (PDF)",
+    "input_fields": [
+      "Avg Daily Revenue",
+      "Keyword Rank",
+      "Days Out of Stock"
+    ],
+    "core_logic": "(Daily Rev * Days Out) + (Est. Re-Ranking Ad Spend)",
+    "outputs": [
+      "calculated_result",
+      "risk_or_opportunity_summary",
+      "recommended_capital_path",
+      "shareable_result_artifact"
+    ],
+    "primary_cta": "Stop the Bleed - Fund Your Restock Now →",
+    "recommended_funding_path": "marketplace-capital-track",
+    "related_registries": [
+      "funding-product-families.registry.json",
+      "funding-products.registry.json",
+      "funding-routing-rules.registry.json"
+    ],
+    "files": [
+      "index.html",
+      "styles.css",
+      "script.js",
+      "README.md"
+    ],
+    "monetization_path": [
+      "lead_capture",
+      "funding_review",
+      "product_routing",
+      "affiliate_partner_routing"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Engineering-as-marketing lead magnet. Build as static page/widget first; wire to routing engine later.",
+    "source_files": [
+      "Engineering-as-Marketing_Tools for Business Funding - Table 1.csv"
+    ]
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "The \"Bank Firing\" Risk Score",
+    "slug": "the-bank-firing-risk-score",
+    "asset_type": "scorecard",
+    "status": "idea",
+    "featured": true,
+    "collection": "engineering-as-marketing",
+    "target_persona": [
+      "small_business_owners",
+      "bank_decline_risk_leads"
+    ],
+    "pain_solved": "Alerts owners of their probability of rejection due to tightening standards.",
+    "time_to_value": "<60 seconds",
+    "shareable_artifact": "\"Traditional Bank Risk Score\" (On-Screen Score)",
+    "input_fields": [
+      "FICO Score",
+      "Annual Business Revenue"
+    ],
+    "core_logic": "Deduct points for revenue <$250k and FICO <700. If score <50 = HIGH RISK",
+    "outputs": [
+      "calculated_result",
+      "risk_or_opportunity_summary",
+      "recommended_capital_path",
+      "shareable_result_artifact"
+    ],
+    "primary_cta": "See Your Fast-Funding Alternative →",
+    "recommended_funding_path": "revenue-advance-program",
+    "related_registries": [
+      "funding-product-families.registry.json",
+      "funding-products.registry.json",
+      "funding-routing-rules.registry.json"
+    ],
+    "files": [
+      "index.html",
+      "styles.css",
+      "script.js",
+      "README.md"
+    ],
+    "monetization_path": [
+      "lead_capture",
+      "funding_review",
+      "product_routing",
+      "affiliate_partner_routing"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Engineering-as-marketing lead magnet. Build as static page/widget first; wire to routing engine later.",
+    "source_files": [
+      "Engineering-as-Marketing_Tools for Business Funding - Table 1.csv"
+    ]
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "The NECA Material Money Quoter",
+    "slug": "the-neca-material-money-quoter",
+    "asset_type": "calculator",
+    "status": "idea",
+    "featured": false,
+    "collection": "engineering-as-marketing",
+    "target_persona": [
+      "contractors",
+      "electricians",
+      "trades_businesses"
+    ],
+    "pain_solved": "Calculates bridge capital needed to buy materials for a new job.",
+    "time_to_value": "<60 seconds",
+    "shareable_artifact": "\"Project Material Bridge Quote\" (PDF)",
+    "input_fields": [
+      "Total Job Value ()",
+      "MaterialCost()"
+    ],
+    "core_logic": "Rec. Advance = Material Cost (Capped at 25% of Job Value)",
+    "outputs": [
+      "calculated_result",
+      "risk_or_opportunity_summary",
+      "recommended_capital_path",
+      "shareable_result_artifact"
+    ],
+    "primary_cta": "Fund Your Materials - NECA Endorsed →",
+    "recommended_funding_path": "equipment-finance-solution",
+    "related_registries": [
+      "funding-product-families.registry.json",
+      "funding-products.registry.json",
+      "funding-routing-rules.registry.json"
+    ],
+    "files": [
+      "index.html",
+      "styles.css",
+      "script.js",
+      "README.md"
+    ],
+    "monetization_path": [
+      "lead_capture",
+      "funding_review",
+      "product_routing",
+      "affiliate_partner_routing"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Engineering-as-marketing lead magnet. Build as static page/widget first; wire to routing engine later.",
+    "source_files": [
+      "Engineering-as-Marketing_Tools for Business Funding - Table 1.csv"
+    ]
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "The \"MCA Shark\" Auditor",
+    "slug": "the-mca-shark-auditor",
+    "asset_type": "scorecard",
+    "status": "idea",
+    "featured": false,
+    "collection": "engineering-as-marketing",
+    "target_persona": [
+      "mca_borrowers",
+      "business_owners_with_existing_advances"
+    ],
+    "pain_solved": "Exposes the true triple-digit APR hidden behind \"Factor Rates\".",
+    "time_to_value": "<60 seconds",
+    "shareable_artifact": "\"High-Risk Debt Audit Certificate\"",
+    "input_fields": [
+      "Funding Amount",
+      "Total Payback",
+      "Daily % of Sales Withheld"
+    ],
+    "core_logic": "Converts Factor Rate into effective APR",
+    "outputs": [
+      "calculated_result",
+      "risk_or_opportunity_summary",
+      "recommended_capital_path",
+      "shareable_result_artifact"
+    ],
+    "primary_cta": "Refinance Your High-Interest Debt →",
+    "recommended_funding_path": "structured-growth-loan-path",
+    "related_registries": [
+      "funding-product-families.registry.json",
+      "funding-products.registry.json",
+      "funding-routing-rules.registry.json"
+    ],
+    "files": [
+      "index.html",
+      "styles.css",
+      "script.js",
+      "README.md"
+    ],
+    "monetization_path": [
+      "lead_capture",
+      "funding_review",
+      "product_routing",
+      "affiliate_partner_routing"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Engineering-as-marketing lead magnet. Build as static page/widget first; wire to routing engine later.",
+    "source_files": [
+      "Engineering-as-Marketing_Tools for Business Funding - Table 1.csv"
+    ]
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "The TikTok Viral Curse Predictor",
+    "slug": "the-tiktok-viral-curse-predictor",
+    "asset_type": "scorecard",
+    "status": "idea",
+    "featured": false,
+    "collection": "engineering-as-marketing",
+    "target_persona": [
+      "tiktok_shop_sellers",
+      "creator_commerce_sellers"
+    ],
+    "pain_solved": "Predicts suspension risk (Late Dispatch Rate) during viral surges.",
+    "time_to_value": "<60 seconds",
+    "shareable_artifact": "\"LDR Risk Assessment Score\"",
+    "input_fields": [
+      "Units Sold (Last 48hr)",
+      "Current Cash on Hand",
+      "Supplier Cost/Unit"
+    ],
+    "core_logic": "Score = Cash / (Units Sold * Cost)",
+    "outputs": [
+      "calculated_result",
+      "risk_or_opportunity_summary",
+      "recommended_capital_path",
+      "shareable_result_artifact"
+    ],
+    "primary_cta": "Don't Get Suspended - Fund Fulfillment Now →",
+    "recommended_funding_path": "marketplace-capital-track",
+    "related_registries": [
+      "funding-product-families.registry.json",
+      "funding-products.registry.json",
+      "funding-routing-rules.registry.json"
+    ],
+    "files": [
+      "index.html",
+      "styles.css",
+      "script.js",
+      "README.md"
+    ],
+    "monetization_path": [
+      "lead_capture",
+      "funding_review",
+      "product_routing",
+      "affiliate_partner_routing"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Engineering-as-marketing lead magnet. Build as static page/widget first; wire to routing engine later.",
+    "source_files": [
+      "Engineering-as-Marketing_Tools for Business Funding - Table 1.csv"
+    ]
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "The \"Net-90\" Opportunity Cost Calculator",
+    "slug": "the-net-90-opportunity-cost-calculator",
+    "asset_type": "calculator",
+    "status": "idea",
+    "featured": false,
+    "collection": "engineering-as-marketing",
+    "target_persona": [
+      "contractors",
+      "subcontractors",
+      "b2b_service_providers"
+    ],
+    "pain_solved": "Quantifies missed work from waiting on slow General Contractor payouts.",
+    "time_to_value": "<60 seconds",
+    "shareable_artifact": "\"Lost Profit Recovery Plan\" (Table)",
+    "input_fields": [
+      "Invoice Amount",
+      "Wait Time (Days)",
+      "Avg Profit per Job"
+    ],
+    "core_logic": "Wait Cost = (Potential Jobs * Avg Profit) / Invoice Amount",
+    "outputs": [
+      "calculated_result",
+      "risk_or_opportunity_summary",
+      "recommended_capital_path",
+      "shareable_result_artifact"
+    ],
+    "primary_cta": "Get Paid Tomorrow & Bid New Jobs →",
+    "recommended_funding_path": "revenue-advance-program",
+    "related_registries": [
+      "funding-product-families.registry.json",
+      "funding-products.registry.json",
+      "funding-routing-rules.registry.json"
+    ],
+    "files": [
+      "index.html",
+      "styles.css",
+      "script.js",
+      "README.md"
+    ],
+    "monetization_path": [
+      "lead_capture",
+      "funding_review",
+      "product_routing",
+      "affiliate_partner_routing"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Engineering-as-marketing lead magnet. Build as static page/widget first; wire to routing engine later.",
+    "source_files": [
+      "Engineering-as-Marketing_Tools for Business Funding - Table 1.csv"
+    ]
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "The \"Section 179\" Tax Slash Tool",
+    "slug": "the-section-179-tax-slash-tool",
+    "asset_type": "calculator",
+    "status": "idea",
+    "featured": false,
+    "collection": "engineering-as-marketing",
+    "target_persona": [
+      "equipment_buyers",
+      "contractors",
+      "business_owners"
+    ],
+    "pain_solved": "Calculates Q4 tax savings of financing new equipment.",
+    "time_to_value": "<60 seconds",
+    "shareable_artifact": "\"Tax Savings PDF for Your CPA\"",
+    "input_fields": [
+      "Cost of Equipment ($)",
+      "Est. Tax Bracket (%)"
+    ],
+    "core_logic": "Net Cost = Equipment Cost - (Cost * Tax Bracket)",
+    "outputs": [
+      "calculated_result",
+      "risk_or_opportunity_summary",
+      "recommended_capital_path",
+      "shareable_result_artifact"
+    ],
+    "primary_cta": "Lock in Your Deduction Before Dec 31st →",
+    "recommended_funding_path": "equipment-finance-solution",
+    "related_registries": [
+      "funding-product-families.registry.json",
+      "funding-products.registry.json",
+      "funding-routing-rules.registry.json"
+    ],
+    "files": [
+      "index.html",
+      "styles.css",
+      "script.js",
+      "README.md"
+    ],
+    "monetization_path": [
+      "lead_capture",
+      "funding_review",
+      "product_routing",
+      "affiliate_partner_routing"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Engineering-as-marketing lead magnet. Build as static page/widget first; wire to routing engine later.",
+    "source_files": [
+      "Engineering-as-Marketing_Tools for Business Funding - Table 1.csv"
+    ]
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "The Gig Income Funding Predictor",
+    "slug": "the-gig-income-funding-predictor",
+    "asset_type": "scorecard",
+    "status": "idea",
+    "featured": false,
+    "collection": "engineering-as-marketing",
+    "target_persona": [
+      "gig_workers",
+      "drivers",
+      "independent_contractors"
+    ],
+    "pain_solved": "Shows funding potential for drivers based on app activity.",
+    "time_to_value": "<60 seconds",
+    "shareable_artifact": "\"Back on the Road Funding Score\"",
+    "input_fields": [
+      "Avg Weekly Earnings",
+      "Platform (Uber/DoorDash)",
+      "Years Driving"
+    ],
+    "core_logic": "Max Funding = Avg Earnings * 4 (modified by seniority)",
+    "outputs": [
+      "calculated_result",
+      "risk_or_opportunity_summary",
+      "recommended_capital_path",
+      "shareable_result_artifact"
+    ],
+    "primary_cta": "Get Your Same-Day Micro-Funding →",
+    "recommended_funding_path": "revenue-advance-program",
+    "related_registries": [
+      "funding-product-families.registry.json",
+      "funding-products.registry.json",
+      "funding-routing-rules.registry.json"
+    ],
+    "files": [
+      "index.html",
+      "styles.css",
+      "script.js",
+      "README.md"
+    ],
+    "monetization_path": [
+      "lead_capture",
+      "funding_review",
+      "product_routing",
+      "affiliate_partner_routing"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Engineering-as-marketing lead magnet. Build as static page/widget first; wire to routing engine later.",
+    "source_files": [
+      "Engineering-as-Marketing_Tools for Business Funding - Table 1.csv"
+    ]
+  },
+  {
+    "schema_version": "1.0.0",
+    "name": "The Competitor \"Meet or Beat\" Submitter",
+    "slug": "the-competitor-meet-or-beat-submitter",
+    "asset_type": "scorecard",
+    "status": "idea",
+    "featured": false,
+    "collection": "engineering-as-marketing",
+    "target_persona": [
+      "skeptical_funding_leads",
+      "rate_shoppers",
+      "business_owners"
+    ],
+    "pain_solved": "Weaponizes the $500 guarantee to build trust with skeptical leads.",
+    "time_to_value": "<60 seconds",
+    "shareable_artifact": "\"Risk-Free Guarantee Certificate\"",
+    "input_fields": [
+      "Competitor Offer Amt",
+      "Factor Rate",
+      "Origination Fee"
+    ],
+    "core_logic": "Verification status = \"Beat It or Pay You $500\"",
+    "outputs": [
+      "calculated_result",
+      "risk_or_opportunity_summary",
+      "recommended_capital_path",
+      "shareable_result_artifact"
+    ],
+    "primary_cta": "Claim Your $500 Guarantee Now →",
+    "recommended_funding_path": "manual-funding-strategy-review",
+    "related_registries": [
+      "funding-product-families.registry.json",
+      "funding-products.registry.json",
+      "funding-routing-rules.registry.json"
+    ],
+    "files": [
+      "index.html",
+      "styles.css",
+      "script.js",
+      "README.md"
+    ],
+    "monetization_path": [
+      "lead_capture",
+      "funding_review",
+      "product_routing",
+      "affiliate_partner_routing"
+    ],
+    "public_visibility": true,
+    "internal_notes": "Engineering-as-marketing lead magnet. Build as static page/widget first; wire to routing engine later.",
+    "source_files": [
+      "Engineering-as-Marketing_Tools for Business Funding - Table 1.csv"
+    ]
+  }
+]

@@ -1,0 +1,576 @@
+[
+  {
+    "field_key": "business_persona",
+    "label": "Business Type",
+    "field_type": "single_select",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "business_persona",
+    "notion_property": "Business Persona",
+    "hubspot_property": "business_persona",
+    "options": [
+      "existing_small_business_owner",
+      "gig_worker_independent_contractor",
+      "ecommerce_marketplace_seller",
+      "startup_founder",
+      "real_estate_investor",
+      "contractor_trucking_equipment_heavy",
+      "not_sure"
+    ],
+    "used_by_assets": [
+      "funding-readiness-scorecard",
+      "am-i-fundable-quiz",
+      "funding-directory"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "monthly_revenue",
+    "label": "Average Monthly Business Revenue",
+    "field_type": "single_select",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "monthly_revenue",
+    "notion_property": "Monthly Revenue",
+    "hubspot_property": "monthly_revenue",
+    "options": [
+      {
+        "label": "$0–$2,999",
+        "value": "0_2999",
+        "normalized_min": 0,
+        "normalized_max": 2999
+      },
+      {
+        "label": "$3,000–$8,499",
+        "value": "3000_8499",
+        "normalized_min": 3000,
+        "normalized_max": 8499
+      },
+      {
+        "label": "$8,500–$14,999",
+        "value": "8500_14999",
+        "normalized_min": 8500,
+        "normalized_max": 14999
+      },
+      {
+        "label": "$15,000–$19,999",
+        "value": "15000_19999",
+        "normalized_min": 15000,
+        "normalized_max": 19999
+      },
+      {
+        "label": "$20,000–$49,999",
+        "value": "20000_49999",
+        "normalized_min": 20000,
+        "normalized_max": 49999
+      },
+      {
+        "label": "$50,000–$99,999",
+        "value": "50000_99999",
+        "normalized_min": 50000,
+        "normalized_max": 99999
+      },
+      {
+        "label": "$100,000+",
+        "value": "100000_plus",
+        "normalized_min": 100000,
+        "normalized_max": null
+      }
+    ],
+    "used_by_assets": [
+      "funding-readiness-scorecard",
+      "funding-directory",
+      "funding-tools"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "lowest_monthly_revenue_90_days",
+    "label": "Lowest Monthly Revenue in Last 90 Days",
+    "field_type": "single_select",
+    "required": false,
+    "public_visibility": true,
+    "crm_field": "lowest_monthly_revenue_90_days",
+    "notion_property": "Lowest Monthly Revenue - 90 Days",
+    "hubspot_property": "lowest_monthly_revenue_90_days",
+    "options": [
+      "under_3000",
+      "3000_15000",
+      "15000_plus",
+      "100000_plus"
+    ],
+    "used_by_assets": [
+      "am-i-fundable-quiz",
+      "funding-routing-rules"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "time_in_business_months",
+    "label": "Time in Business",
+    "field_type": "single_select",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "time_in_business_months",
+    "notion_property": "Time in Business Months",
+    "hubspot_property": "time_in_business_months",
+    "options": [
+      {
+        "label": "Not launched yet",
+        "value": "not_launched",
+        "normalized_months": 0
+      },
+      {
+        "label": "0–3 months",
+        "value": "0_3_months",
+        "normalized_min": 0,
+        "normalized_max": 3
+      },
+      {
+        "label": "4–5 months",
+        "value": "4_5_months",
+        "normalized_min": 4,
+        "normalized_max": 5
+      },
+      {
+        "label": "6–11 months",
+        "value": "6_11_months",
+        "normalized_min": 6,
+        "normalized_max": 11
+      },
+      {
+        "label": "12–23 months",
+        "value": "12_23_months",
+        "normalized_min": 12,
+        "normalized_max": 23
+      },
+      {
+        "label": "24+ months",
+        "value": "24_plus_months",
+        "normalized_min": 24,
+        "normalized_max": null
+      }
+    ],
+    "used_by_assets": [
+      "funding-readiness-scorecard",
+      "am-i-fundable-quiz",
+      "funding-directory"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "credit_score_band",
+    "label": "Estimated Personal Credit Score",
+    "field_type": "single_select",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "credit_score_band",
+    "notion_property": "Credit Score Band",
+    "hubspot_property": "credit_score_band",
+    "options": [
+      {
+        "label": "Below 500",
+        "value": "below_500",
+        "normalized_min": 0,
+        "normalized_max": 499
+      },
+      {
+        "label": "500–579",
+        "value": "500_579",
+        "normalized_min": 500,
+        "normalized_max": 579
+      },
+      {
+        "label": "580–599",
+        "value": "580_599",
+        "normalized_min": 580,
+        "normalized_max": 599
+      },
+      {
+        "label": "600–659",
+        "value": "600_659",
+        "normalized_min": 600,
+        "normalized_max": 659
+      },
+      {
+        "label": "660–679",
+        "value": "660_679",
+        "normalized_min": 660,
+        "normalized_max": 679
+      },
+      {
+        "label": "680–699",
+        "value": "680_699",
+        "normalized_min": 680,
+        "normalized_max": 699
+      },
+      {
+        "label": "700+",
+        "value": "700_plus",
+        "normalized_min": 700,
+        "normalized_max": null
+      }
+    ],
+    "used_by_assets": [
+      "funding-readiness-scorecard",
+      "am-i-fundable-quiz",
+      "funding-directory"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "bank_account_type",
+    "label": "Where Do Business Sales Get Deposited?",
+    "field_type": "single_select",
+    "required": false,
+    "public_visibility": true,
+    "crm_field": "bank_account_type",
+    "notion_property": "Bank Account Type",
+    "hubspot_property": "bank_account_type",
+    "options": [
+      "business",
+      "personal",
+      "none"
+    ],
+    "used_by_assets": [
+      "am-i-fundable-quiz",
+      "funding-routing-rules"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "bank_status",
+    "label": "Business Bank Activity",
+    "field_type": "single_select",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "bank_status",
+    "notion_property": "Bank Status",
+    "hubspot_property": "bank_status",
+    "options": [
+      "no_business_bank_account",
+      "low_or_inconsistent_deposits",
+      "consistent_monthly_deposits",
+      "strong_clean_activity",
+      "recent_nsfs_overdrafts"
+    ],
+    "used_by_assets": [
+      "funding-readiness-scorecard",
+      "funding-routing-rules"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "business_structure",
+    "label": "Business Structure",
+    "field_type": "single_select",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "business_structure",
+    "notion_property": "Business Structure",
+    "hubspot_property": "business_structure",
+    "options": [
+      "no_formal_business",
+      "sole_prop_independent_contractor",
+      "llc_corp_no_business_bank",
+      "llc_corp_with_business_bank",
+      "llc_corp_bank_ein_clean_records"
+    ],
+    "used_by_assets": [
+      "funding-readiness-scorecard",
+      "funding-directory"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "funding_purpose",
+    "label": "Funding Purpose",
+    "field_type": "single_select",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "funding_purpose",
+    "notion_property": "Funding Purpose",
+    "hubspot_property": "funding_purpose",
+    "options": [
+      "payroll_emergency_working_capital",
+      "inventory_materials",
+      "marketing_growth",
+      "equipment_vehicle_truck",
+      "real_estate_purchase_project",
+      "ecommerce_marketplace_growth",
+      "startup_launch_capital",
+      "debt_consolidation_refinancing",
+      "business_credit_building",
+      "not_sure"
+    ],
+    "used_by_assets": [
+      "funding-readiness-scorecard",
+      "funding-tools",
+      "funding-directory"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "desired_funding_amount",
+    "label": "Desired Funding Amount",
+    "field_type": "single_select",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "desired_funding_amount",
+    "notion_property": "Desired Funding Amount",
+    "hubspot_property": "desired_funding_amount",
+    "options": [
+      "under_5000",
+      "5000_25000",
+      "25000_75000",
+      "75000_150000",
+      "150000_500000",
+      "500000_plus"
+    ],
+    "used_by_assets": [
+      "funding-readiness-scorecard",
+      "funding-directory"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "industry",
+    "label": "Industry",
+    "field_type": "text_or_select",
+    "required": false,
+    "public_visibility": true,
+    "crm_field": "industry",
+    "notion_property": "Industry",
+    "hubspot_property": "industry",
+    "options": [],
+    "used_by_assets": [
+      "funding-readiness-scorecard",
+      "funding-directory",
+      "funding-routing-rules"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "state",
+    "label": "State",
+    "field_type": "single_select",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "state",
+    "notion_property": "State",
+    "hubspot_property": "state",
+    "options": "US_STATE_CODES",
+    "used_by_assets": [
+      "funding-readiness-scorecard",
+      "lead-capture"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "red_flags",
+    "label": "Red Flags",
+    "field_type": "multi_select",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "red_flags",
+    "notion_property": "Red Flags",
+    "hubspot_property": "red_flags",
+    "options": [
+      "open_bankruptcy",
+      "recent_tax_lien",
+      "recent_missed_payments",
+      "recent_nsfs_overdrafts",
+      "business_bank_account_recently_opened",
+      "existing_mca_daily_payment_advance",
+      "suspended_marketplace_account",
+      "no_current_revenue",
+      "none"
+    ],
+    "used_by_assets": [
+      "funding-readiness-scorecard",
+      "funding-routing-rules"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "documents_available",
+    "label": "Documents Available",
+    "field_type": "multi_select",
+    "required": false,
+    "public_visibility": true,
+    "crm_field": "documents_available",
+    "notion_property": "Documents Available",
+    "hubspot_property": "documents_available",
+    "options": [
+      "bank_statements",
+      "tax_returns",
+      "credit_report",
+      "paystubs_w2_income_verification",
+      "equipment_invoice",
+      "appraisal_lease_rent_roll",
+      "marketplace_connection",
+      "retirement_account_statement"
+    ],
+    "used_by_assets": [
+      "funding-readiness-scorecard",
+      "funding-documents"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "name",
+    "label": "Full Name",
+    "field_type": "text",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "name",
+    "notion_property": "Name",
+    "hubspot_property": "firstname_lastname",
+    "options": [],
+    "used_by_assets": [
+      "lead-capture"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "email",
+    "label": "Email",
+    "field_type": "email",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "email",
+    "notion_property": "Email",
+    "hubspot_property": "email",
+    "options": [],
+    "used_by_assets": [
+      "lead-capture"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "phone",
+    "label": "Phone",
+    "field_type": "phone",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "phone",
+    "notion_property": "Phone",
+    "hubspot_property": "phone",
+    "options": [],
+    "used_by_assets": [
+      "lead-capture"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "business_name",
+    "label": "Business Name",
+    "field_type": "text",
+    "required": false,
+    "public_visibility": true,
+    "crm_field": "business_name",
+    "notion_property": "Business Name",
+    "hubspot_property": "company",
+    "options": [],
+    "used_by_assets": [
+      "lead-capture"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  },
+  {
+    "field_key": "consent",
+    "label": "Contact Consent",
+    "field_type": "checkbox",
+    "required": true,
+    "public_visibility": true,
+    "crm_field": "consent",
+    "notion_property": "Consent",
+    "hubspot_property": "funding_contact_consent",
+    "options": [
+      {
+        "label": "I agree to be contacted about funding options and understand this score is not an approval, offer, or guarantee of funding.",
+        "value": true
+      }
+    ],
+    "used_by_assets": [
+      "lead-capture"
+    ],
+    "schema_version": "1.0.0",
+    "source_files": [
+      "Funding Readiness Scorecard Logic _ Landing Page + Embed Widget(1).md",
+      "Funding reference sheet(2).pdf"
+    ]
+  }
+]
