@@ -296,5 +296,89 @@
       "playbook",
       "routing"
     ]
+  },
+  {
+    "slug": "automation-platform-workflow-pack",
+    "title": "Automation Platform Workflow Pack",
+    "oneLiner": "Use common automation platforms to route leads, manage follow-up, and keep operations moving.",
+    "audience": "Operators and builders using automation platforms",
+    "primaryCtaLabel": "Browse the pack",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "n8n-funding-lead-router-workflow",
+      "n8n-crm-follow-up-workflow",
+      "zapier-lead-capture-to-crm-playbook",
+      "zapier-document-reminder-zap",
+      "make-multi-step-router-playbook",
+      "google-sheets-funding-tracker-builder",
+      "airtable-affiliate-pipeline-base",
+      "notion-client-intake-dashboard",
+      "hubspot-funding-pipeline-setup",
+      "gohighlevel-sms-follow-up-campaign",
+      "slack-operator-alerts-playbook",
+      "discord-affiliate-community-ops-playbook"
+    ],
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ]
+  },
+  {
+    "slug": "funding-crm-automation-pack",
+    "title": "Funding CRM Automation Pack",
+    "oneLiner": "Keep funding leads, pipeline stages, and follow-up in one clean automation flow.",
+    "audience": "Funding brokers and operators",
+    "primaryCtaLabel": "Browse the pack",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "n8n-funding-lead-router-workflow",
+      "n8n-crm-follow-up-workflow",
+      "google-sheets-funding-tracker-builder",
+      "hubspot-funding-pipeline-setup"
+    ],
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ]
+  },
+  {
+    "slug": "affiliate-ops-automation-pack",
+    "title": "Affiliate Ops Automation Pack",
+    "oneLiner": "Coordinate lead capture, pipeline tracking, and partner handoffs with less manual work.",
+    "audience": "Affiliates, creators, and partner operators",
+    "primaryCtaLabel": "Browse the pack",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "zapier-lead-capture-to-crm-playbook",
+      "zapier-document-reminder-zap",
+      "make-multi-step-router-playbook",
+      "airtable-affiliate-pipeline-base",
+      "notion-client-intake-dashboard"
+    ],
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ]
+  },
+  {
+    "slug": "community-ops-automation-pack",
+    "title": "Community Ops Automation Pack",
+    "oneLiner": "Use alerts, SMS, and community routing to keep operators and partners moving.",
+    "audience": "Community managers and automation operators",
+    "primaryCtaLabel": "Browse the pack",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "gohighlevel-sms-follow-up-campaign",
+      "slack-operator-alerts-playbook",
+      "discord-affiliate-community-ops-playbook"
+    ],
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ]
   }
 ]

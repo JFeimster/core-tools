@@ -1,0 +1,1 @@
+Build a GoHighLevel lead nurture campaign spec for this workflow. Keep the output focused on audience, message sequence, stop rules, reply handling, and validation checks. Do not assume custom code or unsupported runtime access.

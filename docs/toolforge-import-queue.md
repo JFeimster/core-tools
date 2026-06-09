@@ -6,6 +6,23 @@ This queue tracks future ToolForge ideas and where they should land.
 
 Added in this batch:
 
+- n8n
+- Zapier
+- Make
+- Google Sheets
+- Airtable
+- Notion
+- HubSpot
+- GoHighLevel
+- Slack
+- Discord
+
+These platform packs now have repo files, visible directory entries, and collection coverage.
+
+## This Batch
+
+Added in this batch:
+
 - Funding Readiness Review
 - Bank Statement Prep
 - Gig Income Organizer
@@ -84,6 +101,14 @@ These skills now have ToolForge documentation, and the practical subset is surfa
 - Keep visible entries limited to workflows that help a user act inside the ToolForge directory.
 - Keep platform notes for integrations and ecosystem docs that do not need a public directory card.
 - Revisit the queue after each batch so branch names and dependencies stay accurate.
+
+## Next Queue Ideas
+
+- Replit platform pack
+- Vercel workflow pack
+- GitHub Actions automation pack
+- Google Drive workflow pack
+- Cloudflare workflow pack
 
 ## Next Queue Ideas
 

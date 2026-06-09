@@ -1,0 +1,1 @@
+Turn this workflow into a Zapier-ready spec. Keep the answer focused on trigger, field mapping, duplicate handling, notifications, and stop conditions. Do not assume any backend code or database access. Return a practical, copy/paste usable outline.

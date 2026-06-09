@@ -4927,5 +4927,473 @@
       "ops",
       "routing"
     ]
+  },
+  {
+    "slug": "n8n-funding-lead-router-workflow",
+    "brand": "ToolForge",
+    "name": "n8n Funding Lead Router Workflow",
+    "oneLiner": "Route funding leads to the right owner or nurture path based on fit signals.",
+    "pain": "Helps funding teams keep inbound leads moving without manual sorting.",
+    "artifact": "Funding lead router workflow map",
+    "inputs": [
+      {
+        "key": "leadSource",
+        "label": "Lead Source",
+        "type": "text",
+        "placeholder": "Form, partner, ad, referral",
+        "defaultValue": ""
+      },
+      {
+        "key": "fundingGoal",
+        "label": "Funding Goal",
+        "type": "text",
+        "placeholder": "Working capital, equipment, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "routingRules",
+        "label": "Routing Rules",
+        "type": "text",
+        "placeholder": "How should the lead be routed?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Uses minimum fit signals to send the lead to the correct route and logs the decision for the team.",
+    "ctaLabel": "Open Funding CRM Pack",
+    "ctaUrl": "/collections/funding-crm-automation-pack",
+    "tags": [
+      "tool",
+      "routing",
+      "funding"
+    ]
+  },
+  {
+    "slug": "n8n-crm-follow-up-workflow",
+    "brand": "ToolForge",
+    "name": "n8n CRM Follow-Up Workflow",
+    "oneLiner": "Trigger a structured CRM follow-up based on stage, age, or stale status.",
+    "pain": "Helps operators keep records moving without losing human review control.",
+    "artifact": "CRM follow-up workflow map",
+    "inputs": [
+      {
+        "key": "crmStage",
+        "label": "CRM Stage",
+        "type": "text",
+        "placeholder": "Qualified, waiting, stale, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "followUpCadence",
+        "label": "Follow-Up Cadence",
+        "type": "text",
+        "placeholder": "Daily, weekly, after X days",
+        "defaultValue": ""
+      },
+      {
+        "key": "stopRule",
+        "label": "Stop Rule",
+        "type": "text",
+        "placeholder": "When should the workflow stop?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Checks the stage and cadence, sends the next follow-up, and stops when the record converts or exits the rule set.",
+    "ctaLabel": "Open Funding CRM Pack",
+    "ctaUrl": "/collections/funding-crm-automation-pack",
+    "tags": [
+      "tool",
+      "warning",
+      "routing"
+    ]
+  },
+  {
+    "slug": "zapier-lead-capture-to-crm-playbook",
+    "brand": "ToolForge",
+    "name": "Zapier Lead Capture to CRM Playbook",
+    "oneLiner": "Move partner or form leads into a CRM with clean field mapping and dedupe rules.",
+    "pain": "Helps teams capture leads without creating duplicate records or broken field maps.",
+    "artifact": "Lead capture automation spec",
+    "inputs": [
+      {
+        "key": "triggerSource",
+        "label": "Trigger Source",
+        "type": "text",
+        "placeholder": "Form, landing page, referral form",
+        "defaultValue": ""
+      },
+      {
+        "key": "crmDestination",
+        "label": "CRM Destination",
+        "type": "text",
+        "placeholder": "HubSpot, Airtable, Sheets, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "duplicateRule",
+        "label": "Duplicate Rule",
+        "type": "text",
+        "placeholder": "How should duplicates be handled?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Creates or updates the CRM record, then notifies the owner or queues the next step.",
+    "ctaLabel": "Open Affiliate Ops Pack",
+    "ctaUrl": "/collections/affiliate-ops-automation-pack",
+    "tags": [
+      "tool",
+      "lead-capture",
+      "routing"
+    ]
+  },
+  {
+    "slug": "zapier-document-reminder-zap",
+    "brand": "ToolForge",
+    "name": "Zapier Document Reminder Zap",
+    "oneLiner": "Send a short reminder when intake documents are still missing.",
+    "pain": "Helps teams avoid stalled deals by nudging the next required document.",
+    "artifact": "Document reminder zap spec",
+    "inputs": [
+      {
+        "key": "missingDocuments",
+        "label": "Missing Documents",
+        "type": "text",
+        "placeholder": "What is still needed?",
+        "defaultValue": ""
+      },
+      {
+        "key": "reminderChannel",
+        "label": "Reminder Channel",
+        "type": "text",
+        "placeholder": "Email, SMS, Slack, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "stopRule",
+        "label": "Stop Rule",
+        "type": "text",
+        "placeholder": "When should reminders stop?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Sends the reminder only while the file is incomplete and escalates to human review when the limit is reached.",
+    "ctaLabel": "Open Affiliate Ops Pack",
+    "ctaUrl": "/collections/affiliate-ops-automation-pack",
+    "tags": [
+      "tool",
+      "warning",
+      "routing"
+    ]
+  },
+  {
+    "slug": "make-multi-step-router-playbook",
+    "brand": "ToolForge",
+    "name": "Make Multi-Step Router Playbook",
+    "oneLiner": "Route a record through multiple decision points before it lands in the final branch.",
+    "pain": "Helps operators manage branching logic without turning the scenario into a black box.",
+    "artifact": "Make routing scenario spec",
+    "inputs": [
+      {
+        "key": "sourceRecord",
+        "label": "Source Record",
+        "type": "text",
+        "placeholder": "Lead, request, or intake row",
+        "defaultValue": ""
+      },
+      {
+        "key": "branchRules",
+        "label": "Branch Rules",
+        "type": "text",
+        "placeholder": "How should it route?",
+        "defaultValue": ""
+      },
+      {
+        "key": "fallbackPath",
+        "label": "Fallback Path",
+        "type": "text",
+        "placeholder": "What happens on failure?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Applies branch rules in sequence, logs the reason, and sends ambiguous records to human review.",
+    "ctaLabel": "Open Affiliate Ops Pack",
+    "ctaUrl": "/collections/affiliate-ops-automation-pack",
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ]
+  },
+  {
+    "slug": "google-sheets-funding-tracker-builder",
+    "brand": "ToolForge",
+    "name": "Google Sheets Funding Tracker Builder",
+    "oneLiner": "Create a simple funding tracker sheet with stages, due dates, and ownership.",
+    "pain": "Helps funding teams keep leads and docs visible without a heavy CRM.",
+    "artifact": "Funding tracker sheet schema",
+    "inputs": [
+      {
+        "key": "stageList",
+        "label": "Stage List",
+        "type": "text",
+        "placeholder": "Lead, review, pending, closed",
+        "defaultValue": ""
+      },
+      {
+        "key": "ownerField",
+        "label": "Owner Field",
+        "type": "text",
+        "placeholder": "Who owns the row?",
+        "defaultValue": ""
+      },
+      {
+        "key": "dueDateField",
+        "label": "Due Date Field",
+        "type": "text",
+        "placeholder": "Which field tracks due dates?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Defines the minimum columns and review view needed for a useful funding tracker.",
+    "ctaLabel": "Open Funding CRM Pack",
+    "ctaUrl": "/collections/funding-crm-automation-pack",
+    "tags": [
+      "tool",
+      "funding",
+      "playbook"
+    ]
+  },
+  {
+    "slug": "airtable-affiliate-pipeline-base",
+    "brand": "ToolForge",
+    "name": "Airtable Affiliate Pipeline Base",
+    "oneLiner": "Create a lightweight affiliate pipeline base with stages, tags, and follow-up views.",
+    "pain": "Helps partner teams manage affiliate records without overbuilding the schema.",
+    "artifact": "Affiliate pipeline base schema",
+    "inputs": [
+      {
+        "key": "partnerType",
+        "label": "Partner Type",
+        "type": "text",
+        "placeholder": "Affiliate, creator, referral partner",
+        "defaultValue": ""
+      },
+      {
+        "key": "stageList",
+        "label": "Stage List",
+        "type": "text",
+        "placeholder": "New, active, paused, closed",
+        "defaultValue": ""
+      },
+      {
+        "key": "followUpField",
+        "label": "Follow-Up Field",
+        "type": "text",
+        "placeholder": "Which field tracks next action?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Sets up a base that keeps partner status, owner, and follow-up visible in one place.",
+    "ctaLabel": "Open Affiliate Ops Pack",
+    "ctaUrl": "/collections/affiliate-ops-automation-pack",
+    "tags": [
+      "tool",
+      "referral",
+      "playbook"
+    ]
+  },
+  {
+    "slug": "notion-client-intake-dashboard",
+    "brand": "ToolForge",
+    "name": "Notion Client Intake Dashboard",
+    "oneLiner": "Create a clean intake dashboard for client requests, ownership, and next steps.",
+    "pain": "Helps teams keep client intake visible without a complicated system.",
+    "artifact": "Client intake dashboard schema",
+    "inputs": [
+      {
+        "key": "clientType",
+        "label": "Client Type",
+        "type": "text",
+        "placeholder": "New client, partner, lead, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "intakeFields",
+        "label": "Intake Fields",
+        "type": "text",
+        "placeholder": "What should the dashboard capture?",
+        "defaultValue": ""
+      },
+      {
+        "key": "statusFlow",
+        "label": "Status Flow",
+        "type": "text",
+        "placeholder": "What are the key stages?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Creates the dashboard sections and status flow needed to keep intake moving with clear ownership.",
+    "ctaLabel": "Open Affiliate Ops Pack",
+    "ctaUrl": "/collections/affiliate-ops-automation-pack",
+    "tags": [
+      "tool",
+      "decision",
+      "playbook"
+    ]
+  },
+  {
+    "slug": "hubspot-funding-pipeline-setup",
+    "brand": "ToolForge",
+    "name": "HubSpot Funding Pipeline Setup",
+    "oneLiner": "Set up a funding pipeline with simple stages, ownership, and follow-up rules.",
+    "pain": "Helps funding teams clean up stage drift and keep deals moving.",
+    "artifact": "Funding pipeline setup spec",
+    "inputs": [
+      {
+        "key": "pipelineStages",
+        "label": "Pipeline Stages",
+        "type": "text",
+        "placeholder": "Lead, qualified, pending, won",
+        "defaultValue": ""
+      },
+      {
+        "key": "ownerRules",
+        "label": "Owner Rules",
+        "type": "text",
+        "placeholder": "Who owns which deals?",
+        "defaultValue": ""
+      },
+      {
+        "key": "followUpRules",
+        "label": "Follow-Up Rules",
+        "type": "text",
+        "placeholder": "When should follow-up happen?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Defines the stage map and follow-up flow so the team can manage the pipeline without confusion.",
+    "ctaLabel": "Open Funding CRM Pack",
+    "ctaUrl": "/collections/funding-crm-automation-pack",
+    "tags": [
+      "tool",
+      "funding",
+      "routing"
+    ]
+  },
+  {
+    "slug": "gohighlevel-sms-follow-up-campaign",
+    "brand": "ToolForge",
+    "name": "GoHighLevel SMS Follow-Up Campaign",
+    "oneLiner": "Send a short SMS sequence that nudges action without creating spammy noise.",
+    "pain": "Helps teams keep leads warm with a simple reminder path and a clear stop rule.",
+    "artifact": "SMS follow-up campaign spec",
+    "inputs": [
+      {
+        "key": "audience",
+        "label": "Audience",
+        "type": "text",
+        "placeholder": "Leads, partners, or clients",
+        "defaultValue": ""
+      },
+      {
+        "key": "messageSequence",
+        "label": "Message Sequence",
+        "type": "text",
+        "placeholder": "What should the SMS messages say?",
+        "defaultValue": ""
+      },
+      {
+        "key": "stopRule",
+        "label": "Stop Rule",
+        "type": "text",
+        "placeholder": "When should the campaign stop?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Sends the next SMS in sequence only while the lead is active and stops on reply, opt-out, or conversion.",
+    "ctaLabel": "Open Community Ops Pack",
+    "ctaUrl": "/collections/community-ops-automation-pack",
+    "tags": [
+      "tool",
+      "growth",
+      "urgency"
+    ]
+  },
+  {
+    "slug": "slack-operator-alerts-playbook",
+    "brand": "ToolForge",
+    "name": "Slack Operator Alerts Playbook",
+    "oneLiner": "Send Slack alerts for failed handoffs, stale records, or urgent workflow issues.",
+    "pain": "Helps operators notice issues without drowning the team in noise.",
+    "artifact": "Slack alert template set",
+    "inputs": [
+      {
+        "key": "eventType",
+        "label": "Event Type",
+        "type": "text",
+        "placeholder": "What happened?",
+        "defaultValue": ""
+      },
+      {
+        "key": "alertChannel",
+        "label": "Alert Channel",
+        "type": "text",
+        "placeholder": "Which channel should receive it?",
+        "defaultValue": ""
+      },
+      {
+        "key": "owner",
+        "label": "Owner",
+        "type": "text",
+        "placeholder": "Who should respond?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Builds a short alert with severity, owner, and next action so the team can respond quickly.",
+    "ctaLabel": "Open Community Ops Pack",
+    "ctaUrl": "/collections/community-ops-automation-pack",
+    "tags": [
+      "tool",
+      "warning",
+      "ops"
+    ]
+  },
+  {
+    "slug": "discord-affiliate-community-ops-playbook",
+    "brand": "ToolForge",
+    "name": "Discord Affiliate Community Ops Playbook",
+    "oneLiner": "Map a Discord community flow for affiliate onboarding, support, and channel routing.",
+    "pain": "Helps partner communities keep onboarding and support clear without overcomplicating the server.",
+    "artifact": "Discord channel map",
+    "inputs": [
+      {
+        "key": "communityGoal",
+        "label": "Community Goal",
+        "type": "text",
+        "placeholder": "What is the community for?",
+        "defaultValue": ""
+      },
+      {
+        "key": "channelMap",
+        "label": "Channel Map",
+        "type": "text",
+        "placeholder": "What channels are needed?",
+        "defaultValue": ""
+      },
+      {
+        "key": "firstAction",
+        "label": "First Action",
+        "type": "text",
+        "placeholder": "What should a new member do first?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Defines the onboarding flow, the support path, and the moderation handoff for the community.",
+    "ctaLabel": "Open Community Ops Pack",
+    "ctaUrl": "/collections/community-ops-automation-pack",
+    "tags": [
+      "tool",
+      "referral",
+      "growth"
+    ]
   }
 ]
