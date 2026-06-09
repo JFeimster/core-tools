@@ -1,0 +1,8 @@
+{
+  "visibility": "internal",
+  "fields": [
+    "artifact_root",
+    "artifacts",
+    "status"
+  ]
+}
