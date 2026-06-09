@@ -6,12 +6,28 @@ This queue tracks future ToolForge ideas and where they should land.
 
 Added in this batch:
 
-- ChatGPT
-- Claude
-- Cursor
-- Windsurf
+- Funding Readiness Review
+- Bank Statement Prep
+- Gig Income Organizer
+- Business Credit Setup
+- Lender Match Brief
+- Funding Application QA
+- Affiliate Landing Page Builder
+- Partner Onboarding Sequence
+- Lead Magnet Builder for Operators
+- Offer Stack Builder
+- Local SEO Page Builder
+- Content Repurposing
+- Calculator Spec Builder
+- Client Intake Workflow
+- CRM Cleanup
+- Pipeline Follow-Up
+- Notion Dashboard Builder
+- Google Sheets Ops
+- Zapier, Make, and n8n Automation
+- Discord Community Ops
 
-These packs are now represented in the ToolForge library; the remaining queue items stay as future work.
+These skills now have ToolForge documentation, and the practical subset is surfaced in visible directory entries and collections.
 
 ## Queue Key
 
@@ -68,3 +84,13 @@ These packs are now represented in the ToolForge library; the remaining queue it
 - Keep visible entries limited to workflows that help a user act inside the ToolForge directory.
 - Keep platform notes for integrations and ecosystem docs that do not need a public directory card.
 - Revisit the queue after each batch so branch names and dependencies stay accurate.
+
+## Next Queue Ideas
+
+- Gemini CLI platform pack
+- Replit platform pack
+- HubSpot workflow pack
+- Stripe workflow pack
+- Real estate deal screeners
+- E-commerce ad spend and inventory pack
+- Community support and moderation pack

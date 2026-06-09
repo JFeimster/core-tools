@@ -4342,5 +4342,635 @@
     "runner": {
       "type": "none"
     }
+  },
+  {
+    "slug": "funding-readiness-review",
+    "brand": "ToolForge",
+    "name": "Funding Readiness Review Skill",
+    "oneLiner": "Review a borrower profile and spot the gaps before a lender handoff.",
+    "pain": "Helps brokers catch missing facts and risk flags before they send a file.",
+    "artifact": "Funding readiness memo",
+    "inputs": [
+      {
+        "key": "borrowerProfile",
+        "label": "Borrower Profile",
+        "type": "text",
+        "placeholder": "Business type, revenue, ownership, context",
+        "defaultValue": ""
+      },
+      {
+        "key": "fundingGoal",
+        "label": "Funding Goal",
+        "type": "text",
+        "placeholder": "Working capital, refinance, equipment, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "riskFlags",
+        "label": "Risk Flags",
+        "type": "text",
+        "placeholder": "Missing docs, weak points, edge cases",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Summarizes readiness, missing items, and next-step actions in language that is safe to share with a partner.",
+    "ctaLabel": "Open Funding Pack",
+    "ctaUrl": "/collections/funding-operator-workflow-pack",
+    "tags": [
+      "tool",
+      "decision",
+      "warning"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "bank-statement-prep",
+    "brand": "ToolForge",
+    "name": "Bank Statement Prep Skill",
+    "oneLiner": "Turn bank statements into a clean prep checklist for review or submission.",
+    "pain": "Helps funding teams find missing months, unreadable pages, and cleanup items fast.",
+    "artifact": "Statement prep checklist",
+    "inputs": [
+      {
+        "key": "statementPeriod",
+        "label": "Statement Period",
+        "type": "text",
+        "placeholder": "Last 3 months, 6 months, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "accountType",
+        "label": "Account Type",
+        "type": "text",
+        "placeholder": "Checking, savings, merchant, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "knownIssues",
+        "label": "Known Issues",
+        "type": "text",
+        "placeholder": "Missing pages, transfers, NSF flags",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Flags missing coverage and prep issues so the file can move forward without guesswork.",
+    "ctaLabel": "Open Funding Pack",
+    "ctaUrl": "/collections/funding-operator-workflow-pack",
+    "tags": [
+      "tool",
+      "warning",
+      "funding"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "gig-income-organizer",
+    "brand": "ToolForge",
+    "name": "Gig Income Organizer Skill",
+    "oneLiner": "Organize mixed gig income into a clean view for funding or cash-flow planning.",
+    "pain": "Helps gig workers and side-income founders explain irregular income without overselling it.",
+    "artifact": "Gig income summary sheet",
+    "inputs": [
+      {
+        "key": "incomeSources",
+        "label": "Income Sources",
+        "type": "text",
+        "placeholder": "Platforms, clients, and side income",
+        "defaultValue": ""
+      },
+      {
+        "key": "payoutCadence",
+        "label": "Payout Cadence",
+        "type": "text",
+        "placeholder": "Daily, weekly, biweekly, monthly",
+        "defaultValue": ""
+      },
+      {
+        "key": "timeRange",
+        "label": "Time Range",
+        "type": "text",
+        "placeholder": "90 days, 6 months, 12 months",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Groups income by source and timing, then turns it into a useful readiness summary.",
+    "ctaLabel": "Open Funding Pack",
+    "ctaUrl": "/collections/funding-operator-workflow-pack",
+    "tags": [
+      "tool",
+      "runway",
+      "warning"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "business-credit-setup",
+    "brand": "ToolForge",
+    "name": "Business Credit Setup Skill",
+    "oneLiner": "Map the steps and assets needed to start a business-credit workflow safely.",
+    "pain": "Helps founders and brokers separate setup steps from outcome claims.",
+    "artifact": "Business credit setup roadmap",
+    "inputs": [
+      {
+        "key": "currentStage",
+        "label": "Current Stage",
+        "type": "text",
+        "placeholder": "New entity, early build, active profile",
+        "defaultValue": ""
+      },
+      {
+        "key": "targetOutcome",
+        "label": "Target Outcome",
+        "type": "text",
+        "placeholder": "Vendor accounts, profile prep, routing rules",
+        "defaultValue": ""
+      },
+      {
+        "key": "constraints",
+        "label": "Constraints",
+        "type": "text",
+        "placeholder": "Budget, timeline, compliance, state rules",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Creates a stage-by-stage setup plan that stays educational and partner-safe.",
+    "ctaLabel": "Open Funding Pack",
+    "ctaUrl": "/collections/funding-operator-workflow-pack",
+    "tags": [
+      "tool",
+      "credit",
+      "playbook"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "lender-match-brief",
+    "brand": "ToolForge",
+    "name": "Lender Match Brief Skill",
+    "oneLiner": "Package a deal profile into a lender-fit brief that is easy to route.",
+    "pain": "Helps brokers explain why a file fits a lender and where the friction is.",
+    "artifact": "Lender match brief",
+    "inputs": [
+      {
+        "key": "dealType",
+        "label": "Deal Type",
+        "type": "text",
+        "placeholder": "Working capital, DSCR, equipment, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "borrowerProfile",
+        "label": "Borrower Profile",
+        "type": "text",
+        "placeholder": "Business size, revenue, collateral, notes",
+        "defaultValue": ""
+      },
+      {
+        "key": "targetTimeline",
+        "label": "Target Timeline",
+        "type": "text",
+        "placeholder": "Same week, 2 weeks, this month",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Summarizes fit signals, risk flags, and routing notes for a clean handoff.",
+    "ctaLabel": "Open Funding Pack",
+    "ctaUrl": "/collections/funding-operator-workflow-pack",
+    "tags": [
+      "tool",
+      "lender",
+      "routing"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "funding-application-qa",
+    "brand": "ToolForge",
+    "name": "Funding Application QA Skill",
+    "oneLiner": "Review a funding application for blanks, mismatches, and risky wording.",
+    "pain": "Helps teams catch avoidable problems before a lender sees the file.",
+    "artifact": "Funding application QA checklist",
+    "inputs": [
+      {
+        "key": "applicationAnswers",
+        "label": "Application Answers",
+        "type": "text",
+        "placeholder": "Paste the current application draft",
+        "defaultValue": ""
+      },
+      {
+        "key": "supportingDocs",
+        "label": "Supporting Docs",
+        "type": "text",
+        "placeholder": "Bank statements, P&L, IDs, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "reviewDeadline",
+        "label": "Review Deadline",
+        "type": "text",
+        "placeholder": "Today, tomorrow, or specific date",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Checks completeness, consistency, and phrasing so the file is ready for a final handoff.",
+    "ctaLabel": "Open Funding Pack",
+    "ctaUrl": "/collections/funding-operator-workflow-pack",
+    "tags": [
+      "tool",
+      "decision",
+      "warning"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "affiliate-landing-page-builder",
+    "brand": "ToolForge",
+    "name": "Affiliate Landing Page Builder Skill",
+    "oneLiner": "Turn a partner offer into a landing-page brief that supports clicks and tracking.",
+    "pain": "Helps affiliates and creators ship a clear page without muddying disclosures or CTAs.",
+    "artifact": "Affiliate landing page brief",
+    "inputs": [
+      {
+        "key": "offer",
+        "label": "Offer",
+        "type": "text",
+        "placeholder": "Product, service, or partner funnel",
+        "defaultValue": ""
+      },
+      {
+        "key": "audience",
+        "label": "Audience",
+        "type": "text",
+        "placeholder": "Who should the page speak to?",
+        "defaultValue": ""
+      },
+      {
+        "key": "ctaDestination",
+        "label": "CTA Destination",
+        "type": "text",
+        "placeholder": "Tracking link or landing destination",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Builds a page outline with proof points, tracking notes, and a single action path.",
+    "ctaLabel": "Open Affiliate Pack",
+    "ctaUrl": "/collections/affiliate-growth-workflow-pack",
+    "tags": [
+      "tool",
+      "lead-capture",
+      "seo"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "partner-onboarding-sequence",
+    "brand": "ToolForge",
+    "name": "Partner Onboarding Sequence Skill",
+    "oneLiner": "Create the first-action sequence a new partner needs to start cleanly.",
+    "pain": "Helps partner programs avoid confusing handoffs and incomplete enablement.",
+    "artifact": "Partner onboarding sequence",
+    "inputs": [
+      {
+        "key": "partnerType",
+        "label": "Partner Type",
+        "type": "text",
+        "placeholder": "Affiliate, referrer, consultant, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "firstAction",
+        "label": "First Action",
+        "type": "text",
+        "placeholder": "What should they do first?",
+        "defaultValue": ""
+      },
+      {
+        "key": "assetList",
+        "label": "Asset List",
+        "type": "text",
+        "placeholder": "Links, docs, tracking, disclosures",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Sequences the onboarding steps so the partner gets to the first useful action quickly.",
+    "ctaLabel": "Open Affiliate Pack",
+    "ctaUrl": "/collections/affiliate-growth-workflow-pack",
+    "tags": [
+      "tool",
+      "referral",
+      "routing"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "lead-magnet-builder-operator",
+    "brand": "ToolForge",
+    "name": "Lead Magnet Builder for Operators",
+    "oneLiner": "Turn one operator problem into a lead magnet that supports a simple CTA.",
+    "pain": "Helps builders create a useful asset instead of a generic download.",
+    "artifact": "Lead magnet outline",
+    "inputs": [
+      {
+        "key": "audience",
+        "label": "Audience",
+        "type": "text",
+        "placeholder": "Founders, brokers, affiliates, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "painPoint",
+        "label": "Pain Point",
+        "type": "text",
+        "placeholder": "One problem the asset should solve",
+        "defaultValue": ""
+      },
+      {
+        "key": "cta",
+        "label": "CTA",
+        "type": "text",
+        "placeholder": "Download, book, apply, or request",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Designs a narrow lead magnet with a useful artifact, delivery flow, and follow-up CTA.",
+    "ctaLabel": "Open Affiliate Pack",
+    "ctaUrl": "/collections/affiliate-growth-workflow-pack",
+    "tags": [
+      "tool",
+      "lead-capture",
+      "growth"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "offer-stack-builder",
+    "brand": "ToolForge",
+    "name": "Offer Stack Builder",
+    "oneLiner": "Structure the value stack so the offer, proof, and next step are easy to understand.",
+    "pain": "Helps founders and affiliates explain the offer without bloating the page.",
+    "artifact": "Offer stack brief",
+    "inputs": [
+      {
+        "key": "coreOffer",
+        "label": "Core Offer",
+        "type": "text",
+        "placeholder": "What is being sold?",
+        "defaultValue": ""
+      },
+      {
+        "key": "mainOutcome",
+        "label": "Main Outcome",
+        "type": "text",
+        "placeholder": "The result the user wants",
+        "defaultValue": ""
+      },
+      {
+        "key": "proofPoints",
+        "label": "Proof Points",
+        "type": "text",
+        "placeholder": "Testimonials, metrics, examples",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Builds a clear offer stack with value order, proof cues, and a simple CTA path.",
+    "ctaLabel": "Open Affiliate Pack",
+    "ctaUrl": "/collections/affiliate-growth-workflow-pack",
+    "tags": [
+      "tool",
+      "growth",
+      "decision"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "local-seo-page-builder",
+    "brand": "ToolForge",
+    "name": "Local SEO Page Builder",
+    "oneLiner": "Turn a local service into a search-friendly page brief that can drive leads.",
+    "pain": "Helps local businesses ship pages that match search intent without stuffing keywords.",
+    "artifact": "Local SEO page brief",
+    "inputs": [
+      {
+        "key": "service",
+        "label": "Service",
+        "type": "text",
+        "placeholder": "Primary service or offer",
+        "defaultValue": ""
+      },
+      {
+        "key": "location",
+        "label": "Location",
+        "type": "text",
+        "placeholder": "City, region, or service area",
+        "defaultValue": ""
+      },
+      {
+        "key": "primaryCTA",
+        "label": "Primary CTA",
+        "type": "text",
+        "placeholder": "Call, quote, book, or request",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Maps the page sections, trust cues, and lead path around one service and one location.",
+    "ctaLabel": "Open SEO Pack",
+    "ctaUrl": "/collections/local-business-seo-workflow-pack",
+    "tags": [
+      "tool",
+      "seo",
+      "lead-capture"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "calculator-spec-builder",
+    "brand": "ToolForge",
+    "name": "Calculator Spec Builder Skill",
+    "oneLiner": "Turn a calculator idea into a clear spec with inputs, outputs, and guardrails.",
+    "pain": "Helps teams design calculators that are simple enough to implement and safe to publish.",
+    "artifact": "Calculator spec",
+    "inputs": [
+      {
+        "key": "audience",
+        "label": "Audience",
+        "type": "text",
+        "placeholder": "Who will use the calculator?",
+        "defaultValue": ""
+      },
+      {
+        "key": "calculationGoal",
+        "label": "Calculation Goal",
+        "type": "text",
+        "placeholder": "What decision should it help with?",
+        "defaultValue": ""
+      },
+      {
+        "key": "inputs",
+        "label": "Inputs",
+        "type": "text",
+        "placeholder": "Numbers or fields the calculator needs",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Defines the minimum inputs, outputs, and explanation text needed for a practical calculator.",
+    "ctaLabel": "Open SEO Pack",
+    "ctaUrl": "/collections/local-business-seo-workflow-pack",
+    "tags": [
+      "tool",
+      "calculator",
+      "decision"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "crm-cleanup",
+    "brand": "ToolForge",
+    "name": "CRM Cleanup",
+    "oneLiner": "Turn a messy CRM into a clear cleanup plan with ownership and next steps.",
+    "pain": "Helps teams fix duplicates, bad stages, and stale records without overbuilding a new system.",
+    "artifact": "CRM cleanup plan",
+    "inputs": [
+      {
+        "key": "crmSystem",
+        "label": "CRM System",
+        "type": "text",
+        "placeholder": "HubSpot, Pipedrive, Sheets, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "cleanupGoal",
+        "label": "Cleanup Goal",
+        "type": "text",
+        "placeholder": "Duplicates, stages, follow-up, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "knownIssues",
+        "label": "Known Issues",
+        "type": "text",
+        "placeholder": "Bad fields, stale deals, missing owners",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Sorts the biggest CRM problems into a simple plan for cleanup, ownership, and follow-up.",
+    "ctaLabel": "Open Ops Pack",
+    "ctaUrl": "/collections/automation-ops-workflow-pack",
+    "tags": [
+      "tool",
+      "routing",
+      "warning"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "pipeline-follow-up",
+    "brand": "ToolForge",
+    "name": "Pipeline Follow-Up",
+    "oneLiner": "Create a follow-up sequence that keeps opportunities moving without spammy outreach.",
+    "pain": "Helps operators keep deals alive with a respectful, stage-based sequence.",
+    "artifact": "Follow-up sequence",
+    "inputs": [
+      {
+        "key": "pipelineStage",
+        "label": "Pipeline Stage",
+        "type": "text",
+        "placeholder": "New, qualified, waiting, etc.",
+        "defaultValue": ""
+      },
+      {
+        "key": "contactChannel",
+        "label": "Contact Channel",
+        "type": "text",
+        "placeholder": "Email, SMS, DM, call",
+        "defaultValue": ""
+      },
+      {
+        "key": "followUpGoal",
+        "label": "Follow-Up Goal",
+        "type": "text",
+        "placeholder": "Reply, booking, next step, close",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Writes the follow-up cadence, messages, and next-step notes for one pipeline stage.",
+    "ctaLabel": "Open Ops Pack",
+    "ctaUrl": "/collections/automation-ops-workflow-pack",
+    "tags": [
+      "tool",
+      "routing",
+      "urgency"
+    ],
+    "runner": {
+      "type": "none"
+    }
+  },
+  {
+    "slug": "zapier-make-n8n-automation",
+    "brand": "ToolForge",
+    "name": "Zapier, Make, and n8n Automation",
+    "oneLiner": "Map an automation workflow into triggers, actions, and safe handoff notes.",
+    "pain": "Helps operators automate routing and reminders without losing a human fallback.",
+    "artifact": "Automation map",
+    "inputs": [
+      {
+        "key": "trigger",
+        "label": "Trigger",
+        "type": "text",
+        "placeholder": "What starts the workflow?",
+        "defaultValue": ""
+      },
+      {
+        "key": "actions",
+        "label": "Actions",
+        "type": "text",
+        "placeholder": "What should happen next?",
+        "defaultValue": ""
+      },
+      {
+        "key": "fallback",
+        "label": "Fallback",
+        "type": "text",
+        "placeholder": "What happens if it fails?",
+        "defaultValue": ""
+      }
+    ],
+    "logic": "Creates a small automation map with trigger, action chain, validation, and human fallback notes.",
+    "ctaLabel": "Open Ops Pack",
+    "ctaUrl": "/collections/automation-ops-workflow-pack",
+    "tags": [
+      "tool",
+      "ops",
+      "routing"
+    ],
+    "runner": {
+      "type": "none"
+    }
   }
 ]

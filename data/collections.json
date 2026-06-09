@@ -221,5 +221,80 @@
       "playbook",
       "routing"
     ]
+  },
+  {
+    "slug": "funding-operator-workflow-pack",
+    "title": "Funding Operator Workflow Pack",
+    "oneLiner": "Build sharper funding intake, readiness, and lender routing workflows.",
+    "audience": "Funding brokers, founders, and operators handling capital workflows",
+    "primaryCtaLabel": "Browse the pack",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "funding-readiness-review",
+      "bank-statement-prep",
+      "gig-income-organizer",
+      "business-credit-setup",
+      "lender-match-brief",
+      "funding-application-qa"
+    ],
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ]
+  },
+  {
+    "slug": "affiliate-growth-workflow-pack",
+    "title": "Affiliate Growth Workflow Pack",
+    "oneLiner": "Ship clearer partner pages, onboarding, and offer assets.",
+    "audience": "Affiliates, creators, and partner program operators",
+    "primaryCtaLabel": "Browse the pack",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "affiliate-landing-page-builder",
+      "partner-onboarding-sequence",
+      "lead-magnet-builder-operator",
+      "offer-stack-builder"
+    ],
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ]
+  },
+  {
+    "slug": "local-business-seo-workflow-pack",
+    "title": "Local Business + SEO Workflow Pack",
+    "oneLiner": "Turn local services and calculator ideas into clearer lead-gen assets.",
+    "audience": "Local businesses, consultants, and builders",
+    "primaryCtaLabel": "Browse the pack",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "local-seo-page-builder",
+      "calculator-spec-builder"
+    ],
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ]
+  },
+  {
+    "slug": "automation-ops-workflow-pack",
+    "title": "Automation Ops Workflow Pack",
+    "oneLiner": "Clean up the pipeline and automate the handoff points that slow teams down.",
+    "audience": "Operators and automation builders",
+    "primaryCtaLabel": "Browse the pack",
+    "primaryCtaUrl": "/tools",
+    "toolSlugs": [
+      "crm-cleanup",
+      "pipeline-follow-up",
+      "zapier-make-n8n-automation"
+    ],
+    "tags": [
+      "tool",
+      "playbook",
+      "routing"
+    ]
   }
 ]
