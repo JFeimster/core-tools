@@ -1,0 +1,1375 @@
+{
+  "registry_name": "gpt-assets.registry.json",
+  "version": "1.0.0",
+  "generated_at": "2026-06-09",
+  "source": {
+    "type": "notion_database",
+    "name": "My Custom GPTs",
+    "url": "https://feimster.notion.site/ai-agents",
+    "data_source_url": "collection://1ec4bc1b-d63c-8007-8012-000baa567e97"
+  },
+  "recommended_schema": {
+    "gpt_name": "Display name of the GPT or AI agent.",
+    "slug": "Stable route-safe identifier.",
+    "notion_url": "Source page in Notion.",
+    "access_url": "Public or private ChatGPT/GPT access URL when available.",
+    "purpose": "Plain-English purpose of the asset.",
+    "core_pain_point": "Pain point the asset is designed to solve.",
+    "audience_persona": "Primary user personas.",
+    "category": "High-level directory categories.",
+    "suite_tag": "Bundle, product suite, or operating area.",
+    "funnel_stage": "Lead Magnet, Tripwire, Core, Upsell, or Internal.",
+    "tier": "Utility, Growth, Premium, or internal naming.",
+    "status": "Existing, In Development, Draft, Launched, Deprecated.",
+    "input_fields": "Inputs the GPT expects.",
+    "outputs": "Outputs the GPT produces.",
+    "related_tools": "Tools, platforms, actions, or integrations connected to this GPT.",
+    "related_content": "Articles, templates, lead magnets, packs, or pages this GPT supports.",
+    "monetization_path": "How this GPT can generate leads, sales, affiliate revenue, retainers, or productized services.",
+    "featured": "Boolean used for homepage/directory priority.",
+    "collection": "Collection used for grouping and routing inside a directory."
+  },
+  "assets": [
+    {
+      "gpt_name": "Agent Launch Site Builder",
+      "notion_url": "https://app.notion.com/p/a9232093df34419dacd9be637a7b0389?pvs=1",
+      "access_url": "https://chatgpt.com/g/g-6a266d799fac819194b8088eb5feb9de-agent-launch-site-builder",
+      "purpose": "Creates static landing pages, copy decks, wireframes, embeds, and launch-ready site files for AI Agents and Custom GPTs.",
+      "core_pain_point": "AI agents and Custom GPTs often have weak landing pages, generic copy, unclear CTAs, and bland layouts that fail to communicate value quickly.",
+      "audience_persona": [
+        "AI Automation Builder",
+        "Creator-Operator",
+        "Solopreneur",
+        "Agency Owner"
+      ],
+      "category": [
+        "Content & Marketing",
+        "Building & Development",
+        "Sales & Client Relations"
+      ],
+      "suite_tag": "Creator & Content Ops",
+      "funnel_stage": "Core",
+      "tier": "Growth",
+      "status": "In Development",
+      "input_fields": [
+        "Agent/GPT name",
+        "Description",
+        "Core pain point",
+        "Audience persona",
+        "Desired CTA",
+        "Access URL",
+        "Category",
+        "Brand vibe",
+        "Output package"
+      ],
+      "outputs": [
+        "Landing page",
+        "Copy deck",
+        "Wireframe",
+        "HTML/CSS/JS files",
+        "README",
+        "Embed package"
+      ],
+      "related_tools": [
+        "Notion",
+        "File upload",
+        "ChatGPT GPT Builder",
+        "Static HTML/CSS/JS",
+        "Vercel"
+      ],
+      "related_content": [
+        "AI Agent landing pages",
+        "Custom GPT product pages",
+        "Agent directory cards",
+        "Launch assets"
+      ],
+      "monetization_path": "Use as a core builder for paid launch-site creation, agent microsite packages, DFY setup, and AI Agent Arsenal directory assets.",
+      "featured": true,
+      "collection": "ai-agent-arsenal",
+      "slug": "agent-launch-site-builder"
+    },
+    {
+      "gpt_name": "AI Agent Generator",
+      "notion_url": "https://app.notion.com/p/23f4bc1bd63c802d866feb91d2d9d0ef?pvs=1",
+      "access_url": "",
+      "purpose": "Generates pain-point-driven AI agent concepts, GPT instructions, actions, and implementation specs.",
+      "core_pain_point": "Founders know they need useful AI agents but struggle to turn messy workflow problems into agent specs.",
+      "audience_persona": [
+        "Founder",
+        "Agency Owner",
+        "AI Builder",
+        "Operator"
+      ],
+      "category": [
+        "Building & Development",
+        "Product Ideation"
+      ],
+      "suite_tag": "AI Agent Development",
+      "funnel_stage": "Core",
+      "tier": "Growth",
+      "status": "Existing",
+      "input_fields": [
+        "Target audience",
+        "Pain point",
+        "Workflow",
+        "Desired output",
+        "Tools involved",
+        "Monetization goal"
+      ],
+      "outputs": [
+        "GPT concept",
+        "Instructions",
+        "Conversation starters",
+        "Action ideas",
+        "Knowledge file recommendations"
+      ],
+      "related_tools": [
+        "ChatGPT GPT Builder",
+        "Notion",
+        "Zapier",
+        "OpenAPI actions"
+      ],
+      "related_content": [
+        "Agent specs",
+        "GPT builder prompts",
+        "AI automation ideas"
+      ],
+      "monetization_path": "Use to rapidly produce new agents for directories, lead magnets, paid tools, and client implementation projects.",
+      "featured": true,
+      "collection": "ai-agent-arsenal",
+      "slug": "ai-agent-generator"
+    },
+    {
+      "gpt_name": "Consistent Character GPT",
+      "notion_url": "https://app.notion.com/p/24a4bc1bd63c8185a1c5f54d8e932afc?pvs=1",
+      "access_url": "",
+      "purpose": "Helps create repeatable character concepts and image prompt systems for visual content.",
+      "core_pain_point": "Creators struggle to keep AI-generated characters visually consistent across images, campaigns, and content series.",
+      "audience_persona": [
+        "Creator",
+        "Designer",
+        "AI Image Builder",
+        "Content Marketer"
+      ],
+      "category": [
+        "Creative Asset",
+        "Content & Marketing"
+      ],
+      "suite_tag": "Creator & Content Ops",
+      "funnel_stage": "Lead Magnet",
+      "tier": "Utility",
+      "status": "Existing",
+      "input_fields": [
+        "Character description",
+        "Style direction",
+        "Use case",
+        "Reference traits",
+        "Scene types",
+        "Brand rules"
+      ],
+      "outputs": [
+        "Character prompt",
+        "Style guide",
+        "Scene prompts",
+        "Negative prompts",
+        "Prompt variations"
+      ],
+      "related_tools": [
+        "ChatGPT",
+        "Image generation",
+        "Midjourney",
+        "DALL-E",
+        "Canva"
+      ],
+      "related_content": [
+        "Character prompt packs",
+        "AI image workflows",
+        "Creative campaign assets"
+      ],
+      "monetization_path": "Package as a prompt utility, creator lead magnet, or image prompt service upsell.",
+      "featured": false,
+      "collection": "creator-tools",
+      "slug": "consistent-character-gpt"
+    },
+    {
+      "gpt_name": "No-Code GPT Builder",
+      "notion_url": "https://app.notion.com/p/2314bc1bd63c80af9d4cff7373692742?pvs=1",
+      "access_url": "",
+      "purpose": "Creates no-code GPT concepts, instructions, data structures, and builder-ready outputs.",
+      "core_pain_point": "Non-technical operators need to build practical GPTs without getting buried in developer jargon.",
+      "audience_persona": [
+        "No-Code Builder",
+        "Founder",
+        "Solopreneur",
+        "Agency Owner"
+      ],
+      "category": [
+        "Building & Development",
+        "Productivity & Automation"
+      ],
+      "suite_tag": "AI Agent Development",
+      "funnel_stage": "Core",
+      "tier": "Growth",
+      "status": "Existing",
+      "input_fields": [
+        "Use case",
+        "Audience",
+        "Workflow",
+        "Inputs",
+        "Outputs",
+        "Data source",
+        "Desired integrations"
+      ],
+      "outputs": [
+        "GPT name",
+        "Use case",
+        "Ideal user",
+        "Instructions",
+        "Conversation starters",
+        "Knowledge file list"
+      ],
+      "related_tools": [
+        "ChatGPT GPT Builder",
+        "Notion",
+        "Airtable",
+        "Zapier",
+        "Make"
+      ],
+      "related_content": [
+        "No-code GPT templates",
+        "GPT database entries",
+        "Build prompts"
+      ],
+      "monetization_path": "Use as a productized GPT build service, template library, or paid workshop engine.",
+      "featured": true,
+      "collection": "ai-agent-arsenal",
+      "slug": "no-code-gpt-builder"
+    },
+    {
+      "gpt_name": "Prompt Analyst",
+      "notion_url": "https://app.notion.com/p/24a4bc1bd63c8147864dfda77a39357c?pvs=1",
+      "access_url": "",
+      "purpose": "Reviews, diagnoses, and improves prompts for clarity, structure, output quality, and reliability.",
+      "core_pain_point": "Prompts often fail because they are vague, overloaded, missing constraints, or unclear about output format.",
+      "audience_persona": [
+        "Prompt Engineer",
+        "Founder",
+        "Content Creator",
+        "AI Operator"
+      ],
+      "category": [
+        "Prompt Engineering",
+        "Productivity & Automation"
+      ],
+      "suite_tag": "AI Agent Development",
+      "funnel_stage": "Lead Magnet",
+      "tier": "Utility",
+      "status": "Existing",
+      "input_fields": [
+        "Current prompt",
+        "Desired output",
+        "Failure examples",
+        "Audience",
+        "Constraints",
+        "Preferred format"
+      ],
+      "outputs": [
+        "Prompt critique",
+        "Improved prompt",
+        "Output format",
+        "Test cases",
+        "Failure risk notes"
+      ],
+      "related_tools": [
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Notion"
+      ],
+      "related_content": [
+        "Prompt audits",
+        "Prompt rewrites",
+        "AI workflow improvements"
+      ],
+      "monetization_path": "Use as a prompt audit lead magnet or upsell into custom GPT/workflow builds.",
+      "featured": false,
+      "collection": "prompt-tools",
+      "slug": "prompt-analyst"
+    },
+    {
+      "gpt_name": "AI Reviews Blog Writer",
+      "notion_url": "https://app.notion.com/p/24a4bc1bd63c819f8c8fd9db815612fb?pvs=1",
+      "access_url": "",
+      "purpose": "Writes SEO-oriented AI tool reviews, comparison articles, and monetizable affiliate content.",
+      "core_pain_point": "Affiliate reviews often read like generic fluff instead of useful buying guidance that can rank and convert.",
+      "audience_persona": [
+        "Affiliate Marketer",
+        "Blogger",
+        "AI Tool Curator",
+        "Content Operator"
+      ],
+      "category": [
+        "Content & Marketing",
+        "Affiliate"
+      ],
+      "suite_tag": "Content & Affiliate Ops",
+      "funnel_stage": "Core",
+      "tier": "Growth",
+      "status": "Existing",
+      "input_fields": [
+        "Tool name",
+        "Affiliate URL",
+        "Audience",
+        "Primary keyword",
+        "Use cases",
+        "Pricing notes",
+        "Pros/cons"
+      ],
+      "outputs": [
+        "AI tool review",
+        "SEO title",
+        "Meta description",
+        "FAQ",
+        "CTA blocks",
+        "Comparison sections"
+      ],
+      "related_tools": [
+        "Wix",
+        "WordPress",
+        "Notion",
+        "SEO tools",
+        "Affiliate networks"
+      ],
+      "related_content": [
+        "AI tool reviews",
+        "Comparison posts",
+        "Affiliate content clusters"
+      ],
+      "monetization_path": "Drive affiliate clicks, email opt-ins, sponsored reviews, and content-led tool sales.",
+      "featured": true,
+      "collection": "content-tools",
+      "slug": "ai-reviews-blog-writer"
+    },
+    {
+      "gpt_name": "Affiliate Agency GPT",
+      "notion_url": "https://app.notion.com/p/24a4bc1bd63c81cdaaf9d6cf6e5dbd9f?pvs=1",
+      "access_url": "",
+      "purpose": "Helps build affiliate agency offers, recruiting systems, partner messaging, and monetization workflows.",
+      "core_pain_point": "Affiliate operators need systems for recruiting, training, tracking, and activating partners instead of random link-slinging.",
+      "audience_persona": [
+        "Affiliate Agency Owner",
+        "Partner Manager",
+        "Founder",
+        "Referral Program Builder"
+      ],
+      "category": [
+        "Affiliate",
+        "Sales & Client Relations",
+        "Business Operations"
+      ],
+      "suite_tag": "Agency Growth & Sales",
+      "funnel_stage": "Core",
+      "tier": "Growth",
+      "status": "Existing",
+      "input_fields": [
+        "Niche",
+        "Offer",
+        "Commission model",
+        "Ideal partner",
+        "Traffic source",
+        "Training assets",
+        "CRM/tool stack"
+      ],
+      "outputs": [
+        "Recruiting copy",
+        "Partner onboarding plan",
+        "Commission messaging",
+        "Activation checklist",
+        "Content ideas"
+      ],
+      "related_tools": [
+        "Notion",
+        "CRM",
+        "Email",
+        "PartnerStack",
+        "Rewardful",
+        "Tapfiliate"
+      ],
+      "related_content": [
+        "Affiliate program SOPs",
+        "Partner recruitment pages",
+        "Training packs"
+      ],
+      "monetization_path": "Use to build partner programs, affiliate directories, and recruitment funnels for funding/tool offers.",
+      "featured": true,
+      "collection": "agency-growth",
+      "slug": "affiliate-agency-gpt"
+    },
+    {
+      "gpt_name": "Landing Page Builder GPT",
+      "notion_url": "https://app.notion.com/p/2084bc1bd63c80439236c9e9fc107375?pvs=1",
+      "access_url": "",
+      "purpose": "Builds conversion-focused landing page structure, copy, and static page assets.",
+      "core_pain_point": "Offers die when landing pages fail to explain the pain, promise, proof, and next step.",
+      "audience_persona": [
+        "Founder",
+        "Marketer",
+        "Agency Owner",
+        "Creator"
+      ],
+      "category": [
+        "Content & Marketing",
+        "Building & Development"
+      ],
+      "suite_tag": "Creator & Content Ops",
+      "funnel_stage": "Core",
+      "tier": "Growth",
+      "status": "Existing",
+      "input_fields": [
+        "Offer",
+        "Audience",
+        "Pain point",
+        "CTA",
+        "Proof",
+        "Traffic source",
+        "Brand vibe"
+      ],
+      "outputs": [
+        "Landing page copy",
+        "Wireframe",
+        "Section flow",
+        "CTA strategy",
+        "HTML/CSS/JS"
+      ],
+      "related_tools": [
+        "Vercel",
+        "Wix",
+        "Carrd",
+        "Webflow",
+        "ChatGPT"
+      ],
+      "related_content": [
+        "Landing page templates",
+        "Offer pages",
+        "Lead magnets"
+      ],
+      "monetization_path": "Use for DFY landing page builds, template packs, and funnel buildouts.",
+      "featured": true,
+      "collection": "site-builders",
+      "slug": "landing-page-builder-gpt"
+    },
+    {
+      "gpt_name": "Loan Broker Automation Architect GPT",
+      "notion_url": "https://app.notion.com/p/fb6e7a08617b4d11aad27b9bbf84f50a?pvs=1",
+      "access_url": "",
+      "purpose": "Designs automation systems for loan brokers, funding agencies, and broker operations.",
+      "core_pain_point": "Loan brokers lose time and deals because lead intake, document collection, CRM updates, and follow-up are not automated cleanly.",
+      "audience_persona": [
+        "Loan Broker",
+        "Funding Agency Owner",
+        "Broker VA",
+        "Automation Builder"
+      ],
+      "category": [
+        "Productivity & Automation",
+        "Business Operations",
+        "Sales & Client Relations"
+      ],
+      "suite_tag": "Agency Growth & Sales",
+      "funnel_stage": "Core",
+      "tier": "Premium",
+      "status": "In Development",
+      "input_fields": [
+        "Broker workflow",
+        "CRM",
+        "Lead source",
+        "Current bottleneck",
+        "Documents required",
+        "Follow-up rules",
+        "Compliance constraints"
+      ],
+      "outputs": [
+        "Automation map",
+        "Trigger/action logic",
+        "CRM fields",
+        "Human review points",
+        "Tool recommendations",
+        "Implementation plan"
+      ],
+      "related_tools": [
+        "Zapier",
+        "Make",
+        "n8n",
+        "GoHighLevel",
+        "HubSpot",
+        "Airtable",
+        "Notion"
+      ],
+      "related_content": [
+        "Broker automation maps",
+        "Funding agency workflows",
+        "CRM setup guides"
+      ],
+      "monetization_path": "Convert into DFY automation builds, monthly ops retainers, and broker automation audits.",
+      "featured": true,
+      "collection": "funding-agency-automation",
+      "slug": "loan-broker-automation-architect-gpt"
+    },
+    {
+      "gpt_name": "Embedded-Finance Integrator",
+      "notion_url": "https://app.notion.com/p/974b405310d34c1a8f0231c15cdb845b?pvs=1",
+      "access_url": "",
+      "purpose": "Frames embedded-finance workflows, partner offers, and agent actions for platforms and service businesses.",
+      "core_pain_point": "Businesses want to offer financing but need clear partner workflows, intake logic, and compliance-safe handoffs.",
+      "audience_persona": [
+        "Fintech Founder",
+        "SaaS Operator",
+        "Agency Owner",
+        "Embedded Finance Partner"
+      ],
+      "category": [
+        "Fintech",
+        "Productivity & Automation",
+        "Sales & Client Relations"
+      ],
+      "suite_tag": "Finance Ops",
+      "funnel_stage": "Core",
+      "tier": "Premium",
+      "status": "Existing",
+      "input_fields": [
+        "Business model",
+        "Customer type",
+        "Funding offer",
+        "Partner/provider",
+        "Required intake",
+        "Handoff process"
+      ],
+      "outputs": [
+        "Embedded finance workflow",
+        "Action specs",
+        "Partner handoff map",
+        "Intake fields",
+        "Compliance notes"
+      ],
+      "related_tools": [
+        "CRM",
+        "OpenAPI actions",
+        "Zapier",
+        "Notion",
+        "Funding providers"
+      ],
+      "related_content": [
+        "Embedded finance playbooks",
+        "Partner workflows",
+        "Funding offer maps"
+      ],
+      "monetization_path": "Use for embedded-finance consulting, partner program setup, and white-label funding integrations.",
+      "featured": true,
+      "collection": "finance-ops",
+      "slug": "embedded-finance-integrator"
+    },
+    {
+      "gpt_name": "Agent Growth Hub",
+      "notion_url": "https://app.notion.com/p/24a4bc1bd63c818aacd7d72ce8d9aa27?pvs=1",
+      "access_url": "",
+      "purpose": "Helps agents grow with training assets, content, lead generation ideas, and operating rhythms.",
+      "core_pain_point": "Agents need more than motivation; they need repeatable actions, content, scripts, and accountability systems.",
+      "audience_persona": [
+        "Sales Agent",
+        "Funding Agent",
+        "Affiliate",
+        "Agency Owner"
+      ],
+      "category": [
+        "Sales & Client Relations",
+        "Training",
+        "Business Operations"
+      ],
+      "suite_tag": "Agency Growth & Sales",
+      "funnel_stage": "Core",
+      "tier": "Growth",
+      "status": "Existing",
+      "input_fields": [
+        "Agent role",
+        "Offer",
+        "Niche",
+        "Weekly goal",
+        "Lead source",
+        "Skill gap",
+        "Content channel"
+      ],
+      "outputs": [
+        "Growth plan",
+        "Training checklist",
+        "Outreach scripts",
+        "Content ideas",
+        "KPI tracker"
+      ],
+      "related_tools": [
+        "Notion",
+        "CRM",
+        "Discord",
+        "Email",
+        "Social media"
+      ],
+      "related_content": [
+        "Agent onboarding",
+        "Sales training",
+        "Daily activity plans"
+      ],
+      "monetization_path": "Use inside affiliate teams, broker training programs, and paid agent communities.",
+      "featured": false,
+      "collection": "agency-growth",
+      "slug": "agent-growth-hub"
+    },
+    {
+      "gpt_name": "BizCredit Builder GPT",
+      "notion_url": "https://app.notion.com/p/2034bc1bd63c802e841bfb481eb58207?pvs=1",
+      "access_url": "",
+      "purpose": "Guides business credit building, vendor setup, reporting readiness, and credit-building workflows.",
+      "core_pain_point": "Small business owners want business credit but get lost in vendor tiers, reporting requirements, and setup steps.",
+      "audience_persona": [
+        "Small Business Owner",
+        "Startup Founder",
+        "Funding Client",
+        "Credit Builder"
+      ],
+      "category": [
+        "Finance",
+        "Business Credit",
+        "Productivity & Automation"
+      ],
+      "suite_tag": "Finance Ops",
+      "funnel_stage": "Core",
+      "tier": "Growth",
+      "status": "Existing",
+      "input_fields": [
+        "Business age",
+        "Entity status",
+        "EIN/DUNS status",
+        "Industry",
+        "Current credit profile",
+        "Vendor accounts",
+        "Funding goal"
+      ],
+      "outputs": [
+        "Business credit roadmap",
+        "Vendor checklist",
+        "Readiness score",
+        "Next steps",
+        "Credit-building reminders"
+      ],
+      "related_tools": [
+        "Nav",
+        "Credit Suite",
+        "Notion",
+        "CRM"
+      ],
+      "related_content": [
+        "Business credit guides",
+        "Vendor lists",
+        "Funding readiness tools"
+      ],
+      "monetization_path": "Drive credit-builder offers, funding consultations, paid setup services, and affiliate products.",
+      "featured": true,
+      "collection": "funding-tools",
+      "slug": "bizcredit-builder-gpt"
+    },
+    {
+      "gpt_name": "Bank Match GPT",
+      "notion_url": "https://app.notion.com/p/2014bc1bd63c803d9b91cd18a687aa66?pvs=1",
+      "access_url": "",
+      "purpose": "Matches businesses with best-fit digital banking options based on needs, revenue, and operating style.",
+      "core_pain_point": "Founders pick bank accounts randomly instead of matching banking features to cash-flow behavior and funding goals.",
+      "audience_persona": [
+        "Founder",
+        "Small Business Owner",
+        "Gig Worker",
+        "Ecommerce Seller"
+      ],
+      "category": [
+        "Finance",
+        "Digital Banking",
+        "Funding Readiness"
+      ],
+      "suite_tag": "Finance Ops",
+      "funnel_stage": "Lead Magnet",
+      "tier": "Utility",
+      "status": "Existing",
+      "input_fields": [
+        "Business type",
+        "Monthly revenue",
+        "Deposit volume",
+        "Industry",
+        "Banking needs",
+        "Funding goals",
+        "Payment tools"
+      ],
+      "outputs": [
+        "Bank shortlist",
+        "Feature comparison",
+        "Funding-readiness notes",
+        "Setup checklist",
+        "Risk warnings"
+      ],
+      "related_tools": [
+        "Mercury",
+        "Novo",
+        "Lili",
+        "Relay",
+        "Nav"
+      ],
+      "related_content": [
+        "Banking comparison posts",
+        "Funding readiness guides",
+        "Affiliate banking pages"
+      ],
+      "monetization_path": "Drive banking affiliate referrals, funding assessments, and onboarding checklists.",
+      "featured": true,
+      "collection": "funding-tools",
+      "slug": "bank-match-gpt"
+    },
+    {
+      "gpt_name": "Startup Valuation Expert",
+      "notion_url": "https://app.notion.com/p/2084bc1bd63c80528bc4e500c7a2cf85?pvs=1",
+      "access_url": "",
+      "purpose": "Helps estimate startup valuation logic, investor narrative, and valuation drivers.",
+      "core_pain_point": "Founders often guess valuations without understanding revenue, traction, dilution, market, and risk signals.",
+      "audience_persona": [
+        "Startup Founder",
+        "Investor",
+        "Advisor",
+        "SaaS Operator"
+      ],
+      "category": [
+        "Finance",
+        "Startup Strategy",
+        "Capital Advisory"
+      ],
+      "suite_tag": "Finance Ops",
+      "funnel_stage": "Tripwire",
+      "tier": "Growth",
+      "status": "Existing",
+      "input_fields": [
+        "Revenue",
+        "Growth rate",
+        "Market",
+        "Stage",
+        "Traction",
+        "Funding need",
+        "Comparable companies"
+      ],
+      "outputs": [
+        "Valuation range",
+        "Assumptions",
+        "Investor narrative",
+        "Dilution notes",
+        "Risk factors"
+      ],
+      "related_tools": [
+        "Spreadsheets",
+        "Pitch deck",
+        "Notion",
+        "Financial models"
+      ],
+      "related_content": [
+        "Valuation explainers",
+        "Funding strategy guides",
+        "Pitch prep"
+      ],
+      "monetization_path": "Use for valuation reports, fundraising readiness audits, and advisory calls.",
+      "featured": false,
+      "collection": "finance-ops",
+      "slug": "startup-valuation-expert"
+    },
+    {
+      "gpt_name": "Voiceover Script Genius",
+      "notion_url": "https://app.notion.com/p/24a4bc1bd63c810cb53eca2d839372b1?pvs=1",
+      "access_url": "",
+      "purpose": "Writes voiceover scripts for short-form and long-form content with strong pacing and hooks.",
+      "core_pain_point": "Creators waste time turning raw ideas into scripts that sound natural when read aloud.",
+      "audience_persona": [
+        "Creator",
+        "YouTuber",
+        "Podcaster",
+        "Course Creator"
+      ],
+      "category": [
+        "Content & Marketing",
+        "Creative Asset"
+      ],
+      "suite_tag": "Creator & Content Ops",
+      "funnel_stage": "Lead Magnet",
+      "tier": "Utility",
+      "status": "Existing",
+      "input_fields": [
+        "Topic",
+        "Audience",
+        "Target length",
+        "Tone",
+        "CTA",
+        "Key points",
+        "Platform"
+      ],
+      "outputs": [
+        "Voiceover script",
+        "Hook options",
+        "CTA",
+        "Title ideas",
+        "Short-form cuts"
+      ],
+      "related_tools": [
+        "ElevenLabs",
+        "InVideo",
+        "YouTube",
+        "TikTok",
+        "CapCut"
+      ],
+      "related_content": [
+        "Video scripts",
+        "Podcast intros",
+        "Short-form content"
+      ],
+      "monetization_path": "Use for content production services, creator templates, and video lead-gen assets.",
+      "featured": false,
+      "collection": "content-tools",
+      "slug": "voiceover-script-genius"
+    },
+    {
+      "gpt_name": "ResumeTailor AI",
+      "notion_url": "https://app.notion.com/p/1ec4bc1bd63c8105a70bdabf56e52513?pvs=1",
+      "access_url": "",
+      "purpose": "Tailors resumes to job postings and improves positioning for applicants.",
+      "core_pain_point": "Applicants send generic resumes that fail to map experience to the target role.",
+      "audience_persona": [
+        "Job Seeker",
+        "Career Switcher",
+        "Veteran",
+        "Freelancer"
+      ],
+      "category": [
+        "Career",
+        "Productivity"
+      ],
+      "suite_tag": "Personal Ops",
+      "funnel_stage": "Lead Magnet",
+      "tier": "Utility",
+      "status": "Existing",
+      "input_fields": [
+        "Resume",
+        "Job posting",
+        "Target role",
+        "Experience",
+        "Skills",
+        "Constraints"
+      ],
+      "outputs": [
+        "Tailored resume bullets",
+        "Summary rewrite",
+        "Keyword alignment",
+        "Cover letter draft",
+        "Gap notes"
+      ],
+      "related_tools": [
+        "LinkedIn",
+        "Google Docs",
+        "ATS scanners",
+        "Notion"
+      ],
+      "related_content": [
+        "Resume templates",
+        "Job search guides",
+        "Career prompts"
+      ],
+      "monetization_path": "Package as a career utility, resume rewrite offer, or job-seeker lead magnet.",
+      "featured": false,
+      "collection": "personal-ops",
+      "slug": "resumetailor-ai"
+    },
+    {
+      "gpt_name": "DeepPrompt Architect",
+      "notion_url": "https://app.notion.com/p/2074bc1bd63c80b6bfd2f770dd307627?pvs=1",
+      "access_url": "",
+      "purpose": "Builds advanced prompts, prompt chains, system instructions, and structured AI workflows.",
+      "core_pain_point": "Complex AI workflows need stronger architecture than one-off prompts and vibes.",
+      "audience_persona": [
+        "Prompt Engineer",
+        "AI Builder",
+        "Founder",
+        "Automation Architect"
+      ],
+      "category": [
+        "Prompt Engineering",
+        "Building & Development"
+      ],
+      "suite_tag": "AI Agent Development",
+      "funnel_stage": "Core",
+      "tier": "Premium",
+      "status": "Existing",
+      "input_fields": [
+        "Goal",
+        "Role",
+        "Context",
+        "Inputs",
+        "Output format",
+        "Constraints",
+        "Examples"
+      ],
+      "outputs": [
+        "Master prompt",
+        "Prompt chain",
+        "System instructions",
+        "Evaluation rubric",
+        "Reusable framework"
+      ],
+      "related_tools": [
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Notion",
+        "GitHub"
+      ],
+      "related_content": [
+        "Master prompt chains",
+        "Custom GPT instructions",
+        "Agent build specs"
+      ],
+      "monetization_path": "Use for premium prompt packs, custom GPT builds, and AI workflow consulting.",
+      "featured": true,
+      "collection": "prompt-tools",
+      "slug": "deepprompt-architect"
+    },
+    {
+      "gpt_name": "Industry Analysis Bot",
+      "notion_url": "https://app.notion.com/p/1ec4bc1bd63c81bd8920ce3418332afb?pvs=1",
+      "access_url": "",
+      "purpose": "Generates structured industry analysis, opportunity mapping, and market strategy briefs.",
+      "core_pain_point": "Operators need quick market context without drowning in generic research summaries.",
+      "audience_persona": [
+        "Founder",
+        "Investor",
+        "Consultant",
+        "Content Strategist"
+      ],
+      "category": [
+        "Research",
+        "Business Strategy"
+      ],
+      "suite_tag": "Research & Strategy",
+      "funnel_stage": "Tripwire",
+      "tier": "Growth",
+      "status": "Existing",
+      "input_fields": [
+        "Industry",
+        "Geography",
+        "Customer segment",
+        "Business model",
+        "Competitors",
+        "Research question"
+      ],
+      "outputs": [
+        "Industry brief",
+        "Market map",
+        "Opportunities",
+        "Risks",
+        "Content angles",
+        "Strategic recommendations"
+      ],
+      "related_tools": [
+        "Web research",
+        "Notion",
+        "Google Sheets",
+        "SEO tools"
+      ],
+      "related_content": [
+        "Market briefs",
+        "Niche research",
+        "Opportunity reports"
+      ],
+      "monetization_path": "Use for paid research reports, founder strategy calls, and niche content clusters.",
+      "featured": false,
+      "collection": "research-tools",
+      "slug": "industry-analysis-bot"
+    },
+    {
+      "gpt_name": "Personalized Tax Planning Strategy",
+      "notion_url": "https://app.notion.com/p/1ec4bc1bd63c81dfb167caac4937e7bd?pvs=1",
+      "access_url": "",
+      "purpose": "Helps users organize tax-planning questions, deductions, entity considerations, and advisor-prep checklists.",
+      "core_pain_point": "Business owners wait until tax season instead of preparing clean questions and documentation for a professional.",
+      "audience_persona": [
+        "Founder",
+        "Gig Worker",
+        "Small Business Owner",
+        "Creator"
+      ],
+      "category": [
+        "Finance",
+        "Tax Planning",
+        "Business Operations"
+      ],
+      "suite_tag": "Finance Ops",
+      "funnel_stage": "Lead Magnet",
+      "tier": "Utility",
+      "status": "Existing",
+      "input_fields": [
+        "Business type",
+        "Income streams",
+        "Expenses",
+        "Entity type",
+        "State",
+        "Advisor questions"
+      ],
+      "outputs": [
+        "Tax planning checklist",
+        "Question list for CPA",
+        "Deduction categories",
+        "Recordkeeping plan",
+        "Risk notes"
+      ],
+      "related_tools": [
+        "CPA",
+        "QuickBooks",
+        "Notion",
+        "Google Sheets"
+      ],
+      "related_content": [
+        "Tax prep checklists",
+        "Finance ops guides",
+        "Founder financial hygiene"
+      ],
+      "monetization_path": "Use as advisor-prep lead magnet, finance ops utility, or referral path to tax professionals.",
+      "featured": false,
+      "collection": "finance-ops",
+      "slug": "personalized-tax-planning-strategy"
+    },
+    {
+      "gpt_name": "Habit Reactor Engineer",
+      "notion_url": "https://app.notion.com/p/1ec4bc1bd63c817596c3cafbccf11c2d?pvs=1",
+      "access_url": "",
+      "purpose": "Builds habit systems, triggers, routines, and accountability loops.",
+      "core_pain_point": "People overplan goals but fail to install durable triggers and feedback loops.",
+      "audience_persona": [
+        "Founder",
+        "Creator",
+        "Operator",
+        "Self-Improver"
+      ],
+      "category": [
+        "Personal Ops",
+        "Productivity"
+      ],
+      "suite_tag": "Personal Ops",
+      "funnel_stage": "Lead Magnet",
+      "tier": "Utility",
+      "status": "Existing",
+      "input_fields": [
+        "Goal",
+        "Current routine",
+        "Obstacle",
+        "Trigger",
+        "Reward",
+        "Time available",
+        "Accountability preference"
+      ],
+      "outputs": [
+        "Habit system",
+        "Trigger map",
+        "Weekly routine",
+        "Failure plan",
+        "Tracker structure"
+      ],
+      "related_tools": [
+        "Notion",
+        "Google Calendar",
+        "Habit trackers"
+      ],
+      "related_content": [
+        "Routine templates",
+        "Accountability plans",
+        "Personal operating systems"
+      ],
+      "monetization_path": "Use as a productivity lead magnet or personal operating system template.",
+      "featured": false,
+      "collection": "personal-ops",
+      "slug": "habit-reactor-engineer"
+    },
+    {
+      "gpt_name": "Funding Workflow SOP Builder GPT",
+      "notion_url": "https://app.notion.com/p/bcef793d9b43441fa17e0dd130eecd99?pvs=1",
+      "access_url": "https://chatgpt.com/g/g-6a21460c79d481918f2dd0f37cc9a01e-funding-workflow-sop-builder",
+      "purpose": "Turns messy loan broker processes into SOPs, checklists, delegation docs, and automation-ready workflows.",
+      "core_pain_point": "Brokers need clean operating systems before they can delegate, hire, or automate effectively.",
+      "audience_persona": [
+        "Loan Broker",
+        "Agency Owner",
+        "Broker VA",
+        "Processor",
+        "Productized Service Operator"
+      ],
+      "category": [
+        "Business Operations",
+        "Productivity & Automation"
+      ],
+      "suite_tag": "Ops & Templates",
+      "funnel_stage": "Tripwire",
+      "tier": "Growth",
+      "status": "In Development",
+      "input_fields": [
+        "Process name",
+        "Current workflow",
+        "Owner",
+        "Tools involved",
+        "Bottlenecks",
+        "Desired output",
+        "Delegation needs"
+      ],
+      "outputs": [
+        "SOP",
+        "Checklist",
+        "Delegation guide",
+        "Automation map",
+        "CRM fields",
+        "Human review points"
+      ],
+      "related_tools": [
+        "Notion",
+        "Zapier",
+        "CRM",
+        "Google Sheets",
+        "Airtable"
+      ],
+      "related_content": [
+        "Funding agency SOPs",
+        "Broker processor checklist",
+        "Automation roadmap"
+      ],
+      "monetization_path": "Sell as a broker SOP pack, tripwire product, or DFY funding agency operations buildout.",
+      "featured": true,
+      "collection": "funding-agency-automation",
+      "slug": "funding-workflow-sop-builder-gpt"
+    },
+    {
+      "gpt_name": "Landing Page Generator",
+      "notion_url": "https://app.notion.com/p/23f4bc1bd63c8053b6e8eb83ce4ed42e?pvs=1",
+      "access_url": "",
+      "purpose": "Generates high-converting landing pages and production-ready static site files.",
+      "core_pain_point": "Founders need landing pages fast, but most generated pages are too bland, vague, or disconnected from the actual offer.",
+      "audience_persona": [
+        "Founder",
+        "Creator",
+        "Affiliate Marketer",
+        "Agency Owner"
+      ],
+      "category": [
+        "Content & Marketing",
+        "Building & Development"
+      ],
+      "suite_tag": "Creator & Content Ops",
+      "funnel_stage": "Core",
+      "tier": "Growth",
+      "status": "In Development",
+      "input_fields": [
+        "Offer",
+        "Audience",
+        "Traffic source",
+        "Awareness stage",
+        "CTA",
+        "Proof",
+        "Brand style",
+        "Page format"
+      ],
+      "outputs": [
+        "Landing page strategy",
+        "Wireframe",
+        "Copy deck",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "README"
+      ],
+      "related_tools": [
+        "Vercel",
+        "GitHub",
+        "Wix",
+        "Webflow",
+        "Carrd"
+      ],
+      "related_content": [
+        "Landing page templates",
+        "Lead magnet pages",
+        "Static site files"
+      ],
+      "monetization_path": "Use for landing page builds, micro-product sites, directories, and DFY campaign assets.",
+      "featured": true,
+      "collection": "site-builders",
+      "slug": "landing-page-generator"
+    },
+    {
+      "gpt_name": "Real-Time Cash Flow Analyzer",
+      "notion_url": "https://app.notion.com/p/2314bc1bd63c8030a817fd7078e3734a?pvs=1",
+      "access_url": "",
+      "purpose": "Analyzes cash-flow data and summarizes risks, trends, and funding readiness.",
+      "core_pain_point": "Small businesses often do not know whether their cash flow supports funding, operations, or growth decisions.",
+      "audience_persona": [
+        "Small Business Owner",
+        "Gig Worker",
+        "Funding Client",
+        "Finance Operator"
+      ],
+      "category": [
+        "Finance",
+        "Cash Flow",
+        "Funding Readiness"
+      ],
+      "suite_tag": "Finance Ops",
+      "funnel_stage": "Core",
+      "tier": "Growth",
+      "status": "Existing",
+      "input_fields": [
+        "Bank statement summary",
+        "Revenue",
+        "Expenses",
+        "Deposits",
+        "Overdrafts",
+        "Balances",
+        "Funding goal"
+      ],
+      "outputs": [
+        "Cash flow analysis",
+        "Risk flags",
+        "Funding readiness notes",
+        "Action plan",
+        "Summary report"
+      ],
+      "related_tools": [
+        "Bank statements",
+        "CSV upload",
+        "Google Sheets",
+        "My Figures App",
+        "Notion"
+      ],
+      "related_content": [
+        "Cash-flow calculators",
+        "Funding readiness scorecards",
+        "Finance ops reports"
+      ],
+      "monetization_path": "Drive funding assessments, finance ops audits, cash-flow reports, and funding offer routing.",
+      "featured": true,
+      "collection": "funding-tools",
+      "slug": "real-time-cash-flow-analyzer"
+    },
+    {
+      "gpt_name": "Broker Follow-Up Machine GPT",
+      "notion_url": "https://app.notion.com/p/d19dfe1252444112b360e9569f213624?pvs=1",
+      "access_url": "https://chatgpt.com/g/g-6a2152c07e488191862b272d5e3a4b44-broker-follow-up-machine",
+      "purpose": "Builds borrower, referral partner, and pipeline follow-up systems so loan brokers stop losing deals to forgotten check-ins.",
+      "core_pain_point": "Loan brokers lose funded deals because leads, missing docs, and referral partners fall through the cracks.",
+      "audience_persona": [
+        "Loan Broker",
+        "Agency Owner",
+        "Independent Funding Agent",
+        "Referral Partner Manager",
+        "Broker VA"
+      ],
+      "category": [
+        "Sales & Client Relations",
+        "Productivity & Automation"
+      ],
+      "suite_tag": "Agency Growth & Sales",
+      "funnel_stage": "Lead Magnet",
+      "tier": "Growth",
+      "status": "In Development",
+      "input_fields": [
+        "Lead type",
+        "Pipeline stage",
+        "Desired action",
+        "Channel",
+        "CRM/tool",
+        "Tone",
+        "Days since contact",
+        "Missing documents"
+      ],
+      "outputs": [
+        "Follow-up sequence",
+        "Email copy",
+        "SMS copy",
+        "Call script",
+        "CRM tags",
+        "Automation rules",
+        "Metrics"
+      ],
+      "related_tools": [
+        "Zapier",
+        "Notion/Airtable sync",
+        "CRM",
+        "Email",
+        "SMS"
+      ],
+      "related_content": [
+        "Broker follow-up sequence pack",
+        "Dead lead revival kit",
+        "Missing document templates"
+      ],
+      "monetization_path": "Use as a lead magnet that routes to CRM automation setup, broker follow-up packs, and DFY funding agency systems.",
+      "featured": true,
+      "collection": "funding-agency-automation",
+      "slug": "broker-follow-up-machine-gpt"
+    },
+    {
+      "gpt_name": "GPT Stack Builder",
+      "notion_url": "https://app.notion.com/p/2314bc1bd63c8063b882f64e6ce3d244?pvs=1",
+      "access_url": "",
+      "purpose": "Designs stacks of GPTs, tools, workflows, and content assets around a business use case.",
+      "core_pain_point": "Operators collect random AI tools instead of assembling a stack that maps to a revenue workflow.",
+      "audience_persona": [
+        "Founder",
+        "AI Operator",
+        "Agency Owner",
+        "Consultant"
+      ],
+      "category": [
+        "Building & Development",
+        "Productivity & Automation",
+        "Business Strategy"
+      ],
+      "suite_tag": "AI Agent Development",
+      "funnel_stage": "Core",
+      "tier": "Premium",
+      "status": "Existing",
+      "input_fields": [
+        "Business model",
+        "Workflow",
+        "Current tools",
+        "Pain points",
+        "Team size",
+        "Revenue goal",
+        "Automation maturity"
+      ],
+      "outputs": [
+        "GPT stack map",
+        "Tool recommendations",
+        "Workflow sequence",
+        "Build order",
+        "Monetization roadmap"
+      ],
+      "related_tools": [
+        "ChatGPT",
+        "Notion",
+        "Zapier",
+        "Airtable",
+        "GitHub",
+        "Vercel"
+      ],
+      "related_content": [
+        "AI stack maps",
+        "Agent directories",
+        "Automation blueprints"
+      ],
+      "monetization_path": "Use for paid AI stack audits, implementation retainers, and agent ecosystem strategy.",
+      "featured": true,
+      "collection": "ai-agent-arsenal",
+      "slug": "gpt-stack-builder"
+    }
+  ]
+}
